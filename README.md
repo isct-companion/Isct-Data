@@ -40,3 +40,20 @@ python3 scripts/review_course_coverage.py \
 For the verified broken Latin mappings in the original 2025 chemistry and transdisciplinary PDFs, add `--shift29 2025:chemistry --shift29 2025:transdisciplinary`. This repair applies only to the explicitly selected sources and preserves layout whitespace. Do not apply it to already decoded or OCR text. Filter a specific review with repeatable `--department ID` arguments.
 
 Exit codes: **0** = no findings, **1** = course-code differences or suspicious titles require agent review, **2** = missing/invalid input. JSON output includes source paths, extraction strategy, missing/extra codes, title findings and input errors. Differences include equivalence and cross-department references; the agent must inspect the official table columns before adding a record. A status of 0 is not proof of complete semantic extraction or official English coverage.
+
+## Subscription index
+
+After changing any published JSON dataset, regenerate its canonical JSON hash,
+publication timestamp, and the lightweight plain-text index hash:
+
+```sh
+python3 scripts/update_subscription_index.py
+```
+
+Clients poll only `index.sha256` during the normal daily check. When it changes,
+they verify and download `index.json`, then fetch only datasets whose declared
+`hash` changed. CI can verify generated files without modifying them:
+
+```sh
+python3 scripts/update_subscription_index.py --check
+```

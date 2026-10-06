@@ -1,1 +1,56 @@
-{"academicYears":{"2025":{"academicCalendar":"academic-calendar/2025.json","importantDates":"important-dates/2025.json"},"2026":{"academicCalendar":"academic-calendar/2026.json","importantDates":"important-dates/2026.json","exams":["exam/undergraduate/2026-2q.json","exam/graduate/2026-2q.json"]}},"admissionYears":{"2025":{"departments":"departments/2025.json"},"2026":{"departments":"departments/2026.json"}}}
+{
+  "academicYears": {
+    "2025": {
+      "academicCalendar": {
+        "source": "academic-calendar/2025.json",
+        "hash": "0bd605d4fc79d32a67c405c1762b40d2531d1dbc133c00233f0c3d0113492738",
+        "ts": "2026-10-06T07:29:49Z"
+      },
+      "importantDates": {
+        "source": "important-dates/2025.json",
+        "hash": "3b7eca130f42530049e65ba16fb39b135f12fb9df34d589fbbb65d75e1725821",
+        "ts": "2026-10-06T07:29:49Z"
+      }
+    },
+    "2026": {
+      "academicCalendar": {
+        "source": "academic-calendar/2026.json",
+        "hash": "8d5e5bf77a0c29b5bacc716253c630c43010251ca039cbe94473a8f01b8f75b9",
+        "ts": "2026-10-06T07:29:49Z"
+      },
+      "importantDates": {
+        "source": "important-dates/2026.json",
+        "hash": "62797565eeb914bd8ba9443d05da529503f0a63a834ac4a0c2b50507098e6eae",
+        "ts": "2026-10-06T07:29:49Z"
+      },
+      "exams": [
+        {
+          "source": "exam/undergraduate/2026-2q.json",
+          "hash": "bfbece9dd7840f72bdbaa2adbe72605fc54dd841e4c2dbd760ef4842f927275e",
+          "ts": "2026-10-06T07:29:49Z"
+        },
+        {
+          "source": "exam/graduate/2026-2q.json",
+          "hash": "dcdb742d06227c683c8b2ad9ab43b2795522362ee7ebcf12ccdaa488d8e5c284",
+          "ts": "2026-10-06T07:29:49Z"
+        }
+      ]
+    }
+  },
+  "admissionYears": {
+    "2025": {
+      "departments": {
+        "source": "departments/2025.json",
+        "hash": "47ea6b6678cad28d93e779ba2d7ace9409703d2ec7c03695cb100407c7a98405",
+        "ts": "2026-10-06T07:29:49Z"
+      }
+    },
+    "2026": {
+      "departments": {
+        "source": "departments/2026.json",
+        "hash": "43b1dc35e7e75418694a799f57692b5e3411565b7364585dc759a6f277752217",
+        "ts": "2026-10-06T07:29:49Z"
+      }
+    }
+  }
+}
