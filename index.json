@@ -34,6 +34,11 @@
         "hash": "62797565eeb914bd8ba9443d05da529503f0a63a834ac4a0c2b50507098e6eae",
         "source": "important-dates/2026.json",
         "ts": "2026-10-03T06:12:56Z"
+      },
+      "classSchedules": {
+        "hash": "6c7b06faa0399ed7c5dc20db6614abb0578e34e0fe8340996827a67ec5e4111a",
+        "source": "class-schedules/2026.json",
+        "ts": "2026-10-15T10:00:00Z"
       }
     }
   },

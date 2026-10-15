@@ -23,3 +23,10 @@ Localization and completeness:
 - Use the flat public paths (`academic-calendar/2025.json`, `departments/2025.json`, `important-dates/2025.json`, and `exam/{undergraduate,graduate}/2026-2q.json`). Do not create empty files for an unpublished year. Keep unsupported provenance such as hash/retrieval details in a review sidecar until the active schema supports it; never add unknown fields to schema-constrained records.
 - Every source must retain the official landing page and artifact URL. Missing historical editions are documented as gaps; they are never represented as a claim that no course or exam exists.
 - Resolve each department's guide filename from its stored `guidePdf`; never enumerate a shortened department list to infer PDF numbers. Missing text conversion is a review failure, not a zero-course result. For font-encoded or image PDFs, retain the official PDF and page PNG/OCR evidence, decode only the verified glyph mapping, and visually compare course-code differences before publishing.
+
+Alternating class schedules (`class-schedules/{year}.json`, schema `schema/class-schedules.schema.json`):
+
+- The source is the Schedule PDF a course distributes on LMS (login required); record its pluginfile URL, the course page as `landingPageUrl`, the PDF's own date as `publishedAt`, and its SHA-256. Publish only dates, session kinds, red/white groups and session numbers, never problem sets or other PDF content.
+- Copy every dated row of the PDF: `orientation` (both groups), `exercise` or `lab` with its `group`, `exam`, and `no-class` rows (including unnumbered `(*)` rows). A date missing from the PDF is not a class. Never derive a schedule the PDF does not state; a lab needs its own entry from its own schedule.
+- Match the entry to syllabus offerings with `offeringIds` for that academic year.
+- After editing, recompute the `classSchedules` hash in `index.json` from the canonical JSON (sorted keys, no whitespace, UTF-8).
