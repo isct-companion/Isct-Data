@@ -5,6 +5,7 @@ import json
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import parse_qsl, urlsplit
 
 from jsonschema import Draft202012Validator, FormatChecker
 
@@ -46,6 +47,18 @@ EXPECTED_LAS_B102 = {
 }
 
 
+def source_url_errors(source):
+    errors = []
+    session_keys = {"sesskey", "session", "sessionid", "token", "access_token", "password", "passcode", "auth", "authorization", "x-amz-signature"}
+    for field in ("url", "landingPageUrl"):
+        if field not in source:
+            continue
+        parsed = urlsplit(source[field])
+        if parsed.username or parsed.password or any(key.lower() in session_keys for key, _ in parse_qsl(parsed.query)):
+            errors.append(f"{source['id']}: {field} contains authentication/session state")
+    return errors
+
+
 def validate_feed(data, schema_path=None, check_las_b102=False):
     """Return publication errors; schema checks guard the relational checks."""
     schema = json.loads((schema_path or ROOT / "schema/exams.schema.json").read_text(encoding="utf-8"))
@@ -56,6 +69,8 @@ def validate_feed(data, schema_path=None, check_las_b102=False):
     ]
     if errors:
         return errors
+    for source in data["source"]:
+        errors.extend(source_url_errors(source))
     year = data["academicYear"]
     source_ids = [source["id"] for source in data["source"]]
     if len(source_ids) != len(set(source_ids)):

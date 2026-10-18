@@ -1,0 +1,71 @@
+name: Exam data
+
+on:
+  pull_request:
+    paths:
+      - 'exam/**'
+      - 'review/**'
+      - 'source-manifest/**'
+      - 'schema/*exam*'
+      - 'scripts/*exam*'
+      - 'scripts/update_subscription_index.py'
+      - 'index.json'
+      - 'index.sha256'
+      - 'requirements.txt'
+      - '.github/workflows/exams.yml'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: Academic year
+        default: '2026'
+        required: true
+      quarter:
+        type: choice
+        options: [1Q, 2Q, 3Q, 4Q]
+        default: 2Q
+        required: true
+      level:
+        type: choice
+        options: [undergraduate, graduate]
+        required: true
+      candidates:
+        description: Repository-relative reviewed candidate JSON; empty validates only
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  exams:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Validate repository inputs
+        run: python scripts/exam_workflow.py --check
+      - name: Apply exam candidates
+        if: github.event_name == 'workflow_dispatch' && inputs.candidates != ''
+        env:
+          EXAM_YEAR: ${{ inputs.year }}
+          EXAM_QUARTER: ${{ inputs.quarter }}
+          EXAM_LEVEL: ${{ inputs.level }}
+          EXAM_CANDIDATES: ${{ inputs.candidates }}
+        run: >-
+          python scripts/exam_workflow.py
+          --year "$EXAM_YEAR" --quarter "$EXAM_QUARTER"
+          --level "$EXAM_LEVEL" --candidates "$EXAM_CANDIDATES"
+      - name: Validate resulting data
+        run: python scripts/exam_workflow.py --check
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'workflow_dispatch' && inputs.candidates != ''
+        with:
+          name: exam-update
+          path: .exam-runs/
+          if-no-files-found: error
+          retention-days: 7

@@ -19,7 +19,8 @@
         "rooms",
         "label",
         "status",
-        "sourcePages"
+        "sourcePages",
+        "sourceIds"
       ]
     },
     {
@@ -38,7 +39,8 @@
         "rooms",
         "label",
         "status",
-        "sourcePages"
+        "sourcePages",
+        "sourceIds"
       ]
     },
     {

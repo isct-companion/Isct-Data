@@ -1,0 +1,1172 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "quarter": "2Q",
+  "entries": {
+    "2026-2Q-undergraduate-2026-07-29-LAL.C202-07-001": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-07",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.C202-09-002": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-09",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.C202-10-003": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-10",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.F202-04-004": {
+      "level": "undergraduate",
+      "courseCode": "LAL.F202-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.F202-05-005": {
+      "level": "undergraduate",
+      "courseCode": "LAL.F202-05",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.G202-09-006": {
+      "level": "undergraduate",
+      "courseCode": "LAL.G202-09",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.I302-007": {
+      "level": "undergraduate",
+      "courseCode": "LAL.I302",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.K302-01-008": {
+      "level": "undergraduate",
+      "courseCode": "LAL.K302-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.K302-02-009": {
+      "level": "undergraduate",
+      "courseCode": "LAL.K302-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.R202-04-010": {
+      "level": "undergraduate",
+      "courseCode": "LAL.R202-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.S202-10-011": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-10",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.S202-14-012": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-14",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAE.E114-49-013": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E114-49",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAE.E214-49-014": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E214-49",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.C202-12-015": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-12",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.C202-15-016": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-15",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.F202-06-017": {
+      "level": "undergraduate",
+      "courseCode": "LAL.F202-06",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.F202-07-018": {
+      "level": "undergraduate",
+      "courseCode": "LAL.F202-07",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.G202-13-019": {
+      "level": "undergraduate",
+      "courseCode": "LAL.G202-13",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.K302-03-020": {
+      "level": "undergraduate",
+      "courseCode": "LAL.K302-03",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.R202-06-021": {
+      "level": "undergraduate",
+      "courseCode": "LAL.R202-06",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.S202-18-022": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-18",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.S202-22-023": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-22",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.S202-23-024": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-23",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-MTH.A212-025": {
+      "level": "undergraduate",
+      "courseCode": "MTH.A212",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAE.E114-50-026": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E114-50",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAE.E214-50-027": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E214-50",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.G232-028": {
+      "level": "undergraduate",
+      "courseCode": "LAL.G232",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.L302-029": {
+      "level": "undergraduate",
+      "courseCode": "LAL.L302",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAS.P102-02-030": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAS.P102-12-031": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-12",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.A302-032": {
+      "level": "undergraduate",
+      "courseCode": "LAL.A302",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.C362-033": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C362",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAL.G362-034": {
+      "level": "undergraduate",
+      "courseCode": "LAL.G362",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAS.P102-06-035": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-06",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAS.P102-15-036": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-15",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-29-LAT.A206-037": {
+      "level": "undergraduate",
+      "courseCode": "LAT.A206",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CHM.B331-038": {
+      "level": "undergraduate",
+      "courseCode": "CHM.B331",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-EEE.E202-039": {
+      "level": "undergraduate",
+      "courseCode": "EEE.E202",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-ICT.S307-040": {
+      "level": "undergraduate",
+      "courseCode": "ICT.S307",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-IEE.A205-041": {
+      "level": "undergraduate",
+      "courseCode": "IEE.A205",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.C101-15-042": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-15",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.C101-16-043": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-16",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.C101-18-044": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-18",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.P102-09-045": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-09",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.P102-10-046": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-10",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.P102-11-047": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-11",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.P102-17-048": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-17",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LST.A343-049": {
+      "level": "undergraduate",
+      "courseCode": "LST.A343",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MAT.A201-050": {
+      "level": "undergraduate",
+      "courseCode": "MAT.A201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MEC.I212-051": {
+      "level": "undergraduate",
+      "courseCode": "MEC.I212",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-ARC.E201-052": {
+      "level": "undergraduate",
+      "courseCode": "ARC.E201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-ARC.S305-053": {
+      "level": "undergraduate",
+      "courseCode": "ARC.S305",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CAP.H202-01-054": {
+      "level": "undergraduate",
+      "courseCode": "CAP.H202-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CAP.H202-02-055": {
+      "level": "undergraduate",
+      "courseCode": "CAP.H202-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CSC.T272-056": {
+      "level": "undergraduate",
+      "courseCode": "CSC.T272",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CVE.B201-057": {
+      "level": "undergraduate",
+      "courseCode": "CVE.B201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-EEE.D211-058": {
+      "level": "undergraduate",
+      "courseCode": "EEE.D211",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-ICT.S206-059": {
+      "level": "undergraduate",
+      "courseCode": "ICT.S206",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.B102-09-060": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-09",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.C103-16-061": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-16",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.C103-17-062": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-17",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.P102-13-063": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-13",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.P102-14-064": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-14",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LAS.P102-16-065": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-16",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MAT.C305-066": {
+      "level": "undergraduate",
+      "courseCode": "MAT.C305",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MAT.P315-067": {
+      "level": "undergraduate",
+      "courseCode": "MAT.P315",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-PHY.M211-068": {
+      "level": "undergraduate",
+      "courseCode": "PHY.M211",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-SCE.S306-069": {
+      "level": "undergraduate",
+      "courseCode": "SCE.S306",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-TSE.A303-070": {
+      "level": "undergraduate",
+      "courseCode": "TSE.A303",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MTH.A202-071": {
+      "level": "undergraduate",
+      "courseCode": "MTH.A202",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CHM.D334-072": {
+      "level": "undergraduate",
+      "courseCode": "CHM.D334",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CVE.C301-073": {
+      "level": "undergraduate",
+      "courseCode": "CVE.C301",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-ICT.P208-074": {
+      "level": "undergraduate",
+      "courseCode": "ICT.P208",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MAT.A211-075": {
+      "level": "undergraduate",
+      "courseCode": "MAT.A211",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MAT.A307-076": {
+      "level": "undergraduate",
+      "courseCode": "MAT.A307",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-PHY.E310-077": {
+      "level": "undergraduate",
+      "courseCode": "PHY.E310",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-SCE.M206-078": {
+      "level": "undergraduate",
+      "courseCode": "SCE.M206",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-SCE.R301-079": {
+      "level": "undergraduate",
+      "courseCode": "SCE.R301",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MEC.A212-080": {
+      "level": "undergraduate",
+      "courseCode": "MEC.A212",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-CVE.E301-081": {
+      "level": "undergraduate",
+      "courseCode": "CVE.E301",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-LST.A352-082": {
+      "level": "undergraduate",
+      "courseCode": "LST.A352",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-MAT.M204-083": {
+      "level": "undergraduate",
+      "courseCode": "MAT.M204",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-PHY.E320-02-084": {
+      "level": "undergraduate",
+      "courseCode": "PHY.E320-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-07-31-SCE.R201-085": {
+      "level": "undergraduate",
+      "courseCode": "SCE.R201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-CAP.Q333-086": {
+      "level": "undergraduate",
+      "courseCode": "CAP.Q333",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAE.E112-04-087": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E112-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAE.E112-05-088": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E112-05",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAH.H205-089": {
+      "level": "undergraduate",
+      "courseCode": "LAH.H205",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAH.S218-090": {
+      "level": "undergraduate",
+      "courseCode": "LAH.S218",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAS.M101-01-091": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAS.M101-02-092": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAS.M101-03-093": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-03",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-PHY.Q331-094": {
+      "level": "undergraduate",
+      "courseCode": "PHY.Q331",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-CHM.B201-095": {
+      "level": "undergraduate",
+      "courseCode": "CHM.B201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-CVE.A202-096": {
+      "level": "undergraduate",
+      "courseCode": "CVE.A202",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAE.E212-11-097": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E212-11",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAS.M101-07-098": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-07",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAS.M101-08-099": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-08",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAS.M101-09-100": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-09",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MCS.T214-101": {
+      "level": "undergraduate",
+      "courseCode": "MCS.T214",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MTH.C202-102": {
+      "level": "undergraduate",
+      "courseCode": "MTH.C202",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-TSE.M203-01-103": {
+      "level": "undergraduate",
+      "courseCode": "TSE.M203-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-TSE.M203-02-104": {
+      "level": "undergraduate",
+      "courseCode": "TSE.M203-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-CAP.G303-105": {
+      "level": "undergraduate",
+      "courseCode": "CAP.G303",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-CHM.B333-106": {
+      "level": "undergraduate",
+      "courseCode": "CHM.B333",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-EEE.C201-107": {
+      "level": "undergraduate",
+      "courseCode": "EEE.C201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAE.E212-21-108": {
+      "level": "undergraduate",
+      "courseCode": "LAE.E212-21",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAH.H105-109": {
+      "level": "undergraduate",
+      "courseCode": "LAH.H105",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAH.T101-110": {
+      "level": "undergraduate",
+      "courseCode": "LAH.T101",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LST.A347-111": {
+      "level": "undergraduate",
+      "courseCode": "LST.A347",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MAT.P312-112": {
+      "level": "undergraduate",
+      "courseCode": "MAT.P312",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MCS.T311-113": {
+      "level": "undergraduate",
+      "courseCode": "MCS.T311",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-PHY.S312-114": {
+      "level": "undergraduate",
+      "courseCode": "PHY.S312",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MEC.B201-115": {
+      "level": "undergraduate",
+      "courseCode": "MEC.B201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MTH.C302-116": {
+      "level": "undergraduate",
+      "courseCode": "MTH.C302",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LAS.D111-01-117": {
+      "level": "undergraduate",
+      "courseCode": "LAS.D111-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-LST.A363-118": {
+      "level": "undergraduate",
+      "courseCode": "LST.A363",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MAT.P301-119": {
+      "level": "undergraduate",
+      "courseCode": "MAT.P301",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-03-MCS.T212-120": {
+      "level": "undergraduate",
+      "courseCode": "MCS.T212",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-CVE.C201-121": {
+      "level": "undergraduate",
+      "courseCode": "CVE.C201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.C202-01-122": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.C202-02-123": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.C202-03-124": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-03",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.C202-04-125": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.F202-01-126": {
+      "level": "undergraduate",
+      "courseCode": "LAL.F202-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.F202-02-127": {
+      "level": "undergraduate",
+      "courseCode": "LAL.F202-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.R202-01-128": {
+      "level": "undergraduate",
+      "courseCode": "LAL.R202-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.S202-01-129": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.S202-02-130": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.S202-03-131": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-03",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.S202-04-132": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.S202-05-133": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-05",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.C103-11-134": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-11",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.C103-13-135": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-13",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.C103-19-136": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-19",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.M101-04-137": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.M101-05-138": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-05",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.M101-06-139": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-06",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.P102-01-140": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.P102-03-141": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-03",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.P102-04-142": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-TSE.A321-143": {
+      "level": "undergraduate",
+      "courseCode": "TSE.A321",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-CHM.A212-144": {
+      "level": "undergraduate",
+      "courseCode": "CHM.A212",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-CHM.C331-145": {
+      "level": "undergraduate",
+      "courseCode": "CHM.C331",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-CVE.A301-146": {
+      "level": "undergraduate",
+      "courseCode": "CVE.A301",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.C202-05-147": {
+      "level": "undergraduate",
+      "courseCode": "LAL.C202-05",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.F202-03-148": {
+      "level": "undergraduate",
+      "courseCode": "LAL.F202-03",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.S202-07-149": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-07",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAL.S202-08-150": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-08",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.C101-12-151": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-12",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.C101-13-152": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-13",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.C101-14-153": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-14",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.M101-10-154": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-10",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.M101-11-155": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-11",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.M101-12-156": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-12",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.M101-13-157": {
+      "level": "undergraduate",
+      "courseCode": "LAS.M101-13",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.P102-05-158": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-05",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.P102-07-159": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-07",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LAS.P102-08-160": {
+      "level": "undergraduate",
+      "courseCode": "LAS.P102-08",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LST.A207-161": {
+      "level": "undergraduate",
+      "courseCode": "LST.A207",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LST.A361-162": {
+      "level": "undergraduate",
+      "courseCode": "LST.A361",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MCS.T211-163": {
+      "level": "undergraduate",
+      "courseCode": "MCS.T211",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MCS.T313-164": {
+      "level": "undergraduate",
+      "courseCode": "MCS.T313",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MTH.B202-165": {
+      "level": "undergraduate",
+      "courseCode": "MTH.B202",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-XMC.A204-166": {
+      "level": "undergraduate",
+      "courseCode": "XMC.A204",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MTH.C306-167": {
+      "level": "undergraduate",
+      "courseCode": "MTH.C306",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-EEE.M221-168": {
+      "level": "undergraduate",
+      "courseCode": "EEE.M221",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LST.A366-169": {
+      "level": "undergraduate",
+      "courseCode": "LST.A366",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MEC.M331-170": {
+      "level": "undergraduate",
+      "courseCode": "MEC.M331",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MEC.E201-171": {
+      "level": "undergraduate",
+      "courseCode": "MEC.E201",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-ARC.S202-172": {
+      "level": "undergraduate",
+      "courseCode": "ARC.S202",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-CHM.B335-173": {
+      "level": "undergraduate",
+      "courseCode": "CHM.B335",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-LST.A208-174": {
+      "level": "undergraduate",
+      "courseCode": "LST.A208",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MAT.P330-175": {
+      "level": "undergraduate",
+      "courseCode": "MAT.P330",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MCS.T312-176": {
+      "level": "undergraduate",
+      "courseCode": "MCS.T312",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-MTH.C342-177": {
+      "level": "undergraduate",
+      "courseCode": "MTH.C342",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-TSE.M202-01-178": {
+      "level": "undergraduate",
+      "courseCode": "TSE.M202-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-04-TSE.M202-02-179": {
+      "level": "undergraduate",
+      "courseCode": "TSE.M202-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAL.S202-11-180": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-11",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAL.S202-12-181": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-12",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAS.C101-11-182": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-11",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAS.C101-17-183": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C101-17",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-ARC.S307-184": {
+      "level": "undergraduate",
+      "courseCode": "ARC.S307",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-EEE.S301-185": {
+      "level": "undergraduate",
+      "courseCode": "EEE.S301",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAL.S202-19-186": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-19",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAL.S202-20-187": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-20",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAS.C103-14-188": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-14",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAS.C103-15-189": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-15",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-LAS.C103-18-190": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-18",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-05-MTH.B302-191": {
+      "level": "undergraduate",
+      "courseCode": "MTH.B302",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-CHM.C333-192": {
+      "level": "undergraduate",
+      "courseCode": "CHM.C333",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-EEE.D332-193": {
+      "level": "undergraduate",
+      "courseCode": "EEE.D332",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.C103-12-194": {
+      "level": "undergraduate",
+      "courseCode": "LAS.C103-12",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-CAP.N203-195": {
+      "level": "undergraduate",
+      "courseCode": "CAP.N203",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-MEC.H202-196": {
+      "level": "undergraduate",
+      "courseCode": "MEC.H202",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-PHY.Q206-197": {
+      "level": "undergraduate",
+      "courseCode": "PHY.Q206",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-CSC.T343-198": {
+      "level": "undergraduate",
+      "courseCode": "CSC.T343",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-ICT.I207-199": {
+      "level": "undergraduate",
+      "courseCode": "ICT.I207",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-ICT.M306-200": {
+      "level": "undergraduate",
+      "courseCode": "ICT.M306",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-MAT.C304-201": {
+      "level": "undergraduate",
+      "courseCode": "MAT.C304",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-CAP.F205-202": {
+      "level": "undergraduate",
+      "courseCode": "CAP.F205",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-MEC.I333-203": {
+      "level": "undergraduate",
+      "courseCode": "MEC.I333",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-EPS.B211-204": {
+      "level": "undergraduate",
+      "courseCode": "EPS.B211",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-ICT.C205-205": {
+      "level": "undergraduate",
+      "courseCode": "ICT.C205",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-01-206": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-02-207": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-03-208": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-03",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-04-209": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-04",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-05-210": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-05",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-06-211": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-06",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-07-212": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-07",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-LAS.B102-08-213": {
+      "level": "undergraduate",
+      "courseCode": "LAS.B102-08",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-PHY.S322-01-214": {
+      "level": "undergraduate",
+      "courseCode": "PHY.S322-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-2026-08-06-PHY.S322-02-215": {
+      "level": "undergraduate",
+      "courseCode": "PHY.S322-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-CSC.T251-final": {
+      "level": "undergraduate",
+      "courseCode": "CSC.T251",
+      "assessmentId": "final"
+    },
+    "2026-2Q-undergraduate-LAL.S202-13-final": {
+      "level": "undergraduate",
+      "courseCode": "LAL.S202-13",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-07-29-LAL.L446-001": {
+      "level": "graduate",
+      "courseCode": "LAL.L446",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-07-29-LAL.A446-002": {
+      "level": "graduate",
+      "courseCode": "LAL.A446",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-07-31-GEG.T413-003": {
+      "level": "graduate",
+      "courseCode": "GEG.T413",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-07-31-MAT.M427-004": {
+      "level": "graduate",
+      "courseCode": "MAT.M427",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-03-CAP.C424-005": {
+      "level": "graduate",
+      "courseCode": "CAP.C424",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-03-ESI.L410-006": {
+      "level": "graduate",
+      "courseCode": "ESI.L410",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-03-NCL.N406-007": {
+      "level": "graduate",
+      "courseCode": "NCL.N406",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-03-MAT.P407-008": {
+      "level": "graduate",
+      "courseCode": "MAT.P407",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-04-ESI.A402-01-009": {
+      "level": "graduate",
+      "courseCode": "ESI.A402-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-04-ESI.A402-02-010": {
+      "level": "graduate",
+      "courseCode": "ESI.A402-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-04-ART.T458-011": {
+      "level": "graduate",
+      "courseCode": "ART.T458",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-04-CAP.P426-012": {
+      "level": "graduate",
+      "courseCode": "CAP.P426",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-04-ESI.A404-01-013": {
+      "level": "graduate",
+      "courseCode": "ESI.A404-01",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-04-ESI.A404-02-014": {
+      "level": "graduate",
+      "courseCode": "ESI.A404-02",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-04-ICT.S407-015": {
+      "level": "graduate",
+      "courseCode": "ICT.S407",
+      "assessmentId": "final"
+    },
+    "2026-2Q-graduate-2026-08-06-EEE.D532-016": {
+      "level": "graduate",
+      "courseCode": "EEE.D532",
+      "assessmentId": "final"
+    }
+  }
+}
