@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "level": "undergraduate",
+  "quarter": "2Q",
+  "retrievedAt": "2026-10-18T07:06:01Z",
+  "access": {
+    "publicRunner": true,
+    "authenticatedLms": false,
+    "credentialsUsed": false
+  },
+  "sources": [
+    {
+      "id": "official-undergraduate-2026-2q",
+      "level": "undergraduate",
+      "access": "public",
+      "scope": "central_final_exam_timetable",
+      "title": "Science Tokyo 2026 2Q Undergraduate final-exam timetable",
+      "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
+      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
+      "artifactUrl": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
+      "retrievedAt": "2026-10-18T07:06:01Z",
+      "allowedFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "rooms",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ],
+      "publishedAt": "2026-08-03",
+      "sha256": "c9b45b7143eb3589f67e4aa17e5e03ac7ee476d54e426233ecd0d636af905226"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "correction-2026-2q-ict-p208-en",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "targetEntryId": "2026-2Q-undergraduate-2026-07-31-ICT.P208-074",
+      "courseCode": "ICT.P208",
+      "quarter": "2Q",
+      "date": "2026-07-31",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W3-201"
+      },
+      "label": {
+        "ja": "プログラミング発展",
+        "en": "Advanced Computer Programming (ICT)"
+      },
+      "status": "scheduled",
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePages": [
+        6
+      ],
+      "evidenceText": "31(金) 期末試験 5-6 ICT.P208 プログラミング発展 ... W3-201 / Advanced Computer Programming (ICT)",
+      "evidenceHash": "fcc1f2d48c40de26fd416c35556dcb36448ef41c2231e8ca4a298837b269fc21",
+      "evidenceContext": {
+        "identity": "PDF p.6, ICT.P208 row; the English title column reads Advanced Computer Programming (ICT), not the title of the adjacent MAT.A211 row.",
+        "time": "Periods as printed in the PDF; the timetable gives no clock start or end time."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "correction-2026-2q-lal-s202-04-en",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "targetEntryId": "2026-2Q-undergraduate-2026-08-04-LAL.S202-04-132",
+      "courseCode": "LAL.S202-04",
+      "quarter": "2Q",
+      "date": "2026-08-04",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W9-323"
+      },
+      "label": {
+        "ja": "スペイン語初級２ S14",
+        "en": "Spanish: Basic Course 2 S14"
+      },
+      "status": "scheduled",
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePages": [
+        11
+      ],
+      "evidenceText": "4(火) 期末試験 1-2 LAL.S202-04 スペイン語初級２ S14 ... W9-323 / Spanish: Basic Course 2 S14",
+      "evidenceHash": "f2fc9daca87b80104cfdb2d5120ec5ea1d0077640162729190d045ebba3c55a1",
+      "evidenceContext": {
+        "identity": "PDF p.11, LAL.S202-04 row; both the Japanese class label and the English title are S14.",
+        "time": "Periods as printed in the PDF; the timetable gives no clock start or end time."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "correction-2026-2q-lal-s202-07-en-status",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "targetEntryId": "2026-2Q-undergraduate-2026-08-04-LAL.S202-07-149",
+      "courseCode": "LAL.S202-07",
+      "quarter": "2Q",
+      "date": "2026-08-04",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "スペイン語初級２ S21",
+        "en": "Spanish: Basic Course 2 S21"
+      },
+      "status": "cancelled",
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePages": [
+        12
+      ],
+      "evidenceText": "4(火) 期末試験 3-4 LAL.S202-07 スペイン語初級２ S21 ... Spanish: Basic Course 2 S21 / 7/21(火) 削除",
+      "evidenceHash": "b2cbda95c645b298778384f7134a9af9828a2c22e96f9035ba1ed1bf8790c944",
+      "evidenceContext": {
+        "identity": "PDF p.12, LAL.S202-07 row; the entire row is struck through in red and the right margin says 7/21(火) 削除. Preserve the record with status cancelled rather than deleting it.",
+        "time": "Periods as printed in the PDF; the timetable gives no clock start or end time."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "correction-2026-2q-mec-m331-en",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "targetEntryId": "2026-2Q-undergraduate-2026-08-04-MEC.M331-170",
+      "courseCode": "MEC.M331",
+      "quarter": "2Q",
+      "date": "2026-08-04",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "宇宙システム工学",
+        "en": "Space Systems Engineering"
+      },
+      "status": "scheduled",
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePages": [
+        13
+      ],
+      "evidenceText": "4(火) 期末試験 5-6 MEC.M331 宇宙システム工学 ... I1-256 S2-204 / Space Systems Engineering / 7/28(火) 講義室変更",
+      "evidenceHash": "f557ad4fd2feabb2c7f40e5d2f65ce9288ad8cdcd19e1c1e1783f202feaed5ef",
+      "evidenceContext": {
+        "identity": "PDF p.13, MEC.M331 row. English title is Space Systems Engineering. Visual review and Poppler SVG geometry confirm a red strike rectangle overlaps only I1-256; S2-204 is unstruck. The room correction note is 7/28(火) 講義室変更.",
+        "time": "Periods as printed in the PDF; the timetable gives no clock start or end time."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "correction-2026-2q-mth-b302-en",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "targetEntryId": "2026-2Q-undergraduate-2026-08-05-MTH.B302-191",
+      "courseCode": "MTH.B302",
+      "quarter": "2Q",
+      "date": "2026-08-05",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W9-326"
+      },
+      "label": {
+        "ja": "幾何学第二",
+        "en": "Geometry II"
+      },
+      "status": "scheduled",
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePages": [
+        14
+      ],
+      "evidenceText": "5(水) 期末試験 3-4 MTH.B302 幾何学第二 ... W9-326 / Geometry II / 8/3(月) 追加",
+      "evidenceHash": "77ee4413d841bded11fe5f466e8aba8c13d3bccc26bf9807fcc0be49ee77566a",
+      "evidenceContext": {
+        "identity": "PDF p.14, MTH.B302 row; the title column reads Geometry II. The 追加/Addition text is a margin annotation, not part of the English title.",
+        "time": "Periods as printed in the PDF; the timetable gives no clock start or end time."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "correction-2026-2q-cap-n203-en",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "targetEntryId": "2026-2Q-undergraduate-2026-08-06-CAP.N203-195",
+      "courseCode": "CAP.N203",
+      "quarter": "2Q",
+      "date": "2026-08-06",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "無機化学３（元素・化合物）",
+        "en": "Inorganic Chemistry III (Elements・Compounds)"
+      },
+      "status": "scheduled",
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePages": [
+        15
+      ],
+      "evidenceText": "6(木) 期末試験 3-4 CAP.N203 無機化学３（元素・化合物） ... M-178 / Inorganic Chemistry III (Elements・Compounds) / 7/21(火) 追加",
+      "evidenceHash": "331491dbcf3b28ccf5e192f6bedf6b41ee2a9299a52b9219c953858a4dfddfe8",
+      "evidenceContext": {
+        "identity": "PDF p.15, CAP.N203 row; the title column reads Inorganic Chemistry III (Elements・Compounds). The 追加/Addition text is a margin annotation, not part of the English title.",
+        "time": "Periods as printed in the PDF; the timetable gives no clock start or end time."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "correction-2026-2q-ict-i207-en",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "targetEntryId": "2026-2Q-undergraduate-2026-08-06-ICT.I207-199",
+      "courseCode": "ICT.I207",
+      "quarter": "2Q",
+      "date": "2026-08-06",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S4-201"
+      },
+      "label": {
+        "ja": "線形回路",
+        "en": "Linear Circuits"
+      },
+      "status": "scheduled",
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePages": [
+        15
+      ],
+      "evidenceText": "6(木) 期末試験 5-6 ICT.I207 線形回路 ... S4-201 / Linear Circuits / 7/24(金) 追加",
+      "evidenceHash": "60e2d16675deeac99e2c4c3e2df5b2b793841bef922de6e769cb1b707dd66a76",
+      "evidenceContext": {
+        "identity": "PDF p.15, ICT.I207 row; the title column reads Linear Circuits. The 追加/Addition text is a margin annotation, not part of the English title.",
+        "time": "Periods as printed in the PDF; the timetable gives no clock start or end time."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "courseCode": "MTH.B302",
+      "date": "2026-07-31",
+      "periods": [
+        3,
+        6
+      ],
+      "room": {
+        "ja": "M-107"
+      },
+      "sourceId": "official-undergraduate-2026-2q",
+      "sourcePage": 6,
+      "reason": "Visually confirmed red strikethrough with annotation 8/5(水)に変更; superseded by the published 2026-08-05 row (periods 3-4, room W9-326)."
+    }
+  ],
+  "baseFeedHash": "f2e0cb5d95e5eae893f7c1ce868be26f235edc3acd81154fa0cda68a81f6e539"
+}

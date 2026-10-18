@@ -1,0 +1,39 @@
+{
+  "sourceUrl": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
+  "sourceSha256": "c9b45b7143eb3589f67e4aa17e5e03ac7ee476d54e426233ecd0d636af905226",
+  "page": 13,
+  "courseCode": "MEC.M331",
+  "oldRoom": "I1-256",
+  "newRoom": "S2-204",
+  "oldWordBounds": {
+    "xMin": 876.0092,
+    "yMin": 511.075001,
+    "xMax": 904.471295,
+    "yMax": 525.895893
+  },
+  "newWordBounds": {
+    "xMin": 911.7785,
+    "yMin": 511.075001,
+    "xMax": 942.547913,
+    "yMax": 525.895893
+  },
+  "redStrikethroughPolygon": [
+    [
+      875.757812,
+      520.066406
+    ],
+    [
+      904.378906,
+      520.066406
+    ],
+    [
+      904.378906,
+      519.375
+    ],
+    [
+      875.757812,
+      519.375
+    ]
+  ],
+  "method": "Poppler pdftotext -bbox word geometry and pdftocairo SVG red filled strike rectangle; rectangle intersects only the old room word."
+}

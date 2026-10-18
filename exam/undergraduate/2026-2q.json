@@ -9,7 +9,7 @@
       "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
       "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
       "publishedAt": "2026-08-03",
-      "retrievedAt": "2026-10-03T15:08:06+09:00",
+      "retrievedAt": "2026-10-18T07:06:01Z",
       "sha256": "c9b45b7143eb3589f67e4aa17e5e03ac7ee476d54e426233ecd0d636af905226"
     },
     {
@@ -1860,21 +1860,21 @@
       "quarter": "2Q",
       "courseCode": "ICT.P208",
       "date": "2026-07-31",
-      "periods": [
-        5,
-        6
-      ],
       "room": {
         "ja": "W3-201"
       },
       "label": {
         "ja": "プログラミング発展",
-        "en": "Chemical Reaction Dynamics"
+        "en": "Advanced Computer Programming (ICT)"
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
       ],
       "sourcePages": [
+        6
+      ],
+      "periods": [
+        5,
         6
       ]
     },
@@ -3310,22 +3310,22 @@
       "quarter": "2Q",
       "courseCode": "LAL.S202-04",
       "date": "2026-08-04",
-      "periods": [
-        1,
-        2
-      ],
       "room": {
         "ja": "W9-323"
       },
       "label": {
         "ja": "スペイン語初級２ S14",
-        "en": "Spanish: Basic Course 2 S15"
+        "en": "Spanish: Basic Course 2 S14"
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
       ],
       "sourcePages": [
         11
+      ],
+      "periods": [
+        1,
+        2
       ]
     },
     {
@@ -3731,26 +3731,26 @@
     {
       "id": "2026-2Q-undergraduate-2026-08-04-LAL.S202-07-149",
       "kind": "exam",
-      "status": "scheduled",
+      "status": "cancelled",
       "quarter": "2Q",
       "courseCode": "LAL.S202-07",
       "date": "2026-08-04",
-      "periods": [
-        3,
-        4
-      ],
       "room": {
         "ja": "S3-206"
       },
       "label": {
         "ja": "スペイン語初級２ S21",
-        "en": "Spanish: Basic Course 2 S22"
+        "en": "Spanish: Basic Course 2 S21"
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
       ],
       "sourcePages": [
         12
+      ],
+      "periods": [
+        3,
+        4
       ]
     },
     {
@@ -4260,22 +4260,22 @@
       "quarter": "2Q",
       "courseCode": "MEC.M331",
       "date": "2026-08-04",
-      "periods": [
-        5,
-        6
-      ],
       "room": {
-        "ja": "I1-256 S2-204"
+        "ja": "S2-204"
       },
       "label": {
         "ja": "宇宙システム工学",
-        "en": "Thermodynamics (Mechanical Engineering)"
+        "en": "Space Systems Engineering"
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
       ],
       "sourcePages": [
         13
+      ],
+      "periods": [
+        5,
+        6
       ]
     },
     {
@@ -4785,22 +4785,22 @@
       "quarter": "2Q",
       "courseCode": "MTH.B302",
       "date": "2026-08-05",
-      "periods": [
-        3,
-        4
-      ],
       "room": {
         "ja": "W9-326"
       },
       "label": {
         "ja": "幾何学第二",
-        "en": "追加 Geometry II Addition"
+        "en": "Geometry II"
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
       ],
       "sourcePages": [
         14
+      ],
+      "periods": [
+        3,
+        4
       ]
     },
     {
@@ -4885,22 +4885,22 @@
       "quarter": "2Q",
       "courseCode": "CAP.N203",
       "date": "2026-08-06",
-      "periods": [
-        3,
-        4
-      ],
       "room": {
         "ja": "M-178"
       },
       "label": {
         "ja": "無機化学３（元素・化合物）",
-        "en": "追加 Inorganic Chemistry III (Elements・Compounds) Addition"
+        "en": "Inorganic Chemistry III (Elements・Compounds)"
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
       ],
       "sourcePages": [
         15
+      ],
+      "periods": [
+        3,
+        4
       ]
     },
     {
@@ -4985,22 +4985,22 @@
       "quarter": "2Q",
       "courseCode": "ICT.I207",
       "date": "2026-08-06",
-      "periods": [
-        5,
-        6
-      ],
       "room": {
         "ja": "S4-201"
       },
       "label": {
         "ja": "線形回路",
-        "en": "追加 Linear Circuits Addition"
+        "en": "Linear Circuits"
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
       ],
       "sourcePages": [
         15
+      ],
+      "periods": [
+        5,
+        6
       ]
     },
     {

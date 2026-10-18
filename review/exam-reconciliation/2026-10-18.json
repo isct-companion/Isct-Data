@@ -1,0 +1,434 @@
+{
+  "leftCount": 233,
+  "rightCount": 233,
+  "matchingCount": 226,
+  "disagreements": [
+    {
+      "assessment": [
+        2026,
+        "undergraduate",
+        "2Q",
+        "2026-2Q-undergraduate-2026-07-31-ICT.P208-074"
+      ],
+      "left": {
+        "id": "2026-2Q-undergraduate-2026-07-31-ICT.P208-074",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "ICT.P208",
+        "date": "2026-07-31",
+        "periods": [
+          5,
+          6
+        ],
+        "room": {
+          "ja": "W3-201"
+        },
+        "label": {
+          "ja": "プログラミング発展",
+          "en": "Chemical Reaction Dynamics"
+        },
+        "sourcePages": [
+          6
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      },
+      "right": {
+        "id": "2026-2Q-undergraduate-2026-07-31-ICT.P208-074",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "ICT.P208",
+        "date": "2026-07-31",
+        "room": {
+          "ja": "W3-201"
+        },
+        "label": {
+          "ja": "プログラミング発展",
+          "en": "Advanced Computer Programming (ICT)"
+        },
+        "sourcePages": [
+          6
+        ],
+        "periods": [
+          5,
+          6
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      }
+    },
+    {
+      "assessment": [
+        2026,
+        "undergraduate",
+        "2Q",
+        "2026-2Q-undergraduate-2026-08-04-LAL.S202-04-132"
+      ],
+      "left": {
+        "id": "2026-2Q-undergraduate-2026-08-04-LAL.S202-04-132",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "LAL.S202-04",
+        "date": "2026-08-04",
+        "periods": [
+          1,
+          2
+        ],
+        "room": {
+          "ja": "W9-323"
+        },
+        "label": {
+          "ja": "スペイン語初級２ S14",
+          "en": "Spanish: Basic Course 2 S15"
+        },
+        "sourcePages": [
+          11
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      },
+      "right": {
+        "id": "2026-2Q-undergraduate-2026-08-04-LAL.S202-04-132",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "LAL.S202-04",
+        "date": "2026-08-04",
+        "room": {
+          "ja": "W9-323"
+        },
+        "label": {
+          "ja": "スペイン語初級２ S14",
+          "en": "Spanish: Basic Course 2 S14"
+        },
+        "sourcePages": [
+          11
+        ],
+        "periods": [
+          1,
+          2
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      }
+    },
+    {
+      "assessment": [
+        2026,
+        "undergraduate",
+        "2Q",
+        "2026-2Q-undergraduate-2026-08-04-LAL.S202-07-149"
+      ],
+      "left": {
+        "id": "2026-2Q-undergraduate-2026-08-04-LAL.S202-07-149",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "LAL.S202-07",
+        "date": "2026-08-04",
+        "periods": [
+          3,
+          4
+        ],
+        "room": {
+          "ja": "S3-206"
+        },
+        "label": {
+          "ja": "スペイン語初級２ S21",
+          "en": "Spanish: Basic Course 2 S22"
+        },
+        "sourcePages": [
+          12
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      },
+      "right": {
+        "id": "2026-2Q-undergraduate-2026-08-04-LAL.S202-07-149",
+        "kind": "exam",
+        "status": "cancelled",
+        "quarter": "2Q",
+        "courseCode": "LAL.S202-07",
+        "date": "2026-08-04",
+        "room": {
+          "ja": "S3-206"
+        },
+        "label": {
+          "ja": "スペイン語初級２ S21",
+          "en": "Spanish: Basic Course 2 S21"
+        },
+        "sourcePages": [
+          12
+        ],
+        "periods": [
+          3,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      }
+    },
+    {
+      "assessment": [
+        2026,
+        "undergraduate",
+        "2Q",
+        "2026-2Q-undergraduate-2026-08-04-MEC.M331-170"
+      ],
+      "left": {
+        "id": "2026-2Q-undergraduate-2026-08-04-MEC.M331-170",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "MEC.M331",
+        "date": "2026-08-04",
+        "periods": [
+          5,
+          6
+        ],
+        "room": {
+          "ja": "I1-256 S2-204"
+        },
+        "label": {
+          "ja": "宇宙システム工学",
+          "en": "Thermodynamics (Mechanical Engineering)"
+        },
+        "sourcePages": [
+          13
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      },
+      "right": {
+        "id": "2026-2Q-undergraduate-2026-08-04-MEC.M331-170",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "MEC.M331",
+        "date": "2026-08-04",
+        "room": {
+          "ja": "I1-256 S2-204"
+        },
+        "label": {
+          "ja": "宇宙システム工学",
+          "en": "Space Systems Engineering"
+        },
+        "sourcePages": [
+          13
+        ],
+        "periods": [
+          5,
+          6
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      }
+    },
+    {
+      "assessment": [
+        2026,
+        "undergraduate",
+        "2Q",
+        "2026-2Q-undergraduate-2026-08-05-MTH.B302-191"
+      ],
+      "left": {
+        "id": "2026-2Q-undergraduate-2026-08-05-MTH.B302-191",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "MTH.B302",
+        "date": "2026-08-05",
+        "periods": [
+          3,
+          4
+        ],
+        "room": {
+          "ja": "W9-326"
+        },
+        "label": {
+          "ja": "幾何学第二",
+          "en": "追加 Geometry II Addition"
+        },
+        "sourcePages": [
+          14
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      },
+      "right": {
+        "id": "2026-2Q-undergraduate-2026-08-05-MTH.B302-191",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "MTH.B302",
+        "date": "2026-08-05",
+        "room": {
+          "ja": "W9-326"
+        },
+        "label": {
+          "ja": "幾何学第二",
+          "en": "Geometry II"
+        },
+        "sourcePages": [
+          14
+        ],
+        "periods": [
+          3,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      }
+    },
+    {
+      "assessment": [
+        2026,
+        "undergraduate",
+        "2Q",
+        "2026-2Q-undergraduate-2026-08-06-CAP.N203-195"
+      ],
+      "left": {
+        "id": "2026-2Q-undergraduate-2026-08-06-CAP.N203-195",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "CAP.N203",
+        "date": "2026-08-06",
+        "periods": [
+          3,
+          4
+        ],
+        "room": {
+          "ja": "M-178"
+        },
+        "label": {
+          "ja": "無機化学３（元素・化合物）",
+          "en": "追加 Inorganic Chemistry III (Elements・Compounds) Addition"
+        },
+        "sourcePages": [
+          15
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      },
+      "right": {
+        "id": "2026-2Q-undergraduate-2026-08-06-CAP.N203-195",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "CAP.N203",
+        "date": "2026-08-06",
+        "room": {
+          "ja": "M-178"
+        },
+        "label": {
+          "ja": "無機化学３（元素・化合物）",
+          "en": "Inorganic Chemistry III (Elements・Compounds)"
+        },
+        "sourcePages": [
+          15
+        ],
+        "periods": [
+          3,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      }
+    },
+    {
+      "assessment": [
+        2026,
+        "undergraduate",
+        "2Q",
+        "2026-2Q-undergraduate-2026-08-06-ICT.I207-199"
+      ],
+      "left": {
+        "id": "2026-2Q-undergraduate-2026-08-06-ICT.I207-199",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "ICT.I207",
+        "date": "2026-08-06",
+        "periods": [
+          5,
+          6
+        ],
+        "room": {
+          "ja": "S4-201"
+        },
+        "label": {
+          "ja": "線形回路",
+          "en": "追加 Linear Circuits Addition"
+        },
+        "sourcePages": [
+          15
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      },
+      "right": {
+        "id": "2026-2Q-undergraduate-2026-08-06-ICT.I207-199",
+        "kind": "exam",
+        "status": "scheduled",
+        "quarter": "2Q",
+        "courseCode": "ICT.I207",
+        "date": "2026-08-06",
+        "room": {
+          "ja": "S4-201"
+        },
+        "label": {
+          "ja": "線形回路",
+          "en": "Linear Circuits"
+        },
+        "sourcePages": [
+          15
+        ],
+        "periods": [
+          5,
+          6
+        ],
+        "sourceUrls": [
+          "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf"
+        ]
+      }
+    }
+  ],
+  "scope": "assessment identity, exam facts, and source URLs; retrieval timestamps are excluded",
+  "run": {
+    "baseCommit": "1b6cce5866118bdec35d9daeb439fed40fd05f0a",
+    "promptSha256": "97dfaa35a2f84fe1e8b0483ced4d6ae35eebee894ace6dec05b7f80ad473bfa0",
+    "luna": "gpt-5.6-luna",
+    "deepseek": "DeepSeek-V41-Flash High (Harness)",
+    "zeroConversationHistory": true,
+    "inputRepository": "Isct-Data only",
+    "publication": "not pushed",
+    "lunaRunStatus": "interrupted_with_source_review_incomplete",
+    "deepseekRunStatus": "completed"
+  },
+  "adjudication": {
+    "verifiedCorrectionRecords": 7,
+    "additionalFieldCorrection": {
+      "courseCode": "MEC.M331",
+      "room": "S2-204",
+      "proof": "2026-2q-room-cell-strike.json"
+    },
+    "decisionBasis": "official PDF page images and vector strike geometry; model majority is not a decision rule"
+  }
+}

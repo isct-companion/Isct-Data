@@ -17,6 +17,11 @@ class schedules, application code, scripts, schemas or workflow definitions.
    Compare the fresh source rows with the published exam facts; report the
    reviewed scope and any additions, corrections or gaps. An empty candidate
    array is valid only after that comparison, not as a substitute for acquisition.
+   Compare both Japanese and official English title columns within their table
+   cells. Inspect visual revisions at row and individual-cell level: crossed-out
+   old values do not remain active values, and margin notes are not titles. Use
+   rendered pages or vector geometry where plain text loses these marks. An
+   unchanged PDF hash does not prove that an earlier extraction was correct.
    Classify final, quiz, optional oral and other assessments separately. Preserve
    published class suffixes, exact times, allocated periods, rooms and explicit
    cancellations. Do not turn an ordinary teaching row into an exam. Derive an
