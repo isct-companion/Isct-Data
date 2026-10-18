@@ -8,6 +8,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import parse_qsl, urlsplit
 
 from jsonschema import Draft202012Validator, FormatChecker
 from validate_exam_feed import ROOT, validate_feed
@@ -55,6 +56,13 @@ def merge_candidates(feed, review):
         source = review_sources.get(source_id)
         if source is None:
             raise ValueError(f"{code}: reviewed source is missing")
+        for field in ("url", "landingPageUrl"):
+            if field not in source:
+                continue
+            parsed = urlsplit(source[field])
+            sensitive_query = {"sesskey", "session", "sessionid", "token", "access_token", "password", "passcode", "auth", "authorization"}
+            if parsed.username or parsed.password or any(key.lower() in sensitive_query for key, _ in parse_qsl(parsed.query)):
+                raise ValueError(f"{code}: source reference contains authentication/session state")
         previous_source = sources.get(source_id)
         if previous_source and previous_source["url"] != source["url"]:
             raise ValueError(f"{code}: source id cannot silently change URL")
