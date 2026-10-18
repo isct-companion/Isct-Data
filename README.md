@@ -42,3 +42,7 @@ python3 scripts/review_course_coverage.py \
 For the verified broken Latin mappings in the original 2025 chemistry and transdisciplinary PDFs, add `--shift29 2025:chemistry --shift29 2025:transdisciplinary`. This repair applies only to the explicitly selected sources and preserves layout whitespace. Do not apply it to already decoded or OCR text. Filter a specific review with repeatable `--department ID` arguments.
 
 Exit codes: **0** = no findings, **1** = course-code differences or suspicious titles require agent review, **2** = missing/invalid input. JSON output includes source paths, extraction strategy, missing/extra codes, title findings and input errors. Differences include equivalence and cross-department references; the agent must inspect the official table columns before adding a record. A status of 0 is not proof of complete semantic extraction or official English coverage.
+
+## Exam-feed extraction check
+
+Run `python3 scripts/validate_exam_feed.py exam/undergraduate/2026-2q.json` before publishing the 2026 2Q undergraduate feed. It checks for PDF room-note text leaking into English labels, truncated room values, and the official page-16 LAS.B102 title/room rows. The script is a regression guard for the reviewed PDF; it does not infer class suffixes or alter course matching.

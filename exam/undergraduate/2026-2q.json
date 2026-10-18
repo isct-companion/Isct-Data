@@ -5151,11 +5151,27 @@
         8
       ],
       "room": {
-        "ja": "M-B07,M-178,M-124,M-"
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
       },
+      "rooms": [
+        { "ja": "M-B07" },
+        { "ja": "M-178" },
+        { "ja": "M-124" },
+        { "ja": "M-278" },
+        { "ja": "M-374" },
+        { "ja": "W2-401" },
+        { "ja": "WL2-201" },
+        { "ja": "WL2-301" },
+        { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ A",
-        "en": "confirm the room you willtake Fundamental Life Science 1-2 C the exam."
+        "en": "Fundamental Life Science 1-2 A"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
@@ -5175,10 +5191,22 @@
         7,
         8
       ],
-      "room": null,
+      "room": {
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
+      },
+      "rooms": [
+        { "ja": "M-B07" }, { "ja": "M-178" }, { "ja": "M-124" },
+        { "ja": "M-278" }, { "ja": "M-374" }, { "ja": "W2-401" },
+        { "ja": "WL2-201" }, { "ja": "WL2-301" }, { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ B",
-        "en": "confirm the room you willtake Fundamental Life Science 1-2 C the exam."
+        "en": "Fundamental Life Science 1-2 B"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
@@ -5198,10 +5226,22 @@
         7,
         8
       ],
-      "room": null,
+      "room": {
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
+      },
+      "rooms": [
+        { "ja": "M-B07" }, { "ja": "M-178" }, { "ja": "M-124" },
+        { "ja": "M-278" }, { "ja": "M-374" }, { "ja": "W2-401" },
+        { "ja": "WL2-201" }, { "ja": "WL2-301" }, { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ C",
-        "en": "confirm the room you willtake Fundamental Life Science 1-2 C the exam."
+        "en": "Fundamental Life Science 1-2 C"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
@@ -5221,10 +5261,22 @@
         7,
         8
       ],
-      "room": null,
+      "room": {
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
+      },
+      "rooms": [
+        { "ja": "M-B07" }, { "ja": "M-178" }, { "ja": "M-124" },
+        { "ja": "M-278" }, { "ja": "M-374" }, { "ja": "W2-401" },
+        { "ja": "WL2-201" }, { "ja": "WL2-301" }, { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ D",
         "en": "Fundamental Life Science 1-2 D"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
@@ -5244,10 +5296,22 @@
         7,
         8
       ],
-      "room": null,
+      "room": {
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
+      },
+      "rooms": [
+        { "ja": "M-B07" }, { "ja": "M-178" }, { "ja": "M-124" },
+        { "ja": "M-278" }, { "ja": "M-374" }, { "ja": "W2-401" },
+        { "ja": "WL2-201" }, { "ja": "WL2-301" }, { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ E",
         "en": "Fundamental Life Science 1-2 E"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
@@ -5267,10 +5331,22 @@
         7,
         8
       ],
-      "room": null,
+      "room": {
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
+      },
+      "rooms": [
+        { "ja": "M-B07" }, { "ja": "M-178" }, { "ja": "M-124" },
+        { "ja": "M-278" }, { "ja": "M-374" }, { "ja": "W2-401" },
+        { "ja": "WL2-201" }, { "ja": "WL2-301" }, { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ F",
         "en": "Fundamental Life Science 1-2 F"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
@@ -5290,10 +5366,22 @@
         7,
         8
       ],
-      "room": null,
+      "room": {
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
+      },
+      "rooms": [
+        { "ja": "M-B07" }, { "ja": "M-178" }, { "ja": "M-124" },
+        { "ja": "M-278" }, { "ja": "M-374" }, { "ja": "W2-401" },
+        { "ja": "WL2-201" }, { "ja": "WL2-301" }, { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ G",
         "en": "Fundamental Life Science 1-2 G"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
@@ -5313,10 +5401,22 @@
         7,
         8
       ],
-      "room": null,
+      "room": {
+        "ja": "M-B07,M-178,M-124,M-278,M-374,W2-401,WL2-201,WL2-301,WL2-401,W8E-101"
+      },
+      "rooms": [
+        { "ja": "M-B07" }, { "ja": "M-178" }, { "ja": "M-124" },
+        { "ja": "M-278" }, { "ja": "M-374" }, { "ja": "W2-401" },
+        { "ja": "WL2-201" }, { "ja": "WL2-301" }, { "ja": "WL2-401" },
+        { "ja": "W8E-101" }
+      ],
       "label": {
         "ja": "生命科学基礎第一２ H",
         "en": "Fundamental Life Science 1-2 H"
+      },
+      "notes": {
+        "ja": "試験室の詳細はLMSを確認してください。",
+        "en": "Please refer to LMS to confirm the room you will take the exam."
       },
       "sourceIds": [
         "official-undergraduate-2026-2q"
