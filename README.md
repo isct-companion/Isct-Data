@@ -20,6 +20,8 @@
 
 試験PDFは公式入口の更新版を取得し、各エントリに出典ページを記録しています。時限はPDFの割当（例: 3-4）で、正確な開始・終了時刻は推測していません。
 
+隔週授業の日程は `class-schedules/2026.json` に収録しています。物理学演習・物理学実験は赤組・白組が隔週で交互に受講し、各回が赤・白・全員のどれに当たるかは公開シラバスではなく、LMS の科目ページで配布される Schedule PDF にしか載っていません。各エントリは `offeringIds`（シラバスの講義 ID）で科目に対応付け、`sessions` に PDF の全日付（オリエンテーション、演習、試験、休講）を記録します。2026 年度は物理学演習第二 English Class（3〜4Q）のみ収録済みで、他クラスと物理学実験は未収録です。未収録のクラスはアプリで毎週表示され、「隔週・日程未収録」と表示されます。
+
 校暦の `teachingRanges` は通常授業の分段、`examRanges` は公式校暦が示す期末試験・補講期間です。`examRanges` は個別科目の試験一覧ではなく、休業期間や試験日を通常授業として誤表示しないための期間情報です。
 
 試験データではPDFに記載された英語科目名を `label.en` にそのまま収録しています。試験PDFに開始・終了時刻の記載がないため、`periods` のみを使用しています。
@@ -41,6 +43,10 @@ For the verified broken Latin mappings in the original 2025 chemistry and transd
 
 Exit codes: **0** = no findings, **1** = course-code differences or suspicious titles require agent review, **2** = missing/invalid input. JSON output includes source paths, extraction strategy, missing/extra codes, title findings and input errors. Differences include equivalence and cross-department references; the agent must inspect the official table columns before adding a record. A status of 0 is not proof of complete semantic extraction or official English coverage.
 
+## Exam-feed extraction check
+
+Run `python3 scripts/validate_exam_feed.py exam/undergraduate/2026-2q.json` before publishing the 2026 2Q undergraduate feed. It checks for PDF room-note text leaking into English labels, truncated room values, and the official page-16 LAS.B102 title/room rows. The script is a regression guard for the reviewed PDF; it does not infer class suffixes or alter course matching.
+
 ## Subscription index
 
 After changing any published JSON dataset, regenerate its canonical JSON hash,
@@ -50,9 +56,9 @@ publication timestamp, and the lightweight plain-text index hash:
 python3 scripts/update_subscription_index.py
 ```
 
-Clients poll only `index.sha256` during the normal daily check. When it changes,
-they verify and download `index.json`, then fetch only datasets whose declared
-`hash` changed. CI can verify generated files without modifying them:
+The app discovers datasets through `index.json` and hashes that response locally.
+`index.sha256` remains generated repository metadata. CI can verify generated
+files without modifying them:
 
 ```sh
 python3 scripts/update_subscription_index.py --check

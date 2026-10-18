@@ -103,7 +103,7 @@ def updated_index(root, index, timestamp):
         raise ValueError("academicYears and admissionYears must be objects")
 
     for entry in index["academicYears"].values():
-        allowed = {"academicCalendar", "importantDates", "exams"}
+        allowed = {"academicCalendar", "importantDates", "exams", "classSchedules"}
         if not isinstance(entry, dict) or not set(entry).issubset(allowed):
             raise ValueError("invalid academic-year index entry")
         if "academicCalendar" in entry:
@@ -113,6 +113,10 @@ def updated_index(root, index, timestamp):
         if "importantDates" in entry:
             entry["importantDates"] = update_reference(
                 root, entry["importantDates"], timestamp
+            )
+        if "classSchedules" in entry:
+            entry["classSchedules"] = update_reference(
+                root, entry["classSchedules"], timestamp
             )
         if "exams" in entry:
             if not isinstance(entry["exams"], list):

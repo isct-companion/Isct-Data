@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "timezone": "Asia/Tokyo",
+  "source": [
+    {
+      "id": "lms-las-p106-en-2026-3q4q-schedule",
+      "title": "Exercises in Physics II LAS.P106-EN (2026.3~4Q) Schedule",
+      "url": "https://lms.s.isct.ac.jp/2025/pluginfile.php/224190/mod_resource/content/2/EX2_Schedule_3Q4Q_2026_v1.pdf",
+      "landingPageUrl": "https://lms.s.isct.ac.jp/2025/course/view.php?id=12594",
+      "publishedAt": "2026-09-29",
+      "retrievedAt": "2026-10-15T19:00:00+09:00",
+      "sha256": "1e0711085cb11d3b993aba7cb86605ecd7fec4f24aa0d755b56dd7b40b8d21d1"
+    }
+  ],
+  "entries": [
+    {
+      "id": "2026-LAS.P106-EN",
+      "courseCode": "LAS.P106",
+      "classLabel": {
+        "ja": "English Class",
+        "en": "English Class"
+      },
+      "offeringIds": [
+        "202600215"
+      ],
+      "quarters": [
+        "3Q",
+        "4Q"
+      ],
+      "sourceIds": [
+        "lms-las-p106-en-2026-3q4q-schedule"
+      ],
+      "sessions": [
+        {
+          "date": "2026-10-02",
+          "kind": "orientation"
+        },
+        {
+          "date": "2026-10-09",
+          "kind": "no-class"
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "exercise",
+          "group": "red",
+          "number": "3Q-1"
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "exercise",
+          "group": "white",
+          "number": "3Q-1"
+        },
+        {
+          "date": "2026-10-30",
+          "kind": "exercise",
+          "group": "red",
+          "number": "3Q-2"
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "exercise",
+          "group": "white",
+          "number": "3Q-2"
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "exercise",
+          "group": "red",
+          "number": "3Q-3"
+        },
+        {
+          "date": "2026-11-20",
+          "kind": "exercise",
+          "group": "white",
+          "number": "3Q-3"
+        },
+        {
+          "date": "2026-11-27",
+          "kind": "exam"
+        },
+        {
+          "date": "2026-12-04",
+          "kind": "no-class"
+        },
+        {
+          "date": "2026-12-11",
+          "kind": "exercise",
+          "group": "white",
+          "number": "4Q-1"
+        },
+        {
+          "date": "2026-12-18",
+          "kind": "exercise",
+          "group": "red",
+          "number": "4Q-1"
+        },
+        {
+          "date": "2026-12-25",
+          "kind": "exercise",
+          "group": "white",
+          "number": "4Q-2"
+        },
+        {
+          "date": "2027-01-08",
+          "kind": "exercise",
+          "group": "red",
+          "number": "4Q-2"
+        },
+        {
+          "date": "2027-01-15",
+          "kind": "exercise",
+          "group": "white",
+          "number": "4Q-3"
+        },
+        {
+          "date": "2027-01-22",
+          "kind": "no-class"
+        },
+        {
+          "date": "2027-01-29",
+          "kind": "exercise",
+          "group": "red",
+          "number": "4Q-3"
+        },
+        {
+          "date": "2027-02-05",
+          "kind": "exam"
+        }
+      ]
+    }
+  ]
+}
