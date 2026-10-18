@@ -1,0 +1,383 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source-side confirmed exam candidates v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "academicYear",
+    "level",
+    "quarter",
+    "sources",
+    "candidates"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "academicYear": {
+      "type": "integer",
+      "minimum": 2000,
+      "maximum": 2200
+    },
+    "level": {
+      "enum": [
+        "undergraduate",
+        "graduate"
+      ]
+    },
+    "quarter": {
+      "enum": [
+        "1Q",
+        "2Q",
+        "3Q",
+        "4Q"
+      ]
+    },
+    "retrievedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "access": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/source"
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/candidate"
+      }
+    },
+    "rejected": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+  },
+  "definitions": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "level",
+        "access",
+        "scope",
+        "url",
+        "title",
+        "allowedFields"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "level": {
+          "enum": [
+            "undergraduate",
+            "graduate"
+          ]
+        },
+        "access": {
+          "enum": [
+            "public",
+            "authenticated_lms"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "landingPageUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "artifactUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "requires": {
+          "type": "string"
+        },
+        "allowedFields": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "confirmed",
+        "assessmentKind",
+        "sourceId"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confirmed": {
+          "type": "boolean"
+        },
+        "assessmentKind": {
+          "enum": [
+            "final",
+            "quiz",
+            "optional-oral",
+            "other"
+          ]
+        },
+        "assessmentId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9._:-]+$"
+        },
+        "newAssessment": {
+          "type": "boolean"
+        },
+        "targetEntryId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "courseCode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quarter": {
+          "enum": [
+            "1Q",
+            "2Q",
+            "3Q",
+            "4Q"
+          ]
+        },
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "startTime": {
+          "type": "string",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+        },
+        "endTime": {
+          "type": "string",
+          "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+        },
+        "periods": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          }
+        },
+        "status": {
+          "enum": [
+            "scheduled",
+            "cancelled"
+          ]
+        },
+        "room": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/localized"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "label": {
+          "$ref": "#/definitions/localized"
+        },
+        "evidenceText": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "evidenceHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "evidenceContext": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "identity",
+            "time"
+          ],
+          "properties": {
+            "identity": {
+              "type": "string",
+              "minLength": 1
+            },
+            "time": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "publishFields": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "courseCode",
+              "quarter",
+              "date",
+              "startTime",
+              "endTime",
+              "periods",
+              "room",
+              "label",
+              "status",
+              "sourceIds",
+              "sourcePages",
+              "notes",
+              "rooms",
+              "syllabusCourseId",
+              "classLabel"
+            ]
+          }
+        },
+        "notes": {
+          "$ref": "#/definitions/localized"
+        },
+        "rooms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/localized"
+          },
+          "description": "Optional distinct rooms exactly as published. Does not assign an individual student to a room."
+        },
+        "syllabusCourseId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "classLabel": {
+          "$ref": "#/definitions/localized"
+        },
+        "sourcePages": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "confirmed": {
+                "const": true
+              },
+              "assessmentKind": {
+                "const": "final"
+              }
+            },
+            "required": [
+              "confirmed",
+              "assessmentKind"
+            ]
+          },
+          "then": {
+            "required": [
+              "id",
+              "confirmed",
+              "assessmentKind",
+              "assessmentId",
+              "courseCode",
+              "sourceId",
+              "date",
+              "room",
+              "label",
+              "evidenceText",
+              "evidenceHash",
+              "evidenceContext",
+              "publishFields",
+              "quarter"
+            ],
+            "anyOf": [
+              {
+                "required": [
+                  "periods"
+                ]
+              },
+              {
+                "required": [
+                  "startTime",
+                  "endTime"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "dependentRequired": {
+        "startTime": [
+          "endTime"
+        ],
+        "endTime": [
+          "startTime"
+        ]
+      }
+    },
+    "localized": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ja"
+      ],
+      "properties": {
+        "ja": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "level": "undergraduate",
+  "quarter": "2Q",
+  "retrievedAt": "2026-10-18T04:02:30Z",
+  "access": {
+    "requiresAuthenticatedSession": true,
+    "runner": "local-authorized-agent",
+    "publicRunnerCanReadSource": false
+  },
+  "sources": [
+    {
+      "id": "lms-course-8432-forum-114414",
+      "level": "undergraduate",
+      "access": "authenticated_lms",
+      "scope": "course_forum_assessment_notice",
+      "title": "Science Tokyo LMS CSC.T251 course forum",
+      "url": "https://lms.s.isct.ac.jp/2025/mod/forum/view.php?id=114414",
+      "landingPageUrl": "https://lms.s.isct.ac.jp/2025/course/view.php?id=8432",
+      "retrievedAt": "2026-10-18T04:02:30Z",
+      "requires": "authorized_local_browser_session",
+      "allowedFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "startTime",
+        "endTime",
+        "room",
+        "label",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "lms-course-12156-general",
+      "level": "undergraduate",
+      "access": "authenticated_lms",
+      "scope": "course_page_assessment_notice",
+      "title": "Science Tokyo LMS LAL.S202-13 course page",
+      "url": "https://lms.s.isct.ac.jp/2025/course/view.php?id=12156",
+      "landingPageUrl": "https://lms.s.isct.ac.jp/2025/course/view.php?id=12156",
+      "retrievedAt": "2026-10-18T04:02:30Z",
+      "requires": "authorized_local_browser_session",
+      "allowedFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "startTime",
+        "endTime",
+        "room",
+        "label",
+        "sourceIds"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "lms-2026-2q-csc-t251-final",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "quarter": "2Q",
+      "newAssessment": true,
+      "courseCode": "CSC.T251",
+      "date": "2026-07-28",
+      "startTime": "13:30",
+      "endTime": "15:10",
+      "room": {
+        "ja": "M-374 (H131)"
+      },
+      "label": {
+        "ja": "オートマトンと形式言語"
+      },
+      "sourceId": "lms-course-8432-forum-114414",
+      "evidenceText": "7月28日(火) 13:30-15:10 に本館 M-374 (H131) 号室にて行います。",
+      "evidenceHash": "dc98f5b31b48595dc214b222c6305fa71e2cdc8235868a8467d0fe9d96520463",
+      "evidenceContext": {
+        "identity": "LMS breadcrumb shows CSC.T251[2026] / Automata and Formal Languages.",
+        "time": "The forum notice gives the exact start and end time and room."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "startTime",
+        "endTime",
+        "room",
+        "label",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "lms-2026-2q-lal-s202-13-final",
+      "confirmed": true,
+      "assessmentKind": "final",
+      "assessmentId": "final",
+      "quarter": "2Q",
+      "newAssessment": true,
+      "courseCode": "LAL.S202-13",
+      "date": "2026-07-22",
+      "startTime": "09:30",
+      "endTime": "10:20",
+      "room": null,
+      "label": {
+        "ja": "スペイン語初級２ S35"
+      },
+      "sourceId": "lms-course-12156-general",
+      "evidenceText": "7/22 期末テスト。1, 2限の試験は 9:30 開始。試験時間は50分です。",
+      "evidenceHash": "975d5c59c4abfd0deb182ba082528d9672903c3fc04d8bb383bed4bbf41554b7",
+      "evidenceContext": {
+        "identity": "LMS course page title confirms Spanish: Basic Course 2 S35; fresh session observation identifies the course as LAL.S202-13 (course id 12156), but no offeringId mapping was obtained in this run.",
+        "time": "The page states 9:30 start and 50 minutes; endTime 10:20 is derived arithmetically."
+      },
+      "publishFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "startTime",
+        "endTime",
+        "room",
+        "label",
+        "sourceIds"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "courseCode": "LAL.S202-13",
+      "assessmentKind": "optional-oral",
+      "date": "2026-07-29",
+      "reason": "Not a required final exam; retained as a review candidate only."
+    }
+  ]
+}

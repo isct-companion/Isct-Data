@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Campus Life public exam feed v1",
-  "description": "Public data contract only; the native exam-feed adapter is not implemented.",
+  "description": "Public v1 exam feed consumed by subscription clients. Source-side agents publish only normalized, validated entries.",
   "type": "object",
   "additionalProperties": false,
   "required": [

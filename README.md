@@ -45,7 +45,15 @@ Exit codes: **0** = no findings, **1** = course-code differences or suspicious t
 
 ## Exam-feed extraction check
 
-Run `python3 scripts/validate_exam_feed.py exam/undergraduate/2026-2q.json` before publishing the 2026 2Q undergraduate feed. It checks for PDF room-note text leaking into English labels, truncated room values, and the official page-16 LAS.B102 title/room rows. The script is a regression guard for the reviewed PDF; it does not infer class suffixes or alter course matching.
+Install the validator dependency with `python3 -m pip install -r requirements.txt`.
+
+Run `python3 scripts/validate_exam_feed.py exam/undergraduate/2026-2q.json` and the same command for the graduate feed before publishing. The default checks are feed-wide: source references, IDs, dates, periods/times, status, labels, and malformed room values. Run `python3 scripts/validate_exam_feed.py --check-las-b102 exam/undergraduate/2026-2q.json` only when reviewing the 2026 2Q undergraduate PDF page-16 LAS.B102 regression. The script does not infer class suffixes or alter course matching.
+
+The central exam PDFs are a public concentrated-exam source. They cover rows published in the undergraduate or graduate final-exam timetable, not every assessment announced inside an LMS course. An authorized source agent may publish a course-specific final assessment from an authenticated LMS page when it has a clean course/forum URL and a confirmed normalized fact. Publish only the minimum v1 fields and provenance; keep full forum posts, links containing session state, credentials, student identity, and unrelated classroom instructions out of this repository. Unconfirmed or conflicting candidates remain in the review sidecar.
+
+Source-agent merge entry point: `python3 scripts/merge_exam_candidates.py exam/undergraduate/2026-2q.json review/lms-candidates/2026-2q.json --output exam/undergraduate/2026-2q.json --index index.json`. It accepts only confirmed `final` candidates, requires an exact full course code and either allocated periods or complete exact times. Updates use a stable assessment ID or an explicit `targetEntryId`; a separate exam for the same course requires `newAssessment: true`. New IDs exclude the exam date. The `--index` option recomputes the canonical feed hash.
+
+The source scope and authentication policy are recorded in `source-manifest/2026-2q.json`; candidate files must validate against `schema/exam-candidates.schema.json`. Candidate evidence is a short excerpt with `evidenceHash = SHA-256(UTF-8 evidenceText)`. The manifest allows public official PDFs and authorized LMS facts, while session cookies and credentials remain outside the repository.
 
 ## Subscription index
 

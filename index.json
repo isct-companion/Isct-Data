@@ -21,8 +21,8 @@
       "exams": [
         {
           "source": "exam/undergraduate/2026-2q.json",
-          "hash": "636ccd6744fecec3920cb596925ef9e969b8d055515275ef2c68e37f6c48f44c",
-          "ts": "2026-10-18T03:05:59Z"
+          "hash": "f2e0cb5d95e5eae893f7c1ce868be26f235edc3acd81154fa0cda68a81f6e539",
+          "ts": "2026-10-18T04:02:30Z"
         },
         {
           "source": "exam/graduate/2026-2q.json",
