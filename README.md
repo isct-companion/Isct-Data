@@ -12,7 +12,7 @@
 ## カバレッジ
 
 - 2025: 校暦と学部入学者用学科データ。公式の年度別試験時間割アーカイブは確認できなかったため、試験データは未収録です。未掲載は試験が存在しないことを意味しません。
-- 2026: 校暦、学部・大学院の公式 2Q 期末試験時間割（授業行を除外し、視覚確認で取り消し線の旧行を除外）。
+- 2026: 校暦、学部・大学院の公式 2Q 期末試験時間割（視覚確認で取り消し線の旧行を除外）。同じ時間割の「授業」行（補講を含む試験期間中の授業）は試験ではないため、`exam-week-classes/` に別データとして収録しています。
 
 重要日程（入学式、学位記授与式、ホームカミングデイ、大学祭、入試等）は `important-dates/` に独立収録しています。重要日程は休講を意味せず、休講情報は校暦の `days` に記録します。
 
@@ -54,6 +54,35 @@ The central exam PDFs are a public concentrated-exam source. They cover rows pub
 Exam-only agent instructions are in [`prompts/update-exams.md`](prompts/update-exams.md). The shared write entry point is `python3 scripts/exam_workflow.py --year 2026 --quarter 2Q --level undergraduate --candidates review/lms-candidates/2026-2q.json`; run `python3 scripts/exam_workflow.py --check` before and after. The GitHub workflow `.github/workflows/exams.yml` uses that same entry point and emits an exam patch for review. It validates supplied candidates; model invocation and authenticated source acquisition remain runner responsibilities.
 
 The source scope and authentication policy are recorded in `source-manifest/2026-2q.json`; candidate files must validate against `schema/exam-candidates.schema.json`. Candidate evidence is a short excerpt with `evidenceHash = SHA-256(UTF-8 evidenceText)`. The manifest allows public official PDFs and authorized LMS facts, while session cookies and credentials remain outside the repository.
+
+## Exam-week classes
+
+The central exam timetable PDF lists two kinds of rows: 期末試験 (final exams) and
+授業 (classes, including make-up classes, held in the exam period). The exam
+feed publishes only the first. `exam-week-classes/LEVEL/YEAR-quarter.json`
+publishes the second with the exam-feed shape and `kind: "class"`, validated
+by `schema/exam-week-classes.schema.json`, and is indexed under
+`academicYears.YEAR.examWeekClasses`. Apps that predate the dataset ignore the key.
+
+`scripts/extract_exam_timetable.py` reads the PDF from its table geometry rather
+than plain text: grid rules give cells (merged room cells stay whole), thin red
+rectangles strike values, a row with a struck course code is withdrawn, and text
+right of the table is a margin note. `rows` writes every row for review;
+`classes` writes the class feed and refuses when the same PDF's exam rows
+disagree with the reviewed exam feed, since that means the PDF changed or the
+reader is wrong:
+
+```sh
+python3 scripts/extract_exam_timetable.py classes life-undergraduate-exam-timetable.pdf \
+  --calendar academic-calendar/2026.json --quarter 2Q --level undergraduate \
+  --manifest source-manifest/2026-2q.json --exam-feed exam/undergraduate/2026-2q.json \
+  --output exam-week-classes/undergraduate/2026-2q.json
+python3 scripts/update_subscription_index.py
+python3 scripts/exam_workflow.py --check
+```
+
+A class entry's ID is its slot: course code, date and first period. A moved
+session is a new entry. Withdrawn rows are left out.
 
 ## Subscription index
 

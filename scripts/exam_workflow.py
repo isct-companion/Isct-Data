@@ -75,9 +75,35 @@ def run(root, year, quarter, level, candidate_path):
     return report
 
 
+FEEDS = {
+    "exam": "schema/exams.schema.json",
+    "exam-week-classes": "schema/exam-week-classes.schema.json",
+}
+
+
 def check_all(root):
     count = 0
-    for path in sorted((root / "exam").glob("*/*.json")):
+    for directory, schema in FEEDS.items():
+        count += check_feeds(root, directory, root / schema)
+    index = load(root / "index.json")
+    for year, entry in index["academicYears"].items():
+        for field, directory in (("exams", "exam"), ("examWeekClasses", "exam-week-classes")):
+            listed = {reference["source"] for reference in entry.get(field, [])}
+            present = {str(path.relative_to(root)) for path in (root / directory).glob(f"*/{year}-*.json")}
+            if listed != present:
+                raise ValueError(f"index {field} for {year} differs from {directory}/ files")
+    generated = updated_index(root, copy.deepcopy(index), "2000-01-01T00:00:00Z")
+    if generated != index:
+        raise ValueError("dataset references contain stale hashes")
+    index_bytes = (root / "index.json").read_bytes()
+    if (root / "index.sha256").read_text().strip() != hashlib.sha256(index_bytes).hexdigest():
+        raise ValueError("index.sha256 is stale")
+    return {"examCount": count, "validation": "passed"}
+
+
+def check_feeds(root, directory, schema):
+    count = 0
+    for path in sorted((root / directory).glob("*/*.json")):
         feed = load(path)
         if path.parent.name not in {"undergraduate", "graduate"}:
             raise ValueError(f"unknown exam level: {path}")
@@ -86,18 +112,11 @@ def check_all(root):
         expected = f"{feed['academicYear']}-{path.stem.split('-')[-1]}"
         if path.stem != expected or any(entry["quarter"].lower() != path.stem.split('-')[-1] for entry in feed["entries"]):
             raise ValueError(f"exam filename/year/quarter mismatch: {path}")
-        errors = validate_feed(feed)
+        errors = validate_feed(feed, schema)
         if errors:
             raise ValueError("; ".join(errors))
         count += len(feed["entries"])
-    index = load(root / "index.json")
-    generated = updated_index(root, copy.deepcopy(index), "2000-01-01T00:00:00Z")
-    if generated != index:
-        raise ValueError("dataset references contain stale hashes")
-    index_bytes = (root / "index.json").read_bytes()
-    if (root / "index.sha256").read_text().strip() != hashlib.sha256(index_bytes).hexdigest():
-        raise ValueError("index.sha256 is stale")
-    return {"examCount": count, "validation": "passed"}
+    return count
 
 
 def main():

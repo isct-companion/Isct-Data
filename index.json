@@ -30,6 +30,18 @@
           "ts": "2026-10-03T06:12:56Z"
         }
       ],
+      "examWeekClasses": [
+        {
+          "source": "exam-week-classes/undergraduate/2026-2q.json",
+          "hash": "31af4a6fe6c3fdf9b69222dff07a6e1eb83c9e9d6e9c552c78b9cb3241cde137",
+          "ts": "2026-10-18T08:39:46Z"
+        },
+        {
+          "source": "exam-week-classes/graduate/2026-2q.json",
+          "hash": "aafa917371564ece740ce95a33fc175018092f1a52d71ca3c6dc658ddf62bb8b",
+          "ts": "2026-10-18T08:39:46Z"
+        }
+      ],
       "importantDates": {
         "source": "important-dates/2026.json",
         "hash": "62797565eeb914bd8ba9443d05da529503f0a63a834ac4a0c2b50507098e6eae",

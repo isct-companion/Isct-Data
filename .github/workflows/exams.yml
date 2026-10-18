@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'exam/**'
+      - 'exam-week-classes/**'
       - 'review/**'
       - 'source-manifest/**'
       - 'schema/*exam*'

@@ -1,0 +1,1143 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "timezone": "Asia/Tokyo",
+  "source": [
+    {
+      "id": "official-graduate-2026-2q",
+      "title": "Science Tokyo 2026 2Q Graduate final-exam timetable",
+      "url": "https://www.titech.ac.jp/student/pdf/life-graduate-exam-timetable.pdf",
+      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/graduate-exam",
+      "retrievedAt": "2026-10-18T08:39:26Z",
+      "sha256": "61bba1126741cae100c947132d3bc57286dbe4a2a457bc723a56da3b6a83443d",
+      "publishedAt": "2026-07-21"
+    }
+  ],
+  "entries": [
+    {
+      "id": "2026-2Q-graduate-LAH.S434-class-2026-07-29-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAH.S434",
+      "date": "2026-07-29",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "J2-203"
+      },
+      "label": {
+        "ja": "文系エッセンス３８：統計学",
+        "en": "Essence of Humanities and Social Sciences38:Statistics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAJ.J403-01-class-2026-07-29-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAJ.J403-01",
+      "date": "2026-07-29",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "W1-109"
+      },
+      "label": {
+        "ja": "日本語研修コースA２(集中コース) 2QA",
+        "en": "Intensive Japanese Course A2 2QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAH.A503-class-2026-07-29-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAH.A503",
+      "date": "2026-07-29",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "J2-203"
+      },
+      "label": {
+        "ja": "世界を知る：中南米",
+        "en": "Area Studies: Latin America"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAH.S420-01-class-2026-07-29-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAH.S420-01",
+      "date": "2026-07-29",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "G2-202"
+      },
+      "label": {
+        "ja": "文系エッセンス２０：西洋思想 1",
+        "en": "Essence of Humanities and Social Sciences20:Western Thought 1"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAH.T423-class-2026-07-29-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAH.T423",
+      "date": "2026-07-29",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "ハイフレックス配信(Held by HyFlex)"
+      },
+      "label": {
+        "ja": "横断科目２３：Science Tokyoのキャンパスに親 しむ",
+        "en": "Transdisciplinary studies 23:Getting familiar with Science Tokyo campuses"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAL.S432-class-2026-07-29-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAL.S432",
+      "date": "2026-07-29",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-155"
+      },
+      "label": {
+        "ja": "スペイン語文化演習２",
+        "en": "Spanish Seminar: Culture and Society 2"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-SHS.P442-class-2026-07-29-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "SHS.P442",
+      "date": "2026-07-29",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W9-201"
+      },
+      "label": {
+        "ja": "政治・法律・行政分野特論S1B",
+        "en": "Graduate Lecture in Politics, Law and Administration S1B"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LST.A503-class-2026-07-31-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LST.A503",
+      "date": "2026-07-31",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "ZOOM"
+      },
+      "label": {
+        "ja": "環境微生物学",
+        "en": "Environmental Microbiology"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAJ.J403-01-class-2026-07-31-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAJ.J403-01",
+      "date": "2026-07-31",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "W1-102"
+      },
+      "label": {
+        "ja": "日本語研修コースA２(集中コース) 2QA",
+        "en": "Intensive Japanese Course A2 2QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-PHY.C454-class-2026-07-31-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "PHY.C454",
+      "date": "2026-07-31",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "M-102"
+      },
+      "label": {
+        "ja": "光と物質 IV",
+        "en": "Light and Matter IV"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ICT.S407-class-2026-07-31-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ICT.S407",
+      "date": "2026-07-31",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S3-215"
+      },
+      "label": {
+        "ja": "無線信号処理",
+        "en": "Wireless Signal Processing"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LST.A404-class-2026-07-31-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LST.A404",
+      "date": "2026-07-31",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "オンラインOnline"
+      },
+      "label": {
+        "ja": "分子生理学",
+        "en": "Cell Physiology"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MAT.M436-class-2026-07-31-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MAT.M436",
+      "date": "2026-07-31",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "J2-302"
+      },
+      "label": {
+        "ja": "高温材料強度学",
+        "en": "High-Temperature Strength of Metallic Materials"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MCS.M431-class-2026-07-31-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MCS.M431",
+      "date": "2026-07-31",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B107"
+      },
+      "label": {
+        "ja": "非線形拡散方程式",
+        "en": "Nonlinear Diffusion Equations"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ART.T553-class-2026-07-31-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ART.T553",
+      "date": "2026-07-31",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-134"
+      },
+      "label": {
+        "ja": "メディカル・ヘルスケアインフォマティクス",
+        "en": "Medical and Health Informatics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MTH.B402-class-2026-07-31-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MTH.B402",
+      "date": "2026-07-31",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W5-105"
+      },
+      "label": {
+        "ja": "幾何学特論B",
+        "en": "Advanced topics in Geometry B"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ARC.P421-class-2026-07-31-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ARC.P421",
+      "date": "2026-07-31",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "M-135"
+      },
+      "label": {
+        "ja": "施設計画学特論第一",
+        "en": "Theories in Facility Planning I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ARC.S424-class-2026-07-31-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ARC.S424",
+      "date": "2026-07-31",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W5-104"
+      },
+      "label": {
+        "ja": "地盤地震工学特論",
+        "en": "Advanced Geometrical Engineering"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ART.T468-class-2026-07-31-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ART.T468",
+      "date": "2026-07-31",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "G1-103"
+      },
+      "label": {
+        "ja": "モデリングの数理",
+        "en": "Mathematical Modeling"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-IEE.C533-class-2026-07-31-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "IEE.C533",
+      "date": "2026-07-31",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-425"
+      },
+      "label": {
+        "ja": "感情と人の社会",
+        "en": "Affect in Social Context"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ENI.I401-class-2026-07-31-9",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ENI.I401",
+      "date": "2026-07-31",
+      "periods": [
+        9,
+        10
+      ],
+      "room": {
+        "ja": "M-155"
+      },
+      "label": {
+        "ja": "エネルギービッグデータ科学演習",
+        "en": "Big Data in Energy: a practical introduction"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-UDE.P403-class-2026-08-03-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "UDE.P403",
+      "date": "2026-08-03",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "G3-202"
+      },
+      "label": {
+        "ja": "都市計画",
+        "en": "Urban Planning"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MAT.C504-class-2026-08-03-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MAT.C504",
+      "date": "2026-08-03",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "Zoom"
+      },
+      "label": {
+        "ja": "機能デバイス特論",
+        "en": "Functional Devices"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MTH.C504-class-2026-08-03-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MTH.C504",
+      "date": "2026-08-03",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-112"
+      },
+      "label": {
+        "ja": "解析学特論H",
+        "en": "Advanced topics in Analysis H"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-PHY.C439-class-2026-08-03-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "PHY.C439",
+      "date": "2026-08-03",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-107"
+      },
+      "label": {
+        "ja": "磁性体の物理",
+        "en": "Physics of Magnetic Materials"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAH.C645-class-2026-08-03-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAH.C645",
+      "date": "2026-08-03",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W9-607号室 （西9号館6階）"
+      },
+      "label": {
+        "ja": "文理共創科目：理工系科目の教育とゲーミング ［１］",
+        "en": "Collaboration across STEM and Liberal Arts: Science and Engineering Education and Gaming [1]"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-PHY.Q433-class-2026-08-03-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "PHY.Q433",
+      "date": "2026-08-03",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-B43"
+      },
+      "label": {
+        "ja": "場の理論I",
+        "en": "Field Theory I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAH.C644-class-2026-08-03-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAH.C644",
+      "date": "2026-08-03",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "W9-607号室 （西9号館6階）"
+      },
+      "label": {
+        "ja": "文理共創科目：理工系科目の教育とゲーミング ［２］",
+        "en": "Collaboration across STEM and Liberal Arts: Science and Engineering Education and Gaming [2]"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-GEG.E401-class-2026-08-03-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "GEG.E401",
+      "date": "2026-08-03",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "地球環境システムと生態系のダイナミクス",
+        "en": "Global Environmental System and Ecosystem Dynamics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ICT.C506-class-2026-08-03-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ICT.C506",
+      "date": "2026-08-03",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "情報通信ネットワーク特論",
+        "en": "Advanced Information and Communication Network"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MAT.C512-class-2026-08-03-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MAT.C512",
+      "date": "2026-08-03",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "オンラインOnline"
+      },
+      "label": {
+        "ja": "光学材料特論第二",
+        "en": "Advanced Course of Materials Optics II"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ESD.H402-class-2026-08-03-9",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ESD.H402",
+      "date": "2026-08-03",
+      "periods": [
+        9,
+        10
+      ],
+      "room": {
+        "ja": "W9-322"
+      },
+      "label": {
+        "ja": "社会起業",
+        "en": "Social Entrepreneurship"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MEC.M432-class-2026-08-03-9",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MEC.M432",
+      "date": "2026-08-03",
+      "periods": [
+        9,
+        10
+      ],
+      "room": {
+        "ja": "I1-256"
+      },
+      "label": {
+        "ja": "宇宙工学実践プロジェクト",
+        "en": "Practical Space Engineering Project"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-TIM.A402-class-2026-08-03-11",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "TIM.A402",
+      "date": "2026-08-03",
+      "periods": [
+        11,
+        12
+      ],
+      "room": {
+        "ja": "Zoom"
+      },
+      "label": {
+        "ja": "経営・財務分析基礎 II",
+        "en": "Methodology of Corporate Management and Finance II"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-UDE.S531-class-2026-08-04-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "UDE.S531",
+      "date": "2026-08-04",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "G3-207"
+      },
+      "label": {
+        "ja": "微動探査法特論",
+        "en": "Microtremor Survey Techniques using Theory of Stochastic Process"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MCS.M431-class-2026-08-04-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MCS.M431",
+      "date": "2026-08-04",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B107"
+      },
+      "label": {
+        "ja": "非線形拡散方程式",
+        "en": "Nonlinear Diffusion Equations"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-PHY.F441-class-2026-08-04-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "PHY.F441",
+      "date": "2026-08-04",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-143A"
+      },
+      "label": {
+        "ja": "原子核物理学発展 II",
+        "en": "Advanced Nuclear Physics II"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ART.T553-class-2026-08-04-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ART.T553",
+      "date": "2026-08-04",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-134"
+      },
+      "label": {
+        "ja": "メディカル・ヘルスケアインフォマティクス",
+        "en": "Medical and Health Informatics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAT.A417-class-2026-08-04-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAT.A417",
+      "date": "2026-08-04",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-B45"
+      },
+      "label": {
+        "ja": "数理統計学とテスト理論",
+        "en": "Mathematical Statistics and Test Theory"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-LAH.T423-class-2026-08-05-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "LAH.T423",
+      "date": "2026-08-05",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "Zoom限定 (Held by Zoom only)"
+      },
+      "label": {
+        "ja": "横断科目２３：Science Tokyoのキャンパスに親 しむ",
+        "en": "Transdisciplinary studies 23:Getting familiar with Science Tokyo campuses"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MTH.A402-class-2026-08-06-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MTH.A402",
+      "date": "2026-08-06",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-102"
+      },
+      "label": {
+        "ja": "代数学特論B",
+        "en": "Advanced topics in Algebra B"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-GEG.E401-class-2026-08-06-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "GEG.E401",
+      "date": "2026-08-06",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "地球環境システムと生態系のダイナミクス",
+        "en": "Global Environmental System and Ecosystem Dynamics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-ICT.C506-class-2026-08-06-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "ICT.C506",
+      "date": "2026-08-06",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "情報通信ネットワーク特論",
+        "en": "Advanced Information and Communication Network"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-MAT.C423-class-2026-08-06-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "MAT.C423",
+      "date": "2026-08-06",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "オンラインOnline"
+      },
+      "label": {
+        "ja": "光機能材料デバイス特論",
+        "en": "Optoelectronic Materials and Devices"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-2Q-graduate-TIM.C516-class-2026-08-06-11",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "2Q",
+      "courseCode": "TIM.C516",
+      "date": "2026-08-06",
+      "periods": [
+        11,
+        12
+      ],
+      "room": {
+        "ja": "CIC"
+      },
+      "label": {
+        "ja": "情報･サービスと経済･社会システム I",
+        "en": "Information and Service Science for Social System I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-2q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    }
+  ]
+}

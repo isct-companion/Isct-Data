@@ -103,7 +103,7 @@ def updated_index(root, index, timestamp):
         raise ValueError("academicYears and admissionYears must be objects")
 
     for entry in index["academicYears"].values():
-        allowed = {"academicCalendar", "importantDates", "exams", "classSchedules"}
+        allowed = {"academicCalendar", "importantDates", "exams", "examWeekClasses", "classSchedules"}
         if not isinstance(entry, dict) or not set(entry).issubset(allowed):
             raise ValueError("invalid academic-year index entry")
         if "academicCalendar" in entry:
@@ -118,13 +118,14 @@ def updated_index(root, index, timestamp):
             entry["classSchedules"] = update_reference(
                 root, entry["classSchedules"], timestamp
             )
-        if "exams" in entry:
-            if not isinstance(entry["exams"], list):
-                raise ValueError("exams must be an array")
-            entry["exams"] = [
-                update_reference(root, reference, timestamp)
-                for reference in entry["exams"]
-            ]
+        for field in ("exams", "examWeekClasses"):
+            if field in entry:
+                if not isinstance(entry[field], list):
+                    raise ValueError(f"{field} must be an array")
+                entry[field] = [
+                    update_reference(root, reference, timestamp)
+                    for reference in entry[field]
+                ]
 
     for entry in index["admissionYears"].values():
         if not isinstance(entry, dict) or set(entry) != {"departments"}:
