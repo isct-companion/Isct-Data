@@ -139,9 +139,10 @@ page still links 2Q, report 3Q as not yet published.
   credits. The agent run cap is 50 AI credits (100 per day), with a separate 15-credit
   detection cap; quota failures leave the
   baseline unchanged.
-- Add **EXAM_PR_TOKEN** as a fine-grained PAT restricted to **Isct-Data**,
+- Add **DATA_PR_TOKEN** as a fine-grained PAT restricted to **Isct-Data**,
   with repository **Contents: read/write** and **Pull requests: read/write**.
-  It is supplied only to the separate safe-output job. The organization currently
+  This shared credential can be reused by other dataset update workflows in
+  this repository. It is supplied only to the separate safe-output job. The organization currently
   blocks Actions-token PR creation; this repository-scoped user credential
   creates the PR without changing that organization policy. PAT-created PRs
   trigger CI directly, so no additional CI-trigger token is needed. The agent

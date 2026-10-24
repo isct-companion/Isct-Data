@@ -52,7 +52,7 @@ safe-outputs:
   report-incomplete:
     create-issue: false
   create-pull-request:
-    github-token: ${{ secrets.EXAM_PR_TOKEN }}
+    github-token: ${{ secrets.DATA_PR_TOKEN }}
     github-token-for-extra-empty-commit: none
     title-prefix: '[exam-update] '
     base-branch: main
