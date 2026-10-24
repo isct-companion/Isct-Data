@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: アプリの不具合・要望 / App bugs and feature requests
+    url: https://github.com/isct-companion/isct-companion/issues/new/choose
+    about: データではなくアプリ自体の不具合や提案は、IsctCompanion のリポジトリへ。

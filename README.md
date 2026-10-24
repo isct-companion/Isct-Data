@@ -25,6 +25,15 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 - [自動更新と CI の運用](docs/automation.md) — 種類別 workflow、Copilot、権限と設定
 - [エージェント向け指示](prompts/update-official-data.md) · [試験専用指示](prompts/update-exams.md)
 
+## データの誤りを見つけたら
+
+このデータは、公式ページを毎日（学系・履修は毎週）確認する AI の workflow が自動で更新しています。
+日付や科目の誤り・欠落に気づいたら、[issue](https://github.com/isct-companion/Isct-Data/issues/new/choose) のフォームで、
+該当する項目、現在の値と正しい値、根拠となる公式ページの URL を添えて報告してください。日本語・英語・中国語のどれでもかまいません。
+
+AI に手伝ってもらって書いてもかまいませんが、送信前に内容を読み、自分が確認した事実と一致しているか確かめてください。
+条件を満たさない issue は説明なく閉じることがあります。アプリ自体の不具合は[アプリのリポジトリ](https://github.com/isct-companion/isct-companion/issues)へ。
+
 ## 公式情報
 
 - [授業日程（2026）](https://www.titech.ac.jp/student/students/life/schedules) · [2025](https://www.titech.ac.jp/student/students/life/schedules/2025)
