@@ -252,6 +252,47 @@ def class_feed(rows, *, year, quarter, level, source):
     return {"schemaVersion": 1, "academicYear": year, "timezone": "Asia/Tokyo", "source": [source], "entries": entries}
 
 
+def extract_classes(pdf, *, calendar, quarter, level, manifest, exam_feed, retrieved_at=None):
+    ranges = calendar.get("examRanges", {}).get(quarter, [])
+    if not ranges:
+        raise ValueError(f"no exam range for {quarter}")
+    if exam_feed["academicYear"] != calendar["academicYear"]:
+        raise ValueError("exam feed and calendar academic year differ")
+    with pdfplumber.open(pdf) as document:
+        heading = (document.pages[0].extract_text() or "")[:500] if document.pages else ""
+    scope = re.search(r"Schedule of Final Exams(?: and Classes)?\s*-\s*(\d{4})\s+([1-4]Q)\s*-", heading)
+    if not scope or (int(scope[1]), scope[2]) != (calendar["academicYear"], quarter):
+        raise ValueError("PDF year/quarter heading differs from the selected scope or is unreadable")
+    expected_level = "大学院課程" if level == "graduate" else "学士課程"
+    if expected_level not in heading:
+        raise ValueError("PDF level heading differs from the selected scope or is unreadable")
+    rows = read_rows(pdf, (ranges[0]["start"], ranges[-1]["end"]))
+    if not rows:
+        raise ValueError("no timetable rows recognized; refusing to publish an empty extraction")
+    official = [
+        source for source in manifest["sources"]
+        if source["level"] == level and source["scope"] == "central_final_exam_timetable"
+    ]
+    if len(official) != 1 or manifest["academicYear"] != calendar["academicYear"] or manifest["quarter"] != quarter:
+        raise ValueError("the manifest must name one central timetable for this level, year and quarter")
+    drift = exam_drift(rows, exam_feed, official[0]["id"])
+    if drift:
+        raise ValueError("exam rows disagree with the reviewed exam feed: " + "; ".join(drift))
+    published = next(source for source in exam_feed["source"] if source["id"] == official[0]["id"])
+    retrieved = retrieved_at or datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    source = {
+        "id": official[0]["id"],
+        "title": published["title"],
+        "url": official[0]["artifactUrl"],
+        "landingPageUrl": official[0]["url"],
+        "retrievedAt": retrieved,
+        "sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
+    }
+    if "publishedAt" in published:
+        source["publishedAt"] = published["publishedAt"]
+    return class_feed(rows, year=calendar["academicYear"], quarter=quarter, level=level, source=source)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -272,39 +313,21 @@ def main():
     if not ranges:
         print(f"no exam range for {args.quarter}", file=sys.stderr)
         return 2
-    rows = read_rows(args.pdf, (ranges[0]["start"], ranges[-1]["end"]))
     if args.command == "rows":
+        rows = read_rows(args.pdf, (ranges[0]["start"], ranges[-1]["end"]))
         args.output.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         counts = {kind: sum(row["kind"] == kind for row in rows) for kind in TYPES.values()}
         print(json.dumps({"rows": len(rows), **counts, "withdrawn": sum(row["withdrawn"] for row in rows)}))
         return 0
-    manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
-    official = [
-        source for source in manifest["sources"]
-        if source["level"] == args.level and source["scope"] == "central_final_exam_timetable"
-    ]
-    if len(official) != 1 or manifest["academicYear"] != calendar["academicYear"] or manifest["quarter"] != args.quarter:
-        print("the manifest must name one central timetable for this level, year and quarter", file=sys.stderr)
-        return 2
-    exam_feed = json.loads(args.exam_feed.read_text(encoding="utf-8"))
-    drift = exam_drift(rows, exam_feed, official[0]["id"])
-    if drift:
-        print("exam rows disagree with the reviewed exam feed; review before publishing:", file=sys.stderr)
-        print("\n".join(drift), file=sys.stderr)
+    try:
+        feed = extract_classes(args.pdf, calendar=calendar, quarter=args.quarter,
+                               level=args.level,
+                               manifest=json.loads(args.manifest.read_text(encoding="utf-8")),
+                               exam_feed=json.loads(args.exam_feed.read_text(encoding="utf-8")),
+                               retrieved_at=args.retrieved_at)
+    except ValueError as error:
+        print(error, file=sys.stderr)
         return 1
-    published = next(source for source in exam_feed["source"] if source["id"] == official[0]["id"])
-    retrieved = args.retrieved_at or datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-    source = {
-        "id": official[0]["id"],
-        "title": published["title"],
-        "url": official[0]["artifactUrl"],
-        "landingPageUrl": official[0]["url"],
-        "retrievedAt": retrieved,
-        "sha256": hashlib.sha256(args.pdf.read_bytes()).hexdigest(),
-    }
-    if "publishedAt" in published:
-        source["publishedAt"] = published["publishedAt"]
-    feed = class_feed(rows, year=calendar["academicYear"], quarter=args.quarter, level=args.level, source=source)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(feed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"output": str(args.output), "entries": len(feed["entries"])}))

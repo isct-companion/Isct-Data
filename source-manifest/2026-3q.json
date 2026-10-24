@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "quarter": "3Q",
+  "sources": [
+    {
+      "id": "official-undergraduate-2026-3q",
+      "level": "undergraduate",
+      "access": "public",
+      "scope": "central_final_exam_timetable",
+      "url": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
+      "artifactUrl": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
+      "allowedFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "rooms",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    },
+    {
+      "id": "official-graduate-2026-3q",
+      "level": "graduate",
+      "access": "public",
+      "scope": "central_final_exam_timetable",
+      "url": "https://www.titech.ac.jp/student/students/life/graduate-exam",
+      "artifactUrl": "https://www.titech.ac.jp/student/pdf/life-graduate-exam-timetable.pdf",
+      "allowedFields": [
+        "courseCode",
+        "quarter",
+        "date",
+        "periods",
+        "room",
+        "rooms",
+        "label",
+        "status",
+        "sourcePages",
+        "sourceIds"
+      ]
+    }
+  ],
+  "runnerPolicy": {
+    "authenticatedSources": "local_authorized_browser_or_provisioned_school_connector",
+    "publicRunnerAccess": false,
+    "persistCredentials": false,
+    "publishSessionUrls": false
+  },
+  "discoveryPolicy": {
+    "public": "Traverse each official landing page and its current linked exam artifacts for the selected academic scope.",
+    "authenticated": "An authorized source agent enumerates accessible courses in the selected year/quarter, reads course introductions and assessment notices in forums/pages/calendars, and adds verified source URLs before extracting candidates.",
+    "identity": "Verify the full course code and class suffix from the actual course identity; resolve syllabus offering identity only when evidenced.",
+    "coverage": "Record reviewed courses, inaccessible sources, and unresolved candidates. Listed LMS URLs are verified sources, not a complete inventory of all courses.",
+    "publication": "Never delete existing entries because discovery or authenticated access was incomplete."
+  }
+}
