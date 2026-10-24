@@ -27,8 +27,8 @@ permissions:
   copilot-requests: none
 engine:
   id: copilot
+  copilot-sdk: true
   model: auto
-  args: ["--model", "auto"]
 network:
   allowed:
     - www.titech.ac.jp
@@ -45,8 +45,8 @@ safe-outputs:
     report-as-issue: false
     engine:
       id: copilot
+      copilot-sdk: true
       model: auto
-      args: ["--model", "auto"]
   report-failed-jobs: false
   report-failure-as-issue: false
   report-missing-tool: false
