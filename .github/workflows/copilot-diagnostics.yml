@@ -16,9 +16,10 @@ jobs:
           node-version: '24'
       - name: Install official pinned Copilot CLI
         run: npm install --prefix "$RUNNER_TEMP/copilot-probe" @github/copilot@1.0.101
-      - name: Test native Copilot auto without the gh-aw proxy
+      - name: Test native Copilot under the agentic-workflows integration
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
+          GITHUB_COPILOT_INTEGRATION_ID: agentic-workflows
         run: |
           mkdir -p "$RUNNER_TEMP/copilot-probe-home"
           XDG_CONFIG_HOME="$RUNNER_TEMP/copilot-probe-home" "$RUNNER_TEMP/copilot-probe/node_modules/.bin/copilot" \
