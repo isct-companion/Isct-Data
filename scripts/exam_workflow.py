@@ -26,7 +26,7 @@ def scoped_path(raw, root):
     return path
 
 
-def run(root, year, quarter, level, candidate_path, timetable_pdf=None, retrieved_at=None):
+def run(root, year, quarter, level, candidate_path, timetable_pdf=None, retrieved_at=None, public_only=False):
     relative = f"exam/{level}/{year}-{quarter.lower()}.json"
     feed_path = scoped_path(relative, root)
     manifest_path = scoped_path(f"source-manifest/{year}-{quarter.lower()}.json", root)
@@ -35,7 +35,15 @@ def run(root, year, quarter, level, candidate_path, timetable_pdf=None, retrieve
     if (review["academicYear"], review["quarter"], review["level"]) != (year, quarter, level):
         raise ValueError("candidate does not match the selected exam scope")
     before = load(feed_path)
+    if public_only:
+        public_ids = {s['id'] for s in load(manifest_path)['sources'] if s['access'] == 'public'}
+        if any(s['id'] not in public_ids for s in review['sources']) or any(c['sourceId'] not in public_ids for c in review['candidates']):
+            raise ValueError('automated exam candidates must use public sources')
     after = merge_candidates(before, review, level=level, manifest=load(manifest_path), identities=load(identities_path))
+    if public_only:
+        from dataset_rules import manual_exam_facts
+        if manual_exam_facts(root, before) != manual_exam_facts(root, after):
+            raise ValueError('automation cannot change manually maintained exam records')
     class_relative, classes = None, None
     if timetable_pdf:
         from extract_exam_timetable import extract_classes
@@ -122,10 +130,10 @@ def run(root, year, quarter, level, candidate_path, timetable_pdf=None, retrieve
 
 
 def acknowledge_sources(root, state_path, coverage_path):
-    from check_exam_sources import STATE, allowed_url
+    from check_exam_sources import STATE, allowed_url, public_manifest_hash
     state = load(scoped_path(state_path, root))
     coverage = load(scoped_path(coverage_path, root))
-    expected = {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
+    expected = {str(p.relative_to(root)): public_manifest_hash(p)
                 for p in (root / "source-manifest").glob("*.json")}
     if state.get("schemaVersion") != 1 or state.get("manifests") != expected or not state.get("sources"):
         raise ValueError("source snapshot is missing or its manifests have changed")
@@ -136,17 +144,17 @@ def acknowledge_sources(root, state_path, coverage_path):
     reviewed = {(s["manifest"], s["sourceId"]): s for s in coverage["sources"]}
     for manifest_path in expected:
         for source in load(root / manifest_path)["sources"]:
+            if source['access'] != 'public':
+                continue
             item = reviewed.get((manifest_path, source["id"]), {})
             outcome = item.get("outcome")
-            valid = {"reviewed", "not_yet_published", "different_scope"} if source["access"] == "public" else {"unavailable_no_lms_session"}
+            valid = {"reviewed", "not_yet_published", "different_scope"}
             if outcome not in valid:
                 raise ValueError(f"incomplete source review: {manifest_path} {source['id']}")
             if source["access"] == "public" and (item.get("unresolvedFacts") != [] or not item.get("reviewedScope")):
                 raise ValueError("public source scope is missing or has unresolved facts")
             if source["access"] == "public" and any(url not in state["sources"] for url in (source["url"], source.get("artifactUrl", source["url"]))):
                 raise ValueError("source snapshot omits a manifest URL")
-    if coverage.get("lmsDiscovery") != "unavailable_no_lms_session":
-        raise ValueError("coverage must record the global LMS discovery gap")
     check_all(root)
     atomic_write(root / STATE, json.dumps(state, indent=2) + "\n")
     return {"sourceReview": "acknowledged", "sources": len(state["sources"])}

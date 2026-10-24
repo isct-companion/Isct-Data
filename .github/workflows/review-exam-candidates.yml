@@ -1,19 +1,6 @@
-name: Exam data
+name: Review supplied exam candidates
 
 on:
-  pull_request:
-    paths:
-      - 'exam/**'
-      - 'exam-week-classes/**'
-      - 'review/**'
-      - 'source-manifest/**'
-      - 'schema/*exam*'
-      - 'scripts/*exam*'
-      - 'scripts/update_subscription_index.py'
-      - 'index.json'
-      - 'index.sha256'
-      - 'requirements.txt'
-      - '.github/workflows/exams.yml'
   workflow_dispatch:
     inputs:
       year:

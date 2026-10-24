@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Poll official pages/PDFs; compare bytes with the last human-merged review."""
+"""Poll official pages/PDFs; compare bytes with the last validated source review."""
 import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 from html.parser import HTMLParser
@@ -16,24 +17,28 @@ HOST = "www.titech.ac.jp"
 STATE = "review/exam-source-state.json"
 
 
-def allowed_url(url):
+def allowed_url(url, hosts=(HOST,)):
     parsed = urlsplit(url)
-    if (parsed.scheme != "https" or parsed.hostname != HOST or
+    if (parsed.scheme != "https" or parsed.hostname not in hosts or
             parsed.port not in (None, 443) or parsed.username or parsed.password):
         raise ValueError(f"source outside HTTPS allowlist: {url}")
     return url
 
 
 class OfficialRedirects(HTTPRedirectHandler):
+    def __init__(self, hosts=(HOST,)):
+        super().__init__()
+        self.hosts = hosts
+
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        allowed_url(newurl)
+        allowed_url(newurl, self.hosts)
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
-def fetch(url):
-    request = Request(allowed_url(url), headers={"User-Agent": "Isct-Data-exam-monitor/1.0"})
-    with build_opener(OfficialRedirects()).open(request, timeout=45) as response:
-        allowed_url(response.url)
+def fetch(url, hosts=(HOST,)):
+    request = Request(allowed_url(url, hosts), headers={"User-Agent": "Isct-Data-exam-monitor/1.0"})
+    with build_opener(OfficialRedirects(hosts)).open(request, timeout=45) as response:
+        allowed_url(response.url, hosts)
         content = response.read(32 * 1024 * 1024 + 1)
         if len(content) > 32 * 1024 * 1024:
             raise ValueError(f"source exceeds 32 MiB: {url}")
@@ -42,10 +47,18 @@ def fetch(url):
         return content
 
 
+def decode_html(content):
+    match = re.search(rb'charset\s*=\s*["\']?([a-zA-Z0-9_-]+)', content[:4096], re.IGNORECASE)
+    encoding = match[1].decode('ascii') if match else 'utf-8'
+    if encoding.lower() in {'shift_jis', 'shift-jis', 'sjis'}:
+        encoding = 'cp932'
+    return content.decode(encoding)
+
+
 class PdfLinks(HTMLParser):
-    def __init__(self, base):
+    def __init__(self, base, hosts=(HOST,)):
         super().__init__()
-        self.base, self.links = base, set()
+        self.base, self.links, self.hosts = base, set(), hosts
 
     def handle_starttag(self, tag, attrs):
         href = dict(attrs).get("href")
@@ -53,19 +66,24 @@ class PdfLinks(HTMLParser):
             url = urljoin(self.base, href).split("#")[0]
             if urlsplit(url).path.lower().endswith(".pdf"):
                 # A host migration must be reviewed, never silently broaden egress.
-                self.links.add(allowed_url(url))
+                self.links.add(allowed_url(url, self.hosts))
+
+
+def public_manifest_hash(path):
+    manifest = json.loads(path.read_text())
+    public = {'academicYear': manifest['academicYear'], 'quarter': manifest['quarter'],
+              'sources': [s for s in manifest['sources'] if s['access'] == 'public']}
+    return hashlib.sha256(json.dumps(public, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
 
 
 def snapshot(root, fetcher=fetch):
     manifests, urls, gaps = {}, set(), []
     for path in sorted((root / "source-manifest").glob("*.json")):
         content = path.read_bytes()
-        manifests[str(path.relative_to(root))] = hashlib.sha256(content).hexdigest()
+        manifests[str(path.relative_to(root))] = public_manifest_hash(path)
         manifest = json.loads(content)
         for source in manifest["sources"]:
             if source["access"] != "public":
-                gaps.append({"manifest": str(path.relative_to(root)), "id": source["id"],
-                             "outcome": "unavailable_no_lms_session"})
                 continue
             urls.add(allowed_url(source["url"]))
             if source.get("artifactUrl"):
@@ -84,7 +102,7 @@ def snapshot(root, fetcher=fetch):
         documents[url] = content
         if not urlsplit(url).path.lower().endswith(".pdf"):
             parser = PdfLinks(url)
-            parser.feed(content.decode("utf-8"))
+            parser.feed(decode_html(content))
             urls.update(parser.links - hashes.keys())
     return {"schemaVersion": 1, "manifests": manifests, "sources": dict(sorted(hashes.items()))}, documents, gaps
 
@@ -94,7 +112,7 @@ def main():
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".exam-runs")
     args = parser.parse_args()
     try:
-        current, documents, gaps = snapshot(ROOT)
+        current, documents, _ = snapshot(ROOT)
         previous = json.loads((ROOT / STATE).read_text()) if (ROOT / STATE).exists() else None
         changed = current != previous
         args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -107,13 +125,13 @@ def main():
             downloads.append({"url": url, "path": str(path), "sha256": current["sources"][url],
                               "retrievedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")})
         (args.output_dir / "acquisition.json").write_text(json.dumps({
-            "changed": changed, "documents": downloads, "coverageGaps": gaps,
-            "lmsDiscovery": "unavailable_no_lms_session (all quarters)",
+            "changed": changed, "documents": downloads,
+            "sourcePolicy": "public_only; existing manual records are retained",
         }, indent=2) + "\n")
         if os.environ.get("GITHUB_OUTPUT"):
             with open(os.environ["GITHUB_OUTPUT"], "a") as output:
                 output.write(f"changed={str(changed).lower()}\n")
-        print(json.dumps({"changed": changed, "sources": len(documents), "lmsGaps": len(gaps)}))
+        print(json.dumps({"changed": changed, "sources": len(documents)}))
     except (OSError, ValueError) as error:
         print(f"exam source polling failed: {error}", file=sys.stderr)
         return 2
