@@ -1,0 +1,25 @@
+name: Copilot credential diagnostics
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/copilot-auto-argument-fix]
+    paths: [.github/workflows/copilot-diagnostics.yml]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install official pinned Copilot CLI
+        run: npm install --prefix "$RUNNER_TEMP/copilot-probe" @github/copilot@1.0.101
+      - name: Test native Copilot auto without the gh-aw proxy
+        env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/copilot-probe-home"
+          XDG_CONFIG_HOME="$RUNNER_TEMP/copilot-probe-home" "$RUNNER_TEMP/copilot-probe/node_modules/.bin/copilot" \
+            --model auto --no-ask-user --available-tools '' -p 'Reply with OK only. Do not use tools.'
