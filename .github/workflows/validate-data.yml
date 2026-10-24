@@ -1,0 +1,27 @@
+name: Validate data
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-data:
+    name: Validate all datasets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/validate_datasets.py
+      - run: python scripts/update_subscription_index.py --check
+      - run: python scripts/exam_workflow.py --check
+      - run: python -m unittest discover -s tests -v

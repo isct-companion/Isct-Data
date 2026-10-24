@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "timezone": "Asia/Tokyo",
+  "source": [
+    {
+      "id": "official-undergraduate-2026-3q",
+      "title": "Science Tokyo undergraduate timetable source (2026 3Q pending publication)",
+      "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
+      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam"
+    }
+  ],
+  "entries": []
+}

@@ -28,6 +28,16 @@
           "source": "exam/graduate/2026-2q.json",
           "hash": "dcdb742d06227c683c8b2ad9ab43b2795522362ee7ebcf12ccdaa488d8e5c284",
           "ts": "2026-10-03T06:12:56Z"
+        },
+        {
+          "source": "exam/undergraduate/2026-3q.json",
+          "hash": "53ef75f5d5128ccdbaff3b82ca3cefbb8cee1c5583bea6f676d816ff5934b785",
+          "ts": "2026-10-24T05:18:57Z"
+        },
+        {
+          "source": "exam/graduate/2026-3q.json",
+          "hash": "70fb20716978989d5bd3888b5ccab872fb95d85b27111b2244e24010d72bd66a",
+          "ts": "2026-10-24T05:18:57Z"
         }
       ],
       "examWeekClasses": [

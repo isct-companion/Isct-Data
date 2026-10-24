@@ -26,7 +26,7 @@ def scoped_path(raw, root):
     return path
 
 
-def run(root, year, quarter, level, candidate_path):
+def run(root, year, quarter, level, candidate_path, timetable_pdf=None, retrieved_at=None):
     relative = f"exam/{level}/{year}-{quarter.lower()}.json"
     feed_path = scoped_path(relative, root)
     manifest_path = scoped_path(f"source-manifest/{year}-{quarter.lower()}.json", root)
@@ -36,6 +36,35 @@ def run(root, year, quarter, level, candidate_path):
         raise ValueError("candidate does not match the selected exam scope")
     before = load(feed_path)
     after = merge_candidates(before, review, level=level, manifest=load(manifest_path), identities=load(identities_path))
+    class_relative, classes = None, None
+    if timetable_pdf:
+        from extract_exam_timetable import extract_classes
+        class_relative = f"exam-week-classes/{level}/{year}-{quarter.lower()}.json"
+        classes = extract_classes(scoped_path(timetable_pdf, root),
+                                  calendar=load(scoped_path(f"academic-calendar/{year}.json", root)),
+                                  quarter=quarter, level=level, manifest=load(manifest_path),
+                                  exam_feed=after, retrieved_at=retrieved_at)
+        errors = validate_feed(classes, root / "schema/exam-week-classes.schema.json")
+        if errors:
+            raise ValueError("; ".join(errors))
+        # Use the exact PDF provenance for both feeds, even for a class-only revision.
+        source = classes["source"][0]
+        existing = next(s for s in after["source"] if s["id"] == source["id"])
+        existing.update(source)
+        class_path = root / class_relative
+        if class_path.exists():
+            previous_classes = load(class_path)
+            comparable = copy.deepcopy(classes)
+            for item in comparable["source"]:
+                old = next((s for s in previous_classes["source"] if s["id"] == item["id"]), {})
+                if "retrievedAt" in old:
+                    item["retrievedAt"] = old["retrievedAt"]
+            if comparable == previous_classes:
+                classes = previous_classes
+        previous_source = next(s for s in before["source"] if s["id"] == source["id"])
+        if {k: v for k, v in existing.items() if k != "retrievedAt"} == {k: v for k, v in previous_source.items() if k != "retrievedAt"}:
+            if "retrievedAt" in previous_source:
+                existing["retrievedAt"] = previous_source["retrievedAt"]
     index_path = root / "index.json"
     index = load(index_path)
     references = index["academicYears"][str(year)]["exams"]
@@ -56,8 +85,25 @@ def run(root, year, quarter, level, candidate_path):
     next(ref for ref in check["academicYears"][str(year)]["exams"] if ref["source"] == relative).update(matches[0])
     if check != index:
         raise ValueError("exam update attempted to change unrelated index metadata")
+    if classes is not None:
+        references = updated["academicYears"][str(year)].setdefault("examWeekClasses", [])
+        found = [ref for ref in references if ref["source"] == class_relative]
+        if len(found) > 1:
+            raise ValueError("duplicate exam-week class index reference")
+        class_digest = canonical_hash(classes)
+        if found:
+            # Refuse to overwrite a class feed whose base has drifted.
+            if found[0]["hash"] != canonical_hash(load(root / class_relative)):
+                raise ValueError("base class feed does not match its index hash")
+            if found[0]["hash"] != class_digest:
+                found[0].update(hash=class_digest, ts=now)
+        else:
+            references.append({"source": class_relative, "hash": class_digest, "ts": now})
     feed_content = json.dumps(after, ensure_ascii=False, indent=2) + "\n"
     index_content = json.dumps(updated, ensure_ascii=False, indent=2) + "\n"
+    if classes is not None:
+        class_path.parent.mkdir(parents=True, exist_ok=True)
+        atomic_write(class_path, json.dumps(classes, ensure_ascii=False, indent=2) + "\n")
     atomic_write(feed_path, feed_content)
     atomic_write(index_path, index_content)
     atomic_write(root / "index.sha256", hashlib.sha256(index_content.encode()).hexdigest() + "\n")
@@ -70,9 +116,40 @@ def run(root, year, quarter, level, candidate_path):
     out = root / ".exam-runs"
     out.mkdir(exist_ok=True)
     atomic_write(out / "result.json", json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    patch = subprocess.check_output(["git", "diff", "--", relative, "index.json", "index.sha256"], cwd=root, text=True)
+    patch = subprocess.check_output(["git", "diff", "--", relative, class_relative or relative, "index.json", "index.sha256"], cwd=root, text=True)
     atomic_write(out / "exams.patch", patch)
     return report
+
+
+def acknowledge_sources(root, state_path, coverage_path):
+    from check_exam_sources import STATE, allowed_url
+    state = load(scoped_path(state_path, root))
+    coverage = load(scoped_path(coverage_path, root))
+    expected = {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
+                for p in (root / "source-manifest").glob("*.json")}
+    if state.get("schemaVersion") != 1 or state.get("manifests") != expected or not state.get("sources"):
+        raise ValueError("source snapshot is missing or its manifests have changed")
+    for url, digest in state["sources"].items():
+        allowed_url(url)
+        if not isinstance(digest, str) or len(digest) != 64 or any(c not in "0123456789abcdef" for c in digest):
+            raise ValueError("invalid source snapshot hash")
+    reviewed = {(s["manifest"], s["sourceId"]): s for s in coverage["sources"]}
+    for manifest_path in expected:
+        for source in load(root / manifest_path)["sources"]:
+            item = reviewed.get((manifest_path, source["id"]), {})
+            outcome = item.get("outcome")
+            valid = {"reviewed", "not_yet_published", "different_scope"} if source["access"] == "public" else {"unavailable_no_lms_session"}
+            if outcome not in valid:
+                raise ValueError(f"incomplete source review: {manifest_path} {source['id']}")
+            if source["access"] == "public" and (item.get("unresolvedFacts") != [] or not item.get("reviewedScope")):
+                raise ValueError("public source scope is missing or has unresolved facts")
+            if source["access"] == "public" and any(url not in state["sources"] for url in (source["url"], source.get("artifactUrl", source["url"]))):
+                raise ValueError("source snapshot omits a manifest URL")
+    if coverage.get("lmsDiscovery") != "unavailable_no_lms_session":
+        raise ValueError("coverage must record the global LMS discovery gap")
+    check_all(root)
+    atomic_write(root / STATE, json.dumps(state, indent=2) + "\n")
+    return {"sourceReview": "acknowledged", "sources": len(state["sources"])}
 
 
 FEEDS = {
@@ -125,15 +202,23 @@ def main():
     parser.add_argument("--quarter", choices=("1Q", "2Q", "3Q", "4Q"))
     parser.add_argument("--level", choices=("undergraduate", "graduate"))
     parser.add_argument("--candidates", help="repository-relative agent candidate JSON")
+    parser.add_argument("--timetable-pdf", help="repository-relative reviewed PDF; updates exam-week classes in the same operation")
+    parser.add_argument("--retrieved-at", help="actual PDF retrieval time (RFC 3339)")
+    parser.add_argument("--acknowledge-sources", help="repository-relative polled source snapshot, only after completing all reviews")
+    parser.add_argument("--coverage", help="repository-relative coverage report for source acknowledgement")
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     try:
         if args.check:
             result = check_all(ROOT)
+        elif args.acknowledge_sources:
+            if not args.coverage:
+                parser.error("--acknowledge-sources requires --coverage")
+            result = acknowledge_sources(ROOT, args.acknowledge_sources, args.coverage)
         else:
             if not all((args.year, args.quarter, args.level, args.candidates)):
                 parser.error("apply requires --year, --quarter, --level and --candidates")
-            result = run(ROOT, args.year, args.quarter, args.level, args.candidates)
+            result = run(ROOT, args.year, args.quarter, args.level, args.candidates, args.timetable_pdf, args.retrieved_at)
         print(json.dumps(result, ensure_ascii=False, indent=2))
     except (OSError, ValueError, KeyError, TypeError, subprocess.CalledProcessError) as error:
         print(f"exam workflow error: {error}", file=sys.stderr)
