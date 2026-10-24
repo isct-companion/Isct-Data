@@ -106,7 +106,8 @@ python3 scripts/update_subscription_index.py --check
 without path filters. Its required-check name is **Validate all datasets**. It
 validates all six dataset families (including unindexed files), checks generated
 index hashes, runs the exam relational checks and the workflow boundary tests.
-Require this status check in main's branch protection/ruleset before merging.
+Main branch protection requires this GitHub Actions check and a PR, including
+for administrators; force pushes and branch deletion are disabled.
 
 `update-exams.md` and its compiled `update-exams.lock.yml` use GitHub Agentic
 Workflows v0.93.2. Every day at 09:17 JST (00:17 UTC), the standard-library
@@ -138,15 +139,14 @@ page still links 2Q, report 3Q as not yet published.
   credits. The agent run cap is 50 AI credits (100 per day), with a separate 15-credit
   detection cap; quota failures leave the
   baseline unchanged.
-- Enable **Allow GitHub Actions to create and approve pull requests** under
-  Settings → Actions → General. The agent itself has read-only credentials;
-  only the separate safe-output job may create a draft PR. Issue fallback and
-  automatic failure/missing-tool issues are disabled. There is no merge output.
-- To trigger PR CI automatically, add **GH_AW_CI_TRIGGER_TOKEN** as documented
-  by gh-aw (repository-scoped PAT with Contents: write). The default Actions
-  token's PR events do not trigger another workflow. Without this optional
-  credential, a maintainer must trigger CI, for example by closing/reopening the
-  PR; branch protection must continue requiring **Validate all datasets**.
+- Add **EXAM_PR_TOKEN** as a fine-grained PAT restricted to **Isct-Data**,
+  with repository **Contents: read/write** and **Pull requests: read/write**.
+  It is supplied only to the separate safe-output job. The organization currently
+  blocks Actions-token PR creation; this repository-scoped user credential
+  creates the PR without changing that organization policy. PAT-created PRs
+  trigger CI directly, so no additional CI-trigger token is needed. The agent
+  itself keeps read-only GitHub credentials. Issue fallback, reporting issues
+  and protected-file patches are disabled, and there is no merge output.
 - Merge this setup PR before dispatching **Update exam data** from main. Run it
   manually once and review the draft PR, source coverage artifact and CI results.
 
