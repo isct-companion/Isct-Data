@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from check_exam_sources import OfficialRedirects, PdfLinks, STATE, allowed_url, snapshot
 from exam_workflow import acknowledge_sources, check_all, run
 from merge_exam_candidates import canonical_hash
+from publish_exam_update import apply_and_validate, prepare, publish
 
 
 class SourcePolling(unittest.TestCase):
@@ -59,6 +60,12 @@ class PublicationBoundary(unittest.TestCase):
     def write(self, name, value):
         (self.runs / name).write_text(json.dumps(value))
         return f'.exam-runs/{name}'
+
+    def commit_base(self):
+        subprocess.run(['git', 'add', '.'], cwd=self.root, check=True)
+        subprocess.run(['git', '-c', 'user.name=Test', '-c', 'user.email=test@example.invalid',
+                        '-c', 'commit.gpgsign=false', 'commit', '-qm', 'fixture'], cwd=self.root, check=True)
+        return subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=self.root, text=True).strip()
 
     def public_bytes(self):
         return {str(p.relative_to(self.root)): p.read_bytes()
@@ -116,6 +123,7 @@ class PublicationBoundary(unittest.TestCase):
                                             'reviewedScope': path.stem, 'unresolvedFacts': [],
                                             'outcome': 'reviewed' if source['access'] == 'public' else 'unavailable_no_lms_session'})
         state_path = self.write('state.json', state)
+        base = self.commit_base()
         incomplete = copy.deepcopy(coverage)
         incomplete['sources'].pop()
         with self.assertRaises(ValueError):
@@ -124,11 +132,54 @@ class PublicationBoundary(unittest.TestCase):
         coverage_path = self.write('coverage.json', coverage)
         acknowledge_sources(self.root, state_path, coverage_path)
         self.assertEqual(json.loads((self.root / STATE).read_text()), state)
+        bundle = {'schemaVersion': 1, 'baseSha': base, 'files': {STATE: json.dumps(state)},
+                  'observedState': state, 'coverage': coverage}
+        files = apply_and_validate(self.root, bundle, base, fresh_state=state)
+        self.assertEqual(set(files), {STATE})
+        with self.assertRaises(ValueError):
+            apply_and_validate(self.root, bundle, base, fresh_state={})
         manifest = self.root / 'source-manifest/2026-3q.json'
         manifest.write_text(manifest.read_text() + ' ')
         with self.assertRaises(ValueError):
             acknowledge_sources(self.root, state_path, coverage_path)
         self.assertEqual(json.loads((self.root / STATE).read_text()), state)
+
+    def test_direct_publication_rejects_script_changes_traversal_and_stale_inputs(self):
+        base = self.commit_base()
+        before = self.public_bytes()
+        for name in ('scripts/exam_workflow.py', '../escape.json', 'exam/undergraduate/../../scripts/evil.py'):
+            with self.subTest(name=name), self.assertRaises(ValueError):
+                apply_and_validate(self.root, {'schemaVersion': 1, 'baseSha': base, 'files': {name: '{}'}}, base)
+            self.assertEqual(before, self.public_bytes())
+        with self.assertRaises(ValueError):
+            apply_and_validate(self.root, {'schemaVersion': 1, 'baseSha': '0' * 40, 'files': {}}, base)
+        (self.root / 'scripts/exam_workflow.py').write_text('untrusted script')
+        with self.assertRaises(ValueError):
+            prepare(self.root, base)
+
+    def test_direct_publication_records_real_check_before_nonforced_ref_change(self):
+        calls = []
+        # Substitute only the GitHub transport. Publication ordering, credential
+        # separation, commit ancestry and the non-force ref update run unchanged.
+        def api(token, method, path, body=None):
+            calls.append((token, method, path, body))
+            if path == 'git/ref/heads/main':
+                return {'object': {'sha': 'base'}}
+            if path == 'git/commits/base':
+                return {'tree': {'sha': 'base-tree'}}
+            return {'sha': 'new'}
+        result = publish('base', {'index.sha256': 'data'}, 'writer', 'actions', 'https://example.invalid/run', api=api)
+        self.assertTrue(result['changed'])
+        self.assertEqual(calls[-2][0:3], ('actions', 'POST', 'statuses/new'))
+        self.assertEqual(calls[-1], ('writer', 'PATCH', 'git/refs/heads/main', {'sha': 'new', 'force': False}))
+        self.assertEqual(next(c[3]['parents'] for c in calls if c[2] == 'git/commits'), ['base'])
+        calls.clear()
+        def stale(token, method, path, body=None):
+            calls.append(path)
+            return {'object': {'sha': 'advanced'}}
+        with self.assertRaises(ValueError):
+            publish('base', {'index.sha256': 'data'}, 'writer', 'actions', 'https://example.invalid/run', api=stale)
+        self.assertEqual(calls, ['git/ref/heads/main'])
 
 
 if __name__ == '__main__':

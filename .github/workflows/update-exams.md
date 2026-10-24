@@ -7,7 +7,6 @@ on:
   schedule:
     - cron: '17 0 * * *'
   workflow_dispatch:
-  skip-if-match: 'is:pr is:open in:title "[exam-update]"'
   steps:
     - uses: actions/checkout@v4
       with:
@@ -19,8 +18,6 @@ jobs:
   pre-activation:
     outputs:
       changed: ${{ steps.poll.outputs.changed }}
-  safe_outputs:
-    if: needs.agent.result == 'success'
 if: github.event_name == 'workflow_dispatch' || needs.pre_activation.outputs.changed == 'true'
 permissions:
   contents: read
@@ -45,31 +42,62 @@ safe-outputs:
     engine:
       id: copilot
       model: auto
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: exam-runtime
+          persist-credentials: false
+          sparse-checkout: scripts/prepare_copilot_auto.py
+          sparse-checkout-cone-mode: false
+      - name: Preserve native Copilot auto selection
+        run: python3 exam-runtime/scripts/prepare_copilot_auto.py "$RUNNER_TEMP/gh-aw/actions"
   report-failed-jobs: false
   report-failure-as-issue: false
   report-missing-tool: false
   report-missing-data: false
   report-incomplete:
     create-issue: false
-  create-pull-request:
-    github-token: ${{ secrets.DATA_PR_TOKEN }}
-    github-token-for-extra-empty-commit: none
-    title-prefix: '[exam-update] '
-    base-branch: main
-    draft: true
-    fallback-as-issue: false
-    protected-files: blocked
-    allowed-files:
-      - exam/**/*.json
-      - exam-week-classes/**/*.json
-      - index.json
-      - index.sha256
-      - review/exam-source-state.json
+  jobs:
+    publish-exam-data:
+      description: Publish the reviewed exam data directly to main after independent validation.
+      runs-on: ubuntu-latest
+      if: needs.agent.result == 'success'
+      permissions:
+        contents: read
+        statuses: write
+      artifacts:
+        - /tmp/gh-aw/agent/exam-publication.json
+      inputs:
+        summary:
+          description: Brief source review and coverage summary for this publication.
+          required: true
+          type: string
+      steps:
+        - uses: actions/checkout@v4
+          with:
+            ref: ${{ github.sha }}
+            persist-credentials: false
+        - uses: actions/setup-python@v5
+          with:
+            python-version: '3.12'
+        - run: python -m pip install -r requirements.txt
+        - name: Independently validate and publish the data-only bundle
+          env:
+            DATA_PR_TOKEN: ${{ secrets.DATA_PR_TOKEN }}
+            STATUS_TOKEN: ${{ github.token }}
+            EXAM_BASE_SHA: ${{ github.sha }}
+          run: >-
+            python scripts/publish_exam_update.py --base "$EXAM_BASE_SHA"
+            --bundle "$(dirname "$GH_AW_AGENT_OUTPUT")/agent/exam-publication.json"
+
 steps:
   - uses: actions/setup-python@v5
     with:
       python-version: '3.12'
   - run: python -m pip install -r requirements.txt
+  - name: Preserve native Copilot auto selection
+    run: python3 scripts/prepare_copilot_auto.py "$RUNNER_TEMP/gh-aw/actions"
   - name: Acquire fresh official artifacts for source review
     run: python scripts/check_exam_sources.py
 post-steps:
@@ -78,6 +106,14 @@ post-steps:
       python scripts/validate_datasets.py
       python scripts/update_subscription_index.py --check
       python scripts/exam_workflow.py --check
+  - name: Prepare a bounded data-only publication bundle
+    if: success()
+    env:
+      EXAM_BASE_SHA: ${{ github.sha }}
+    run: |
+      git show "$EXAM_BASE_SHA:scripts/publish_exam_update.py" > "$RUNNER_TEMP/prepare-exam-publication.py"
+      python "$RUNNER_TEMP/prepare-exam-publication.py" --root "$GITHUB_WORKSPACE" \
+        --base "$EXAM_BASE_SHA" --prepare /tmp/gh-aw/agent/exam-publication.json
   - name: Preserve acquisition and coverage for review
     if: always()
     uses: actions/upload-artifact@v4
@@ -113,13 +149,17 @@ and previously reviewed facts when coverage is incomplete.
 Only after ALL public source scopes are reviewed (or confirmed not yet
 published) and all applicable feed updates pass validation, acknowledge the
 snapshot using the writer command documented in the prompt. This deliberately
-puts the hash baseline in the same PR as the reviewed facts: it only advances
-after human merge, and failed runs keep retrying the change. If review is
+puts the hash baseline in the same atomic data commit as the reviewed facts:
+it only advances after the trusted publisher succeeds, and failed runs retry. If review is
 incomplete, leave the snapshot untouched and explain the blocker in run artifacts.
 
-Create at most one draft PR through `create_pull_request`. Include fresh source
-URLs/hashes, scopes, changed exam/class counts, validation commands, and LMS or
-other coverage gaps in its body; a state-only PR is valid when a changed source
-was fully reviewed and no published fact changed. Never create issues, comments,
-merge a PR, push to main, or publish any other output. If nothing changed, use
-noop. A pending `[exam-update]` PR suspends new runs until it is resolved.
+When every source scope has been reviewed and the writer has finished, call
+`publish_exam_data` with a brief review summary. This signals the separate trusted
+publisher; the agent cannot push or merge. It accepts only exam feeds, exam-week
+class feeds, their index metadata and the reviewed source fingerprint. It checks
+the exact run base, complete source coverage and fresh source hashes, reruns all
+validation and boundary tests, records the required GitHub Actions status on the
+candidate commit, and updates main only by fast-forward. If main or source bytes
+changed during review, publication fails for a fresh run. Do not create PRs,
+issues, comments, or change any other repository files. If no update is needed,
+call noop instead. Keep detailed review results in `.exam-runs/` artifacts.
