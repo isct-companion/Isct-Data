@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "manifests": {
+    "source-manifest/2026-2q.json": "31e0217b21221b733e9532d09dc2f3bd8e95e32ffe6c6f1635447a4a822d6895",
+    "source-manifest/2026-3q.json": "eb00ab31c2dcad9c0fe0da95bdf0d31c8b789902602c159154c65ebe30e121b2"
+  },
+  "sources": {
+    "https://www.titech.ac.jp/student/pdf/life-graduate-exam-timetable.pdf": "61bba1126741cae100c947132d3bc57286dbe4a2a457bc723a56da3b6a83443d",
+    "https://www.titech.ac.jp/student/pdf/life-graduate-exam-tyuuigaki-j.pdf": "65fa84e5cdfb1354b76c2dc702db2fa266138315b5fd7ec3472aed0a74599962",
+    "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-ishi.pdf": "ff16f55455b2c85366b4f625785f341657f201bab3ab73b275d99cd87a9841b5",
+    "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf": "c9b45b7143eb3589f67e4aa17e5e03ac7ee476d54e426233ecd0d636af905226",
+    "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-tuigaki-j.pdf": "ebe71bcae4bbfc1688d1cb6a74febdafcdc28ba4ea57ae1291cf81a67bbc8f1f",
+    "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-tuishiken-j.pdf": "f46ab18dc59ae3572bb92a97065a05420a178756be556a6f56541e6e58539460",
+    "https://www.titech.ac.jp/student/students/life/graduate-exam": "b039e043441522cc10c59955f93434b43676ad437340261e24261dc12985e860",
+    "https://www.titech.ac.jp/student/students/life/undergraduate-exam": "2e60fd3e7e4ab7af9827dc8a1ac215a4c45c6537e20b363ca480e9414b573512"
+  }
+}
