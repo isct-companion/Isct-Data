@@ -1,75 +1,65 @@
-# 自動更新と CI の運用
+# 公開データの自動更新と CI
 
-[README](../README.md) · [データ仕様と収録範囲](data.md) · [保守コマンド](maintenance.md) · [試験データの更新](exams.md) · [自動更新の運用](automation.md)
+[README](../README.md) · [保守コマンド](maintenance.md) · [試験データの更新](exams.md)
 
-`.github/workflows/validate-data.yml` runs on every PR and every push to `main`
-without path filters. Its required-check name is **Validate all datasets**. It
-validates all six dataset families (including unindexed files), checks generated
-index hashes, runs the exam relational checks and the workflow boundary tests.
-Main branch protection requires this GitHub Actions check on the exact candidate
-commit, including for administrators; force pushes and branch deletion remain
-disabled. Direct data publication removes the PR requirement only.
+| Workflow | データ | 定期チェック（JST） | 個別 prompt |
+| --- | --- | --- | --- |
+| Update academic calendar | 校暦・授業期間・休講・祝日 | 毎日 09:47 | [校暦](../prompts/update-academic-calendar.md) |
+| Update departments and course guidance | 入学年度別の学系・履修指南 | 日曜 10:47 | [学系](../prompts/update-departments.md) |
+| Update important dates | 行事・式典・入試の日程 | 毎日 10:17 | [重要日程](../prompts/update-important-dates.md) |
+| Update exams and exam-week classes | 期末試験と同じ PDF の授業・補講 | 毎日 09:17 | [試験](../prompts/update-exams.md) |
 
-`update-exams.md` and its compiled `update-exams.lock.yml` use GitHub Agentic
-Workflows v0.93.2. The pinned Copilot harness receives a hash-checked compatibility fix that preserves
-native `auto` selection; an upstream harness change stops setup for review. The
-agent and threat detector use the same fix. Every day at 09:17 JST (00:17 UTC), the standard-library
-`scripts/check_exam_sources.py` hashes public landing pages, manifest PDFs and
-currently linked PDFs. It rejects off-host URLs/redirects and failed downloads.
-Only a changed fingerprint starts Copilot; manual dispatch forces review. A
-single concurrency group serializes updates.
-The fingerprint baseline is `review/exam-source-state.json`, written only by
-`exam_workflow.py` after complete source review and committed atomically with the reviewed
-facts by the trusted publisher. First run has no baseline and therefore performs an initial review. Failures
-never advance main's baseline. No HTTP cache headers or model
-claims are used as a substitute for a content hash.
+各 workflow の Markdown には対象、時刻、ネットワーク許可と個別 prompt を指定します。
+エンジン、証拠準備、予算、成果物と公開処理は
+[shared/public-data.md](../.github/workflows/shared/public-data.md) を共有します。
+変更時は対象の Markdown を編集し、`gh aw compile WORKFLOW_NAME` で lock を再生成します。
 
-2026 3Q has empty undergraduate/graduate feeds with nonempty provenance and an
-empty identity registry. These are publication placeholders, not a claim that
-no exams exist. Its manifest deliberately does not reuse quarter-specific 2Q
-LMS course IDs. Every run still records global LMS discovery as a coverage gap.
-Confirm year/quarter from the actual PDF before publishing; when the official
-page still links 2Q, report 3Q as not yet published.
+## 公開までの流れ
 
-### One-time GitHub setup
+1. Python の標準ライブラリで公開ページ、参照 PDF とリンク先 PDF の内容を取得し、SHA-256 を比較します。変更時だけ Copilot を起動し、手動実行はレビューを強制します。
+2. 固定スクリプトが証拠のパス、テキスト、PDF ページ画像、レビュー JSON と試験候補を準備します。モデルは対象データの prompt で確認します。
+3. モデルは Python と基本的な読み取りツールで証拠を確認し、書き込みには対象の固定レビュー適用コマンドを使います。試験の書き込みは引き続き `exam_workflow.py` が担当し、同じ PDF の試験週授業も同時に更新します。
+4. 別ジョブの `publish_data.py` がクリーンな実行基準から変更を適用し、対象パス、他データの index 不変、公開ソースの最新ハッシュ、全量検証とテストを確認します。試験は最新 PDF の行も再照合します。
+5. 正確に検証したコミットへ必須の Actions ステータスを記録してから、main を非強制で更新します。途中で main やソースが変われば公開を中止します。
 
-- Add **COPILOT_GITHUB_TOKEN** under repository Actions secrets: a fine-grained
-  PAT owned by your personal account, with account permission **Copilot
-  Requests: read**. This selects your personal subscription entitlements. The
-  workflow explicitly disables organization Copilot billing and uses automatic
-  model selection for Student compatibility. Your actual remaining credits must
-  be checked in your personal Copilot usage settings. It does not purchase extra
-  credits. The agent run cap is 50 AI credits (100 per day), with a separate 15-credit
-  detection cap; quota failures leave the
-  baseline unchanged.
-- Add **DATA_PR_TOKEN** as a fine-grained PAT restricted to **Isct-Data**,
-  with repository **Contents: read/write** and **Pull requests: read/write**.
-  This shared credential can be reused by other dataset update workflows in
-  this repository. It is supplied only to the separate trusted publisher. The model keeps
-  read-only GitHub credentials. The publisher accepts a bounded UTF-8 data bundle,
-  checks the immutable base and allowed paths, rechecks current official source
-  hashes, verifies complete review coverage, and runs the full schema/index/exam
-  checks and boundary tests from a clean base checkout. It then creates the exact
-  validated commit, records **Validate all datasets** with a separate Actions
-  token, and fast-forwards main using this repository credential. A changed main
-  tip, changed source, failed check or forbidden path aborts publication. No force
-  push, PR, issue or comment is created. Ordinary push-to-main CI still runs.
-- Run **Update exam data** from main manually once and inspect the source
-  coverage artifact, trusted publication job, resulting commit and CI results.
-  Branch dispatches may be used for diagnostics but cannot publish main.
+ソース指紋は `review/source-state/TYPE.json` に保存し、試験は既存の
+`review/exam-source-state.json` を使用します。検証したデータと同じコミットでのみ進みます。
+共通 concurrency により更新実行を直列化します。PR・issue・コメントは生成しません。
 
-Official references: [Copilot authentication](https://github.github.com/gh-aw/reference/auth/),
-[PR CI triggering](https://github.github.com/gh-aw/reference/triggering-ci/),
-[Copilot plans](https://docs.github.com/en/copilot/get-started/plans).
+エージェントは最大 **40 ターン／20 AI credits**、検出ジョブは **5 credits**、
+workflow ごとの過去 24 時間上限は **100 credits** です。harness の自動リトライは無効です。
+コマンド失敗時は同じ入力で再実行せず、不完全として終了します。
+`.data-runs/` と `.exam-runs/` は実行成果物として 7 日間保持します。
 
-To change the agentic workflow, edit its Markdown source and regenerate the lock:
+## 公開ソースと人工保守の境界
 
-```sh
-gh aw compile update-exams
-```
+学校の公開ソースは `www.titech.ac.jp` に限定します。校暦 workflow だけ、
+国民の祝日のため `www8.cao.go.jp` を追加許可します。URL とリダイレクト先を
+スクリプトで検証し、別ホストへの移行を自動承認しません。GitHub/Copilot の
+実行基盤通信は gh-aw が別途管理します。
 
-The only school-source network allowlist entry is `www.titech.ac.jp`; required
-GitHub/Copilot infrastructure is managed by gh-aw separately. Dependency setup
-runs before the agent sandbox starts. Both current exam landing pages and PDF
-links use the allowed hostname. A school migration to a different host requires
-a reviewed policy/manifest PR, not an automatic allowlist expansion.
+LMS ログイン・取得の機能は提供しません。既存の `class-schedules/2026.json` と
+手動ソースを持つ試験記録は保持し、人が更新します。自動公開はこれらの記録・
+出典を変更・削除できません。全量 CI は人工保守データも継続検証します。
+
+## GitHub の設定
+
+- `COPILOT_GITHUB_TOKEN`: 個人の fine-grained PAT、**Copilot Requests: read**。
+  個人のプランで自動選模し、組織課金権限は使いません。
+- `DATA_PR_TOKEN`: Isct-Data だけに限定した既存 PAT。**Contents: read/write** と
+  **Pull requests: read/write** を持ちます。名前は互換性のため維持します。
+  使用箇所は独立公開ジョブのみで、モデルへは渡しません。
+- main は **Validate all datasets** を GitHub Actions 発行の必須チェックとし、
+  管理者にも適用します。PR 前提はなく、強制 push と削除は禁止します。
+
+Copilot CLI は資格情報を保持する AWF proxy を通してネイティブ `/auto` を使います。
+固定 gh-aw v0.93.2 の起動処理には SHA-256 検証付きの互換処理を適用します。
+BYOK の無指定モデルへのフォールバックを避け、上流 harness が変われば設定を停止します。
+組み込み MCP、ネイティブ web ツールと sub-agent は無効にし、明示したツールだけを使います。
+
+## 全量 CI と人工候補の確認
+
+`validate-data.yml` は全 PR と main への全 push で、パスフィルタなしに六種類の
+全データ、index、試験の関連整合性と境界テストを確認します。
+`review-exam-candidates.yml` は手動で渡した候補のパッチを成果物にする専用入口です。
+PR 時の重複した試験専用 CI は全量 CI に統合しました。

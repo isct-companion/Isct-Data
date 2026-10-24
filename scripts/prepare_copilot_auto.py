@@ -8,24 +8,25 @@ import sys
 # v0.93.2 resolves auto through its generic alias map, selecting a fixed model
 # unsupported by Student plans. AWF already passes native Copilot auto through.
 # Keep the upstream harness and its security/usage/retry checks; alter only this
-# resolver option, and refuse any upstream version we have not reviewed.
+# resolver option and CLI-only transport environment, and reject unknown upstream bytes.
 ORIGINAL_SHA256 = "ef6e2e1d5cab9d4f77fd70d2a203bc1eae8d4b17a83b9a401f8567e44108acec"
 BEFORE = '      role: "main",\n      configuredModel,\n      aliasMap: aliasMap ??'
 AFTER = '      role: "main",\n      configuredModel,\n      preserveAuto: true,\n      aliasMap: aliasMap ??'
 
+ENV_BEFORE = '  const childEnv = Object.keys(sdkChildEnv).length > 0 ? buildCopilotEngineChildEnv(process.env, sdkChildEnv) : undefined;'
+ENV_AFTER = '  let childEnv = Object.keys(sdkChildEnv).length > 0 ? buildCopilotEngineChildEnv(process.env, sdkChildEnv) : undefined;\n  if (!copilotSDKMode && selectionConfiguredModel === "auto" && process.env.GH_AW_NATIVE_COPILOT_AUTO === "1") {\n    childEnv = buildCopilotEngineChildEnv(process.env, sdkChildEnv);\n    if (!isLikelyAWFAPIProxyURL(childEnv.COPILOT_API_URL) || childEnv.COPILOT_TOKEN !== "ghu_" + "a".repeat(36)) {\n      throw new Error("Native auto requires the existing AWF proxy and its placeholder token");\n    }\n    // Native /auto chooses an entitled model. BYOK /chat/completions with no\n    // model instead uses a legacy server default, which is not CLI auto.\n    for (const key of Object.keys(childEnv)) {\n      if (key.startsWith("COPILOT_PROVIDER_")) delete childEnv[key];\n    }\n    childEnv.COPILOT_OFFLINE = "false";\n  }'
+
 
 def prepare(path):
-    original = path.read_bytes()
-    if hashlib.sha256(original).hexdigest() == ORIGINAL_SHA256:
-        text = original.decode("utf-8")
-        if text.count(BEFORE) != 1:
-            raise ValueError("Copilot auto resolver target changed")
-        path.write_text(text.replace(BEFORE, AFTER), encoding="utf-8")
-        return
-    text = original.decode("utf-8")
-    if text.count(AFTER) == 1 and hashlib.sha256(text.replace(AFTER, BEFORE).encode()).hexdigest() == ORIGINAL_SHA256:
-        return
-    raise ValueError("Unreviewed gh-aw Copilot harness; review the native auto adapter before upgrading")
+    current = path.read_text(encoding='utf-8')
+    original = current.replace(AFTER, BEFORE).replace(ENV_AFTER, ENV_BEFORE)
+    if hashlib.sha256(original.encode()).hexdigest() != ORIGINAL_SHA256:
+        raise ValueError('Unreviewed gh-aw Copilot harness; review the native auto adapter before upgrading')
+    if original.count(BEFORE) != 1 or original.count(ENV_BEFORE) != 1:
+        raise ValueError('Copilot native auto patch target changed')
+    desired = original.replace(BEFORE, AFTER).replace(ENV_BEFORE, ENV_AFTER)
+    if current != desired:
+        path.write_text(desired, encoding='utf-8')
 
 
 def main():

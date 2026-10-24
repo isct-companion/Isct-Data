@@ -15,6 +15,10 @@ from check_exam_sources import OfficialRedirects, PdfLinks, STATE, allowed_url, 
 from exam_workflow import acknowledge_sources, check_all, run
 from merge_exam_candidates import canonical_hash
 from publish_exam_update import apply_and_validate, prepare, publish
+from data_workflow import apply_review
+from dataset_rules import state_path
+from source_monitor import snapshot as public_snapshot
+from update_subscription_index import normalize
 
 
 class SourcePolling(unittest.TestCase):
@@ -28,10 +32,18 @@ class SourcePolling(unittest.TestCase):
         first, _, gaps = snapshot(ROOT, download)
         self.assertEqual(len(calls), len(set(calls)))
         self.assertIn('https://www.titech.ac.jp/revised.pdf', first['sources'])
-        self.assertEqual(len(gaps), 2)
+        self.assertEqual(gaps, [])
         self.assertEqual(snapshot(ROOT, download)[0], first)
         revised = snapshot(ROOT, lambda url: b'%PDF-revised' if url.endswith('.pdf') else download(url))[0]
         self.assertNotEqual(first, revised)
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory)
+            shutil.copytree(ROOT / 'source-manifest', target / 'source-manifest')
+            path = target / 'source-manifest/2026-2q.json'
+            value = json.loads(path.read_text())
+            next(s for s in value['sources'] if s['access'] != 'public')['url'] += '&manual-update=1'
+            path.write_text(json.dumps(value))
+            self.assertEqual(first, snapshot(target, download)[0])
 
     def test_rejects_off_host_links_and_redirects_before_fetch(self):
         for url in ('http://www.titech.ac.jp/a.pdf', 'https://titech.ac.jp/a.pdf',
@@ -46,13 +58,39 @@ class SourcePolling(unittest.TestCase):
         with self.assertRaises(OSError):
             snapshot(ROOT, lambda url: (_ for _ in ()).throw(OSError('unavailable')))
 
+    def test_public_profiles_limit_cabinet_office_to_calendar_and_ignore_manual_sources(self):
+        for dataset in ('academic-calendar', 'departments', 'important-dates', 'exams'):
+            calls = []
+            def download(url):
+                calls.append(url)
+                return b'public source bytes'
+            public_snapshot(ROOT, dataset, download)
+            self.assertTrue(calls)
+            self.assertFalse(any('lms.' in url for url in calls))
+            self.assertEqual(any('www8.cao.go.jp' in url for url in calls), dataset == 'academic-calendar')
+
+
+    def test_source_graph_decodes_legacy_guide_html_and_tracks_holiday_csv(self):
+        def download(url):
+            if url.endswith('.pdf'):
+                return b'%PDF-fixture'
+            if url.endswith('.csv'):
+                return '日付,祝日'.encode('cp932')
+            link = 'syukujitsu.csv' if 'www8.cao.go.jp' in url else '/extra.pdf'
+            return f'<html><meta charset="Shift_JIS"><a href="{link}">公開資料</a></html>'.encode('cp932')
+        guides, _ = public_snapshot(ROOT, 'departments', download)
+        self.assertIn('https://www.titech.ac.jp/extra.pdf', guides['sources'])
+        calendar, _ = public_snapshot(ROOT, 'academic-calendar', download)
+        self.assertIn('https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv', calendar['sources'])
+
+
 
 class PublicationBoundary(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name) / 'data'
-        shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns('.git', '.exam-runs', '__pycache__'))
+        shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns('.git', '.exam-runs', '.data-runs', '__pycache__'))
         subprocess.run(['git', 'init', '-q', str(self.root)], check=True)
         self.runs = self.root / '.exam-runs'
         self.runs.mkdir()
@@ -115,13 +153,16 @@ class PublicationBoundary(unittest.TestCase):
             self.assertEqual(self.public_bytes(), before)
 
     def test_source_baseline_requires_complete_coverage_and_current_manifests(self):
+        (self.root / STATE).unlink(missing_ok=True)
         state, _, _ = snapshot(self.root, lambda url: b'%PDF-test' if url.endswith('.pdf') else b'<html></html>')
-        coverage = {'sources': [], 'lmsDiscovery': 'unavailable_no_lms_session'}
+        coverage = {'sources': []}
         for path in sorted((self.root / 'source-manifest').glob('*.json')):
             for source in json.loads(path.read_text())['sources']:
+                if source['access'] != 'public':
+                    continue
                 coverage['sources'].append({'manifest': str(path.relative_to(self.root)), 'sourceId': source['id'],
                                             'reviewedScope': path.stem, 'unresolvedFacts': [],
-                                            'outcome': 'reviewed' if source['access'] == 'public' else 'unavailable_no_lms_session'})
+                                            'outcome': 'reviewed'})
         state_path = self.write('state.json', state)
         base = self.commit_base()
         incomplete = copy.deepcopy(coverage)
@@ -139,7 +180,9 @@ class PublicationBoundary(unittest.TestCase):
         with self.assertRaises(ValueError):
             apply_and_validate(self.root, bundle, base, fresh_state={})
         manifest = self.root / 'source-manifest/2026-3q.json'
-        manifest.write_text(manifest.read_text() + ' ')
+        value = json.loads(manifest.read_text())
+        value['sources'][0]['artifactUrl'] += '?revision=1'
+        manifest.write_text(json.dumps(value))
         with self.assertRaises(ValueError):
             acknowledge_sources(self.root, state_path, coverage_path)
         self.assertEqual(json.loads((self.root / STATE).read_text()), state)
@@ -156,6 +199,64 @@ class PublicationBoundary(unittest.TestCase):
         (self.root / 'scripts/exam_workflow.py').write_text('untrusted script')
         with self.assertRaises(ValueError):
             prepare(self.root, base)
+
+    def test_public_dataset_writer_and_publisher_keep_unrelated_subscriptions(self):
+        for dataset in ('academic-calendar', 'departments', 'important-dates'):
+            with self.subTest(dataset=dataset):
+                base = self.commit_base()
+                path = f'{dataset}/2026.json'
+                original_index = json.loads((self.root / 'index.json').read_text())
+                original = json.loads((self.root / path).read_text())
+                updated = copy.deepcopy(original); updated['source'][0]['title'] += ' reviewed'
+                state, documents = public_snapshot(self.root, dataset, lambda url: b'public source bytes')
+                directory = self.root / '.data-runs'; directory.mkdir(exist_ok=True)
+                records = []
+                for n, (url, content) in enumerate(documents.items()):
+                    local = directory / f'{n}.html'; local.write_bytes(content)
+                    records.append({'url': url, 'path': str(local.relative_to(self.root))})
+                (directory / 'source-state.json').write_text(json.dumps(state))
+                (directory / 'acquisition.json').write_text(json.dumps({'documents': records}))
+                review = {'dataset': dataset, 'status': 'approved', 'summary': 'Reviewed public source',
+                          'sources': [{'url': u, 'outcome': 'reviewed', 'reviewedScope': '2026', 'unresolvedFacts': []} for u in state['sources']],
+                          'updates': {path: updated}, 'baseHashes': {path: canonical_hash(normalize(original))}}
+                (directory / 'review.json').write_text(json.dumps(review))
+                apply_review(self.root, dataset)
+                bundle = prepare(self.root, base, dataset)
+                self.assertEqual(bundle['schemaVersion'], 2)
+                self.assertIn(path, bundle['files'])
+                subprocess.run(['git', 'restore', '.'], cwd=self.root, check=True)
+                result = apply_and_validate(self.root, bundle, base, fresh_state=state, dataset=dataset)
+                self.assertIn(path, result)
+                current_index = json.loads((self.root / 'index.json').read_text())
+                # A public calendar/event/guide update cannot change exam or manual schedule subscriptions.
+                for year in original_index['academicYears']:
+                    for field in ('exams', 'examWeekClasses', 'classSchedules'):
+                        self.assertEqual(current_index['academicYears'][year].get(field), original_index['academicYears'][year].get(field))
+                forbidden = copy.deepcopy(bundle)
+                forbidden['files'] = {'class-schedules/2026.json': '{}'}
+                subprocess.run(['git', 'restore', '.'], cwd=self.root, check=True)
+                with self.assertRaises(ValueError):
+                    apply_and_validate(self.root, forbidden, base, fresh_state=state, dataset=dataset)
+                subprocess.run(['git', 'restore', '.'], cwd=self.root, check=True)
+
+    def test_automatic_publisher_cannot_change_manual_exam_facts(self):
+        base = self.commit_base()
+        path = 'exam/undergraduate/2026-2q.json'
+        feed = json.loads((self.root / path).read_text())
+        manual_id = '2026-2Q-undergraduate-CSC.T251-final'
+        next(e for e in feed['entries'] if e['id'] == manual_id)['date'] = '2026-07-30'
+        before = self.public_bytes()
+        bundle = {'schemaVersion': 1, 'baseSha': base, 'files': {path: json.dumps(feed)}}
+        with self.assertRaisesRegex(ValueError, 'manually maintained'):
+            apply_and_validate(self.root, bundle, base)
+        self.assertEqual(self.public_bytes(), before)
+        public_feed = json.loads((self.root / path).read_text())
+        public_feed['source'][0]['url'] = 'https://outside.example/unreviewed.pdf'
+        bundle['files'][path] = json.dumps(public_feed)
+        bundle['observedState'] = snapshot(self.root, lambda url: b'public bytes')[0]
+        with self.assertRaisesRegex(ValueError, 'not polled'):
+            apply_and_validate(self.root, bundle, base)
+        self.assertEqual(self.public_bytes(), before)
 
     def test_direct_publication_records_real_check_before_nonforced_ref_change(self):
         calls = []
