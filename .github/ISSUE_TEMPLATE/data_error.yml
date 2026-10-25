@@ -1,0 +1,87 @@
+name: データの誤り / Data error
+description: 校暦・試験・学系などのデータが公式情報と違う、または欠けている。
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        日本語・英語・中国語のどれで書いてもかまいません。
+
+        このデータは、公式ページを毎日（学系・履修は毎週）確認する AI の workflow が自動で更新しています。根拠となる公式ページを添えて報告してください。アプリ自体の不具合は[アプリのリポジトリ](https://github.com/isct-companion/isct-companion/issues)へ。
+
+        AI に手伝ってもらって書いてもかまいませんが、送信前に内容を読み、自分が確認した事実と一致しているか確かめてください。条件を満たさない issue は説明なく閉じることがあります。
+  - type: dropdown
+    id: dataset
+    attributes:
+      label: データの種類
+      options:
+        - 校暦
+        - 期末試験
+        - 試験期間の授業・補講
+        - 学系・履修
+        - 重要日程
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: 年度
+      placeholder: "2026"
+    validations:
+      required: true
+  - type: dropdown
+    id: quarter
+    attributes:
+      label: クォーター
+      options:
+        - 1Q
+        - 2Q
+        - 3Q
+        - 4Q
+        - 該当なし（学系・重要日程など）
+    validations:
+      required: true
+  - type: input
+    id: item
+    attributes:
+      label: 該当する項目
+      description: 科目コード、または日付。
+      placeholder: "LAS.P102 / 2026-11-03"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 現在の値
+      description: アプリまたは JSON に今表示・収録されている内容。
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: 正しい値
+      description: 公式情報に書かれている内容。
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 公式の出典 URL
+      description: 根拠となる titech.ac.jp の公式ページまたは PDF の URL。
+      placeholder: "https://www.titech.ac.jp/student/students/life/schedules"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足
+      description: 任意。PDF のページ番号など。
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 確認
+      options:
+        - label: AI に手伝ってもらった場合、内容を読み、自分が公式情報で確認した事実と一致していることを確かめました。
+          required: true
