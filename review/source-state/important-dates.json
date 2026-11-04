@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "dataset": "important-dates",
   "sources": {
-    "https://www.titech.ac.jp/student/students/life/schedules": "38234b147a28afe90c1efe788d9526ab6f831ad08cb7004fde255fe0db7422fd",
-    "https://www.titech.ac.jp/student/students/life/schedules/2025": "33f7aaccb8ab506ee1f2a958736c61b631a22559deb4defcb27ff2d090a414e9"
+    "https://www.titech.ac.jp/student/students/life/schedules": "b1dfb019bae4aff703e900ac6a0b603c4a445e7e8df5170f96fba93dee066c9b",
+    "https://www.titech.ac.jp/student/students/life/schedules/2025": "b4493337d5da25bf9a2e57552b37d2115e2dda1dd917eead33897c3c4ca5a51b"
   }
 }
