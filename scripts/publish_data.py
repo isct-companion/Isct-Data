@@ -217,11 +217,15 @@ def main():
             bundle = load(args.bundle)
             if bundle.get('schemaVersion') != 2 or bundle.get('review') is None:
                 raise ValueError('publication requires a prepared public-source review bundle')
+            # Test the publisher's code on the untouched checkout. The bundle may
+            # not change scripts or tests, so this is the code that publishes;
+            # running it after the bundle is applied would make the suite depend
+            # on the files this publication writes.
+            subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"], cwd=root, check=True)
             fresh, documents = snapshot(root, args.dataset)
             files = apply_and_validate(root, bundle, args.base, fresh_state=fresh, dataset=args.dataset)
             if args.dataset == 'exams':
                 verify_public_exam_artifacts(root, documents)
-            subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"], cwd=root, check=True)
             result = publish(args.base, files, os.environ.get("DATA_PR_TOKEN"), os.environ.get("STATUS_TOKEN"),
                              f"https://github.com/{REPOSITORY}/actions/runs/{os.environ['GITHUB_RUN_ID']}", dataset=args.dataset)
             print(json.dumps(result))

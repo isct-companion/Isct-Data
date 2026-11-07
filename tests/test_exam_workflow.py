@@ -87,10 +87,21 @@ class SourcePolling(unittest.TestCase):
 
 class PublicationBoundary(unittest.TestCase):
     def setUp(self):
-        self.temp = tempfile.TemporaryDirectory()
-        self.addCleanup(self.temp.cleanup)
-        self.root = Path(self.temp.name) / 'data'
-        shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns('.git', '.exam-runs', '.data-runs', '__pycache__'))
+        self.make_fixture()
+
+    def make_fixture(self):
+        # Copy only the files git tracks, so leftovers in the checkout (a
+        # publication's freshly written source state, local notes) never leak
+        # into the fixture and change what a test commits.
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        self.root = Path(temp.name) / 'data'
+        tracked = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT, text=True).split('\0')
+        for name in filter(None, tracked):
+            source = ROOT / name
+            if source.is_file():
+                (self.root / name).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(source, self.root / name)
         subprocess.run(['git', 'init', '-q', str(self.root)], check=True)
         self.runs = self.root / '.exam-runs'
         self.runs.mkdir()
@@ -203,6 +214,9 @@ class PublicationBoundary(unittest.TestCase):
     def test_public_dataset_writer_and_publisher_keep_unrelated_subscriptions(self):
         for dataset in ('academic-calendar', 'departments', 'important-dates'):
             with self.subTest(dataset=dataset):
+                # Each dataset starts from its own repository: the previous
+                # iteration's writes must not decide what this base commit holds.
+                self.make_fixture()
                 base = self.commit_base()
                 path = f'{dataset}/2026.json'
                 original_index = json.loads((self.root / 'index.json').read_text())
