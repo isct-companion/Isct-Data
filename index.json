@@ -83,8 +83,8 @@
   "campusMap": {
     "1": {
       "source": "campus-map/v1/campus-map.json.gz",
-      "hash": "828d95c3274b558e1153d10914d69d1e6599e0abbc38173ed680651919875d65",
-      "ts": "2026-11-10T11:12:22Z"
+      "hash": "9038d66e40768525e5299f5fbf2a034a866d493997d69b312ffa0c961cf60455",
+      "ts": "2026-11-10T14:05:34Z"
     }
   }
 }
