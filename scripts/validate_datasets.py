@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Validate every published dataset, including files not yet in the index."""
+"""Validate every published dataset, including files not yet in the index, and the campus map export."""
 import json
 import sys
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
+
+from validate_campus_map import validate as validate_campus_map
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMAS = {
@@ -34,6 +36,9 @@ def main():
             except (OSError, ValueError) as error:
                 errors.append(f"{path}: {error}")
             count += 1
+    map_count, map_errors = validate_campus_map(ROOT)
+    count += map_count
+    errors.extend(map_errors)
     for error in errors:
         print(error, file=sys.stderr)
     print(f"Validated {count} datasets; {len(errors)} errors")
