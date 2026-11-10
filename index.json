@@ -79,5 +79,12 @@
         "ts": "2026-10-03T06:35:58Z"
       }
     }
+  },
+  "campusMap": {
+    "1": {
+      "source": "campus-map/v1/campus-map.json.gz",
+      "hash": "8c9f731b398807ab9ffd86c03a524156634dc0a798e6fc9099a74dba11167d60",
+      "ts": "2026-11-10T05:57:30Z"
+    }
   }
 }

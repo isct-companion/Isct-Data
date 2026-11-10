@@ -14,6 +14,7 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 | [`class-schedules/`](class-schedules/) | 人工保守の個別・隔週授業日程 |
 | [`exam/`](exam/) | 学部・大学院の期末試験 |
 | [`exam-week-classes/`](exam-week-classes/) | 試験期間中の授業・補講 |
+| [`campus-map/`](campus-map/) | 大岡山・すずかけ台のキャンパスマップ（アプリ用 gzip、形式は [campus-map-export.md](docs/campus-map-export.md)。元データは非公開リポジトリ） |
 
 2025・2026 年度を収録しています。試験の公開データは 2026 2Q を収録済みで、3Q は出典付きの空 feed を準備しています。公式の集中試験時間割と LMS 上の個別告知では収録範囲が異なります。空データや未収録は、試験・授業が存在しないことを意味しません。
 
