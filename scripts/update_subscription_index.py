@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Add dataset hashes/timestamps to index.json and write index.sha256.
 
-The script uses only Python's standard library. Existing timestamps are kept
-when a dataset's canonical JSON hash is unchanged, so repeated runs are stable.
+The script uses only Python's standard library. A JSON dataset is hashed in
+canonical form; any other file (the gzip campus map) by its bytes. Existing
+timestamps are kept when a hash is unchanged, so repeated runs are stable.
 """
 
 import argparse
@@ -15,6 +16,8 @@ import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
+
+from dataset_rules import VERSIONED_INDEX
 
 SHA256 = re.compile(r"[0-9a-f]{64}")
 RFC3339 = re.compile(
@@ -45,6 +48,13 @@ def canonical_json_hash(path):
         normalize(value), ensure_ascii=False, sort_keys=True, separators=(",", ":")
     ).encode("utf-8")
     return hashlib.sha256(canonical).hexdigest()
+
+
+def source_hash(path):
+    """Formatting does not change a JSON dataset, so it is hashed canonically; another file is only its bytes."""
+    if path.suffix == ".json":
+        return canonical_json_hash(path)
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def validate_timestamp(value):
@@ -85,7 +95,7 @@ def update_reference(root, reference, timestamp):
     else:
         raise ValueError(f"invalid dataset reference: {reference!r}")
 
-    digest = canonical_json_hash(source_path(root, source))
+    digest = source_hash(source_path(root, source))
     return {
         "source": source,
         "hash": digest,
@@ -94,9 +104,12 @@ def update_reference(root, reference, timestamp):
 
 
 def updated_index(root, index, timestamp):
-    allowed_root = {"academicYears", "admissionYears"}
-    if set(index) != allowed_root:
-        raise ValueError("index.json must contain academicYears and admissionYears only")
+    required_root = {"academicYears", "admissionYears"}
+    if not required_root <= set(index) <= required_root | set(VERSIONED_INDEX):
+        raise ValueError(
+            "index.json must contain academicYears and admissionYears, and only "
+            + ", ".join(sorted(VERSIONED_INDEX)) + " besides them"
+        )
     if not isinstance(index["academicYears"], dict) or not isinstance(
         index["admissionYears"], dict
     ):
@@ -131,6 +144,18 @@ def updated_index(root, index, timestamp):
         if not isinstance(entry, dict) or set(entry) != {"departments"}:
             raise ValueError("invalid admission-year index entry")
         entry["departments"] = update_reference(root, entry["departments"], timestamp)
+
+    for group, pattern in VERSIONED_INDEX.items():
+        if group not in index:
+            continue
+        if not isinstance(index[group], dict) or not index[group]:
+            raise ValueError(f"{group} must be a non-empty object keyed by format version")
+        for version, reference in index[group].items():
+            if not re.fullmatch(r"[1-9][0-9]*", version):
+                raise ValueError(f"{group} key is not a format version: {version!r}")
+            index[group][version] = update_reference(root, reference, timestamp)
+            if index[group][version]["source"] != pattern.format(version=version):
+                raise ValueError(f"{group} version {version} must be {pattern.format(version=version)}")
     return index
 
 

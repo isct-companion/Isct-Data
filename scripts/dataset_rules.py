@@ -14,6 +14,10 @@ DATASETS = {
     'exams': {'directories': ('exam', 'exam-week-classes'), 'index': ('academicYears', ('exams', 'examWeekClasses')),
               'hosts': ('www.titech.ac.jp',)},
 }
+# Datasets indexed by format version instead of by year: index group -> the source of one version. A later format is a
+# new key and directory, and the old one stays, frozen. They are published by pull request from their private source
+# repository, never by the automated workflows, so they are not in DATASETS and no publication path reaches them.
+VERSIONED_INDEX = {'campusMap': 'campus-map/v{version}/campus-map.json.gz'}
 
 
 def state_path(dataset):
