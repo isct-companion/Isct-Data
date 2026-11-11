@@ -25,3 +25,50 @@ jobs:
       - run: python scripts/update_subscription_index.py --check
       - run: python scripts/exam_workflow.py --check
       - run: python -m unittest discover -s tests -v
+
+  # The homepage's /data/ page is generated from this repository at build time.
+  # Rebuild it as soon as validated data reaches main instead of waiting for
+  # its daily rebuild. A push that fails validation triggers nothing; the next
+  # push that passes compares against the last push that passed, so data
+  # fixed in a follow-up commit is still picked up.
+  rebuild-homepage:
+    name: Rebuild the homepage data page
+    needs: validate-data
+    if: github.event_name == 'push' && github.repository == 'isct-companion/Isct-Data'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - name: Check whether published data changed since the last validated push
+        id: changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          prev=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/validate-data.yml/runs?branch=main&event=push&status=success&per_page=10" \
+            --jq "[.workflow_runs[] | select(.id != $GITHUB_RUN_ID)][0].head_sha // empty")
+          if [ -z "$prev" ]; then
+            echo "No earlier validated push; rebuilding."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif ! files=$(gh api "repos/$GITHUB_REPOSITORY/compare/$prev...$GITHUB_SHA" --jq '.files[].filename'); then
+            echo "Could not compare with $prev; rebuilding."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif grep -qx 'index.json' <<<"$files"; then
+            echo "index.json changed since $prev."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "index.json unchanged since $prev; nothing to rebuild."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Trigger the Cloudflare Pages deploy hook
+        if: steps.changed.outputs.changed == 'true'
+        env:
+          HOOK: ${{ secrets.HOMEPAGE_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::warning::HOMEPAGE_DEPLOY_HOOK is not set; the homepage will pick this up at its daily rebuild."
+            exit 0
+          fi
+          curl --fail --silent --show-error --max-time 30 -X POST "$HOOK" -o /dev/null
+          echo "Homepage rebuild triggered."
