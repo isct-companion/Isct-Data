@@ -47,6 +47,11 @@ class VisibleText(HTMLParser):
             self.parts.append(data)
 
 
+def is_html(content):
+    # The school's XHTML pages start with an XML declaration, before DOCTYPE.
+    return bool(re.search(br'<(?:!doctype\s+html|html(?:\s|>))', content[:4096], re.I))
+
+
 def content_fingerprint(content):
     """Hash what a reviewer can see, so re-encoded bytes alone never wake the agent.
 
@@ -64,7 +69,7 @@ def content_fingerprint(content):
                                     for item in (*page.lines, *page.rects))
                     pages.append([re.sub(r'\s+', ' ', page.extract_text() or '').strip(), shapes])
             value = json.dumps(pages, ensure_ascii=False)
-        elif content.lstrip().lower().startswith((b'<!doctype', b'<html')):
+        elif is_html(content):
             parser = VisibleText(); parser.feed(decode_html(content))
             text = re.sub(r'\s+', ' ', ' '.join(parser.parts)).strip()
             value = json.dumps([text, parser.links], ensure_ascii=False)
@@ -125,7 +130,7 @@ def snapshot(root, dataset, fetcher=None):
                 hashes[url] = hashlib.sha256(content).hexdigest(); documents[url] = content
                 if sum(map(len, documents.values())) > 256 * 1024 * 1024:
                     raise ValueError('public source graph exceeds 256 MiB')
-                if content.lstrip().lower().startswith((b'<!doctype', b'<html')):
+                if is_html(content):
                     parser = PublicArtifactLinks(url, hosts); parser.feed(decode_html(content))
                     pending.update(parser.links - hashes.keys())
     state = {'schemaVersion': 1, 'dataset': dataset, 'sources': dict(sorted(hashes.items()))}

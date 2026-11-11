@@ -208,14 +208,14 @@ def prepare(root, dataset):
             review['baseHashes'][str(path.relative_to(root))] = canonical_hash(normalize(load(path)))
         lines += ['', 'Put complete reviewed replacement objects in `updates`, keyed by dataset path; use `{}` for no fact changes.',
                   'Existing paths and their base hashes:', json.dumps(review['baseHashes'], indent=2)]
-    lines += ['', 'Query evidence with `python3 scripts/evidence.py` (see `--help`) instead of reading whole files or every page image.',
-              'Do not run git, JSON formatters or validation probes. The fixed commands below validate everything.', 'After reviewing every acquired source, set `status` to `approved`, supply a summary,',
+    lines += ['', 'Query evidence with `python3 scripts/evidence.py` (see `--help`) to read relevant text and page images.',
+              'After reviewing every acquired source, set `status` to `approved`, supply a summary,',
               'and mark each source `outcome: reviewed` with its reviewed scope and no unresolved facts.',
-              f'First run exactly: `python3 scripts/data_workflow.py --dataset {dataset} --check-review`.',
-              'It writes nothing. If it reports a problem, fix only that problem in the review JSON and check again (at most 3 checks).',
-              f'After it passes, run exactly once: `python3 scripts/data_workflow.py --dataset {dataset} --apply-review`.',
-              'If apply fails, STOP. Do not repeat it or invent different arguments. Report incomplete instead.',
-              'On success call `publish_data` with the summary. Do not call a publisher before this command succeeds.']
+              f'Check the review with `python3 scripts/data_workflow.py --dataset {dataset} --check-review`.',
+              'It writes nothing. Resolve any reported review issues in the review JSON before applying.',
+              f'After it passes, apply the review with `python3 scripts/data_workflow.py --dataset {dataset} --apply-review`.',
+              'If apply fails, report the incomplete review and the error to the caller.',
+              'On success, report the reviewed sources, changes, and validation result to the caller.']
     save(task / 'review.json', review)
     atomic_write(task / 'task.md', '\n'.join(lines) + '\n')
     return {'dataset': dataset, 'resources': len(records), 'renderedPages': rendered}
@@ -224,7 +224,7 @@ def prepare(root, dataset):
 def apply_review(root, dataset, dry_run=False):
     from merge_exam_candidates import canonical_hash
     from exam_workflow import acknowledge_sources, check_all, run as write_exams
-    from jsonschema import Draft202012Validator, FormatChecker
+    from dataset_contracts import DatasetContracts
     review, state = load(root / RUN / 'review.json'), load(root / RUN / 'source-state.json')
     if review.get('dataset') != dataset:
         raise ValueError('review dataset differs from the fixed workflow scope')
@@ -273,6 +273,7 @@ def apply_review(root, dataset, dry_run=False):
         save(root / '.exam-runs/coverage.json', {'sources': coverage})
         acknowledge_sources(root, '.exam-runs/source-state.json', '.exam-runs/coverage.json')
     else:
+        contracts = DatasetContracts()
         updates = review['updates']; normalized = {}
         for name, value in updates.items():
             if not feed_path(name, dataset):
@@ -281,13 +282,9 @@ def apply_review(root, dataset, dry_run=False):
             before = canonical_hash(normalize(load(path))) if path.exists() else None
             if review['baseHashes'].get(name) != before:
                 raise ValueError('dataset changed after preparing review')
-            expected_year = int(Path(name).stem)
-            if value.get('admissionYear' if dataset == 'departments' else 'academicYear') != expected_year:
-                raise ValueError('dataset year differs from its filename')
-            validator = Draft202012Validator(load(root / f'schema/{dataset}.schema.json'), format_checker=FormatChecker())
-            errors = [e.message for e in validator.iter_errors(value)]
-            if errors:
-                raise ValueError('; '.join(errors))
+            issues = contracts.validate_candidate(dataset, name, value)
+            if issues:
+                raise ValueError('; '.join(map(str, issues)))
             normalized[name] = normalize(value)
         if dry_run:
             return {'dataset': dataset, 'review': 'valid', 'updates': sorted(normalized)}
@@ -337,8 +334,8 @@ def main():
         return 0
     except (OSError, ValueError, TypeError, KeyError) as error:
         if args.check_review:
-            print(f'Review check failed: {error!r}. Fix only .data-runs/review.json, then check again '
-                  '(at most 3 checks in total). Nothing was written.', file=sys.stderr)
+            print(f'Review check failed: {error!r}. Review the reported issues before checking again. '
+                  'Nothing was written.', file=sys.stderr)
             return 1
         print(f'Public data workflow failed: {error!r}. STOP; do not retry unchanged inputs.', file=sys.stderr)
         return 2

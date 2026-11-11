@@ -1,1 +1,3 @@
 .github/workflows/*.lock.yml linguist-generated=true
+# Preserve the downloaded official XHTML evidence byte-for-byte.
+tests/fixtures/academic-calendar-schedules.html -whitespace
