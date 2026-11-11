@@ -1,5 +1,6 @@
 """Publication boundaries: stale/partial reviews must never advance public data."""
 import copy
+from datetime import datetime, timedelta
 import hashlib
 import json
 from pathlib import Path
@@ -144,8 +145,12 @@ class PublicationBoundary(unittest.TestCase):
     def review(self):
         feed = json.loads((self.root / 'exam/undergraduate/2026-3q.json').read_text())
         source = json.loads((self.root / 'source-manifest/2026-3q.json').read_text())['sources'][0]
+        # Provenance must be newer than what the live feed already publishes,
+        # or the writer rightly refuses it; the feed fills up as quarters publish.
+        known = [s['retrievedAt'] for s in feed['source'] if s.get('retrievedAt')] + ['2026-10-24T00:00:00Z']
+        retrieved = (datetime.fromisoformat(max(known).replace('Z', '+00:00')) + timedelta(days=1))
         source = dict(source, url=source['artifactUrl'], title='Reviewed official timetable',
-                      landingPageUrl=source['url'], retrievedAt='2026-10-24T00:00:00Z')
+                      landingPageUrl=source['url'], retrievedAt=retrieved.strftime('%Y-%m-%dT%H:%M:%SZ'))
         evidence = 'TST.A101 final 2026-11-27 periods 1-2 room M-101'
         return {'schemaVersion': 1, 'academicYear': 2026, 'quarter': '3Q', 'level': 'undergraduate',
                 'baseFeedHash': canonical_hash(feed), 'sources': [source], 'candidates': [{
