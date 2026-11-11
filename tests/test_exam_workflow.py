@@ -359,6 +359,11 @@ class AuthorComparison(unittest.TestCase):
         result = compare(self.root, 'important-dates', {'a': a, 'b': b}, self.out)
         self.assertTrue(result['same'])
         self.assertEqual((self.out / 'final.json').read_bytes(), a.read_bytes())
+        # Authors download minutes apart; a different retrievedAt alone is not a disagreement
+        # (seen in the first real run: four provenance "differences" woke the arbiter).
+        later = self.bundle('b', lambda data: (self.label('新しい行事')(data),
+                                               data['source'][0].update(retrievedAt='2026-11-11T06:56:27Z')))
+        self.assertTrue(compare(self.root, 'important-dates', {'a': a, 'b': later}, self.out)['same'])
         # Stale or mismatched source observations never get compared at all.
         stale = json.loads(b.read_text()); stale['observedState']['sources'] = {}
         b.write_text(json.dumps(stale))

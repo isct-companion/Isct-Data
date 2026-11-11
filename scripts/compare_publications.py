@@ -110,6 +110,19 @@ def head_json(root, name):
         return None
 
 
+# When each author downloaded the sources. Both reviewed identical bytes (the
+# observed states must match), so a different download time is not a disagreement.
+VOLATILE = {'retrievedAt'}
+
+
+def stable(value):
+    if isinstance(value, dict):
+        return {k: stable(v) for k, v in value.items() if k not in VOLATILE}
+    if isinstance(value, list):
+        return [stable(v) for v in value]
+    return value
+
+
 def data_files(bundle, dataset):
     if bundle is None:
         return {}
@@ -134,14 +147,14 @@ def compare(root, dataset, paths, out):
     files = {side: data_files(b, dataset) for side, b in bundles.items()}
     names = sorted(set().union(*files.values()))
     main = {name: head_json(root, name) for name in names}
-    same = len(bundles) == 2 and files['a'] == files['b']
+    same = len(bundles) == 2 and stable(files['a']) == stable(files['b'])
     items = []
     for name in names:
         records = {side: walk(files[side].get(name, main[name]) or {}) for side in bundles}
         records['main'] = walk(main[name] or {})
         for key in sorted(set().union(*(r.keys() for r in records.values()))):
             values = {side: records[side].get(key, (None, None))[1] for side in records}
-            if len(bundles) == 2 and values['a'] == values['b']:
+            if len(bundles) == 2 and stable(values['a']) == stable(values['b']):
                 continue  # Both authors agree; nothing to arbitrate.
             if len(bundles) == 1 and next(v for s, v in values.items() if s != 'main') == values['main']:
                 continue  # The only author left this record as main has it.
