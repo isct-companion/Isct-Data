@@ -1,0 +1,204 @@
+# Shared pipeline for the four public-data workflows. Called by update-*.yml.
+#
+#   triage (script) ──► author A (AI) ─┐
+#                   └─► author B (AI) ─┴─► compare (script) ──same──────────────► publish (script)
+#                                                └──differ──► arbiter (AI) ──► resolve (script) ─┘
+#
+# Scripts decide whether sources really changed, whether the two independent
+# reviews agree, and how the arbiter's picks become data. Models never hold
+# write credentials; the publisher re-validates every bundle against fresh
+# official sources and main's immutable base.
+name: Public data pipeline
+
+on:
+  workflow_call:
+    inputs:
+      dataset:
+        type: string
+        required: true
+      force:
+        description: Run the AI review even if triage finds no source change
+        type: boolean
+        default: false
+
+permissions: {}
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      changed: ${{ steps.poll.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Decide without inference whether official sources really changed
+        id: poll
+        env:
+          DATASET: ${{ inputs.dataset }}
+        run: python scripts/data_workflow.py --dataset "$DATASET" --poll
+
+  author-a:
+    needs: triage
+    if: inputs.force || needs.triage.outputs.changed == 'true'
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+      pull-requests: read
+    uses: ./.github/workflows/author-public-data.lock.yml
+    with:
+      dataset: ${{ inputs.dataset }}
+      slot: a
+    secrets: inherit
+
+  author-b:
+    needs: triage
+    if: inputs.force || needs.triage.outputs.changed == 'true'
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+      pull-requests: read
+    uses: ./.github/workflows/author-public-data.lock.yml
+    with:
+      dataset: ${{ inputs.dataset }}
+      slot: b
+    secrets: inherit
+
+  compare:
+    needs: [author-a, author-b]
+    # One author failing is not fatal: the arbiter then checks the other's work.
+    if: always() && (needs.author-a.result == 'success' || needs.author-b.result == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      same: ${{ steps.compare.outputs.same }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Collect both authors' bundles
+        uses: actions/download-artifact@v4
+        with:
+          pattern: publication-bundle-*
+          path: ${{ runner.temp }}/bundles
+      - name: Compare the two independent reviews record by record
+        id: compare
+        env:
+          DATASET: ${{ inputs.dataset }}
+        run: >-
+          python scripts/compare_publications.py --dataset "$DATASET" --compare
+          --a "$RUNNER_TEMP/bundles/publication-bundle-a/publication.json"
+          --b "$RUNNER_TEMP/bundles/publication-bundle-b/publication.json"
+          --dir "$RUNNER_TEMP/comparison"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: publication-comparison
+          path: ${{ runner.temp }}/comparison/
+          if-no-files-found: error
+          retention-days: 7
+
+  arbitrate:
+    needs: compare
+    if: needs.compare.result == 'success' && needs.compare.outputs.same != 'true'
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+      pull-requests: read
+    uses: ./.github/workflows/arbitrate-public-data.lock.yml
+    with:
+      dataset: ${{ inputs.dataset }}
+    secrets: inherit
+
+  resolve:
+    needs: [compare, arbitrate]
+    if: always() && needs.compare.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - name: Stop when the arbiter did not finish
+        if: needs.compare.outputs.same != 'true' && needs.arbitrate.result != 'success'
+        run: |
+          echo "::error::The authors disagreed and the arbiter did not finish; nothing is published."
+          exit 1
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: publication-comparison
+          path: ${{ runner.temp }}/comparison
+      - name: Fetch the arbiter's verdict
+        if: needs.compare.outputs.same != 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: arbiter-verdict
+          path: ${{ runner.temp }}/verdict
+      - name: Build the final data from the arbiter's choices with fixed code
+        if: needs.compare.outputs.same != 'true'
+        env:
+          DATASET: ${{ inputs.dataset }}
+          DATA_BASE_SHA: ${{ github.sha }}
+        run: >-
+          python scripts/compare_publications.py --dataset "$DATASET" --resolve
+          --dir "$RUNNER_TEMP/comparison" --verdict "$RUNNER_TEMP/verdict/verdict.json"
+          --base "$DATA_BASE_SHA"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-publication
+          path: ${{ runner.temp }}/comparison/final.json
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs: resolve
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      statuses: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: final-publication
+          path: ${{ runner.temp }}/final
+      - name: Independently validate and publish the scoped data bundle
+        env:
+          DATASET: ${{ inputs.dataset }}
+          DATA_PR_TOKEN: ${{ secrets.DATA_PR_TOKEN }}
+          STATUS_TOKEN: ${{ github.token }}
+          DATA_BASE_SHA: ${{ github.sha }}
+        run: >-
+          python scripts/publish_data.py --dataset "$DATASET" --base "$DATA_BASE_SHA"
+          --bundle "$RUNNER_TEMP/final/final.json"

@@ -3,8 +3,10 @@
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import hashlib
+from html.parser import HTMLParser
 import json
 from pathlib import Path
+import re
 from urllib.parse import urljoin, urlsplit
 
 from check_exam_sources import PdfLinks, allowed_url, decode_html, fetch, snapshot as exam_snapshot
@@ -21,10 +23,93 @@ class PublicArtifactLinks(PdfLinks):
                 self.links.add(allowed_url(url, self.hosts))
 
 
+class VisibleText(HTMLParser):
+    """Visible page text and link targets; markup, scripts and styles are ignored."""
+    SKIP = {'script', 'style', 'noscript', 'template'}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts, self.links, self.depth = [], [], 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP:
+            self.depth += 1
+        href = dict(attrs).get('href')
+        if tag == 'a' and href:
+            self.links.append(href.split('#')[0])
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP and self.depth:
+            self.depth -= 1
+
+    def handle_data(self, data):
+        if not self.depth:
+            self.parts.append(data)
+
+
+def content_fingerprint(content):
+    """Hash what a reviewer can see, so re-encoded bytes alone never wake the agent.
+
+    PDFs hash page text plus drawn lines and rectangles (strike-throughs and
+    revision boxes are geometry, not text). Anything unreadable falls back to
+    the byte hash, which errs towards running a review."""
+    try:
+        if content.startswith(b'%PDF-'):
+            import io
+            import pdfplumber
+            pages = []
+            with pdfplumber.open(io.BytesIO(content)) as pdf:
+                for page in pdf.pages:
+                    shapes = sorted(tuple(round(float(item[k]) * 2) / 2 for k in ('x0', 'top', 'x1', 'bottom'))
+                                    for item in (*page.lines, *page.rects))
+                    pages.append([re.sub(r'\s+', ' ', page.extract_text() or '').strip(), shapes])
+            value = json.dumps(pages, ensure_ascii=False)
+        elif content.lstrip().lower().startswith((b'<!doctype', b'<html')):
+            parser = VisibleText(); parser.feed(decode_html(content))
+            text = re.sub(r'\s+', ' ', ' '.join(parser.parts)).strip()
+            value = json.dumps([text, parser.links], ensure_ascii=False)
+        else:
+            return hashlib.sha256(content).hexdigest()
+    except ImportError:
+        raise
+    except Exception:  # noqa: BLE001 - an unreadable document means "treat bytes as content"
+        return hashlib.sha256(content).hexdigest()
+    return hashlib.sha256(value.encode()).hexdigest()
+
+
+def with_content(state, documents):
+    state['content'] = {url: content_fingerprint(documents[url]) for url in sorted(documents)}
+    return state
+
+
+def triage(state, previous):
+    """Decide without inference whether official sources really changed since the last review."""
+    if previous is None:
+        return True, 'no reviewed source baseline is committed yet', []
+    if state.get('manifests') != previous.get('manifests'):
+        return True, 'source manifests changed', []
+    added = sorted(state['sources'].keys() - previous['sources'].keys())
+    removed = sorted(previous['sources'].keys() - state['sources'].keys())
+    rebytes = sorted(u for u in state['sources'].keys() & previous['sources'].keys()
+                     if state['sources'][u] != previous['sources'][u])
+    details = [f'added {u}' for u in added] + [f'removed {u}' for u in removed]
+    if added or removed:
+        return True, 'the set of official sources changed', details + [f'bytes {u}' for u in rebytes]
+    if not rebytes:
+        return False, 'official source bytes are unchanged', []
+    old = previous.get('content')
+    if not old:
+        return True, 'source bytes changed and the baseline has no content fingerprints', [f'bytes {u}' for u in rebytes]
+    changed = [u for u in rebytes if state['content'].get(u) != old.get(u)]
+    if not changed:
+        return False, 'only markup or encoding changed; visible content is identical', [f'bytes {u}' for u in rebytes]
+    return True, 'visible source content changed', [f'content {u}' for u in changed]
+
+
 def snapshot(root, dataset, fetcher=None):
     if dataset == 'exams':
         state, documents, _ = exam_snapshot(root, fetcher or fetch)
-        return state, documents
+        return with_content(state, documents), documents
     hosts = DATASETS[dataset]['hosts']
     pending = {allowed_url(url, hosts) for url in source_urls(root, dataset)}
     if not pending:
@@ -43,7 +128,8 @@ def snapshot(root, dataset, fetcher=None):
                 if content.lstrip().lower().startswith((b'<!doctype', b'<html')):
                     parser = PublicArtifactLinks(url, hosts); parser.feed(decode_html(content))
                     pending.update(parser.links - hashes.keys())
-    return {'schemaVersion': 1, 'dataset': dataset, 'sources': dict(sorted(hashes.items()))}, documents
+    state = {'schemaVersion': 1, 'dataset': dataset, 'sources': dict(sorted(hashes.items()))}
+    return with_content(state, documents), documents
 
 
 def acquire(root, dataset):

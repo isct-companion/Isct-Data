@@ -22,12 +22,14 @@ Read `.data-runs/task.md` and its exact paths; do not guess hashes or PDF names.
    margin notes are not course titles. Preserve full class suffixes, official
    Japanese/English titles, periods, explicitly stated times and room lists.
    Never invent exact minutes from a period allocation or translate exam titles.
-3. Read the drift report against the published public exam rows. When it is empty,
-   keep the prepared empty candidate array. When nonempty, review each prepared
-   candidate and set `confirmed: true` only for source-confirmed facts. Preserve
-   `targetEntryId` for existing assessments and stable `assessmentId` for new
-   ones; never use a moved date as assessment identity. Unresolved identities or
-   incomplete extraction must stop publication, not guess an answer.
+3. Read the drift report and review the complete prepared candidate list
+   against the official PDF. Treat the candidate JSON as read-only. In
+   `.data-runs/review.json`, preserve each matching scope's `candidateHash` and
+   `candidateCount`. Setting that scope's `confirmed` to true approves exactly
+   that list, including an empty list when there is no exam drift. If any fact
+   or assessment identity is unresolved, report it and stop without approval.
+   The writer regenerates the candidates from the PDF and checks their hash
+   before applying the entire approved list.
 4. Final-exam rows belong in `exam/`. Ordinary teaching/make-up rows from this same
    PDF belong in `exam-week-classes/`. The fixed batch command invokes
    `exam_workflow.py` with the exact PDF so its shared
@@ -36,7 +38,9 @@ Read `.data-runs/task.md` and its exact paths; do not guess hashes or PDF names.
 5. Confirm every public scope in `.data-runs/review.json`, set accurate source
    review scopes and resolve all extraction facts. Only then approve the review.
 
-Run exactly `python3 scripts/data_workflow.py --dataset exams --apply-review`.
+Run `python3 scripts/data_workflow.py --dataset exams --check-review` until it
+passes (at most three checks), then exactly once
+`python3 scripts/data_workflow.py --dataset exams --apply-review`.
 This calls `scripts/exam_workflow.py` for all tracked exam writes and source-state
 acknowledgement. Do not supply `all`, `full` or `none` as filenames. On any failure,
 STOP and report incomplete; repeating the same command cannot repair its inputs.

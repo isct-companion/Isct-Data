@@ -17,7 +17,7 @@ from merge_exam_candidates import canonical_hash
 from publish_exam_update import apply_and_validate, prepare, publish
 from data_workflow import apply_review
 from dataset_rules import state_path
-from source_monitor import snapshot as public_snapshot
+from source_monitor import snapshot as public_snapshot, triage
 from update_subscription_index import normalize
 
 
@@ -82,6 +82,26 @@ class SourcePolling(unittest.TestCase):
         self.assertIn('https://www.titech.ac.jp/extra.pdf', guides['sources'])
         calendar, _ = public_snapshot(ROOT, 'academic-calendar', download)
         self.assertIn('https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv', calendar['sources'])
+
+    def test_triage_wakes_the_agent_only_for_visible_source_changes(self):
+        def site(page):
+            return lambda url: b'%PDF-fixture' if url.endswith('.pdf') else page
+        base = b'<html><script>var t=1</script><p>2027 \xe5\x85\xa5\xe5\xad\xa6\xe5\xbc\x8f</p><a href="/x.pdf">x</a></html>'
+        previous, _ = public_snapshot(ROOT, 'important-dates', site(base))
+        self.assertEqual(triage(previous, previous)[0], False)
+        self.assertTrue(triage(previous, None)[0])
+        # A rotated script nonce or re-indented markup is not new data.
+        noise = base.replace(b'var t=1', b'var t=2').replace(b'<p>', b'\n  <p>')
+        state, _ = public_snapshot(ROOT, 'important-dates', site(noise))
+        self.assertNotEqual(state['sources'], previous['sources'])
+        self.assertEqual(triage(state, previous)[:2], (False, 'only markup or encoding changed; visible content is identical'))
+        # Visible text, a new link and a legacy baseline without fingerprints all start a review.
+        for page in (base.replace(b'2027', b'2028'), base.replace(b'/x.pdf', b'/y.pdf')):
+            state, _ = public_snapshot(ROOT, 'important-dates', site(page))
+            self.assertTrue(triage(state, previous)[0])
+        legacy = {k: v for k, v in previous.items() if k != 'content'}
+        state, _ = public_snapshot(ROOT, 'important-dates', site(noise))
+        self.assertTrue(triage(state, legacy)[0])
 
 
 
@@ -299,3 +319,93 @@ class PublicationBoundary(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+
+class AuthorComparison(unittest.TestCase):
+    """Two independent authors; a script compares them, a third agent only sees differences."""
+    setUp = PublicationBoundary.setUp
+    make_fixture = PublicationBoundary.make_fixture
+    commit_base = PublicationBoundary.commit_base
+    NAME = 'important-dates/2026.json'
+
+    def bundle(self, side, change):
+        data = json.loads((self.root / self.NAME).read_text())
+        change(data)
+        state = json.loads((self.root / state_path('important-dates')).read_text())
+        observed = dict(state, sources={url: 'f' * 64 for url in state['sources']})
+        bundle = {'schemaVersion': 2, 'dataset': 'important-dates', 'baseSha': self.base,
+                  'files': {self.NAME: json.dumps(data, ensure_ascii=False)}, 'observedState': observed,
+                  'coverage': {}, 'review': {'dataset': 'important-dates', 'status': 'approved', 'summary': side,
+                                             'sources': [], 'updates': {}, 'baseHashes': {}}}
+        path = Path(self.tmp.name) / f'{side}.json'
+        path.write_text(json.dumps(bundle, ensure_ascii=False))
+        return path
+
+    def label(self, text, index=0):
+        def change(data):
+            data['entries'][index]['label'] = dict(data['entries'][index]['label'], ja=text)
+        return change
+
+    def prepare(self):
+        self.base = self.commit_base()
+        self.tmp = tempfile.TemporaryDirectory(); self.addCleanup(self.tmp.cleanup)
+        self.out = Path(self.tmp.name) / 'comparison'
+
+    def test_identical_reviews_skip_the_arbiter(self):
+        from compare_publications import compare
+        self.prepare()
+        a, b = self.bundle('a', self.label('新しい行事')), self.bundle('b', self.label('新しい行事'))
+        result = compare(self.root, 'important-dates', {'a': a, 'b': b}, self.out)
+        self.assertTrue(result['same'])
+        self.assertEqual((self.out / 'final.json').read_bytes(), a.read_bytes())
+        # Stale or mismatched source observations never get compared at all.
+        stale = json.loads(b.read_text()); stale['observedState']['sources'] = {}
+        b.write_text(json.dumps(stale))
+        with self.assertRaises(ValueError):
+            compare(self.root, 'important-dates', {'a': a, 'b': b}, self.out)
+
+    def test_arbiter_sees_only_differences_and_its_picks_become_the_data(self):
+        from compare_publications import check_verdict, compare, resolve
+        self.prepare()
+        entries = json.loads((self.root / self.NAME).read_text())['entries']
+        both = lambda text: lambda data: (self.label('共通の変更', 1)(data), self.label(text)(data))
+        a, b = self.bundle('a', both('Aの表記')), self.bundle('b', both('Bの表記'))
+        result = compare(self.root, 'important-dates', {'a': a, 'b': b}, self.out)
+        self.assertEqual((result['same'], result['differences']), (False, 1))
+        item = json.loads((self.out / 'comparison.json').read_text())['items'][0]
+        self.assertEqual(item['id'], f"{self.NAME}::entries[id={entries[0]['id']}]")
+        self.assertEqual(set(item['options']), {'a', 'b', 'main'})
+        verdict_path = self.out / 'verdict.json'
+        template = verdict_path.read_text()
+        def decide(**fields):
+            value = json.loads(template)
+            value['summary'] = 'checked'
+            value['choices'][0].update(fields)
+            verdict_path.write_text(json.dumps(value, ensure_ascii=False))
+        for bad in ({'choice': 'pending', 'evidence': 'p.1'}, {'choice': 'b', 'evidence': ''}, {'choice': 'c', 'evidence': 'p.1'}):
+            decide(**bad)
+            with self.subTest(bad=bad), self.assertRaises(ValueError):
+                check_verdict(self.out, verdict_path)
+        # "none" is a valid verdict that stops publication.
+        decide(choice='none', evidence='source says 別の表記')
+        self.assertEqual(len(check_verdict(self.out, verdict_path)[2]), 1)
+        with self.assertRaises(ValueError):
+            resolve(self.root, 'important-dates', self.out, verdict_path, self.base)
+        decide(choice='b', evidence='page 1 line 4')
+        result = resolve(self.root, 'important-dates', self.out, verdict_path, self.base)
+        self.assertIn(self.NAME, result['files'])
+        final = json.loads((self.out / 'final.json').read_text())
+        published = json.loads(final['files'][self.NAME])['entries']
+        self.assertEqual([e['label']['ja'] for e in published[:2]], ['Bの表記', '共通の変更'])
+        self.assertEqual(published[2:], entries[2:])
+        self.assertIn('index.json', final['files'])
+
+    def test_a_lone_author_is_checked_by_the_arbiter_against_main(self):
+        from compare_publications import compare
+        self.prepare()
+        a = self.bundle('a', self.label('単独の変更'))
+        result = compare(self.root, 'important-dates', {'a': a, 'b': Path(self.tmp.name) / 'missing.json'}, self.out)
+        self.assertEqual((result['same'], result['authors'], result['differences']), (False, ['a'], 1))
+        item = json.loads((self.out / 'comparison.json').read_text())['items'][0]
+        self.assertEqual(set(item['options']), {'a', 'main'})
