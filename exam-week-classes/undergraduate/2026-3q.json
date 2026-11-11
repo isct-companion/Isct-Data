@@ -1,0 +1,3017 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "timezone": "Asia/Tokyo",
+  "source": [
+    {
+      "id": "official-undergraduate-2026-3q",
+      "title": "2026年度 第3Q 学士課程期末試験時間割",
+      "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
+      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
+      "retrievedAt": "2026-11-11T07:41:51Z",
+      "sha256": "a0aa55f35716480b0b916f29dd082b5cf950b246589bb32d97a2a1ecb40420e9"
+    }
+  ],
+  "entries": [
+    {
+      "id": "2026-3Q-undergraduate-LAE.E133-01-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E133-01",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-155"
+      },
+      "label": {
+        "ja": "英語スピーキング演習第三 1",
+        "en": "Oral Expression in English 3 1"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E153-02-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E153-02",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "S2-202"
+      },
+      "label": {
+        "ja": "TOEFL対策セミナー（リスニング＆スピーキン グ）第三 2",
+        "en": "TOEFL Seminar (Listening and Speaking) 3 2"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E311-08-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E311-08",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-143A"
+      },
+      "label": {
+        "ja": "英語第九 8 再履修",
+        "en": "English 9 8 再履修"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.K353-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.K353",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-B43"
+      },
+      "label": {
+        "ja": "韓国語３",
+        "en": "Korean 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-08-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-08",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S32",
+        "en": "Spanish: Basic Course 3 S32"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.I121-05-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.I121-05",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "南4号館3階 第1演習室"
+      },
+      "label": {
+        "ja": "コンピュータサイエンス第一 3a(CS1)",
+        "en": "Computer Science I 3a(CS1)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M108-05-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.M108-05",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-110"
+      },
+      "label": {
+        "ja": "線形代数学演習第二 X",
+        "en": "Linear Algebra Recitation II X"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E133-02-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E133-02",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "英語スピーキング演習第三 2",
+        "en": "Oral Expression in English 3 2"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E157-02-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E157-02",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "TOEFL対策セミナー（リーディング＆ライティ ング）第三 2",
+        "en": "TOEFL Seminar (Reading and Writing) 3 2"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-16-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-16",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S42",
+        "en": "Spanish: Basic Course 3 S42"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAW.X205-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAW.X205",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W9-218"
+      },
+      "label": {
+        "ja": "技術経営III",
+        "en": "Introduction to Management of Technology III"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.M231-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MEC.M231",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "I1-256"
+      },
+      "label": {
+        "ja": "宇宙工学基礎",
+        "en": "Introduction to Space Engineering"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.L201-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "PHY.L201",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "物理実験学",
+        "en": "Experimental Physics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.R243-class-2026-11-25-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.R243",
+      "date": "2026-11-25",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W3-305"
+      },
+      "label": {
+        "ja": "ロシア語会話（中級）３",
+        "en": "Russian Conversation: Intermediate Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S233-class-2026-11-25-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S233",
+      "date": "2026-11-25",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S2-201"
+      },
+      "label": {
+        "ja": "スペイン語会話（入門・基礎）３",
+        "en": "Spanish Conversation: Basic Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.R233-class-2026-11-25-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.R233",
+      "date": "2026-11-25",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W3-305"
+      },
+      "label": {
+        "ja": "ロシア語会話（初級）３",
+        "en": "Russian Conversation: Basic Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.P351-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.P351",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "S4-201"
+      },
+      "label": {
+        "ja": "電気機器設計および製図",
+        "en": "Design and Drawing of Electric Machine"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-22-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-22",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-156"
+      },
+      "label": {
+        "ja": "英語第三 22-LS-ADV",
+        "en": "English 3 22-LS-ADV"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-31-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-31",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W5-106"
+      },
+      "label": {
+        "ja": "英語第三 31-LS",
+        "en": "English 3 31-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-36-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-36",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "I3-203"
+      },
+      "label": {
+        "ja": "英語第三 36-RW",
+        "en": "English 3 36-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.H215-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.H215",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-124"
+      },
+      "label": {
+        "ja": "表象文化論Ｂ",
+        "en": "Studies of Culture and Representation B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.S213-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.S213",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "メディア論Ｂ",
+        "en": "Media Studies B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.T207-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.T207",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W8E-308"
+      },
+      "label": {
+        "ja": "科学哲学Ｂ",
+        "en": "Philosophy of Science B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.I121-10-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.I121-10",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "南4号館3階第2演習室"
+      },
+      "label": {
+        "ja": "コンピュータサイエンス第一 5b(CS1)",
+        "en": "Computer Science I 5b(CS1)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M106-05-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.M106-05",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-102"
+      },
+      "label": {
+        "ja": "線形代数学第二 X",
+        "en": "Linear Algebra II X"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.B204-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CHM.B204",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "基礎分析化学演習",
+        "en": "Exercise in Basic Analytical Chemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CSC.T273-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CSC.T273",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B07,情報工学系計算機室"
+      },
+      "label": {
+        "ja": "オブジェクト指向プログラミング",
+        "en": "Object-Oriented Programming"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.I121-12-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.I121-12",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "南4号館3階第2演習室"
+      },
+      "label": {
+        "ja": "コンピュータサイエンス第一 6b(CS1)",
+        "en": "Computer Science I 6b(CS1)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A205-01-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.A205-01",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B43"
+      },
+      "label": {
+        "ja": "流体工学基礎 E",
+        "en": "Fluid Engineering E"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.C202-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.C202",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "電気回路第二",
+        "en": "Electric Circuits II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.H305-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.H305",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W9-327"
+      },
+      "label": {
+        "ja": "歴史学Ｃ",
+        "en": "History C"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.T313-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.T313",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-135"
+      },
+      "label": {
+        "ja": "教養特論：人間関係論",
+        "en": "Special Lecture: Human Relations"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.G307-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CAP.G307",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S4-202"
+      },
+      "label": {
+        "ja": "プロセス制御工学",
+        "en": "Process Control Engineering"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.B334-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CHM.B334",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "地球化学",
+        "en": "Geochemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EPS.A333-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EPS.A333",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "理学院 地球惑星科学系石川 台2号館318室"
+      },
+      "label": {
+        "ja": "惑星天文学",
+        "en": "Planetary Astronomy"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EPS.B210-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EPS.B210",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "I3-107"
+      },
+      "label": {
+        "ja": "物理数学B（地惑）",
+        "en": "Mathematics for Physics B (EPS course)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.C307-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MAT.C307",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S7-202"
+      },
+      "label": {
+        "ja": "固体物性II（誘電体・磁性体）",
+        "en": "Solid State Properties II (Dielectric and Magnetic Materials"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A206-02-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.A206-02",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S2-202"
+      },
+      "label": {
+        "ja": "生物工学基礎 J",
+        "en": "Biological engineering J"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.C312-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.C312",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W5-105"
+      },
+      "label": {
+        "ja": "社会環境政策概論",
+        "en": "Introduction to Environmental Policy and Social System"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LST.A211-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LST.A211",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "物理化学第三（分子軌道，相互作用，分光学）",
+        "en": "Physical Chemistry III"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.M317-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MAT.M317",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "S8-101"
+      },
+      "label": {
+        "ja": "非鉄金属材料学 B",
+        "en": "Science and Engineering of Non-ferrous Materials B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A301-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.A301",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "S3-207"
+      },
+      "label": {
+        "ja": "剛体の運動力学",
+        "en": "Rigid body dynamics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.Q321-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MEC.Q321",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "I3-301、302、303"
+      },
+      "label": {
+        "ja": "計算力学・データサイエンス PJ",
+        "en": "Computational Mechanics and Data Science Project"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.D333-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CHM.D333",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B45"
+      },
+      "label": {
+        "ja": "有機反応論",
+        "en": "Organic Reactions"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-05-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-05",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W3-201"
+      },
+      "label": {
+        "ja": "量子化学基礎 E",
+        "en": "Basic Quantum Chemistry E"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.B331-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MTH.B331",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "幾何学続論",
+        "en": "Geometry III"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A340-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.A340",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W9-201"
+      },
+      "label": {
+        "ja": "原子核工学基礎第４",
+        "en": "Basic Nuclear Engineering 4"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.E211-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.E211",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "波動工学",
+        "en": "Electromagnetic Fields and Waves"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.I312-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ICT.I312",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S4-203"
+      },
+      "label": {
+        "ja": "線形電子回路",
+        "en": "Linear Electronic Circuits"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.C202-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MAT.C202",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S7-201"
+      },
+      "label": {
+        "ja": "結晶とフォノン",
+        "en": "Crystal and Phonon"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ARC.S203-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ARC.S203",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        7
+      ],
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "建築構造力学第一",
+        "en": "Structural Mechanics I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CVE.N331-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CVE.N331",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "コンクリート・地盤工学実 験室"
+      },
+      "label": {
+        "ja": "コンクリート・地盤工学実験第二",
+        "en": "Concrete and Geotechnical Engineering Laboratory II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EPS.L330-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EPS.L330",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "石２号館3階318室"
+      },
+      "label": {
+        "ja": "数値地球惑星科学",
+        "en": "Computational Planetary Science"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MCS.T301-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MCS.T301",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "W8E-308"
+      },
+      "label": {
+        "ja": "ベクトル解析と関数解析",
+        "en": "Vector and Functional analysis"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.H203-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MEC.H203",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        10
+      ],
+      "room": {
+        "ja": "I1-256,I1-204,I3-301～3,310"
+      },
+      "label": {
+        "ja": "機械製図",
+        "en": "Machine drawing"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CSC.T252-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CSC.T252",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "計算機室（西8号館E207 ）"
+      },
+      "label": {
+        "ja": "論理回路理論",
+        "en": "Switching Circuit Theory"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.M251-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.M251",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "電気電子インフォマティクスⅠ：機械学習",
+        "en": "Electrical and Electronic Informatics I: machine learning"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.C309-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ICT.C309",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S4-202"
+      },
+      "label": {
+        "ja": "マルチメディア伝送工学",
+        "en": "Multimedia Distribution Technology"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LST.A213-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LST.A213",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "分子生物学第二",
+        "en": "Molecular Biology II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-04-class-2026-11-27-9",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-04",
+      "date": "2026-11-27",
+      "periods": [
+        9,
+        10
+      ],
+      "room": {
+        "ja": "W3-201"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 L",
+        "en": "Basic Chemical Thermodynamics L"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-04-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-04",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "英語第三 4-LS",
+        "en": "English 3 4-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-05-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-05",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W9-322"
+      },
+      "label": {
+        "ja": "英語第三 5-LS",
+        "en": "English 3 5-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-06-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-06",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "英語第三 6-LS",
+        "en": "English 3 6-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-07-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-07",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-155"
+      },
+      "label": {
+        "ja": "英語第三 7-LS",
+        "en": "English 3 7-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-14-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-14",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-143B"
+      },
+      "label": {
+        "ja": "英語第三 14-RW",
+        "en": "English 3 14-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-20-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-20",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "英語第三 20-RW",
+        "en": "English 3 20-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E233-01-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E233-01",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-143A"
+      },
+      "label": {
+        "ja": "英語スピーキング演習第七 1",
+        "en": "Oral Expression in English 7 1"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-05-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-05",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "英語第七 5-LS",
+        "en": "English 7 5-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-06-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-06",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W9-322"
+      },
+      "label": {
+        "ja": "英語第七 6-LS",
+        "en": "English 7 6-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-07-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-07",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "英語第七 7-LS",
+        "en": "English 7 7-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-08-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-08",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-155"
+      },
+      "label": {
+        "ja": "英語第七 8-LS",
+        "en": "English 7 8-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-09-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-09",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-143B"
+      },
+      "label": {
+        "ja": "英語第七 9-RW",
+        "en": "English 7 9-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-10-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-10",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "英語第七 10-RW",
+        "en": "English 7 10-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E353-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E353",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-143A"
+      },
+      "label": {
+        "ja": "TOEFL対策セミナー（リスニング＆スピーキン グ）第十一",
+        "en": "TOEFL Seminar (Listening and Speaking) 11"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-01-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-01",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "教養卒論 1",
+        "en": "Liberal Arts Final Report 1"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-02-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-02",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "教養卒論 2",
+        "en": "Liberal Arts Final Report 2"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-03-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-03",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "教養卒論 3",
+        "en": "Liberal Arts Final Report 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-04-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-04",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W2-401"
+      },
+      "label": {
+        "ja": "教養卒論 4",
+        "en": "Liberal Arts Final Report 4"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-05-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-05",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W3-301"
+      },
+      "label": {
+        "ja": "教養卒論 5",
+        "en": "Liberal Arts Final Report 5"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-06-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-06",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "教養卒論 6",
+        "en": "Liberal Arts Final Report 6"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-07-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-07",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "教養卒論 7",
+        "en": "Liberal Arts Final Report 7"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-08-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-08",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "教養卒論 8",
+        "en": "Liberal Arts Final Report 8"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-09-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-09",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "WL1-201"
+      },
+      "label": {
+        "ja": "教養卒論 9",
+        "en": "Liberal Arts Final Report 9"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.C301-10-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.C301-10",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-124"
+      },
+      "label": {
+        "ja": "教養卒論 10",
+        "en": "Liberal Arts Final Report 10"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAW.W121-28-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAW.W121-28",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "屋内運動場・グラウンド・ テニスコート"
+      },
+      "label": {
+        "ja": "ウェルネス実習 C2",
+        "en": "Wellness Exercise C2"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.M208-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MAT.M208",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "SL-101"
+      },
+      "label": {
+        "ja": "金属材料フロンティア",
+        "en": "Metallic Materials Frontier"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A205-01-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.A205-01",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B43"
+      },
+      "label": {
+        "ja": "流体工学基礎 E",
+        "en": "Fluid Engineering E"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-20-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-20",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W3-201"
+      },
+      "label": {
+        "ja": "英語第七 20-LS",
+        "en": "English 7 20-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-21-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-21",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W3-501"
+      },
+      "label": {
+        "ja": "英語第七 21-RW",
+        "en": "English 7 21-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-22-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-22",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W3-207"
+      },
+      "label": {
+        "ja": "英語第七 22-RW",
+        "en": "English 7 22-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.S108-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.S108",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "教養特論：現代社会の課題とコミュニケーショ ン",
+        "en": "Special Lecture : Social Issues and Communication"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.S114-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.S114",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W8E-308"
+      },
+      "label": {
+        "ja": "教養特論：障害学",
+        "en": "Special Lecture: Disability Studies"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.S117-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.S117",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "教養特論：ダイバーシティ・エクイティ・イン クルージョン（ＤＥＩ）",
+        "en": "Special Lecture: Diversity, Equity, and Inclusion (DEI)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CVE.N230-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CVE.N230",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "構造力学・水理学実験室"
+      },
+      "label": {
+        "ja": "構造力学・水理学実験第一",
+        "en": "Structural Mechanics and Hydraulics Laboratory I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.B334-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CHM.B334",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "地球化学",
+        "en": "Geochemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.D381-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.D381",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "電力デバイス",
+        "en": "Power devices"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EPS.A333-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EPS.A333",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "理学院 地球惑星科学系石川 台2号館318室"
+      },
+      "label": {
+        "ja": "惑星天文学",
+        "en": "Planetary Astronomy"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.D112-01-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.D112-01",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W8E-104,西8号館 図学製図 室"
+      },
+      "label": {
+        "ja": "図学・図形デザイン第二 A",
+        "en": "Descriptive Geometry for Space Design2 A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.Q321-02-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "PHY.Q321-02",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "量子力学III（演習） B",
+        "en": "Quantum Mechanics III（Exercise) B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A206-01-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.A206-01",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S3-215"
+      },
+      "label": {
+        "ja": "生物工学基礎 E",
+        "en": "Biological engineering E"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A206-02-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TSE.A206-02",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S2-202"
+      },
+      "label": {
+        "ja": "生物工学基礎 J",
+        "en": "Biological engineering J"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-01-class-2026-12-01-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-01",
+      "date": "2026-12-01",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "量子化学基礎 A",
+        "en": "Basic Quantum Chemistry A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-03-class-2026-12-01-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-03",
+      "date": "2026-12-01",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "量子化学基礎 C",
+        "en": "Basic Quantum Chemistry C"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.I211-class-2026-12-01-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MEC.I211",
+      "date": "2026-12-01",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "ロボット機構学",
+        "en": "Robot Kinematics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M106-03-class-2026-12-01-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAS.M106-03",
+      "date": "2026-12-01",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "線形代数学第二 O(21～30)",
+        "en": "Linear Algebra II O(21～30)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.B331-class-2026-12-01-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MTH.B331",
+      "date": "2026-12-01",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "幾何学続論",
+        "en": "Geometry III"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAW.W131-04-class-2026-12-01-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAW.W131-04",
+      "date": "2026-12-01",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "屋内運動場・グラウンド・ テニスコート"
+      },
+      "label": {
+        "ja": "生涯ウェルネス実習 C1",
+        "en": "Advanced Wellness Exercise C1"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.F304-class-2026-12-01-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CAP.F304",
+      "date": "2026-12-01",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "大岡山西4号館実験室,南実 験棟4 1階,南1号館計算機室 （S1-320）,M-356"
+      },
+      "label": {
+        "ja": "応用化学実験第四",
+        "en": "Chemical Science and Engineering Laboratory Ⅳ"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-IEE.C305-class-2026-12-01-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "IEE.C305",
+      "date": "2026-12-01",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "M-B104"
+      },
+      "label": {
+        "ja": "データ収集・分析",
+        "en": "Data Collection and Analysis"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-SCE.P213-class-2026-12-01-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "SCE.P213",
+      "date": "2026-12-01",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "南５号館206,210"
+      },
+      "label": {
+        "ja": "サイバーフィジカルソリューション",
+        "en": "Cyber Physical Solution"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E153-02-class-2026-12-02-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E153-02",
+      "date": "2026-12-02",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "S2-202"
+      },
+      "label": {
+        "ja": "TOEFL対策セミナー（リスニング＆スピーキン グ）第三 2",
+        "en": "TOEFL Seminar (Listening and Speaking) 3 2"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-10-class-2026-12-02-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-10",
+      "date": "2026-12-02",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W3-301"
+      },
+      "label": {
+        "ja": "中国語初級３ C10",
+        "en": "Chinese: Basic Course 3 C10"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-01-class-2026-12-02-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-01",
+      "date": "2026-12-02",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-112"
+      },
+      "label": {
+        "ja": "フランス語初級３ F01",
+        "en": "French: Basic Course 3 F01"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-07-class-2026-12-02-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-07",
+      "date": "2026-12-02",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W2-402"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S31",
+        "en": "Spanish: Basic Course 3 S31"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E133-02-class-2026-12-02-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E133-02",
+      "date": "2026-12-02",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "英語スピーキング演習第三 2",
+        "en": "Oral Expression in English 3 2"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-15-class-2026-12-02-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-15",
+      "date": "2026-12-02",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W2-402"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S41",
+        "en": "Spanish: Basic Course 3 S41"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.I211-class-2026-12-02-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MEC.I211",
+      "date": "2026-12-02",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S2-203"
+      },
+      "label": {
+        "ja": "ロボット機構学",
+        "en": "Robot Kinematics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S343-class-2026-12-02-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S343",
+      "date": "2026-12-02",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-156"
+      },
+      "label": {
+        "ja": "スペイン語上級３",
+        "en": "Spanish: Advanced Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.S209-class-2026-12-02-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "PHY.S209",
+      "date": "2026-12-02",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "熱力学（物理）(講義）",
+        "en": "Thermodynamics (Physics) (Lecture)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S333-class-2026-12-02-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S333",
+      "date": "2026-12-02",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "M-156"
+      },
+      "label": {
+        "ja": "スペイン語中級３",
+        "en": "Spanish: Intermediate Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    }
+  ]
+}

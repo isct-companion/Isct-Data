@@ -1,0 +1,1567 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "timezone": "Asia/Tokyo",
+  "source": [
+    {
+      "id": "official-graduate-2026-3q",
+      "title": "2026年度 第3Q 大学院課程期末試験時間割",
+      "url": "https://www.titech.ac.jp/student/pdf/life-graduate-exam-timetable.pdf",
+      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/graduate-exam",
+      "retrievedAt": "2026-11-11T07:41:51Z",
+      "sha256": "cfcd4027b2d14b620014e3f39a9c84897db3c0673590313272df687596f3387c"
+    }
+  ],
+  "entries": [
+    {
+      "id": "2026-3Q-graduate-LAJ.J401-02-class-2026-11-25-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J401-02",
+      "date": "2026-11-25",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "W1-111"
+      },
+      "label": {
+        "ja": "日本語研修コースA１(集中コース) 3QA",
+        "en": "Intensive Japanese Course A1 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAH.T406-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.T406",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "オンラインOnline"
+      },
+      "label": {
+        "ja": "横断科目６：長寿社会と生命",
+        "en": "Transdisciplinary studies 6:Longevity Society and Life"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-IEE.E402-class-2026-11-25-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "IEE.E402",
+      "date": "2026-11-25",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W9-311,W9-425"
+      },
+      "label": {
+        "ja": "経営工学・経済学輪講F",
+        "en": "Reading in Industrial Engineering and Economics F"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAH.S513-class-2026-11-25-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAH.S513",
+      "date": "2026-11-25",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "文系エッセンス６１：死の哲学",
+        "en": "Essence of Humanities and Social Sciences61:Philosophy of Death"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-DSA.P432-class-2026-11-25-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "DSA.P432",
+      "date": "2026-11-25",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "Zoom"
+      },
+      "label": {
+        "ja": "応用実践データサイエンス・AI第三B",
+        "en": "Applied Practical Data Science and Artificial Intelligence 3B"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-DSA.P632-class-2026-11-25-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "DSA.P632",
+      "date": "2026-11-25",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "Zoom"
+      },
+      "label": {
+        "ja": "応用実践データサイエンス・AI発展第三B",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 3B"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAW.X418-class-2026-11-25-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAW.X418",
+      "date": "2026-11-25",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-325"
+      },
+      "label": {
+        "ja": "日本企業・産業研究 I",
+        "en": "Study on Japanese Companies and Industries I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-SCE.A405-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "SCE.A405",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "逆問題とデータ同化",
+        "en": "Inverse Problems and Data Assimilation"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-UDE.S422-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "UDE.S422",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W5-104"
+      },
+      "label": {
+        "ja": "構造デザイン実践論",
+        "en": "Structural Design Practice"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.J401-02-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J401-02",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "W1-111"
+      },
+      "label": {
+        "ja": "日本語研修コースA１(集中コース) 3QA",
+        "en": "Intensive Japanese Course A1 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CAP.P414-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CAP.P414",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-101"
+      },
+      "label": {
+        "ja": "高分子集合体特論",
+        "en": "Advanced Polymer Assembly"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.T433-02-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.T433-02",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W1-102"
+      },
+      "label": {
+        "ja": "日本語会話中級3 3QA",
+        "en": "Japanese conversation: Intermediate 3 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.C401-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.C401",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-110"
+      },
+      "label": {
+        "ja": "核燃料サイクル工学",
+        "en": "Nuclear Fuel Cycle Engineering"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-UDE.D403-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "UDE.D403",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W9-323"
+      },
+      "label": {
+        "ja": "都市デザイン・まちづくり原論",
+        "en": "Theories of Urban and Community Design"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ICT.S414-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ICT.S414",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S4-202"
+      },
+      "label": {
+        "ja": "信号処理特論（情報通信）",
+        "en": "Advanced Signal Processing (ICT)"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.J423-04-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J423-04",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W1-102"
+      },
+      "label": {
+        "ja": "中級日本語3 3QA",
+        "en": "Intermediate Japanese 3 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ESD.D506-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ESD.D506",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "M-B45"
+      },
+      "label": {
+        "ja": "システムズエンジニアリング実践",
+        "en": "Application of Systems Engineering"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.D405-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.D405",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "北2号館571およびZC研実 験室 North 2-571,ZC Lab."
+      },
+      "label": {
+        "ja": "核不拡散・核燃料デブリバックエンド化学実験 Ａ",
+        "en": "Experiments for Chemistry in Nuclear Non- proliferation, Fuel Debris and Back-end Fuel Cycle A"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ICT.C417-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ICT.C417",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "データ通信システム",
+        "en": "Data Communication System"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-IEE.C435-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "IEE.C435",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-201"
+      },
+      "label": {
+        "ja": "生物統計学",
+        "en": "Biostatistics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.T411-02-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.T411-02",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W1-102"
+      },
+      "label": {
+        "ja": "日本語会話初中級1 3QA",
+        "en": "Japanese conversation: Pre-intermediate 1 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-MCS.T410-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MCS.T410",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W8E-306"
+      },
+      "label": {
+        "ja": "応用確率論",
+        "en": "Applied Probability"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-TAL.L442-class-2026-11-26-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TAL.L442",
+      "date": "2026-11-26",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "S6-305,J3-309B"
+      },
+      "label": {
+        "ja": "リベラルアーツセミナー",
+        "en": "Graduate Seminar in Liberal Arts"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ART.T459-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ART.T459",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W8E-307"
+      },
+      "label": {
+        "ja": "自然言語処理",
+        "en": "Natural Language Processing"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-EEE.P461-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.P461",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-B45"
+      },
+      "label": {
+        "ja": "パルスパワー工学",
+        "en": "Pulsed Power Technology"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.B401-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.B401",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "北2号館571 North 2-571"
+      },
+      "label": {
+        "ja": "放射線生物学･医学",
+        "en": "Radiation Biology and Medicine"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.J401-02-class-2026-11-27-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J401-02",
+      "date": "2026-11-27",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "W1-111"
+      },
+      "label": {
+        "ja": "日本語研修コースA１(集中コース) 3QA",
+        "en": "Intensive Japanese Course A1 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CVE.C431-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CVE.C431",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W8E-306"
+      },
+      "label": {
+        "ja": "地盤工学における物理模型",
+        "en": "Physical Modeling in Geotechnics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ESI.E610-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ESI.E610",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "アカデミック ライティングA",
+        "en": "Academic Writing A"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-PHY.C455-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "PHY.C455",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-107"
+      },
+      "label": {
+        "ja": "ソフトマターの物理",
+        "en": "Physics of Soft Matter"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-MEC.M532-class-2026-11-27-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MEC.M532",
+      "date": "2026-11-27",
+      "periods": [
+        3,
+        6
+      ],
+      "room": {
+        "ja": "M-135"
+      },
+      "label": {
+        "ja": "宇宙システム利用",
+        "en": "Space Systems and Missions"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CVE.G403-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CVE.G403",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W5-105"
+      },
+      "label": {
+        "ja": "環境工学のための水質化学",
+        "en": "Water Chemistry for Environmental Engineering"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ESI.J404-class-2026-11-27-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ESI.J404",
+      "date": "2026-11-27",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "S8-501"
+      },
+      "label": {
+        "ja": "高温物理化学－金属の高温酸化",
+        "en": "Physical Chemistry for High Temperature Processes -Oxidation of Metals-"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-EEE.D422-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.D422",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "B2-226"
+      },
+      "label": {
+        "ja": "有機エレクトロニクス基礎論",
+        "en": "Fundamentals of Organic Electronics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-MCS.M429-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MCS.M429",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "M-B43"
+      },
+      "label": {
+        "ja": "分散システム",
+        "en": "Distributed Systems"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.F452-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.F452",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "北2号館671 North 2-671"
+      },
+      "label": {
+        "ja": "原子力基礎工学第二",
+        "en": "Nuclear Engineering Science II"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-UDE.S435-class-2026-11-27-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "UDE.S435",
+      "date": "2026-11-27",
+      "periods": [
+        7,
+        9
+      ],
+      "room": {
+        "ja": "Zoom"
+      },
+      "label": {
+        "ja": "地震津波災害軽減",
+        "en": "Earthquake and Tsunami Disaster Reduction"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ESD.H406-class-2026-11-27-9",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ESD.H406",
+      "date": "2026-11-27",
+      "periods": [
+        9,
+        10
+      ],
+      "room": {
+        "ja": "W9-323"
+      },
+      "label": {
+        "ja": "マーケティング・サイエンス",
+        "en": "Marketing Science"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-TIM.A405-class-2026-11-28-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TIM.A405",
+      "date": "2026-11-28",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "CIC"
+      },
+      "label": {
+        "ja": "数理情報分析基礎 I",
+        "en": "Methodology of Mathematical and Computational Analysis I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-TIM.C512-class-2026-11-28-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TIM.C512",
+      "date": "2026-11-28",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "CIC310"
+      },
+      "label": {
+        "ja": "エネルギー技術と経済･社会システム I",
+        "en": "Energy Technology and Social System I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ENI.I402-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ENI.I402",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W5-104"
+      },
+      "label": {
+        "ja": "エネルギー計算化学演習",
+        "en": "Computational chemistry for energy technologies"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ESI.H415-class-2026-11-30-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ESI.H415",
+      "date": "2026-11-30",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "G1-103"
+      },
+      "label": {
+        "ja": "有機電気化学特論",
+        "en": "Advanced Organic Electrochemistry"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-MTH.B403-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "MTH.B403",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-102"
+      },
+      "label": {
+        "ja": "幾何学特論C",
+        "en": "Advanced topics in Geometry C"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-SCE.C401-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "SCE.C401",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-103"
+      },
+      "label": {
+        "ja": "システムの同定と推定",
+        "en": "System Identification and Estimation"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.D401-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.D401",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "北2号館571およびZC研実験 室 North 2-571,ZC Lab."
+      },
+      "label": {
+        "ja": "核不拡散・廃止措置材料工学実験Ａ",
+        "en": "Experiments for Material Engineering in Nuclear Non-proliferation and Decommissioning A"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.N606-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.N606",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "北2号館571およびZC研実験 室 North 2-571,ZC Lab."
+      },
+      "label": {
+        "ja": "原子力材料工学実践特論",
+        "en": "Nuclear Material Special Laboratory"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-SCE.Z401-class-2026-11-30-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "SCE.Z401",
+      "date": "2026-11-30",
+      "periods": [
+        5,
+        8
+      ],
+      "room": {
+        "ja": "I1-256"
+      },
+      "label": {
+        "ja": "サイバーフィジカルイノベーション",
+        "en": "Cyber-Physical Innovation"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-IEE.C435-class-2026-11-30-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "IEE.C435",
+      "date": "2026-11-30",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-201"
+      },
+      "label": {
+        "ja": "生物統計学",
+        "en": "Biostatistics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ART.T459-class-2026-12-01-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "ART.T459",
+      "date": "2026-12-01",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W8E-307"
+      },
+      "label": {
+        "ja": "自然言語処理",
+        "en": "Natural Language Processing"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.B401-class-2026-12-01-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.B401",
+      "date": "2026-12-01",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "北2号館571 North 2-571"
+      },
+      "label": {
+        "ja": "放射線生物学･医学",
+        "en": "Radiation Biology and Medicine"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.J401-02-class-2026-12-01-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J401-02",
+      "date": "2026-12-01",
+      "periods": [
+        1,
+        4
+      ],
+      "room": {
+        "ja": "W1-111"
+      },
+      "label": {
+        "ja": "日本語研修コースA１(集中コース) 3QA",
+        "en": "Intensive Japanese Course A1 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CAP.A429-class-2026-12-01-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CAP.A429",
+      "date": "2026-12-01",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S3-215"
+      },
+      "label": {
+        "ja": "構造有機化学特論第一",
+        "en": "Advanced Physical Organic Chemistry I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CVE.A434-class-2026-12-01-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "CVE.A434",
+      "date": "2026-12-01",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-143A"
+      },
+      "label": {
+        "ja": "社会基盤構造物の信頼性・リスク・レジリエン ス評価論",
+        "en": "Reliability, Risk and Resilience Assessment of Infrastructures"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-NCL.C402-class-2026-12-01-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "NCL.C402",
+      "date": "2026-12-01",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "北2号館571 North 2-571"
+      },
+      "label": {
+        "ja": "放射性廃棄物処分工学",
+        "en": "Radioactive Waste Management and Disposal Engineering"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-EEE.D511-class-2026-12-01-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.D511",
+      "date": "2026-12-01",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-B43"
+      },
+      "label": {
+        "ja": "磁性・スピン工学特論",
+        "en": "Magnetism and Spintronics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-EEE.D422-class-2026-12-01-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "EEE.D422",
+      "date": "2026-12-01",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "B2-226"
+      },
+      "label": {
+        "ja": "有機エレクトロニクス基礎論",
+        "en": "Fundamentals of Organic Electronics"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.T443-04-class-2026-12-01-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.T443-04",
+      "date": "2026-12-01",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-327"
+      },
+      "label": {
+        "ja": "日本語演習3 3QA",
+        "en": "Japanese seminar 3: Oral expression 3QA"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-UDE.S436-class-2026-12-01-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "UDE.S436",
+      "date": "2026-12-01",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "G5-105"
+      },
+      "label": {
+        "ja": "地震動の基礎",
+        "en": "Fundamental of Earthquake Ground Motion"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-TIM.A414-class-2026-12-01-9",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TIM.A414",
+      "date": "2026-12-01",
+      "periods": [
+        9,
+        10
+      ],
+      "room": {
+        "ja": "Zoom"
+      },
+      "label": {
+        "ja": "社会科学のモデル・実験入門",
+        "en": "Introduction to Models and Experiments in Social Science"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-TIM.C510-class-2026-12-01-11",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "TIM.C510",
+      "date": "2026-12-01",
+      "periods": [
+        11,
+        12
+      ],
+      "room": {
+        "ja": "オンラインOnline"
+      },
+      "label": {
+        "ja": "科学技術政策分析 I",
+        "en": "Science, Technology and Innovation Policy Analysis I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-IEE.E402-class-2026-12-02-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "IEE.E402",
+      "date": "2026-12-02",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W9-311,W9-425"
+      },
+      "label": {
+        "ja": "経営工学・経済学輪講F",
+        "en": "Reading in Industrial Engineering and Economics F"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAL.S433-class-2026-12-02-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S433",
+      "date": "2026-12-02",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "M-156"
+      },
+      "label": {
+        "ja": "スペイン語文化演習３",
+        "en": "Spanish Seminar: Culture and Society 3"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        7
+      ]
+    }
+  ]
+}

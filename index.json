@@ -31,13 +31,13 @@
         },
         {
           "source": "exam/undergraduate/2026-3q.json",
-          "hash": "53ef75f5d5128ccdbaff3b82ca3cefbb8cee1c5583bea6f676d816ff5934b785",
-          "ts": "2026-10-24T05:18:57Z"
+          "hash": "0e2681afb45b2f79fc90b9dd0dfbb139e7910cf7189d297ae6da5c3830107724",
+          "ts": "2026-11-11T07:43:38Z"
         },
         {
           "source": "exam/graduate/2026-3q.json",
-          "hash": "70fb20716978989d5bd3888b5ccab872fb95d85b27111b2244e24010d72bd66a",
-          "ts": "2026-10-24T05:18:57Z"
+          "hash": "8e744476f5601892c5e9debce2efe38770f8bf2dc979ddfe99ddb10141bc9b19",
+          "ts": "2026-11-11T07:43:39Z"
         }
       ],
       "examWeekClasses": [
@@ -50,6 +50,16 @@
           "source": "exam-week-classes/graduate/2026-2q.json",
           "hash": "aafa917371564ece740ce95a33fc175018092f1a52d71ca3c6dc658ddf62bb8b",
           "ts": "2026-10-18T08:39:46Z"
+        },
+        {
+          "source": "exam-week-classes/undergraduate/2026-3q.json",
+          "hash": "e1edb3aa8060d3af30689a4b269d3079947c3a94afdf10d844a8ab0eb1c45e2d",
+          "ts": "2026-11-11T07:43:38Z"
+        },
+        {
+          "source": "exam-week-classes/graduate/2026-3q.json",
+          "hash": "0be14621e699ce47f84f0e190ab5f1e0051bce99f529708c3bc0fe90c3b31460",
+          "ts": "2026-11-11T07:43:39Z"
         }
       ],
       "importantDates": {

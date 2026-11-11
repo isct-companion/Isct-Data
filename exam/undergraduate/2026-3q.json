@@ -5,10 +5,4563 @@
   "source": [
     {
       "id": "official-undergraduate-2026-3q",
-      "title": "Science Tokyo undergraduate timetable source (2026 3Q pending publication)",
+      "title": "2026年度 第3Q 学士課程期末試験時間割",
       "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
-      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam"
+      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
+      "sha256": "a0aa55f35716480b0b916f29dd082b5cf950b246589bb32d97a2a1ecb40420e9",
+      "retrievedAt": "2026-11-11T07:41:51Z"
     }
   ],
-  "entries": []
+  "entries": [
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-04",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-B104"
+      },
+      "label": {
+        "ja": "中国語初級３ C04",
+        "en": "Chinese: Basic Course 3 C04"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-07-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-07",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-356"
+      },
+      "label": {
+        "ja": "中国語初級３ C07",
+        "en": "Chinese: Basic Course 3 C07"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-09",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-501"
+      },
+      "label": {
+        "ja": "中国語初級３ C09",
+        "en": "Chinese: Basic Course 3 C09"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-10-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-10",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-301"
+      },
+      "label": {
+        "ja": "中国語初級３ C10",
+        "en": "Chinese: Basic Course 3 C10"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-04",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "フランス語初級３ F04",
+        "en": "French: Basic Course 3 F04"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-05-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-05",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W8E-306"
+      },
+      "label": {
+        "ja": "フランス語初級３ F05",
+        "en": "French: Basic Course 3 F05"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.G203-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.G203-09",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "ドイツ語初級３ D33",
+        "en": "German: Basic Course 3 D33"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.I353-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.I353",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-119"
+      },
+      "label": {
+        "ja": "イタリア語３",
+        "en": "Italian 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.R203-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.R203-04",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W8E-308"
+      },
+      "label": {
+        "ja": "ロシア語初級３ R04",
+        "en": "Russian: Basic Course 3 R04"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-04",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-207"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S14",
+        "en": "Spanish: Basic Course 3 S14"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-09",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W9-323"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S33",
+        "en": "Spanish: Basic Course 3 S33"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-10-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-10",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W9-322"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S34",
+        "en": "Spanish: Basic Course 3 S34"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-11-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-11",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "S3-207"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S35",
+        "en": "Spanish: Basic Course 3 S35"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-12-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-12",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S36",
+        "en": "Spanish: Basic Course 3 S36"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-22-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-22",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W8E-307"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S15",
+        "en": "Spanish: Basic Course 3 S15"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ARC.P202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ARC.P202",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "建築計画第一",
+        "en": "Architectural Planning I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.O203-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.O203-01",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W2-401"
+      },
+      "label": {
+        "ja": "有機化学第３（ベンゼン・C-O） A",
+        "en": "Organic Chemistry III(Benzene・C-O) A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.O203-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.O203-02",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W2-402"
+      },
+      "label": {
+        "ja": "有機化学第３（ベンゼン・C-O） B",
+        "en": "Organic Chemistry III(Benzene・C-O) B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.Y305-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.Y305",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-B104"
+      },
+      "label": {
+        "ja": "生体高分子化学",
+        "en": "Biopolymer Chemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-12-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-12",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-356"
+      },
+      "label": {
+        "ja": "中国語初級３ C12",
+        "en": "Chinese: Basic Course 3 C12"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-15-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-15",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-501"
+      },
+      "label": {
+        "ja": "中国語初級３ C15",
+        "en": "Chinese: Basic Course 3 C15"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-06-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-06",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "フランス語初級３ F06",
+        "en": "French: Basic Course 3 F06"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-07-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-07",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W8E-306"
+      },
+      "label": {
+        "ja": "フランス語初級３ F07",
+        "en": "French: Basic Course 3 F07"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.G203-13-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.G203-13",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "ドイツ語初級３ D43",
+        "en": "German: Basic Course 3 D43"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.R203-06-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.R203-06",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W8E-308"
+      },
+      "label": {
+        "ja": "ロシア語初級３ R06",
+        "en": "Russian: Basic Course 3 R06"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-17-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-17",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W9-323"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S43",
+        "en": "Spanish: Basic Course 3 S43"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-18-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-18",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W9-322"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S44",
+        "en": "Spanish: Basic Course 3 S44"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-19-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-19",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "S3-207"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S45",
+        "en": "Spanish: Basic Course 3 S45"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-20-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-20",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S46",
+        "en": "Spanish: Basic Course 3 S46"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-21-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-21",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-207"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S47",
+        "en": "Spanish: Basic Course 3 S47"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.P322-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.P322",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "S8-102"
+      },
+      "label": {
+        "ja": "有機材料物性A",
+        "en": "Organic Materials Properties A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.C211-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MTH.C211",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-103"
+      },
+      "label": {
+        "ja": "応用解析序論第一",
+        "en": "Applied Analysis I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.C351-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MTH.C351",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-101"
+      },
+      "label": {
+        "ja": "函数解析",
+        "en": "Functional Analysis"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.G233-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.G233",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "ドイツ語会話（入門・基礎）３",
+        "en": "German Conversation: Basic Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.L303-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.L303",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "古典ラテン語３",
+        "en": "Classical Latin 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.A303-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.A303",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "古典ギリシア語３",
+        "en": "Classical Greek 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C363-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C363",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-301"
+      },
+      "label": {
+        "ja": "中国語会話（中級・応用）３",
+        "en": "Chinese Conversation: Advanced Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.G363-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.G363",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "ドイツ語会話（中級・応用）３",
+        "en": "German Conversation: Advanced Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.C332-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CHM.C332",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-B104"
+      },
+      "label": {
+        "ja": "量子化学",
+        "en": "Quantum Chemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.M310-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.M310",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W2-402"
+      },
+      "label": {
+        "ja": "数理計画法",
+        "en": "Mathematical Programming"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E113-27-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-27",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W9-327"
+      },
+      "label": {
+        "ja": "英語第三 27-LS",
+        "en": "English 3 27-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M106-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M106-03",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "線形代数学第二 O(21～30)",
+        "en": "Linear Algebra II O(21～30)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M106-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M106-04",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "線形代数学第二 P(31～40)",
+        "en": "Linear Algebra II P(31～40)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.Y202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.Y202",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "高分子合成１（逐次重合）",
+        "en": "Polymer Synthesis I (Step-Growth Polymerization)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-38-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-38",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W9-327"
+      },
+      "label": {
+        "ja": "英語第七 38-RW",
+        "en": "English 7 38-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M105-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M105-03",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "WL1-401"
+      },
+      "label": {
+        "ja": "微分積分学第二 S(61～70)",
+        "en": "Calculus II S(61～70)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MCS.T221-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MCS.T221",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "集合と位相第二",
+        "en": "Set and Topology II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.B211-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MTH.B211",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-103"
+      },
+      "label": {
+        "ja": "幾何学概論第一",
+        "en": "Introduction to Geometry I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.B202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CHM.B202",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "基礎分析化学",
+        "en": "Basic Analytical Chemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-IEE.A203-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "IEE.A203",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "数理工学",
+        "en": "Mathematical Engineering"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.S315-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAH.S315",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-156"
+      },
+      "label": {
+        "ja": "国際政治学C",
+        "en": "International Politic C"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.F201-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.F201",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W2-401,W2-402"
+      },
+      "label": {
+        "ja": "基礎流体力学",
+        "en": "Fundamentals of Fluid Mechanics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.Q311-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.Q311",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "量子力学III（講義）",
+        "en": "Quantum Mechanics III（Lecture)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-SCE.A202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "SCE.A202",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W9-326"
+      },
+      "label": {
+        "ja": "システム制御数学Ｂ",
+        "en": "Mathematics for Systems and Control B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        7
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CSC.T371-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CSC.T371",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "S2-203"
+      },
+      "label": {
+        "ja": "システムソフトウェア",
+        "en": "System Software"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.C331-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "EEE.C331",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "コンピュータアーキテクチャ（電気電子）",
+        "en": "Computer Architecture (Electrical and Electronic Engineering)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-IEE.C203-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "IEE.C203",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W9-311"
+      },
+      "label": {
+        "ja": "工業心理学",
+        "en": "Engineering Psychology"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.J331-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.J331",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "I1-256"
+      },
+      "label": {
+        "ja": "マイクロ・ナノ加工基礎",
+        "en": "Fundamentals of Micro and Nano Machining"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.N205-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.N205",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "無機化学４（錯体構造）",
+        "en": "Inorganic Chemistry Ⅳ (Coordination Structures)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.M231-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "EEE.M231",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "応用確率統計",
+        "en": "Applied Probability and Statistical Theory"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-05-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-05",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 M",
+        "en": "Basic Chemical Thermodynamics M"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-06-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-06",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 N",
+        "en": "Basic Chemical Thermodynamics N"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-07-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-07",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S2-203"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 O",
+        "en": "Basic Chemical Thermodynamics O"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-08-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-08",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 P",
+        "en": "Basic Chemical Thermodynamics P"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M106-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M106-02",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "線形代数学第二 N(11～20)",
+        "en": "Linear Algebra II N(11～20)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-10-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-10",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ J",
+        "en": "Fundamentals of Electromagnetism 1 J"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-11-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-11",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ K",
+        "en": "Fundamentals of Electromagnetism 1 K"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-12-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-12",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ L",
+        "en": "Fundamentals of Electromagnetism 1 L"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-17-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-17",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-110"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ English Class",
+        "en": "Fundamentals of Electromagnetism 1 English Class"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LST.A243-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LST.A243",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W9-326"
+      },
+      "label": {
+        "ja": "発生生物学",
+        "en": "Developmental Biology"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.M207-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.M207",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S8-501"
+      },
+      "label": {
+        "ja": "状態図・相図と相安定",
+        "en": "Phase Diagram and Stability"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MCS.T333-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MCS.T333",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W2-401"
+      },
+      "label": {
+        "ja": "情報理論",
+        "en": "Information Theory"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.C340-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.C340",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-124"
+      },
+      "label": {
+        "ja": "基礎固体物理学",
+        "en": "Basic Solid State Physics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.D351-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "EEE.D351",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "電子デバイス第一",
+        "en": "Electron Devices I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.P331-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "EEE.P331",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-124"
+      },
+      "label": {
+        "ja": "高電圧工学",
+        "en": "High Voltage Engineering"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.S311-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.S311",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W9-326"
+      },
+      "label": {
+        "ja": "機械学習（情報通信）",
+        "en": "Machine Learning (ICT)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-09",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ K",
+        "en": "Fundamental Life Science 2-1 K"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-06-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-06",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S2-203"
+      },
+      "label": {
+        "ja": "量子化学基礎 F",
+        "en": "Basic Quantum Chemistry F"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-07-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-07",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "量子化学基礎 G",
+        "en": "Basic Quantum Chemistry G"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-08-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-08",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "量子化学基礎 H",
+        "en": "Basic Quantum Chemistry H"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M105-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M105-01",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W2-401"
+      },
+      "label": {
+        "ja": "微分積分学第二 Q(41～50)",
+        "en": "Calculus II Q(41～50)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M105-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M105-02",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "微分積分学第二 R(51～60)",
+        "en": "Calculus II R(51～60)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-13-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-13",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ M",
+        "en": "Fundamentals of Electromagnetism 1 M"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-14-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-14",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ N",
+        "en": "Fundamentals of Electromagnetism 1 N"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-15-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-15",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ O",
+        "en": "Fundamentals of Electromagnetism 1 O"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-16-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-16",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ P",
+        "en": "Fundamentals of Electromagnetism 1 P"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.A308-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.A308",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-101"
+      },
+      "label": {
+        "ja": "界面化学",
+        "en": "Interface Chemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.C211-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.C211",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "弾塑性力学",
+        "en": "Theory of Elasticity and Plasticity"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.F350-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.F350",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "原子核物理学",
+        "en": "Nuclear Physics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.S219-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.S219-01",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-103"
+      },
+      "label": {
+        "ja": "熱力学（物理）(演習） A",
+        "en": "Thermodynamics (Physics) (Exercise) A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.S219-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.S219-02",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-110"
+      },
+      "label": {
+        "ja": "熱力学（物理）(演習） B",
+        "en": "Thermodynamics (Physics) (Exercise) B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.S210-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.S210",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S2-203"
+      },
+      "label": {
+        "ja": "ディジタル信号処理",
+        "en": "Digital Signal Processing"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LST.A212-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LST.A212",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "有機化学第三(ベンゼン，ケトン)",
+        "en": "Organic Chemistry III (benzene and ketones)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        7
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.M201-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.M201",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S8-101"
+      },
+      "label": {
+        "ja": "結晶学",
+        "en": "Fundamentals of Crystallography"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.P213-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.P213",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S8-102"
+      },
+      "label": {
+        "ja": "有機化学(反応)A",
+        "en": "Organic Chemistry (Reaction-A)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.A331-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MTH.A331",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "代数学続論",
+        "en": "Algebra III"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.I211-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.I211",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "論理回路設計",
+        "en": "Theory and Design of Logic Circuits"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.C203-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.C203",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "S7-201"
+      },
+      "label": {
+        "ja": "統計力学（C）",
+        "en": "Statistical Mechanics (Ceramics course)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        8
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.T207-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAH.T207",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "科学哲学Ｂ",
+        "en": "Philosophy of Science B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CSC.T273-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CSC.T273",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-B07,情報工学系計算機室"
+      },
+      "label": {
+        "ja": "オブジェクト指向プログラミング",
+        "en": "Object-Oriented Programming"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CVE.M204-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CVE.M204",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "W5-107"
+      },
+      "label": {
+        "ja": "土木化学基礎",
+        "en": "Fundamental Chemistry for Civil Engineering"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.C209-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.C209",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "W2-402"
+      },
+      "label": {
+        "ja": "代数系と符号理論",
+        "en": "Algebraic Systems and Coding Theory"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        9
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M106-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M106-01",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "線形代数学第二 M(1～10)",
+        "en": "Linear Algebra II M(1～10)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.C203-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MTH.C203",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-B104"
+      },
+      "label": {
+        "ja": "解析学概論第三",
+        "en": "Introduction to Analysis III"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        8
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.C202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "EEE.C202",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "電気回路第二",
+        "en": "Electric Circuits II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.S101-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAH.S101",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "W9-326"
+      },
+      "label": {
+        "ja": "法学（憲法）Ａ",
+        "en": "Law (Constitutional Law) A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.S105-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAH.S105",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "心理学Ａ",
+        "en": "Psychology A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAH.T107-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAH.T107",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-107"
+      },
+      "label": {
+        "ja": "社会モデリングＡ",
+        "en": "Social Modeling A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.Q207-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.Q207",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "量子力学入門（講義）",
+        "en": "Introduction to Quantum Mechanics（Lecture)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        10
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.D201-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.D201",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-356,M-374"
+      },
+      "label": {
+        "ja": "機械力学",
+        "en": "Mechanical Vibrations"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        8
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.D204-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CHM.D204",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "M-110"
+      },
+      "label": {
+        "ja": "有機化学演習第二",
+        "en": "Exercise in Organic Chemistry II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EPS.B210-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "EPS.B210",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "I3-107"
+      },
+      "label": {
+        "ja": "物理数学B（地惑）",
+        "en": "Mathematics for Physics B (EPS course)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.C307-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.C307",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "S7-202"
+      },
+      "label": {
+        "ja": "固体物性II（誘電体・磁性体）",
+        "en": "Solid State Properties II (Dielectric and Magnetic Materials"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        11
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.H304-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.H304",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S2-201"
+      },
+      "label": {
+        "ja": "固体触媒化学",
+        "en": "Solid Catalytic Chemistry"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-01",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "中国語初級３ C01",
+        "en": "Chinese: Basic Course 3 C01"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W3-205"
+      },
+      "label": {
+        "ja": "中国語初級３ C02",
+        "en": "Chinese: Basic Course 3 C02"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-03",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-156"
+      },
+      "label": {
+        "ja": "中国語初級３ C03",
+        "en": "Chinese: Basic Course 3 C03"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-01",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-112"
+      },
+      "label": {
+        "ja": "フランス語初級３ F01",
+        "en": "French: Basic Course 3 F01"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "フランス語初級３ F02",
+        "en": "French: Basic Course 3 F02"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.R203-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.R203-01",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-119"
+      },
+      "label": {
+        "ja": "ロシア語初級３ R01",
+        "en": "Russian: Basic Course 3 R01"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W3-707"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S12",
+        "en": "Spanish: Basic Course 3 S12"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-03",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W9-322"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S13",
+        "en": "Spanish: Basic Course 3 S13"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "量子化学基礎 B",
+        "en": "Basic Quantum Chemistry B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-04",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-124"
+      },
+      "label": {
+        "ja": "量子化学基礎 D",
+        "en": "Basic Quantum Chemistry D"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-09",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-110"
+      },
+      "label": {
+        "ja": "量子化学基礎 English Class",
+        "en": "Basic Quantum Chemistry English Class"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M105-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M105-04",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "微分積分学第二 T(71～80)",
+        "en": "Calculus II T(71～80)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ B",
+        "en": "Fundamentals of Electromagnetism 1 B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-03",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ C",
+        "en": "Fundamentals of Electromagnetism 1 C"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-04",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ D",
+        "en": "Fundamentals of Electromagnetism 1 D"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.P329-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.P329",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S8-102"
+      },
+      "label": {
+        "ja": "生物有機化学B",
+        "en": "Organic and Biological Chemistry B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.J333-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.J333",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "I1-256"
+      },
+      "label": {
+        "ja": "トライボロジーの基礎",
+        "en": "Fundamentals of Tribology"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-TSE.A301-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "TSE.A301",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S3-207"
+      },
+      "label": {
+        "ja": "剛体の運動力学",
+        "en": "Rigid body dynamics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        12
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ARC.S302-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ARC.S302",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "建築構造設計第二",
+        "en": "Structural Design II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        2,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.G203-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.G203",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "化学工学２（分子拡散）",
+        "en": "Chemical Engineering II (Molecular Diffusion)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.N305-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.N305",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-103"
+      },
+      "label": {
+        "ja": "機器分析A（表面・X線・電気等）",
+        "en": "Instrumental Anaylsis (Surface・X-ray・Electronics etc.)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.D202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CHM.D202",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S4-201"
+      },
+      "label": {
+        "ja": "有機化学第二",
+        "en": "Organic Chemistry II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CHM.D333-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CHM.D333",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-B45"
+      },
+      "label": {
+        "ja": "有機反応論",
+        "en": "Organic Reactions"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CVE.D231-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CVE.D231",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-B104"
+      },
+      "label": {
+        "ja": "景観工学",
+        "en": "Landscape and Design Engineering"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.C203-05-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.C203-05",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W3-205"
+      },
+      "label": {
+        "ja": "中国語初級３ C05",
+        "en": "Chinese: Basic Course 3 C05"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.F203-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.F203-03",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-112"
+      },
+      "label": {
+        "ja": "フランス語初級３ F03",
+        "en": "French: Basic Course 3 F03"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-01",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 I",
+        "en": "Basic Chemical Thermodynamics I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W2-401"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 J",
+        "en": "Basic Chemical Thermodynamics J"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-03",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 K",
+        "en": "Basic Chemical Thermodynamics K"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C107-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C107-04",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S2-203"
+      },
+      "label": {
+        "ja": "化学熱力学基礎 L",
+        "en": "Basic Chemical Thermodynamics L"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.M106-05-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.M106-05",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-102"
+      },
+      "label": {
+        "ja": "線形代数学第二 X",
+        "en": "Linear Algebra II X"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-05-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-05",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ E",
+        "en": "Fundamentals of Electromagnetism 1 E"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-06-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-06",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-301"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ F",
+        "en": "Fundamentals of Electromagnetism 1 F"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-07-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-07",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-201"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ G",
+        "en": "Fundamentals of Electromagnetism 1 G"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-08-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-08",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-124"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ H",
+        "en": "Fundamentals of Electromagnetism 1 H"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MCS.T223-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MCS.T223",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-101"
+      },
+      "label": {
+        "ja": "数理統計学",
+        "en": "Mathematical Statistics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MCS.T323-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MCS.T323",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W9-325"
+      },
+      "label": {
+        "ja": "計算の理論",
+        "en": "Theory of Computation"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MEC.F331-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.F331",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "I1-256"
+      },
+      "label": {
+        "ja": "応用流体力学",
+        "en": "Advanced Fluid Mechanics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.S209-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.S209",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "熱力学（物理）(講義）",
+        "en": "Thermodynamics (Physics) (Lecture)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        13
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-SCE.C203-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "SCE.C203",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W2-402"
+      },
+      "label": {
+        "ja": "線形システム制御論",
+        "en": "Linear System Theory"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MTH.B203-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MTH.B203",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-110"
+      },
+      "label": {
+        "ja": "位相空間論第三",
+        "en": "Introduction to Topology III"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        8
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CAP.Y204-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.Y204",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "高分子物性１（溶液物性）",
+        "en": "Polymer Physics I (Polymer Solutions)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CSC.T261-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CSC.T261",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S2-203"
+      },
+      "label": {
+        "ja": "情報論理",
+        "en": "Logic in Computer Science"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-EEE.E211-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "EEE.E211",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S2-204"
+      },
+      "label": {
+        "ja": "波動工学",
+        "en": "Electromagnetic Fields and Waves"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.I312-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.I312",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S8-101"
+      },
+      "label": {
+        "ja": "線形電子回路",
+        "en": "Linear Electronic Circuits"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.C202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.C202",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S7-201"
+      },
+      "label": {
+        "ja": "結晶とフォノン",
+        "en": "Crystal and Phonon"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MCS.T301-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MCS.T301",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W8E-308"
+      },
+      "label": {
+        "ja": "ベクトル解析と関数解析",
+        "en": "Vector and Functional analysis"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.E212-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.E212",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "電磁気学II（講義）",
+        "en": "Electromagnetism II (Lecture)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-CSC.T252-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CSC.T252",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-178"
+      },
+      "label": {
+        "ja": "論理回路理論",
+        "en": "Switching Circuit Theory"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-ICT.C309-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.C309",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "S4-202"
+      },
+      "label": {
+        "ja": "マルチメディア伝送工学",
+        "en": "Multimedia Distribution Technology"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-MAT.M202-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.M202",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL2-401"
+      },
+      "label": {
+        "ja": "統計力学（M）",
+        "en": "Statistical Mechanics(M)"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.E222-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.E222-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "M-101"
+      },
+      "label": {
+        "ja": "電磁気学II（演習） B",
+        "en": "Electromagnetism II (Exercise) B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        14
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-08-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-08",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S32",
+        "en": "Spanish: Basic Course 3 S32"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-01",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-B07"
+      },
+      "label": {
+        "ja": "量子化学基礎 A",
+        "en": "Basic Quantum Chemistry A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-03",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "W8E-101"
+      },
+      "label": {
+        "ja": "量子化学基礎 C",
+        "en": "Basic Quantum Chemistry C"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-16-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-16",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S42",
+        "en": "Spanish: Basic Course 3 S42"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.C105-05-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.C105-05",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "量子化学基礎 E",
+        "en": "Basic Quantum Chemistry E"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-PHY.L201-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "PHY.L201",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-374"
+      },
+      "label": {
+        "ja": "物理実験学",
+        "en": "Experimental Physics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-01",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ A",
+        "en": "Fundamentals of Electromagnetism 1 A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.P103-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.P103-09",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-278"
+      },
+      "label": {
+        "ja": "電磁気学基礎１ I",
+        "en": "Fundamentals of Electromagnetism 1 I"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-01",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ A",
+        "en": "Fundamental Life Science 2-1 A"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-02",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ B",
+        "en": "Fundamental Life Science 2-1 B"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-03-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-03",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ C",
+        "en": "Fundamental Life Science 2-1 C"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-04-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-04",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ D",
+        "en": "Fundamental Life Science 2-1 D"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-05-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-05",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ E",
+        "en": "Fundamental Life Science 2-1 E"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-06-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-06",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ F",
+        "en": "Fundamental Life Science 2-1 F"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-07-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-07",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ G",
+        "en": "Fundamental Life Science 2-1 G"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAS.B103-08-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAS.B103-08",
+      "status": "scheduled",
+      "date": "2026-12-02",
+      "room": {
+        "ja": "M-110,M-178,M-278,M-374"
+      },
+      "label": {
+        "ja": "生命科学基礎第二１ H",
+        "en": "Fundamental Life Science 2-1 H"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        16
+      ]
+    }
+  ]
 }

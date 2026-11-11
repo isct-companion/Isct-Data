@@ -5,10 +5,463 @@
   "source": [
     {
       "id": "official-graduate-2026-3q",
-      "title": "Science Tokyo graduate timetable source (2026 3Q pending publication)",
+      "title": "2026年度 第3Q 大学院課程期末試験時間割",
       "url": "https://www.titech.ac.jp/student/pdf/life-graduate-exam-timetable.pdf",
-      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/graduate-exam"
+      "landingPageUrl": "https://www.titech.ac.jp/student/students/life/graduate-exam",
+      "sha256": "cfcd4027b2d14b620014e3f39a9c84897db3c0673590313272df687596f3387c",
+      "retrievedAt": "2026-11-11T07:41:51Z"
     }
   ],
-  "entries": []
+  "entries": [
+    {
+      "id": "2026-3Q-graduate-LAH.A505-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAH.A505",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "J2-203"
+      },
+      "label": {
+        "ja": "世界を知る：南・東南アジア",
+        "en": "Area Studies: South and Southeast Asia"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAL.L447-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.L447",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "古典ラテン語７",
+        "en": "Classical Latin 7"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAL.A447-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAL.A447",
+      "status": "scheduled",
+      "date": "2026-11-25",
+      "room": {
+        "ja": "M-157"
+      },
+      "label": {
+        "ja": "古典ギリシア語７",
+        "en": "Classical Greek 7"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-GEG.S413-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "GEG.S413",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W8E-306"
+      },
+      "label": {
+        "ja": "科学メディアとコミュニケーション",
+        "en": "Science Media and Communication"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CAP.A427-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CAP.A427",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "分子触媒化学特論第一",
+        "en": "Advanced Molecular Catalyst Chemistry I"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CHM.D433-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CHM.D433",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-356"
+      },
+      "label": {
+        "ja": "有機金属化学特論",
+        "en": "Advanced Organometallic Chemistry"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-MAT.M430-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MAT.M430",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "G1-103"
+      },
+      "label": {
+        "ja": "金属量子論",
+        "en": "Quantum theory of metals"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-MEC.G531-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.G531",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "I3-107"
+      },
+      "label": {
+        "ja": "高精度加工学",
+        "en": "Precision Manufacturing Processes"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-GEG.T412-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "GEG.T412",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "W8E-306"
+      },
+      "label": {
+        "ja": "開発のための化学プロセス合成",
+        "en": "Chemical Process Synthesis for Development"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-CSC.T527-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "CSC.T527",
+      "status": "scheduled",
+      "date": "2026-11-26",
+      "room": {
+        "ja": "M-155"
+      },
+      "label": {
+        "ja": "フォールトトレラント分散アルゴリズム",
+        "en": "Fault Tolerant Distributed Algorithms"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-SCE.C452-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "SCE.C452",
+      "status": "scheduled",
+      "date": "2026-11-27",
+      "room": {
+        "ja": "W8E-308"
+      },
+      "label": {
+        "ja": "非線形・適応制御",
+        "en": "Nonlinear and Adaptive Control"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.J411-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J411-09",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "G1-102"
+      },
+      "label": {
+        "ja": "初級日本語1 3QC",
+        "en": "Basic Japanese 1 3QC"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-MEC.D433-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "MEC.D433",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "I1-256"
+      },
+      "label": {
+        "ja": "自励振動",
+        "en": "Self-excited vibration"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.J413-09-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J413-09",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "G1-102"
+      },
+      "label": {
+        "ja": "初級日本語3 3QC",
+        "en": "Basic Japanese 3 3QC"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        3,
+        4
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-XCO.T489-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "XCO.T489-01",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "W9-324"
+      },
+      "label": {
+        "ja": "基盤人工知能",
+        "en": "Fundamentals of Artificial Intelligence"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        5,
+        6
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ICT.C417-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ICT.C417",
+      "status": "scheduled",
+      "date": "2026-11-30",
+      "room": {
+        "ja": "S3-206"
+      },
+      "label": {
+        "ja": "データ通信システム",
+        "en": "Data Communication System"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        7,
+        8
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ESI.A405-01-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ESI.A405-01",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL1-201"
+      },
+      "label": {
+        "ja": "エネルギーマテリアル論第一 大岡山",
+        "en": "Interdisciplinary Energy Materials Science 1 大岡山"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-ESI.A405-02-final",
+      "kind": "exam",
+      "quarter": "3Q",
+      "courseCode": "ESI.A405-02",
+      "status": "scheduled",
+      "date": "2026-12-01",
+      "room": {
+        "ja": "WL1-201"
+      },
+      "label": {
+        "ja": "エネルギーマテリアル論第一 横浜",
+        "en": "Interdisciplinary Energy Materials Science 1 横浜"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "periods": [
+        1,
+        2
+      ],
+      "sourcePages": [
+        6
+      ]
+    }
+  ]
 }
