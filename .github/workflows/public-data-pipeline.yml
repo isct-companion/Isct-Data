@@ -114,7 +114,7 @@ jobs:
 
   arbitrate:
     needs: compare
-    if: needs.compare.result == 'success' && needs.compare.outputs.same != 'true'
+    if: always() && needs.compare.result == 'success' && needs.compare.outputs.same != 'true'
     permissions:
       actions: read
       contents: read
@@ -175,6 +175,9 @@ jobs:
 
   publish:
     needs: resolve
+    # always(): when the authors agree the arbiter is skipped, and GitHub would
+    # otherwise skip every job downstream of a skipped job, including this one.
+    if: always() && needs.resolve.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
