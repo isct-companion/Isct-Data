@@ -9,25 +9,45 @@
 | Update important dates | 行事・式典・入試の日程 | 毎日 10:17 | [重要日程](../prompts/update-important-dates.md) |
 | Update exams and exam-week classes | 期末試験と同じ PDF の授業・補講 | 毎日 09:17 | [試験](../prompts/update-exams.md) |
 
-各 workflow の Markdown には対象、時刻、ネットワーク許可と個別 prompt を指定します。
-エンジン、証拠準備、予算、成果物と公開処理は
-[shared/public-data.md](../.github/workflows/shared/public-data.md) を共有します。
-変更時は対象の Markdown を編集し、`gh aw compile WORKFLOW_NAME` で lock を再生成します。
+`update-*.yml` は対象と時刻だけを指定し、共通の
+[public-data-pipeline.yml](../.github/workflows/public-data-pipeline.yml) を呼び出します。
+AI 部分は gh-aw の [author-public-data.md](../.github/workflows/author-public-data.md)
+（2 回呼ばれる作成者）と [arbitrate-public-data.md](../.github/workflows/arbitrate-public-data.md)
+（仲裁者）です。エンジン（Student プランのためネイティブ auto、現在は GPT-5.6 Luna）は
+[shared/copilot-engine.md](../.github/workflows/shared/copilot-engine.md)、証拠準備と予算は
+[shared/public-data.md](../.github/workflows/shared/public-data.md) が共有します。
+Markdown を変更したら `gh aw compile` で lock を再生成します。
 
 ## 公開までの流れ
 
-1. Python の標準ライブラリで公開ページ、参照 PDF とリンク先 PDF の内容を取得し、SHA-256 を比較します。変更時だけ Copilot を起動し、手動実行はレビューを強制します。
-2. 固定スクリプトが証拠のパス、テキスト、PDF ページ画像、レビュー JSON と試験候補を準備します。モデルは対象データの prompt で確認します。
-3. モデルは Python と基本的な読み取りツールで証拠を確認し、書き込みには対象の固定レビュー適用コマンドを使います。試験の書き込みは引き続き `exam_workflow.py` が担当し、同じ PDF の試験週授業も同時に更新します。
-4. 別ジョブの `publish_data.py` がクリーンな実行基準から変更を適用し、対象パス、他データの index 不変、公開ソースの最新ハッシュ、全量検証とテストを確認します。試験は最新 PDF の行も再照合します。
-5. 正確に検証したコミットへ必須の Actions ステータスを記録してから、main を非強制で更新します。途中で main やソースが変われば公開を中止します。
+```
+triage（スクリプト）─► 作成者 A（AI）─┐
+                    └► 作成者 B（AI）─┴► 比較（スクリプト）─一致─────────────────► 公開（スクリプト）
+                                                └─差分あり─► 仲裁者（AI）─► 統合（スクリプト）─┘
+```
+
+1. **triage**: スクリプトが公開ページと PDF を取得し、前回レビュー時と比べます。バイトが同じ、
+   またはマークアップだけが変わり表示内容（HTML の本文とリンク、PDF の本文と罫線・取り消し線）が
+   同じなら AI を起動しません。手動実行も同じ判定を通り、`force` を指定したときだけ強制します。
+2. **作成者 A・B**: 同じ証拠を別々に取得・準備し、互いの結果を見ずにレビューします。
+   `--check-review` で書き込みなしに検証し（最大 3 回）、通ったら `--apply-review` を 1 回だけ実行します。
+3. **比較**: スクリプトが 2 つの公開バンドルをレコード単位で比較します。ソース指紋か基準コミットが
+   違えば中止します。データが一致すればそのまま公開へ進みます。
+4. **仲裁者**: 差分があるとき、または片方が完了しなかったときだけ起動します。差分レコードごとに
+   A・B・現在の main のどれが証拠と一致するかを選び、根拠を書きます。どれも違えば `none` とし、
+   公開しません。片方だけ完了した試験データは、取り消し・削除・出典の変更をすべて確認し、
+   新規行はバンドルから決まる乱数で 40 件を抽出して確認します。差分が 150 件を超えると人の確認に回します。
+5. **統合**: スクリプトが仲裁者の選択からデータを組み立て、index を再生成し、通常の公開バンドルにします。
+6. **公開**: 別ジョブの `publish_data.py` がクリーンな実行基準から変更を適用し、対象パス、他データの
+   index 不変、公開ソースの最新ハッシュ、全量検証とテストを確認します。試験は最新 PDF の行も再照合します。
+   正確に検証したコミットへ必須の Actions ステータスを記録してから、main を非強制で更新します。
 
 ソース指紋は `review/source-state/TYPE.json` に保存し、試験は既存の
 `review/exam-source-state.json` を使用します。検証したデータと同じコミットでのみ進みます。
 共通 concurrency により更新実行を直列化します。PR・issue・コメントは生成しません。
 
-エージェントは最大 **40 ターン／20 AI credits**、検出ジョブは **5 credits**、
-workflow ごとの過去 24 時間上限は **100 credits** です。harness の自動リトライは無効です。
+作成者は 1 回あたり最大 **40 ターン／20 AI credits**（1 回の更新で 2 回）、仲裁者は **40 ターン／20 credits**、
+検出ジョブは **5 credits** です。過去 24 時間の上限は作成者 **160**（全データ種類の合計）、仲裁者 **60 credits** です。harness の自動リトライは無効です。
 コマンド失敗時は同じ入力で再実行せず、不完全として終了します。
 `.data-runs/` と `.exam-runs/` は実行成果物として 7 日間保持します。
 

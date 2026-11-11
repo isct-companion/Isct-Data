@@ -1,0 +1,32 @@
+name: Update departments and course guidance
+
+on:
+  schedule:
+    - cron: '47 1 * * 0'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Run the AI review even if the script finds no source change
+        type: boolean
+        default: false
+
+permissions: {}
+
+# One public-data update at a time, across all datasets.
+concurrency:
+  group: public-data-update
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+      pull-requests: read
+      statuses: write
+    uses: ./.github/workflows/public-data-pipeline.yml
+    with:
+      dataset: departments
+      force: ${{ inputs.force || false }}
+    secrets: inherit

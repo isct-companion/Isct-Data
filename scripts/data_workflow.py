@@ -12,7 +12,7 @@ import sys
 
 from dataset_rules import DATASETS, allowed_path, feed_path, state_path
 from check_exam_sources import decode_html
-from source_monitor import acquire, snapshot
+from source_monitor import acquire, snapshot, triage
 from update_subscription_index import atomic_write, normalize, updated_index
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -46,6 +46,7 @@ def public_exam_scopes(root, records, write_templates=False):
     from extract_exam_timetable import exam_drift, read_rows
     by_url = {x['url']: x for x in records}
     scopes = []
+    candidate_documents = {}
     for manifest_path in sorted((root / 'source-manifest').glob('*.json')):
         manifest = load(manifest_path); year, quarter = manifest['academicYear'], manifest['quarter']
         for source in manifest['sources']:
@@ -79,50 +80,54 @@ def public_exam_scopes(root, records, write_templates=False):
                 scope['revisionPages'] = sorted({r['page'] for r in rows if r['revised'] or r['struck']})
                 if write_templates:
                     save(root / f'{RUN}/exams/{name}.rows.json', rows)
-                    provenance = {**copy.deepcopy(source), **copy.deepcopy(next(x for x in feed['source'] if x['id'] == source['id']))}
-                    provenance.pop('artifactUrl', None)
-                    if not feed['entries']:
-                        course_level = '学士課程' if level == 'undergraduate' else '大学院課程'
-                        provenance['title'] = f'{year}年度 第{quarter} {course_level}期末試験時間割'
-                    provenance.update(url=source['artifactUrl'], landingPageUrl=source['url'],
-                                      sha256=record['sha256'], retrievedAt=record['retrievedAt'])
-                    candidates = []
-                    if scope['drift']:
-                        for n, row in enumerate(rows):
-                            if row['kind'] != 'exam':
+                provenance = {**copy.deepcopy(source), **copy.deepcopy(next(x for x in feed['source'] if x['id'] == source['id']))}
+                provenance.pop('artifactUrl', None)
+                if not feed['entries']:
+                    course_level = '学士課程' if level == 'undergraduate' else '大学院課程'
+                    provenance['title'] = f'{year}年度 第{quarter} {course_level}期末試験時間割'
+                provenance.update(url=source['artifactUrl'], landingPageUrl=source['url'],
+                                  sha256=record['sha256'], retrievedAt=record['retrievedAt'])
+                candidates = []
+                if scope['drift']:
+                    for n, row in enumerate(rows):
+                        if row['kind'] != 'exam':
+                            continue
+                        for code in row['codes']:
+                            existing = [e for e in feed['entries'] if e['courseCode'] == code and source['id'] in e['sourceIds']]
+                            if len(existing) > 1:
+                                scope['unresolvedFacts'].append(f'ambiguous assessment identity: {code}')
                                 continue
-                            for code in row['codes']:
-                                existing = [e for e in feed['entries'] if e['courseCode'] == code and source['id'] in e['sourceIds']]
-                                if len(existing) > 1:
-                                    scope['unresolvedFacts'].append(f'ambiguous assessment identity: {code}')
-                                    continue
-                                if row['withdrawn'] and not existing:
-                                    continue
-                                evidence = json.dumps({k: row[k] for k in ('date', 'codes', 'periods', 'room', 'titleJa', 'titleEn', 'withdrawn')}, ensure_ascii=False)
-                                candidate = {'id': f'pdf-{n}-{code}', 'confirmed': False, 'assessmentKind': 'final',
-                                             'assessmentId': 'final', 'courseCode': code, 'quarter': quarter,
-                                             'sourceId': source['id'], 'date': row['date'], 'periods': row['periods'],
-                                             'status': 'cancelled' if row['withdrawn'] else 'scheduled',
-                                             'label': {'ja': row['titleJa']}, 'room': {'ja': row['room']} if row['room'] else None, 'sourcePages': [row['page']],
-                                             'evidenceText': evidence, 'evidenceHash': hashlib.sha256(evidence.encode()).hexdigest(),
-                                             'evidenceContext': {'identity': code, 'time': f'{row["date"]} {row["periods"]}'},
-                                             'publishFields': ['courseCode', 'quarter', 'date', 'periods', 'status', 'label', 'room', 'sourceIds', 'sourcePages']}
-                                if row['titleEn']:
-                                    candidate['label']['en'] = row['titleEn']
-                                if existing:
-                                    candidate['targetEntryId'] = existing[0]['id']
-                                else:
-                                    candidate['newAssessment'] = True
-                                candidates.append(candidate)
-                    candidate_document = {'schemaVersion': 1, 'academicYear': year, 'quarter': quarter,
-                         'level': level, 'baseFeedHash': canonical_hash(feed), 'sources': [provenance], 'candidates': candidates}
-                    schema = load(root / 'schema/exam-candidates.schema.json')
-                    errors = [e.message for e in Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(candidate_document)]
-                    if errors:
-                        raise ValueError('; '.join(errors))
+                            if row['withdrawn'] and not existing:
+                                continue
+                            evidence = json.dumps({k: row[k] for k in ('date', 'codes', 'periods', 'room', 'titleJa', 'titleEn', 'withdrawn')}, ensure_ascii=False)
+                            candidate = {'id': f'pdf-{n}-{code}', 'confirmed': False, 'assessmentKind': 'final',
+                                         'assessmentId': 'final', 'courseCode': code, 'quarter': quarter,
+                                         'sourceId': source['id'], 'date': row['date'], 'periods': row['periods'],
+                                         'status': 'cancelled' if row['withdrawn'] else 'scheduled',
+                                         'label': {'ja': row['titleJa']}, 'room': {'ja': row['room']} if row['room'] else None, 'sourcePages': [row['page']],
+                                         'evidenceText': evidence, 'evidenceHash': hashlib.sha256(evidence.encode()).hexdigest(),
+                                         'evidenceContext': {'identity': code, 'time': f'{row["date"]} {row["periods"]}'},
+                                         'publishFields': ['courseCode', 'quarter', 'date', 'periods', 'status', 'label', 'room', 'sourceIds', 'sourcePages']}
+                            if row['titleEn']:
+                                candidate['label']['en'] = row['titleEn']
+                            if existing:
+                                candidate['targetEntryId'] = existing[0]['id']
+                            else:
+                                candidate['newAssessment'] = True
+                            candidates.append(candidate)
+                candidate_document = {'schemaVersion': 1, 'academicYear': year, 'quarter': quarter,
+                     'level': level, 'baseFeedHash': canonical_hash(feed), 'sources': [provenance], 'candidates': candidates}
+                schema = load(root / 'schema/exam-candidates.schema.json')
+                errors = [e.message for e in Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(candidate_document)]
+                if errors:
+                    raise ValueError('; '.join(errors))
+                scope['candidateHash'] = canonical_hash(candidate_document)
+                scope['candidateCount'] = len(candidates)
+                candidate_documents[candidate_path] = candidate_document
+                if write_templates:
                     save(root / candidate_path, candidate_document)
             scopes.append(scope)
-    return scopes
+    return scopes, candidate_documents
 
 
 def prepare(root, dataset):
@@ -190,10 +195,10 @@ def prepare(root, dataset):
         save(task / 'course-coverage.json', json.loads(result.stdout))
         lines += ['', 'Read `.data-runs/course-coverage.json` first. Review differences and input errors against text and pages; do not treat a code match as proof that titles or credits match.']
     if dataset == 'exams':
-        review['examScopes'] = public_exam_scopes(root, records, write_templates=True)
+        review['examScopes'], _ = public_exam_scopes(root, records, write_templates=True)
         lines += ['', '## Exam scopes (generated from actual PDF headings)',
                   'Current matching PDF scopes have prepared candidate JSON and geometry rows under `.data-runs/exams/`.',
-                  'If drift is empty, retain the empty candidates array. If drift exists, review and confirm the prepared candidates.',
+                  'Review the complete candidate list for each matching scope. Keep the candidate JSON, candidateHash, and candidateCount unchanged.',
                   'When the reviewed PDF hash matches and geometry drift is empty, reuse both proofs; do not load all unchanged page images.',
                   'Use page images selectively for newly changed facts and revisions, to stay within the provider request-size limit.',
                   'Check each scope outcome, set its `confirmed` to true only after review, and retain manual-source facts.',
@@ -203,17 +208,20 @@ def prepare(root, dataset):
             review['baseHashes'][str(path.relative_to(root))] = canonical_hash(normalize(load(path)))
         lines += ['', 'Put complete reviewed replacement objects in `updates`, keyed by dataset path; use `{}` for no fact changes.',
                   'Existing paths and their base hashes:', json.dumps(review['baseHashes'], indent=2)]
-    lines += ['', 'Do not run JSON validation, shell probes, git diff, or helper commands. The one fixed command below validates everything.', 'After reviewing every acquired source, set `status` to `approved`, supply a summary,',
+    lines += ['', 'Query evidence with `python3 scripts/evidence.py` (see `--help`) instead of reading whole files or every page image.',
+              'Do not run git, JSON formatters or validation probes. The fixed commands below validate everything.', 'After reviewing every acquired source, set `status` to `approved`, supply a summary,',
               'and mark each source `outcome: reviewed` with its reviewed scope and no unresolved facts.',
-              f'Run exactly: `python3 scripts/data_workflow.py --dataset {dataset} --apply-review`.',
-              'If this command fails, STOP. Do not repeat it or invent different arguments. Report incomplete instead.',
+              f'First run exactly: `python3 scripts/data_workflow.py --dataset {dataset} --check-review`.',
+              'It writes nothing. If it reports a problem, fix only that problem in the review JSON and check again (at most 3 checks).',
+              f'After it passes, run exactly once: `python3 scripts/data_workflow.py --dataset {dataset} --apply-review`.',
+              'If apply fails, STOP. Do not repeat it or invent different arguments. Report incomplete instead.',
               'On success call `publish_data` with the summary. Do not call a publisher before this command succeeds.']
     save(task / 'review.json', review)
     atomic_write(task / 'task.md', '\n'.join(lines) + '\n')
     return {'dataset': dataset, 'resources': len(records), 'renderedPages': rendered}
 
 
-def apply_review(root, dataset):
+def apply_review(root, dataset, dry_run=False):
     from merge_exam_candidates import canonical_hash
     from exam_workflow import acknowledge_sources, check_all, run as write_exams
     from jsonschema import Draft202012Validator, FormatChecker
@@ -228,18 +236,40 @@ def apply_review(root, dataset):
         if hashlib.sha256(path.read_bytes()).hexdigest() != state['sources'][record['url']]:
             raise ValueError('acquired evidence bytes were changed')
     if dataset == 'exams':
-        scopes = public_exam_scopes(root, acquisition['documents'])
+        scopes, candidate_documents = public_exam_scopes(root, acquisition['documents'])
         actual = {(x['manifest'], x['sourceId']): x for x in review['examScopes']}
+        expected = {(scope['manifest'], scope['sourceId']) for scope in scopes}
+        if len(actual) != len(review['examScopes']) or actual.keys() != expected:
+            raise ValueError('review must cover every public exam scope exactly once')
         coverage = []
+        approved_scopes = []
         for scope in scopes:
-            item = actual.get((scope['manifest'], scope['sourceId']), {})
+            item = actual[(scope['manifest'], scope['sourceId'])]
+            scope_name = f'{scope["year"]} {scope["quarter"]} {scope["level"]}'
+            if scope['unresolvedFacts']:
+                raise ValueError(f'{scope_name}: ' + '; '.join(scope['unresolvedFacts']))
             if item.get('confirmed') is not True or item.get('outcome') != scope['outcome'] or item.get('unresolvedFacts') != []:
-                raise ValueError('every public exam scope must be confirmed without unresolved facts')
+                raise ValueError(f'{scope_name}: scope must be confirmed without unresolved facts')
             if scope['outcome'] == 'reviewed':
-                write_exams(root, scope['year'], scope['quarter'], scope['level'], scope['candidates'],
-                            timetable_pdf=scope['pdf'], retrieved_at=scope['retrievedAt'], public_only=True)
+                candidate_path = scope['candidates']
+                count = scope['candidateCount']
+                if item.get('candidateHash') != scope['candidateHash'] or item.get('candidateCount') != count:
+                    raise ValueError(f'{scope_name}: approval does not match the prepared list of {count} candidates')
+                if canonical_hash(load(root / candidate_path)) != scope['candidateHash']:
+                    raise ValueError(f'{scope_name}: the prepared list of {count} candidates was modified')
+                approved_scopes.append(scope)
             coverage.append({'manifest': scope['manifest'], 'sourceId': scope['sourceId'], 'outcome': scope['outcome'],
                              'reviewedScope': f'{scope["year"]} {scope["quarter"]} {scope["level"]}', 'unresolvedFacts': []})
+        if dry_run:
+            return {'dataset': dataset, 'review': 'valid', 'approvedScopes': len(approved_scopes)}
+        for scope in approved_scopes:
+            document = candidate_documents[scope['candidates']]
+            for candidate in document['candidates']:
+                candidate['confirmed'] = True
+            approved_path = scope['candidates'].replace('.candidates.json', '.approved.json')
+            save(root / approved_path, document)
+            write_exams(root, scope['year'], scope['quarter'], scope['level'], approved_path,
+                        timetable_pdf=scope['pdf'], retrieved_at=scope['retrievedAt'], public_only=True)
         save(root / '.exam-runs/coverage.json', {'sources': coverage})
         acknowledge_sources(root, '.exam-runs/source-state.json', '.exam-runs/coverage.json')
     else:
@@ -259,6 +289,8 @@ def apply_review(root, dataset):
             if errors:
                 raise ValueError('; '.join(errors))
             normalized[name] = normalize(value)
+        if dry_run:
+            return {'dataset': dataset, 'review': 'valid', 'updates': sorted(normalized)}
         index = load(root / 'index.json'); group, fields = DATASETS[dataset]['index']
         for name, value in normalized.items():
             save(root / name, value)
@@ -277,25 +309,38 @@ def main():
     operation = parser.add_mutually_exclusive_group(required=True)
     operation.add_argument('--poll', action='store_true')
     operation.add_argument('--prepare', action='store_true')
+    operation.add_argument('--check-review', action='store_true')
     operation.add_argument('--apply-review', action='store_true')
     args = parser.parse_args()
     try:
         if args.poll:
             state, documents = snapshot(ROOT, args.dataset)
             previous = load(ROOT / state_path(args.dataset)) if (ROOT / state_path(args.dataset)).exists() else None
-            changed = state != previous
+            changed, reason, details = triage(state, previous)
             if os.environ.get('GITHUB_OUTPUT'):
                 with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
                     output.write(f'changed={str(changed).lower()}\n')
-            result = {'dataset': args.dataset, 'changed': changed, 'sources': len(documents)}
+            if os.environ.get('GITHUB_STEP_SUMMARY'):
+                with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+                    verdict = 'start the AI review' if changed else 'skip the AI review'
+                    summary.write(f'### Source triage: {args.dataset}\n\n**{verdict}** — {reason}.\n\n')
+                    summary.write(''.join(f'- `{line}`\n' for line in details[:50]) + '\n')
+            result = {'dataset': args.dataset, 'changed': changed, 'reason': reason,
+                      'details': details, 'sources': len(documents)}
         elif args.prepare:
             result = prepare(ROOT, args.dataset)
+        elif args.check_review:
+            result = apply_review(ROOT, args.dataset, dry_run=True)
         else:
             result = apply_review(ROOT, args.dataset)
         print(json.dumps(result))
         return 0
     except (OSError, ValueError, TypeError, KeyError) as error:
-        print(f'Public data workflow failed: {error}. STOP; do not retry unchanged inputs.', file=sys.stderr)
+        if args.check_review:
+            print(f'Review check failed: {error!r}. Fix only .data-runs/review.json, then check again '
+                  '(at most 3 checks in total). Nothing was written.', file=sys.stderr)
+            return 1
+        print(f'Public data workflow failed: {error!r}. STOP; do not retry unchanged inputs.', file=sys.stderr)
         return 2
 
 
