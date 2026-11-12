@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "dataset": "academic-calendar",
+  "sources": {
+    "https://www.titech.ac.jp/student/students/life/schedules": "b1dfb019bae4aff703e900ac6a0b603c4a445e7e8df5170f96fba93dee066c9b",
+    "https://www.titech.ac.jp/student/students/life/schedules/2025": "b4493337d5da25bf9a2e57552b37d2115e2dda1dd917eead33897c3c4ca5a51b",
+    "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html": "565ed19991424566812ce202196adc2a5f7932d9e607940ce28df76456413e43",
+    "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv": "cec37a743c96995cdb9cb52b685c9003634682a9b0e1a640a6b9b96881fe964a"
+  },
+  "content": {
+    "https://www.titech.ac.jp/student/students/life/schedules": "b1dfb019bae4aff703e900ac6a0b603c4a445e7e8df5170f96fba93dee066c9b",
+    "https://www.titech.ac.jp/student/students/life/schedules/2025": "b4493337d5da25bf9a2e57552b37d2115e2dda1dd917eead33897c3c4ca5a51b",
+    "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html": "34bbe73c9c2eeac329d9de76ee72b9131bfc67b7319e906293c53ae2934f80bd",
+    "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv": "cec37a743c96995cdb9cb52b685c9003634682a9b0e1a640a6b9b96881fe964a"
+  }
+}
