@@ -1,48 +1,33 @@
 #!/usr/bin/env python3
-"""Validate every published dataset, including files not yet in the index, and the campus map export."""
+"""Validate published dataset contracts and subscription coverage."""
+import argparse
 import json
 import sys
+from dataclasses import asdict
 from pathlib import Path
 
-from jsonschema import Draft202012Validator, FormatChecker
-
-from validate_campus_map import validate as validate_campus_map
-
-ROOT = Path(__file__).resolve().parent.parent
-SCHEMAS = {
-    "academic-calendar": "academic-calendar",
-    "departments": "departments",
-    "important-dates": "important-dates",
-    "class-schedules": "class-schedules",
-    "exam": "exams",
-    "exam-week-classes": "exam-week-classes",
-}
+from dataset_contracts import DatasetContracts, InvalidContract, ROOT
 
 
 def main():
-    errors, count = [], 0
-    for directory, name in SCHEMAS.items():
-        schema = json.loads((ROOT / f"schema/{name}.schema.json").read_text())
-        Draft202012Validator.check_schema(schema)
-        validator = Draft202012Validator(schema, format_checker=FormatChecker())
-        paths = sorted((ROOT / directory).rglob("*.json"))
-        if not paths:
-            errors.append(f"{directory}: no datasets found")
-        for path in paths:
-            try:
-                value = json.loads(path.read_text(encoding="utf-8"))
-                errors.extend(f"{path.relative_to(ROOT)} {list(e.absolute_path)}: {e.message}"
-                              for e in validator.iter_errors(value))
-            except (OSError, ValueError) as error:
-                errors.append(f"{path}: {error}")
-            count += 1
-    map_count, map_errors = validate_campus_map(ROOT)
-    count += map_count
-    errors.extend(map_errors)
-    for error in errors:
-        print(error, file=sys.stderr)
-    print(f"Validated {count} datasets; {len(errors)} errors")
-    return 1 if errors else 0
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--data-root", type=Path, default=ROOT, help="Directory containing the datasets and index.json")
+    parser.add_argument("--format", choices=("text", "json"), default="text", help="Validation output format")
+    parser.add_argument("--require-file", action="append", default=[], metavar="PATH",
+                        help="Also require this dataset path to exist and be indexed. May be repeated.")
+    args = parser.parse_args()
+    try:
+        count, issues = DatasetContracts().validate_repository(args.data_root, required_files=args.require_file)
+    except InvalidContract as error:
+        count, issues = 0, [error.issue]
+    if args.format == "json":
+        print(json.dumps({"schemaVersion": 1, "checked": count, "errors": [asdict(issue) for issue in issues]},
+                         ensure_ascii=False))
+    else:
+        for issue in issues:
+            print(issue, file=sys.stderr)
+        print(f"Validated {count} datasets; {len(issues)} errors")
+    return 1 if issues else 0
 
 
 if __name__ == "__main__":

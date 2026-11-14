@@ -1,0 +1,79 @@
+{
+  "$schema": "../schema/dataset-contracts.schema.json",
+  "schemaVersion": 1,
+  "datasets": {
+    "academic-calendar": {
+      "glob": "academic-calendar/**/*.json",
+      "pathPattern": "academic-calendar/([0-9]{4})\\.json",
+      "schema": "schema/academic-calendar.schema.json",
+      "versionField": "schemaVersion",
+      "pathValueField": "academicYear",
+      "index": {"group": "academicYears", "field": "academicCalendar", "multiple": false},
+      "requiredFiles": ["academic-calendar/2025.json", "academic-calendar/2026.json"]
+    },
+    "departments": {
+      "glob": "departments/**/*.json",
+      "pathPattern": "departments/([0-9]{4})\\.json",
+      "schema": "schema/departments.schema.json",
+      "versionField": "schemaVersion",
+      "pathValueField": "admissionYear",
+      "index": {"group": "admissionYears", "field": "departments", "multiple": false},
+      "requiredFiles": ["departments/2025.json", "departments/2026.json"]
+    },
+    "important-dates": {
+      "glob": "important-dates/**/*.json",
+      "pathPattern": "important-dates/([0-9]{4})\\.json",
+      "schema": "schema/important-dates.schema.json",
+      "versionField": "schemaVersion",
+      "pathValueField": "academicYear",
+      "index": {"group": "academicYears", "field": "importantDates", "multiple": false},
+      "requiredFiles": ["important-dates/2025.json", "important-dates/2026.json"]
+    },
+    "class-schedules": {
+      "glob": "class-schedules/**/*.json",
+      "pathPattern": "class-schedules/([0-9]{4})\\.json",
+      "schema": "schema/class-schedules.schema.json",
+      "versionField": "schemaVersion",
+      "pathValueField": "academicYear",
+      "index": {"group": "academicYears", "field": "classSchedules", "multiple": false},
+      "requiredFiles": ["class-schedules/2026.json"]
+    },
+    "exams": {
+      "glob": "exam/**/*.json",
+      "pathPattern": "exam/(?:undergraduate|graduate)/([0-9]{4})-[1-4]q\\.json",
+      "schema": "schema/exams.schema.json",
+      "versionField": "schemaVersion",
+      "pathValueField": "academicYear",
+      "index": {"group": "academicYears", "field": "exams", "multiple": true},
+      "requiredFiles": [
+        "exam/graduate/2026-2q.json",
+        "exam/graduate/2026-3q.json",
+        "exam/undergraduate/2026-2q.json",
+        "exam/undergraduate/2026-3q.json"
+      ]
+    },
+    "exam-week-classes": {
+      "glob": "exam-week-classes/**/*.json",
+      "pathPattern": "exam-week-classes/(?:undergraduate|graduate)/([0-9]{4})-[1-4]q\\.json",
+      "schema": "schema/exam-week-classes.schema.json",
+      "versionField": "schemaVersion",
+      "pathValueField": "academicYear",
+      "index": {"group": "academicYears", "field": "examWeekClasses", "multiple": true},
+      "requiredFiles": [
+        "exam-week-classes/graduate/2026-2q.json",
+        "exam-week-classes/graduate/2026-3q.json",
+        "exam-week-classes/undergraduate/2026-2q.json",
+        "exam-week-classes/undergraduate/2026-3q.json"
+      ]
+    },
+    "campus-map": {
+      "glob": "campus-map/**/*",
+      "pathPattern": "campus-map/v([1-9][0-9]*)/campus-map\\.json\\.gz",
+      "schema": "schema/campus-map-v{key}.schema.json",
+      "versionField": "formatVersion",
+      "pathValueField": "formatVersion",
+      "index": {"group": "campusMap", "field": null, "multiple": false},
+      "requiredFiles": ["campus-map/v1/campus-map.json.gz"]
+    }
+  }
+}

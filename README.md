@@ -20,6 +20,8 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 
 ## ドキュメント
 
+- [データ契約と共通の更新経路](docs/data-contracts.md) — 外部 AI と CI の共通 contract、検証、収録範囲、[更新 skill](.agents/skills/update-public-data/SKILL.md)
+
 - [データ仕様と収録範囲](docs/data.md) — 各データの意味、出典、既知の欠落
 - [保守コマンド](docs/maintenance.md) — 全量検証、購読 index の再生成、履修表の照合
 - [試験データの更新](docs/exams.md) — 候補の確認、固定 writer、試験週授業の同時更新
