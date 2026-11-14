@@ -47,6 +47,6 @@ not proof of completeness or correctness. Copy facts exactly as the source state
 After the fixed writer succeeds, return a concise source review summary and the
 validation result to the caller. Use a completion tool only if the runner supplies it.
 The trusted publisher rechecks fresh source hashes, dataset boundaries,
-manual-record preservation, schema/index/exam consistency and tests before
-updating main. Models receive no write credentials. Do not create PRs, issues,
+manual-record preservation and schema/index/exam consistency before opening
+a data update PR. Models receive no write credentials. Do not create PRs, issues,
 comments, workflows, scripts, schemas or unrelated data changes.
