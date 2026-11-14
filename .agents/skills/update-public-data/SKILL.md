@@ -26,7 +26,7 @@ this skill does not define another data format or validation policy.
    file the user's requested scope must deliver. Verify the index actually
    references new files, not just that an unindexed JSON file exists.
 6. Deliver the diff, evidence coverage and validation result. When publication
-   is requested, use the existing PR/CI or trusted publisher route. Bundle
+   is requested, use the PR and CI workflow. Bundle
    preparation uses the unchanged base code and the same publication format.
    A successful local validation is not a publication receipt.
 

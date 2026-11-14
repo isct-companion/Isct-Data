@@ -24,7 +24,6 @@ jobs:
       contents: read
       issues: write
       pull-requests: read
-      statuses: write
     uses: ./.github/workflows/public-data-pipeline.yml
     with:
       dataset: important-dates

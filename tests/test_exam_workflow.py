@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from check_exam_sources import OfficialRedirects, PdfLinks, STATE, allowed_url, snapshot
 from exam_workflow import acknowledge_sources, check_all, run
 from merge_exam_candidates import canonical_hash
-from publish_exam_update import apply_and_validate, prepare, publish
+from publish_data import apply_and_validate, prepare, publish
 from data_workflow import apply_review
 from dataset_rules import state_path
 from source_monitor import snapshot as public_snapshot, triage
@@ -223,7 +223,7 @@ class PublicationBoundary(unittest.TestCase):
             acknowledge_sources(self.root, state_path, coverage_path)
         self.assertEqual(json.loads((self.root / STATE).read_text()), state)
 
-    def test_direct_publication_rejects_script_changes_traversal_and_stale_inputs(self):
+    def test_publication_rejects_script_changes_traversal_and_stale_inputs(self):
         base = self.commit_base()
         before = self.public_bytes()
         for name in ('scripts/exam_workflow.py', '../escape.json', 'exam/undergraduate/../../scripts/evil.py'):
@@ -297,29 +297,87 @@ class PublicationBoundary(unittest.TestCase):
             apply_and_validate(self.root, bundle, base)
         self.assertEqual(self.public_bytes(), before)
 
-    def test_direct_publication_records_real_check_before_nonforced_ref_change(self):
-        calls = []
-        # Substitute only the GitHub transport. Publication ordering, credential
-        # separation, commit ancestry and the non-force ref update run unchanged.
+    def test_publication_skips_a_source_fingerprint_or_download_metadata_change(self):
+        base = self.commit_base()
+        name = 'exam/undergraduate/2026-3q.json'
+        feed = json.loads((self.root / name).read_text())
+        source = feed['source'][0]
+        source['retrievedAt'] = '2026-11-14T00:00:00Z'
+        source['sha256'] = hashlib.sha256((self.root / name).read_bytes()).hexdigest()
+        state = json.loads((self.root / STATE).read_text())
+        files = {name: json.dumps(feed), STATE: json.dumps(state)}
+
+        def api(*args):
+            self.fail('A metadata-only update should require no GitHub requests')
+
+        result = publish(self.root, base, files, state, None, 'automation/public-data/exams', '123', api=api)
+        self.assertFalse(result['changed'])
+
+    def test_publication_opens_one_pr_without_updating_main_and_can_retry(self):
+        base = self.commit_base()
+        name = 'important-dates/2026.json'
+        feed = json.loads((self.root / name).read_text())
+        feed['entries'][0]['startDate'] = feed['entries'][0]['endDate'] = '2026-04-02'
+        files = {name: json.dumps(feed)}
+        dataset = 'important-dates'
+        state = json.loads((self.root / state_path(dataset)).read_text())
+        prefix = f'automation/public-data/{dataset}'
+        branch = f'{prefix}/123'
+        ref = f'refs/heads/{branch}'
+        url = 'https://github.com/isct-companion/Isct-Data/pull/123'
+        refs = {'refs/heads/main': base}
+        commits = {base: {'tree': {'sha': 'base-tree'}}}
+        pulls = []
+        fail_create = True
+
+        # Substitute the remote API to exercise branch creation and retry without
+        # writing test commits or PRs to the real data repository.
         def api(token, method, path, body=None):
-            calls.append((token, method, path, body))
-            if path == 'git/ref/heads/main':
-                return {'object': {'sha': 'base'}}
-            if path == 'git/commits/base':
-                return {'tree': {'sha': 'base-tree'}}
-            return {'sha': 'new'}
-        result = publish('base', {'index.sha256': 'data'}, 'writer', 'actions', 'https://example.invalid/run', api=api)
-        self.assertTrue(result['changed'])
-        self.assertEqual(calls[-2][0:3], ('actions', 'POST', 'statuses/new'))
-        self.assertEqual(calls[-1], ('writer', 'PATCH', 'git/refs/heads/main', {'sha': 'new', 'force': False}))
-        self.assertEqual(next(c[3]['parents'] for c in calls if c[2] == 'git/commits'), ['base'])
-        calls.clear()
-        def stale(token, method, path, body=None):
-            calls.append(path)
-            return {'object': {'sha': 'advanced'}}
-        with self.assertRaises(ValueError):
-            publish('base', {'index.sha256': 'data'}, 'writer', 'actions', 'https://example.invalid/run', api=stale)
-        self.assertEqual(calls, ['git/ref/heads/main'])
+            if method == 'GET' and path == 'git/ref/heads/main':
+                return {'object': {'sha': refs['refs/heads/main']}}
+            if method == 'GET' and path.startswith('pulls?'):
+                return pulls
+            if method == 'GET' and path.startswith('git/commits/'):
+                return commits[path.removeprefix('git/commits/')]
+            if method == 'POST' and path == 'git/trees':
+                return {'sha': canonical_hash(body)}
+            if method == 'GET' and path == f'git/matching-refs/heads/{branch}':
+                return [{'ref': ref, 'object': {'sha': refs[ref]}}] if ref in refs else []
+            if method == 'POST' and path == 'git/commits':
+                sha = f'commit-{len(commits)}'
+                commits[sha] = {'tree': {'sha': body['tree']}, 'parents': [{'sha': p} for p in body['parents']]}
+                return {'sha': sha}
+            if method == 'POST' and path == 'git/refs':
+                self.assertNotIn(body['ref'], refs)
+                refs[body['ref']] = body['sha']
+                return {}
+            if method == 'POST' and path == 'pulls':
+                if fail_create:
+                    raise OSError('GitHub temporarily unavailable')
+                self.assertIn(f"refs/heads/{body['head']}", refs)
+                pulls.append(dict(body, html_url=url))
+                return pulls[-1]
+            self.fail(f'Unexpected GitHub write or read: {method} {path}')
+
+        def propose():
+            return publish(self.root, base, files, state, 'writer', prefix, '123', api=api, dataset=dataset)
+
+        refs['refs/heads/main'] = 'advanced'
+        with self.assertRaisesRegex(ValueError, 'main advanced'):
+            propose()
+        self.assertNotIn(ref, refs)
+
+        refs['refs/heads/main'] = base
+        with self.assertRaises(OSError):
+            propose()
+        sha = refs[ref]
+        fail_create = False
+        self.assertEqual(propose()['pullRequest'], url)
+        self.assertEqual(propose()['pullRequest'], url)
+        self.assertEqual(refs, {'refs/heads/main': base, ref: sha})
+        self.assertEqual(commits[sha]['parents'], [{'sha': base}])
+        self.assertEqual(len(pulls), 1)
+        self.assertEqual(pulls[0]['base'], 'main')
 
 
 if __name__ == '__main__':

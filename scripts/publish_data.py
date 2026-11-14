@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare a data-only bundle, then validate and fast-forward it from a trusted job."""
+"""Prepare a data-only bundle, then validate it and open a pull request."""
 import argparse
 import json
 import os
@@ -7,21 +7,17 @@ from pathlib import Path
 import subprocess
 import sys
 from urllib.error import HTTPError
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
-from dataset_rules import DATASETS, allowed_path as scoped_allowed_path, assert_public_provenance, feed_path, manual_exam_facts, state_path
+from dataset_rules import DATASETS, allowed_path, assert_public_provenance, feed_path, manual_exam_facts, state_path, urls_in
 
 ROOT = Path(__file__).resolve().parent.parent
 REPOSITORY = "isct-companion/Isct-Data"
-CHECK = "Validate all datasets"
 
 
 def git(root, *args):
     return subprocess.check_output(["git", "-c", "core.hooksPath=/dev/null", *args], cwd=root, text=True).strip()
-
-
-def allowed_path(root, name, dataset='exams'):
-    return scoped_allowed_path(root, name, dataset)
 
 
 def load(path):
@@ -134,26 +130,69 @@ def request(token, method, path, body=None):
         raise ValueError(f"GitHub publication API {method} {path} failed with HTTP {error.code}") from None
 
 
-def publish(base, files, write_token, status_token, run_url, *, api=request, dataset='exams'):
-    if not files:
-        return {"changed": False, "sha": base}
-    if not write_token or not status_token:
+def feed_content(data):
+    # A fresh download can update provenance without changing any published facts.
+    sources = [{key: value for key, value in source.items() if key not in {'retrievedAt', 'sha256'}}
+               for source in data['source']]
+    return dict(data, source=sources)
+
+
+def changed_feeds(root, base, files, dataset):
+    changed = {}
+    for name, content in files.items():
+        if not feed_path(name, dataset):
+            continue
+        data = json.loads(content)
+        if git(root, "ls-tree", "--name-only", base, "--", name):
+            previous = json.loads(git(root, "show", f"{base}:{name}"))
+            if feed_content(data) == feed_content(previous):
+                continue
+        changed[name] = data
+    return changed
+
+
+def publish(root, base, files, observed, write_token, branch_prefix, run_id, *, api=request, dataset='exams'):
+    feeds = changed_feeds(root, base, files, dataset)
+    if not feeds:
+        return {"changed": False}
+    if not write_token:
         raise ValueError("publisher credentials are missing")
     if api(write_token, "GET", "git/ref/heads/main")["object"]["sha"] != base:
         raise ValueError("main advanced during review; rerun on the latest main")
+    branch = f"{branch_prefix}/{run_id}"
+    head = f"{REPOSITORY.split('/')[0]}:{branch}"
+    query = urlencode({"state": "all", "base": "main", "head": head})
+    existing = api(write_token, "GET", f"pulls?{query}")
+    if existing:
+        return {"changed": False, "pullRequest": existing[0]["html_url"]}
+
     original = api(write_token, "GET", f"git/commits/{base}")
     tree = api(write_token, "POST", "git/trees", {"base_tree": original["tree"]["sha"], "tree": [
         {"path": name, "mode": "100644", "type": "blob", "content": content} for name, content in files.items()]})
-    commit = api(write_token, "POST", "git/commits", {
-        "message": f"Update reviewed public {dataset} data", "tree": tree["sha"], "parents": [base]})
-    sha = commit["sha"]
-    # This is the result of the full validation just performed on this exact tree,
-    # recorded with the Actions token so main's required GitHub Actions check holds.
-    api(status_token, "POST", f"statuses/{sha}", {"state": "success", "context": CHECK,
-            "description": "Full data, index, exam and boundary checks passed in trusted publisher", "target_url": run_url})
-    # No force: a concurrent main update causes GitHub to reject this ref change.
-    api(write_token, "PATCH", "git/refs/heads/main", {"sha": sha, "force": False})
-    return {"changed": True, "sha": sha, "files": sorted(files)}
+    ref = f"refs/heads/{branch}"
+    refs = api(write_token, "GET", f"git/matching-refs/heads/{branch}")
+    published = next((item["object"]["sha"] for item in refs if item["ref"] == ref), None)
+    title = f"Update public {dataset} data"
+    if published:
+        # A retry can finish opening a PR after the previous run created the branch.
+        commit = api(write_token, "GET", f"git/commits/{published}")
+        if commit["tree"]["sha"] != tree["sha"] or [p["sha"] for p in commit["parents"]] != [base]:
+            raise ValueError("publication branch differs from the validated update; start a new run")
+    else:
+        commit = api(write_token, "POST", "git/commits", {
+            "message": title, "tree": tree["sha"], "parents": [base]})
+        api(write_token, "POST", "git/refs", {"ref": ref, "sha": commit["sha"]})
+
+    run_url = f"https://github.com/{REPOSITORY}/actions/runs/{run_id}"
+    sources = set().union(*(urls_in(data) for data in feeds.values())) & observed["sources"].keys()
+    body = (
+        f"Validated against the official sources in [the update workflow run]({run_url}).\n\n"
+        "Changed datasets\n\n" + "\n".join(f"- `{name}`" for name in sorted(feeds)) + "\n\n"
+        "Official sources\n\n" + "\n".join(f"- <{url}>" for url in sorted(sources)) + "\n\n"
+        "After CI passes, check the relevant changes against the official sources and squash merge."
+    )
+    pull = api(write_token, "POST", "pulls", {"title": title, "head": branch, "base": "main", "body": body})
+    return {"changed": True, "pullRequest": pull["html_url"], "files": sorted(feeds)}
 
 
 def verify_public_exam_artifacts(root, documents):
@@ -210,24 +249,23 @@ def main():
             print(json.dumps({"preparedFiles": sorted(bundle["files"])}))
         else:
             if os.environ.get("GITHUB_REF") != "refs/heads/main" or os.environ.get("GITHUB_REPOSITORY") != REPOSITORY:
-                raise ValueError("direct publication runs only from this repository's main branch")
+                raise ValueError("automated publication runs only from this repository's main branch")
             if not args.bundle:
                 parser.error("--bundle is required for publication")
             from source_monitor import snapshot
             bundle = load(args.bundle)
             if bundle.get('schemaVersion') != 2 or bundle.get('review') is None:
                 raise ValueError('publication requires a prepared public-source review bundle')
-            # Test the publisher's code on the untouched checkout. The bundle may
-            # not change scripts or tests, so this is the code that publishes;
-            # running it after the bundle is applied would make the suite depend
-            # on the files this publication writes.
-            subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"], cwd=root, check=True)
             fresh, documents = snapshot(root, args.dataset)
             files = apply_and_validate(root, bundle, args.base, fresh_state=fresh, dataset=args.dataset)
             if args.dataset == 'exams':
                 verify_public_exam_artifacts(root, documents)
-            result = publish(args.base, files, os.environ.get("DATA_PR_TOKEN"), os.environ.get("STATUS_TOKEN"),
-                             f"https://github.com/{REPOSITORY}/actions/runs/{os.environ['GITHUB_RUN_ID']}", dataset=args.dataset)
+            result = publish(root, args.base, files, fresh, os.environ.get("DATA_PR_TOKEN"),
+                             os.environ["PUBLICATION_BRANCH_PREFIX"], os.environ["GITHUB_RUN_ID"],
+                             dataset=args.dataset)
+            if result.get("pullRequest"):
+                with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+                    summary.write(f'[Data update pull request]({result["pullRequest"]})\n')
             print(json.dumps(result))
     except (OSError, ValueError, KeyError, TypeError, subprocess.CalledProcessError) as error:
         print(f"data publication failed: {error}", file=sys.stderr)

@@ -22,7 +22,7 @@ CI の Copilot と外部の AI エージェントは、同じ証拠・review・w
 | 抽出 | 同じ task.md、分野 prompt、`evidence.py`、`.data-runs/review.json` | モデルの起動、ファイルと証拠の提示 |
 | 検証・適用 | `--check-review`、`--apply-review`、共通契約、固定 writer | コマンドの実行と診断の返却 |
 | 比較・仲裁 | `compare_publications.py`、同じ publication bundle と verdict | 独立モデルの起動が必要なら実行する |
-| 公開 | `publish_data.py`、全量検証、対象パスと基準 SHA の確認 | 資格情報を持つ信頼された公開ジョブ、または PR のマージ |
+| 公開 | `publish_data.py`、全量検証、対象パスと基準 SHA の確認 | 自動更新 PR の作成、CI、担当者による squash merge |
 
 外部エージェントも、CI と同じ review を書いて同じ writer を使用します。
 ローカルでの確認だけなら公開資格情報は不要です。複数作者を使う場合は同じ比較器を呼び、
@@ -78,9 +78,8 @@ path は JSON Pointer です。AI は診断された箇所を修正し、契約�
 
 公開バンドルが必要な実行環境では、変更前の基準コミットを保存し、同じ基準のコードで
 `publish_data.py --root PATH --dataset TYPE --base SHA --prepare OUTPUT` を実行します。
-準備しただけでは公開されません。CI の publisher は再取得した出典と照合してから公開します。
-PR による公開は同じ全量 CI を通りますが、CI の構造検証だけで出典との一致が証明されたと扱わず、
-出典確認と差分レビューを行います。
+CI の publisher は再取得した出典と照合し、公開データに差分がある場合に PR を作成します。
+PR では全量 CI を実行し、担当者が出典と差分を確認して squash merge します。
 
 ## Skill と MCP
 
