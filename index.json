@@ -98,13 +98,8 @@
     },
     "2": {
       "source": "campus-map/v2/campus-map.json.gz",
-      "hash": "08ef57cdf76b8c8a2b608935afbb98a4cec722c24473806172f3739861a28d11",
-      "ts": "2026-11-15T02:09:02Z"
-    },
-    "3": {
-      "source": "campus-map/v3/campus-map.json.gz",
-      "hash": "82df80e0c4be31a8e009ec30adace915765c0b8baa30a6643d9588c7f512d2b2",
-      "ts": "2026-11-15T02:18:11Z"
+      "hash": "8fd2312edec906c928b401bfc01340fa9b3caeac362072d0acf54f7637c70b3d",
+      "ts": "2026-11-15T02:31:09Z"
     }
   }
 }
