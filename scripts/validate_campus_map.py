@@ -58,6 +58,17 @@ def rings(polygons):
         yield from polygon
 
 
+def inside(position, polygons):
+    """Whether a position lies inside MultiPolygon coordinates: an odd number of ring crossings (holes included)."""
+    x, y = position
+    crossings = 0
+    for ring in rings(polygons):
+        for (x1, y1), (x2, y2) in zip(ring, ring[1:]):
+            if (y1 > y) != (y2 > y) and x < x1 + (y - y1) * (x2 - x1) / (y2 - y1):
+                crossings += 1
+    return crossings % 2 == 1
+
+
 def check_content(doc, errors):
     """Everything the schema cannot say: references, unique ids, places, closed rings, the alias table."""
     ids = set()
@@ -75,6 +86,8 @@ def check_content(doc, errors):
         claim("building", b["id"])
         points.append((f"building {b['id']} center", b["campus"], b["center"]))
         shapes.append((f"building {b['id']} footprint", b["campus"], b["footprint"]))
+        if doc["formatVersion"] >= 2 and not inside(b["center"], b["footprint"]):  # v1, frozen, has twelve outside
+            errors.append(f"building {b['id']}: center is outside its footprint")
         ordinals = [level["ordinal"] for level in b["levels"]]
         if ordinals != sorted(ordinals) or len(set(ordinals)) != len(ordinals):
             errors.append(f"building {b['id']}: levels are not sorted by distinct ordinal")
