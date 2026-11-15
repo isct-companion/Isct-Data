@@ -97,7 +97,8 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
 
 - `buildings`: every building with a footprint. `campus` is `ookayama` or `suzukakedai`. `name.ja` always,
   `name.en` when known. `codes` are the distinct building prefixes of its rooms' codes (the part before the
-  last `-`), sorted; may be empty. `footprint` and `outline` are GeoJSON MultiPolygon coordinates. `levels` are
+  last `-`), sorted; may be empty. `center` is where the app draws the building's name, inside its footprint.
+  `footprint` and `outline` are GeoJSON MultiPolygon coordinates. `levels` are
   sorted by `ordinal` ascending (B1 = -1, 1F = 0) and may be empty. `entrances` may be empty: a building whose
   doors are not known has none, and the app falls back to `center`. `entrances[].name` and `levelId` may be `null`.
   `streetLevelId` is the level the building is entered from, which the app opens first: one of its own `levels`,
@@ -132,6 +133,7 @@ the decompressed size is under 16,000,000 bytes; the schema, `formatVersion` equ
 `buildingId`, `roomId`, `unitIds` entry and alias target resolves; a unit's room lists the unit and the other way
 round; ids are unique; every coordinate lies in its campus's box and has at most 7 decimals; every ring is closed;
 levels are sorted by ordinal, `codes` match the rooms, alias keys are normalised and every room code is an alias;
+every building's `center` lies inside its `footprint`;
 from format 2, a building with levels has a `streetLevelId` that is one of them, and one with none has `null`.
 
 ## Attribution
