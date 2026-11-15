@@ -86,7 +86,7 @@ def check_content(doc, errors):
         claim("building", b["id"])
         points.append((f"building {b['id']} center", b["campus"], b["center"]))
         shapes.append((f"building {b['id']} footprint", b["campus"], b["footprint"]))
-        if not inside(b["center"], b["footprint"]):
+        if doc["formatVersion"] >= 2 and not inside(b["center"], b["footprint"]):  # v1, frozen, has twelve outside
             errors.append(f"building {b['id']}: center is outside its footprint")
         ordinals = [level["ordinal"] for level in b["levels"]]
         if ordinals != sorted(ordinals) or len(set(ordinals)) != len(ordinals):

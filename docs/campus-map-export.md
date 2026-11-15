@@ -133,7 +133,7 @@ the decompressed size is under 16,000,000 bytes; the schema, `formatVersion` equ
 `buildingId`, `roomId`, `unitIds` entry and alias target resolves; a unit's room lists the unit and the other way
 round; ids are unique; every coordinate lies in its campus's box and has at most 7 decimals; every ring is closed;
 levels are sorted by ordinal, `codes` match the rooms, alias keys are normalised and every room code is an alias;
-every building's `center` lies inside its `footprint`;
+from format 2, every building's `center` lies inside its `footprint`;
 from format 2, a building with levels has a `streetLevelId` that is one of them, and one with none has `null`.
 
 ## Attribution
