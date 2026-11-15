@@ -3,8 +3,8 @@
 [README](../README.md) · [データ仕様と収録範囲](data.md) · [保守コマンド](maintenance.md)
 
 The Isct Companion app draws the Ookayama and Suzukakedai campus maps (buildings, floors, rooms, entrances,
-elevators, restrooms, AEDs and lounges) from one file: `campus-map/v2/campus-map.json.gz`, format version 2.
-This page is its contract. Schema: [`schema/campus-map-v2.schema.json`](../schema/campus-map-v2.schema.json).
+elevators, restrooms, AEDs and lounges) from one file: `campus-map/v3/campus-map.json.gz`, format version 3.
+This page is its contract. Schema: [`schema/campus-map-v3.schema.json`](../schema/campus-map-v3.schema.json).
 Validator: `scripts/validate_campus_map.py`, run by `scripts/validate_datasets.py` in CI.
 
 ## Where the data comes from
@@ -25,7 +25,8 @@ workflow writes it, and the automated publication paths cannot reach `campus-map
 ```json
 "campusMap": {
   "1": { "source": "campus-map/v1/campus-map.json.gz", "hash": "<sha256 hex of the .gz bytes>", "ts": "<UTC RFC 3339>" },
-  "2": { "source": "campus-map/v2/campus-map.json.gz", "hash": "<sha256 hex of the .gz bytes>", "ts": "<UTC RFC 3339>" }
+  "2": { "source": "campus-map/v2/campus-map.json.gz", "hash": "<sha256 hex of the .gz bytes>", "ts": "<UTC RFC 3339>" },
+  "3": { "source": "campus-map/v3/campus-map.json.gz", "hash": "<sha256 hex of the .gz bytes>", "ts": "<UTC RFC 3339>" }
 }
 ```
 
@@ -41,7 +42,8 @@ and is never updated again. The app reads only its own version key and never rea
 | Version | Directory | Since | Change |
 | --- | --- | --- | --- |
 | 1 | `campus-map/v1/` | 2026-11-13 | First format. Frozen since 2026-11-15. |
-| 2 | `campus-map/v2/` | 2026-11-15 | `buildings[].entrances[].principal` added: the building's main entrance. |
+| 2 | `campus-map/v2/` | 2026-11-15 | `buildings[].entrances[].principal` added: the building's main entrance. Frozen since 2026-11-15; no app release reads it. |
+| 3 | `campus-map/v3/` | 2026-11-15 | `principal` replaced by `buildings[].principalEntranceId`, which may name another building's entrance. |
 
 ## The file
 
@@ -52,7 +54,7 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
 
 ```json
 {
-  "formatVersion": 2,
+  "formatVersion": 3,
   "attribution": ["© OpenStreetMap contributors (ODbL)"],
   "buildings": [
     {
@@ -62,11 +64,12 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
       "codes": ["W9"],
       "center": [139.68, 35.60],
       "footprint": [[[[139.68, 35.60], "..."]]],
+      "principalEntranceId": "uuid",
       "levels": [
         { "id": "uuid", "ordinal": 0, "name": "1F", "outline": [[[[139.68, 35.60], "..."]]] }
       ],
       "entrances": [
-        { "id": "uuid", "point": [139.68, 35.60], "name": { "ja": "玄関1" }, "levelId": "uuid", "principal": true }
+        { "id": "uuid", "point": [139.68, 35.60], "name": { "ja": "玄関1" }, "levelId": "uuid" }
       ]
     }
   ],
@@ -94,10 +97,11 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
   last `-`), sorted; may be empty. `footprint` and `outline` are GeoJSON MultiPolygon coordinates. `levels` are
   sorted by `ordinal` ascending (B1 = -1, 1F = 0) and may be empty. `entrances` may be empty: a building whose
   doors are not known has none, and the app falls back to `center`. `entrances[].name` and `levelId` may be `null`.
-  `entrances[].principal` is `true` for the building's main entrance (IMDF opening category
-  `pedestrian.principal`) and `false` for every other entrance. At most one entrance of a building is principal; a
-  building whose main entrance is not settled has none. The main entrance's level is the floor the building is
-  entered from, which the app opens first.
+  `principalEntranceId` is the id of the building's main entrance (IMDF opening category `pedestrian.principal`), or
+  `null` when it is not settled. It is usually one of the building's own `entrances`, but a building entered through a
+  neighbour's door names that building's entrance (西2号館 names 西3号館's 3F 玄関); a door is listed once, under the
+  building it belongs to. The main entrance's floor is the floor the building is entered from, which the app opens
+  first: the building's level nearest the `ordinal` of the entrance's level.
 - `units`: `category` is one of `classroom room corridor elevator_lobby restroom stairs lounge porch`
   (`room` is a room with no known name; `porch` is outdoors). `polygon` is GeoJSON Polygon coordinates (one outer
   ring, then holes). A unit drawn as several parts becomes one unit per part, the later ids suffixed `#2`, `#3`.
@@ -126,7 +130,7 @@ the decompressed size is under 16,000,000 bytes; the schema, `formatVersion` equ
 `buildingId`, `roomId`, `unitIds` entry and alias target resolves; a unit's room lists the unit and the other way
 round; ids are unique; every coordinate lies in its campus's box and has at most 7 decimals; every ring is closed;
 levels are sorted by ordinal, `codes` match the rooms, alias keys are normalised and every room code is an alias;
-from format 2, no building has more than one principal entrance.
+in format 2 no building has more than one principal entrance; from format 3 every `principalEntranceId` is an entrance id.
 
 ## Attribution
 
