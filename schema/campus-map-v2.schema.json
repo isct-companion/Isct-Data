@@ -41,7 +41,7 @@
     "building": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "campus", "name", "codes", "center", "footprint", "levels", "entrances"],
+      "required": ["id", "campus", "name", "codes", "center", "footprint", "levels", "streetLevelId", "entrances"],
       "properties": {
         "id": {"$ref": "#/$defs/id"},
         "campus": {"enum": ["ookayama", "suzukakedai"]},
@@ -50,6 +50,7 @@
         "center": {"$ref": "#/$defs/position"},
         "footprint": {"$ref": "#/$defs/multiPolygon"},
         "levels": {"type": "array", "items": {"$ref": "#/$defs/level"}},
+        "streetLevelId": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/id"}]},
         "entrances": {"type": "array", "items": {"$ref": "#/$defs/entrance"}}
       }
     },
@@ -67,13 +68,12 @@
     "entrance": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "point", "name", "levelId", "principal"],
+      "required": ["id", "point", "name", "levelId"],
       "properties": {
         "id": {"$ref": "#/$defs/id"},
         "point": {"$ref": "#/$defs/position"},
         "name": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/name"}]},
-        "levelId": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/id"}]},
-        "principal": {"type": "boolean"}
+        "levelId": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/id"}]}
       }
     },
     "unit": {

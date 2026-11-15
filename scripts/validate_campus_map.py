@@ -85,18 +85,13 @@ def check_content(doc, errors):
             level_campus[level["id"]], level_building[level["id"]] = b["campus"], b["id"]
             shapes.append((f"level {level['id']} outline", b["campus"], level["outline"]))
         own_levels = {level["id"] for level in b["levels"]}
-        if sum(bool(entrance.get("principal")) for entrance in b["entrances"]) > 1:  # format 2 on
-            errors.append(f"building {b['id']}: more than one principal entrance")
+        if "streetLevelId" in b and (b["streetLevelId"] not in own_levels if b["levels"] else b["streetLevelId"] is not None):
+            errors.append(f"building {b['id']}: streetLevelId is not one of its levels")  # format 2 on
         for entrance in b["entrances"]:
             claim("entrance", entrance["id"])
             points.append((f"entrance {entrance['id']}", b["campus"], entrance["point"]))
             if entrance["levelId"] is not None and entrance["levelId"] not in own_levels:
                 errors.append(f"entrance {entrance['id']}: levelId is not a level of its building")
-
-    entrances = {e["id"] for b in doc["buildings"] for e in b["entrances"]}
-    for b in doc["buildings"]:  # format 3 on; it may name another building's entrance
-        if b.get("principalEntranceId") is not None and b["principalEntranceId"] not in entrances:
-            errors.append(f"building {b['id']}: principalEntranceId does not resolve to an entrance")
 
     rooms = {r["id"]: r for r in doc["rooms"]}
     for kind in ("units", "amenities", "rooms"):

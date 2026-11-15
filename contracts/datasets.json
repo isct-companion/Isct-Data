@@ -73,7 +73,7 @@
       "versionField": "formatVersion",
       "pathValueField": "formatVersion",
       "index": {"group": "campusMap", "field": null, "multiple": false},
-      "requiredFiles": ["campus-map/v1/campus-map.json.gz", "campus-map/v2/campus-map.json.gz", "campus-map/v3/campus-map.json.gz"]
+      "requiredFiles": ["campus-map/v1/campus-map.json.gz", "campus-map/v2/campus-map.json.gz"]
     }
   }
 }
