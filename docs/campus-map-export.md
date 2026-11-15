@@ -3,8 +3,8 @@
 [README](../README.md) · [データ仕様と収録範囲](data.md) · [保守コマンド](maintenance.md)
 
 The Isct Companion app draws the Ookayama and Suzukakedai campus maps (buildings, floors, rooms, entrances,
-elevators, restrooms, AEDs and lounges) from one file: `campus-map/v1/campus-map.json.gz`, format version 1.
-This page is its contract. Schema: [`schema/campus-map-v1.schema.json`](../schema/campus-map-v1.schema.json).
+elevators, restrooms, AEDs and lounges) from one file: `campus-map/v2/campus-map.json.gz`, format version 2.
+This page is its contract. Schema: [`schema/campus-map-v2.schema.json`](../schema/campus-map-v2.schema.json).
 Validator: `scripts/validate_campus_map.py`, run by `scripts/validate_datasets.py` in CI.
 
 ## Where the data comes from
@@ -23,7 +23,10 @@ workflow writes it, and the automated publication paths cannot reach `campus-map
 `index.json` has one top-level key beside `academicYears` and `admissionYears`:
 
 ```json
-"campusMap": { "1": { "source": "campus-map/v1/campus-map.json.gz", "hash": "<sha256 hex of the .gz bytes>", "ts": "<UTC RFC 3339>" } }
+"campusMap": {
+  "1": { "source": "campus-map/v1/campus-map.json.gz", "hash": "<sha256 hex of the .gz bytes>", "ts": "<UTC RFC 3339>" },
+  "2": { "source": "campus-map/v2/campus-map.json.gz", "hash": "<sha256 hex of the .gz bytes>", "ts": "<UTC RFC 3339>" }
+}
 ```
 
 The key is the format version as a string. The entry has exactly `source`, `hash` and `ts`, like every other
@@ -32,8 +35,13 @@ the gzip file's bytes. `scripts/update_subscription_index.py` writes the hash an
 
 ## Versioning
 
-A later format gets a new key and a new directory (`campus-map/v2/`); `v1` stays, frozen, for the app releases
-that read it. The app reads only its own version key and never reads another format.
+A later format gets a new key and a new directory; an older one stays, frozen, for the app releases that read it,
+and is never updated again. The app reads only its own version key and never reads another format.
+
+| Version | Directory | Since | Change |
+| --- | --- | --- | --- |
+| 1 | `campus-map/v1/` | 2026-11-13 | First format. Frozen since 2026-11-15. |
+| 2 | `campus-map/v2/` | 2026-11-15 | `buildings[].entrances[].principal` added: the building's main entrance. |
 
 ## The file
 
@@ -44,7 +52,7 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
 
 ```json
 {
-  "formatVersion": 1,
+  "formatVersion": 2,
   "attribution": ["© OpenStreetMap contributors (ODbL)"],
   "buildings": [
     {
@@ -58,7 +66,7 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
         { "id": "uuid", "ordinal": 0, "name": "1F", "outline": [[[[139.68, 35.60], "..."]]] }
       ],
       "entrances": [
-        { "id": "uuid", "point": [139.68, 35.60], "name": { "ja": "玄関1" }, "levelId": "uuid" }
+        { "id": "uuid", "point": [139.68, 35.60], "name": { "ja": "玄関1" }, "levelId": "uuid", "principal": true }
       ]
     }
   ],
@@ -86,6 +94,10 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
   last `-`), sorted; may be empty. `footprint` and `outline` are GeoJSON MultiPolygon coordinates. `levels` are
   sorted by `ordinal` ascending (B1 = -1, 1F = 0) and may be empty. `entrances` may be empty: a building whose
   doors are not known has none, and the app falls back to `center`. `entrances[].name` and `levelId` may be `null`.
+  `entrances[].principal` is `true` for the building's main entrance (IMDF opening category
+  `pedestrian.principal`) and `false` for every other entrance. At most one entrance of a building is principal; a
+  building whose main entrance is not settled has none. The main entrance's level is the floor the building is
+  entered from, which the app opens first.
 - `units`: `category` is one of `classroom room corridor elevator_lobby restroom stairs lounge porch`
   (`room` is a room with no known name; `porch` is outdoors). `polygon` is GeoJSON Polygon coordinates (one outer
   ring, then holes). A unit drawn as several parts becomes one unit per part, the later ids suffixed `#2`, `#3`.
@@ -113,7 +125,8 @@ decompressed JSON stays under 16 MB (16,000,000 bytes).
 the decompressed size is under 16,000,000 bytes; the schema, `formatVersion` equal to the key; every `levelId`,
 `buildingId`, `roomId`, `unitIds` entry and alias target resolves; a unit's room lists the unit and the other way
 round; ids are unique; every coordinate lies in its campus's box and has at most 7 decimals; every ring is closed;
-levels are sorted by ordinal, `codes` match the rooms, alias keys are normalised and every room code is an alias.
+levels are sorted by ordinal, `codes` match the rooms, alias keys are normalised and every room code is an alias;
+from format 2, no building has more than one principal entrance.
 
 ## Attribution
 

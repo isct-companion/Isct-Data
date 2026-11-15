@@ -95,6 +95,11 @@
       "source": "campus-map/v1/campus-map.json.gz",
       "hash": "59ce67133afe3dfe063eba12f32943f9b3a6950709d8c444736f7dd8659b3ba6",
       "ts": "2026-11-13T07:36:01Z"
+    },
+    "2": {
+      "source": "campus-map/v2/campus-map.json.gz",
+      "hash": "08ef57cdf76b8c8a2b608935afbb98a4cec722c24473806172f3739861a28d11",
+      "ts": "2026-11-15T02:09:02Z"
     }
   }
 }

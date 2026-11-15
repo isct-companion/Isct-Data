@@ -85,6 +85,8 @@ def check_content(doc, errors):
             level_campus[level["id"]], level_building[level["id"]] = b["campus"], b["id"]
             shapes.append((f"level {level['id']} outline", b["campus"], level["outline"]))
         own_levels = {level["id"] for level in b["levels"]}
+        if sum(bool(entrance.get("principal")) for entrance in b["entrances"]) > 1:  # format 2 on
+            errors.append(f"building {b['id']}: more than one principal entrance")
         for entrance in b["entrances"]:
             claim("entrance", entrance["id"])
             points.append((f"entrance {entrance['id']}", b["campus"], entrance["point"]))
