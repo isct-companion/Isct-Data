@@ -93,6 +93,11 @@ def check_content(doc, errors):
             if entrance["levelId"] is not None and entrance["levelId"] not in own_levels:
                 errors.append(f"entrance {entrance['id']}: levelId is not a level of its building")
 
+    entrances = {e["id"] for b in doc["buildings"] for e in b["entrances"]}
+    for b in doc["buildings"]:  # format 3 on; it may name another building's entrance
+        if b.get("principalEntranceId") is not None and b["principalEntranceId"] not in entrances:
+            errors.append(f"building {b['id']}: principalEntranceId does not resolve to an entrance")
+
     rooms = {r["id"]: r for r in doc["rooms"]}
     for kind in ("units", "amenities", "rooms"):
         for item in doc[kind]:
