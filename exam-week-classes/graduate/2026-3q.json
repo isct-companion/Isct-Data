@@ -8,8 +8,8 @@
       "title": "2026年度 第3Q 大学院課程期末試験時間割",
       "url": "https://www.titech.ac.jp/student/pdf/life-graduate-exam-timetable.pdf",
       "landingPageUrl": "https://www.titech.ac.jp/student/students/life/graduate-exam",
-      "retrievedAt": "2026-11-11T07:41:51Z",
-      "sha256": "cfcd4027b2d14b620014e3f39a9c84897db3c0673590313272df687596f3387c"
+      "retrievedAt": "2026-11-16T06:36:04Z",
+      "sha256": "74c5912d50174eeab7b5efe4a709d48c90f2789442a5a6c1d57343e2adf8aaea"
     }
   ],
   "entries": [
@@ -55,6 +55,31 @@
       "label": {
         "ja": "横断科目６：長寿社会と生命",
         "en": "Transdisciplinary studies 6:Longevity Society and Life"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "id": "2026-3Q-graduate-LAJ.J412-08-class-2026-11-25-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J412-08",
+      "date": "2026-11-25",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W9-202"
+      },
+      "label": {
+        "ja": "初級日本語2 3QA",
+        "en": "Basic Japanese 2 3QA"
       },
       "sourceIds": [
         "official-graduate-2026-3q"
@@ -1064,6 +1089,31 @@
       ]
     },
     {
+      "id": "2026-3Q-graduate-LAE.E453-class-2026-11-30-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E453",
+      "date": "2026-11-30",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S4-203"
+      },
+      "label": {
+        "ja": "TOEFL対策セミナー第十五",
+        "en": "TOEFL Seminar 15"
+      },
+      "sourceIds": [
+        "official-graduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
       "id": "2026-3Q-graduate-MTH.B403-class-2026-11-30-3",
       "kind": "class",
       "status": "scheduled",
@@ -1125,7 +1175,7 @@
         8
       ],
       "room": {
-        "ja": "北2号館571およびZC研実験 室 North 2-571,ZC Lab."
+        "ja": "北2号館571およびZC研実験室 North 2-571,ZC Lab"
       },
       "label": {
         "ja": "核不拡散・廃止措置材料工学実験Ａ",
@@ -1150,7 +1200,7 @@
         8
       ],
       "room": {
-        "ja": "北2号館571およびZC研実験 室 North 2-571,ZC Lab."
+        "ja": "北2号館571およびZC研実験室 North 2-571,ZC Lab"
       },
       "label": {
         "ja": "原子力材料工学実践特論",
