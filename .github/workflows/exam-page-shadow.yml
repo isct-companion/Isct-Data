@@ -1,0 +1,114 @@
+name: Compare full and page-scoped exam review
+
+on:
+  workflow_call:
+    inputs:
+      before-run:
+        type: string
+        required: true
+      after-run:
+        type: string
+        required: true
+    secrets:
+      COPILOT_GITHUB_TOKEN:
+        required: true
+
+permissions: {}
+
+jobs:
+  prepare:
+    if: github.repository == 'isct-companion/Isct-Data'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Freeze both PDF snapshots and prepare the evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE_RUN: ${{ inputs.before-run }}
+          AFTER_RUN: ${{ inputs.after-run }}
+        run: >-
+          python scripts/exam_page_shadow.py prepare --before-run "$BEFORE_RUN"
+          --after-run "$AFTER_RUN" --output "$RUNNER_TEMP/exam-shadow"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exam-shadow-evidence-full
+          path: ${{ runner.temp }}/exam-shadow/full/
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exam-shadow-evidence-pages
+          path: ${{ runner.temp }}/exam-shadow/pages/
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exam-shadow-reference
+          path: ${{ runner.temp }}/exam-shadow/report/
+          if-no-files-found: error
+          retention-days: 7
+
+  review:
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix:
+        arm: [full, pages]
+        slot: [a, b]
+    permissions:
+      actions: read
+      contents: read
+    uses: ./.github/workflows/review-exam-page-shadow.lock.yml
+    with:
+      arm: ${{ matrix.arm }}
+      slot: ${{ matrix.slot }}
+    secrets:
+      COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
+
+  grade:
+    needs: [prepare, review]
+    if: always() && needs.prepare.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: exam-shadow-reference
+          path: ${{ runner.temp }}/exam-shadow/reference
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: exam-shadow-answer-*
+          path: ${{ runner.temp }}/exam-shadow/answers
+      - name: Check scope coverage and all four independent reviews
+        run: >-
+          python scripts/exam_page_shadow.py grade
+          --reference "$RUNNER_TEMP/exam-shadow/reference/reference.json"
+          --answers "$RUNNER_TEMP/exam-shadow/answers"
+          --output "$RUNNER_TEMP/exam-shadow/result.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: exam-shadow-result
+          path: ${{ runner.temp }}/exam-shadow/result.json
+          if-no-files-found: error
+          retention-days: 7

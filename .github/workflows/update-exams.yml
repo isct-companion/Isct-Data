@@ -9,16 +9,25 @@ on:
         description: Run the AI review even if the script finds no source change
         type: boolean
         default: false
+      shadow_before_run:
+        description: Earlier production exam run ID for the read-only page review trial
+        type: string
+        default: ''
+      shadow_after_run:
+        description: Later production exam run ID (leave blank to use the current official PDFs)
+        type: string
+        default: ''
 
 permissions: {}
 
 # One public-data update at a time, across all datasets.
 concurrency:
-  group: public-data-update
+  group: ${{ (inputs.shadow_before_run != '' || inputs.shadow_after_run != '') && 'exam-page-shadow' || 'public-data-update' }}
   cancel-in-progress: false
 
 jobs:
   pipeline:
+    if: inputs.shadow_before_run == '' && inputs.shadow_after_run == ''
     permissions:
       actions: read
       contents: read
@@ -29,3 +38,15 @@ jobs:
       dataset: exams
       force: ${{ inputs.force || false }}
     secrets: inherit
+
+  page-shadow:
+    if: github.event_name == 'workflow_dispatch' && (inputs.shadow_before_run != '' || inputs.shadow_after_run != '')
+    permissions:
+      actions: read
+      contents: read
+    uses: ./.github/workflows/exam-page-shadow.yml
+    with:
+      before-run: ${{ inputs.shadow_before_run }}
+      after-run: ${{ inputs.shadow_after_run }}
+    secrets:
+      COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
