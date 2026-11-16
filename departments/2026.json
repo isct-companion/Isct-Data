@@ -6351,7 +6351,7 @@
           "level": 200,
           "code": "EEE.C201",
           "title": {
-            "ja": " 電気回路第一"
+            "ja": "電気回路第一"
           },
           "credits": {
             "lecture": 2,
@@ -6372,7 +6372,7 @@
           "level": 200,
           "code": "EEE.C202",
           "title": {
-            "ja": " 電気回路第二"
+            "ja": "電気回路第二"
           },
           "credits": {
             "lecture": 2,
@@ -6393,7 +6393,7 @@
           "level": 200,
           "code": "EEE.C211",
           "title": {
-            "ja": " アナログ電子回路"
+            "ja": "アナログ電子回路"
           },
           "credits": {
             "lecture": 2,
@@ -6414,7 +6414,7 @@
           "level": 200,
           "code": "EEE.C261",
           "title": {
-            "ja": " 制御工学"
+            "ja": "制御工学"
           },
           "credits": {
             "lecture": 2,
@@ -6475,7 +6475,7 @@
           "level": 200,
           "code": "EEE.E201",
           "title": {
-            "ja": " 電磁気学第一"
+            "ja": "電磁気学第一"
           },
           "credits": {
             "lecture": 2,
@@ -6496,7 +6496,7 @@
           "level": 200,
           "code": "EEE.E202",
           "title": {
-            "ja": " 電磁気学第二"
+            "ja": "電磁気学第二"
           },
           "credits": {
             "lecture": 2,
@@ -6517,7 +6517,7 @@
           "level": 200,
           "code": "EEE.E211",
           "title": {
-            "ja": " 波動工学"
+            "ja": "波動工学"
           },
           "credits": {
             "lecture": 2,
@@ -6538,7 +6538,7 @@
           "level": 200,
           "code": "EEE.L211",
           "title": {
-            "ja": " 電気電子工学実験第一 A"
+            "ja": "電気電子工学実験第一 A"
           },
           "credits": {
             "lecture": 0,
@@ -6559,7 +6559,7 @@
           "level": 200,
           "code": "EEE.L212",
           "title": {
-            "ja": " 電気電子工学実験第一 B"
+            "ja": "電気電子工学実験第一 B"
           },
           "credits": {
             "lecture": 0,
@@ -6580,7 +6580,7 @@
           "level": 200,
           "code": "EEE.L221",
           "title": {
-            "ja": " 電気電子工学実験第二 A"
+            "ja": "電気電子工学実験第二 A"
           },
           "credits": {
             "lecture": 0,
@@ -6601,7 +6601,7 @@
           "level": 200,
           "code": "EEE.L222",
           "title": {
-            "ja": " 電気電子工学実験第二 B"
+            "ja": "電気電子工学実験第二 B"
           },
           "credits": {
             "lecture": 0,
@@ -6622,7 +6622,7 @@
           "level": 200,
           "code": "EEE.L241",
           "title": {
-            "ja": " 技術者倫理（電気電子）"
+            "ja": "技術者倫理（電気電子）"
           },
           "credits": {
             "lecture": 1,
@@ -6663,7 +6663,7 @@
           "level": 200,
           "code": "EEE.M201",
           "title": {
-            "ja": " 解析学（電気電子）"
+            "ja": "解析学（電気電子）"
           },
           "credits": {
             "lecture": 2,
@@ -6684,7 +6684,7 @@
           "level": 200,
           "code": "EEE.M211",
           "title": {
-            "ja": " ﾌｰﾘｴ変換とﾗﾌﾟﾗｽ変換"
+            "ja": "ﾌｰﾘｴ変換とﾗﾌﾟﾗｽ変換"
           },
           "credits": {
             "lecture": 2,
@@ -6703,9 +6703,30 @@
             "ja": "電気電子系"
           },
           "level": 200,
+          "code": "EEE.M221",
+          "title": {
+            "ja": "計算ｱﾙｺﾞﾘｽﾞﾑとﾌﾟﾛｸﾞﾗﾐﾝｸﾞ"
+          },
+          "credits": {
+            "lecture": 2,
+            "exercise": 0,
+            "lab": 0
+          },
+          "sourceKind": "course-table",
+          "sourcePages": [
+            3
+          ],
+          "note": "Official course-table code: EEE.M221.R",
+          "mark": "required"
+        },
+        {
+          "category": {
+            "ja": "電気電子系"
+          },
+          "level": 200,
           "code": "EEE.M231",
           "title": {
-            "ja": " 応用確率統計"
+            "ja": "応用確率統計"
           },
           "credits": {
             "lecture": 2,
@@ -6726,7 +6747,7 @@
           "level": 200,
           "code": "EEE.M241",
           "title": {
-            "ja": " 離散時間システム"
+            "ja": "離散時間システム"
           },
           "credits": {
             "lecture": 1,
@@ -6839,6 +6860,26 @@
             3
           ],
           "note": "Official course-table code: EEE.C321.L"
+        },
+        {
+          "category": {
+            "ja": "電気電子系"
+          },
+          "level": 300,
+          "code": "EEE.C331",
+          "title": {
+            "ja": "ｺﾝﾋﾟｭｰﾀｱｰｷﾃｸﾁｬ（電気電子）"
+          },
+          "credits": {
+            "lecture": 1,
+            "exercise": 0,
+            "lab": 0
+          },
+          "sourceKind": "course-table",
+          "sourcePages": [
+            3
+          ],
+          "note": "Official course-table code: EEE.C331.L"
         },
         {
           "category": {
@@ -7067,7 +7108,7 @@
           "level": 300,
           "code": "EEE.L311",
           "title": {
-            "ja": " 電気電子工学実験第三 A"
+            "ja": "電気電子工学実験第三 A"
           },
           "credits": {
             "lecture": 0,
@@ -7088,7 +7129,7 @@
           "level": 300,
           "code": "EEE.L312",
           "title": {
-            "ja": " 電気電子工学実験第三 B"
+            "ja": "電気電子工学実験第三 B"
           },
           "credits": {
             "lecture": 0,
@@ -7149,7 +7190,7 @@
           "level": 300,
           "code": "EEE.L351",
           "title": {
-            "ja": " 科学技術者実践英語"
+            "ja": "科学技術者実践英語"
           },
           "credits": {
             "lecture": 1,
@@ -7529,7 +7570,7 @@
           "level": 300,
           "code": "EEE.Z381",
           "title": {
-            "ja": " 研究プロジェクト（電気電子系）"
+            "ja": "研究プロジェクト（電気電子系）"
           },
           "credits": {
             "lecture": 0,
@@ -7570,7 +7611,7 @@
           "level": 300,
           "code": "EEE.Z388",
           "title": {
-            "ja": " 学士特定課題研究（電気電子系）"
+            "ja": "学士特定課題研究（電気電子系）"
           },
           "credits": {
             "lecture": 0,
@@ -7591,7 +7632,7 @@
           "level": 300,
           "code": "EEE.Z380",
           "title": {
-            "ja": " 学士特定課題研究 S（電気電子系）"
+            "ja": "学士特定課題研究 S（電気電子系）"
           },
           "credits": {
             "lecture": 0,
@@ -7612,7 +7653,7 @@
           "level": 300,
           "code": "EEE.Z399",
           "title": {
-            "ja": " 学士特定課題プロジェクト（電気電子系）"
+            "ja": "学士特定課題プロジェクト（電気電子系）"
           },
           "credits": {
             "lecture": 0,
