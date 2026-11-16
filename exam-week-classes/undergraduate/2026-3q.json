@@ -8,8 +8,8 @@
       "title": "2026年度 第3Q 学士課程期末試験時間割",
       "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
       "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
-      "retrievedAt": "2026-11-14T06:29:23Z",
-      "sha256": "6cc31049b3258866d17ddc88613e69bf60e374f1b218f7365f5fbe8715bac04d"
+      "retrievedAt": "2026-11-16T06:36:04Z",
+      "sha256": "7b744a16cfe105b3a3f1a10ac1cab21c862b7fdfd5e7292f1be40dc5b308e341"
     }
   ],
   "entries": [
@@ -185,7 +185,7 @@
         "official-undergraduate-2026-3q"
       ],
       "sourcePages": [
-        2
+        1
       ]
     },
     {
@@ -335,7 +335,32 @@
         "official-undergraduate-2026-3q"
       ],
       "sourcePages": [
-        3
+        2
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAJ.J203-03-class-2026-11-25-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J203-03",
+      "date": "2026-11-25",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W9-201"
+      },
+      "label": {
+        "ja": "日本語第七 GSEP",
+        "en": "Japanese 7 GSEP"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        2
       ]
     },
     {
@@ -380,6 +405,31 @@
       "label": {
         "ja": "スペイン語会話（入門・基礎）３",
         "en": "Spanish Conversation: Basic Course 3"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAJ.J103-04-class-2026-11-25-7",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAJ.J103-04",
+      "date": "2026-11-25",
+      "periods": [
+        7,
+        8
+      ],
+      "room": {
+        "ja": "W9-202"
+      },
+      "label": {
+        "ja": "日本語第三 GSEP",
+        "en": "Japanese 3 GSEP"
       },
       "sourceIds": [
         "official-undergraduate-2026-3q"
@@ -2764,6 +2814,31 @@
       ]
     },
     {
+      "id": "2026-3Q-undergraduate-LAE.E113-05-class-2026-12-02-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-05",
+      "date": "2026-12-02",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "W3-201"
+      },
+      "label": {
+        "ja": "英語第三 5-LS",
+        "en": "English 3 5-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
       "id": "2026-3Q-undergraduate-LAE.E153-02-class-2026-12-02-1",
       "kind": "class",
       "status": "scheduled",
@@ -2889,6 +2964,31 @@
       ]
     },
     {
+      "id": "2026-3Q-undergraduate-LAE.E213-06-class-2026-12-02-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-06",
+      "date": "2026-12-02",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "W3-201"
+      },
+      "label": {
+        "ja": "英語第七 6-LS",
+        "en": "English 7 6-LS"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
       "id": "2026-3Q-undergraduate-LAL.S203-15-class-2026-12-02-3",
       "kind": "class",
       "status": "scheduled",
@@ -2930,6 +3030,31 @@
       "label": {
         "ja": "ロボット機構学",
         "en": "Robot Kinematics"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-20-class-2026-12-02-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-20",
+      "date": "2026-12-02",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W3-201"
+      },
+      "label": {
+        "ja": "英語第七 20-LS",
+        "en": "English 7 20-LS"
       },
       "sourceIds": [
         "official-undergraduate-2026-3q"
