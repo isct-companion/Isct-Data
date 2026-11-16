@@ -8,8 +8,8 @@
       "title": "2026年度 第3Q 学士課程期末試験時間割",
       "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
       "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
-      "retrievedAt": "2026-11-16T06:36:04Z",
-      "sha256": "7b744a16cfe105b3a3f1a10ac1cab21c862b7fdfd5e7292f1be40dc5b308e341"
+      "retrievedAt": "2026-11-16T12:07:44Z",
+      "sha256": "91f43dffa0af3d666c08dc205dd67d1b2fd494438679b12d24eb4209038d3496"
     }
   ],
   "entries": [
@@ -539,6 +539,31 @@
       ]
     },
     {
+      "id": "2026-3Q-undergraduate-LAE.E113-33-class-2026-11-26-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E113-33",
+      "date": "2026-11-26",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "英語第三 33-RW",
+        "en": "English 3 33-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
       "id": "2026-3Q-undergraduate-LAE.E113-36-class-2026-11-26-1",
       "kind": "class",
       "status": "scheduled",
@@ -739,6 +764,31 @@
       ]
     },
     {
+      "id": "2026-3Q-undergraduate-LAE.E213-31-class-2026-11-26-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-31",
+      "date": "2026-11-26",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "M-B101"
+      },
+      "label": {
+        "ja": "英語第七 31-RW",
+        "en": "English 7 31-RW"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
       "id": "2026-3Q-undergraduate-LAS.I121-12-class-2026-11-26-3",
       "kind": "class",
       "status": "scheduled",
@@ -805,6 +855,31 @@
       "label": {
         "ja": "電気回路第二",
         "en": "Electric Circuits II"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        5
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAE.E213-43-class-2026-11-26-5",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAE.E213-43",
+      "date": "2026-11-26",
+      "periods": [
+        5,
+        6
+      ],
+      "room": {
+        "ja": "W3-501"
+      },
+      "label": {
+        "ja": "英語第七 43-RW",
+        "en": "English 7 43-RW"
       },
       "sourceIds": [
         "official-undergraduate-2026-3q"
