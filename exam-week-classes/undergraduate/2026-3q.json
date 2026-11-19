@@ -8,8 +8,8 @@
       "title": "2026年度 第3Q 学士課程期末試験時間割",
       "url": "https://www.titech.ac.jp/student/pdf/life-undergraduate-exam-timetable.pdf",
       "landingPageUrl": "https://www.titech.ac.jp/student/students/life/undergraduate-exam",
-      "retrievedAt": "2026-11-16T12:07:44Z",
-      "sha256": "91f43dffa0af3d666c08dc205dd67d1b2fd494438679b12d24eb4209038d3496"
+      "retrievedAt": "2026-11-19T07:30:39Z",
+      "sha256": "3eb4d3a631ab1be61605a6603b996d9ab5413df7e44182fa2cf6359985c444c4"
     }
   ],
   "entries": [
@@ -3014,6 +3014,31 @@
       ]
     },
     {
+      "id": "2026-3Q-undergraduate-LAL.S203-11-class-2026-12-02-1",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-11",
+      "date": "2026-12-02",
+      "periods": [
+        1,
+        2
+      ],
+      "room": {
+        "ja": "S3-207"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S35",
+        "en": "Spanish: Basic Course 3 S35"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
       "id": "2026-3Q-undergraduate-LAE.E133-02-class-2026-12-02-3",
       "kind": "class",
       "status": "scheduled",
@@ -3080,6 +3105,31 @@
       "label": {
         "ja": "スペイン語初級３ S41",
         "en": "Spanish: Basic Course 3 S41"
+      },
+      "sourceIds": [
+        "official-undergraduate-2026-3q"
+      ],
+      "sourcePages": [
+        15
+      ]
+    },
+    {
+      "id": "2026-3Q-undergraduate-LAL.S203-19-class-2026-12-02-3",
+      "kind": "class",
+      "status": "scheduled",
+      "quarter": "3Q",
+      "courseCode": "LAL.S203-19",
+      "date": "2026-12-02",
+      "periods": [
+        3,
+        4
+      ],
+      "room": {
+        "ja": "S3-207"
+      },
+      "label": {
+        "ja": "スペイン語初級３ S45",
+        "en": "Spanish: Basic Course 3 S45"
       },
       "sourceIds": [
         "official-undergraduate-2026-3q"
