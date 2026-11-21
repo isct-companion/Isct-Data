@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 2,
+  "academicYear": 2027,
+  "source": [
+    {
+      "title": "Science Tokyo 2027年度 授業日程",
+      "url": "https://www.titech.ac.jp/student/students/life/schedules"
+    },
+    {
+      "title": "Science Tokyo 2027年度 授業日程（月毎）",
+      "url": "https://www.titech.ac.jp/student/pdf/life-schedules-month-ay2027.pdf"
+    },
+    {
+      "title": "Science Tokyo 2027年度 授業日程（曜日毎）",
+      "url": "https://www.titech.ac.jp/student/pdf/life-schedules-week-ay2027.pdf"
+    },
+    {
+      "title": "内閣府 国民の祝日・休日",
+      "url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html"
+    }
+  ],
+  "quarters": {
+    "1Q": {
+      "start": "2027-04-03",
+      "end": "2027-06-08"
+    },
+    "2Q": {
+      "start": "2027-06-09",
+      "end": "2027-08-05"
+    },
+    "3Q": {
+      "start": "2027-09-27",
+      "end": "2027-12-02"
+    },
+    "4Q": {
+      "start": "2027-12-03",
+      "end": "2028-02-08"
+    }
+  },
+  "teachingRanges": {
+    "1Q": [
+      {
+        "start": "2027-04-07",
+        "end": "2027-05-31"
+      }
+    ],
+    "2Q": [
+      {
+        "start": "2027-06-09",
+        "end": "2027-07-27"
+      },
+      {
+        "start": "2027-07-29",
+        "end": "2027-07-29"
+      }
+    ],
+    "3Q": [
+      {
+        "start": "2027-10-01",
+        "end": "2027-11-24"
+      }
+    ],
+    "4Q": [
+      {
+        "start": "2027-12-03",
+        "end": "2027-12-27"
+      },
+      {
+        "start": "2028-01-04",
+        "end": "2028-01-31"
+      }
+    ]
+  },
+  "examRanges": {
+    "1Q": [
+      {
+        "start": "2027-06-01",
+        "end": "2027-06-08"
+      }
+    ],
+    "2Q": [
+      {
+        "start": "2027-07-28",
+        "end": "2027-07-28"
+      },
+      {
+        "start": "2027-07-30",
+        "end": "2027-08-05"
+      }
+    ],
+    "3Q": [
+      {
+        "start": "2027-11-25",
+        "end": "2027-12-02"
+      }
+    ],
+    "4Q": [
+      {
+        "start": "2028-02-01",
+        "end": "2028-02-08"
+      }
+    ]
+  },
+  "days": [
+    {
+      "date": "2027-04-29",
+      "type": "holiday",
+      "label": {
+        "ja": "昭和の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-05-03",
+      "type": "holiday",
+      "label": {
+        "ja": "憲法記念日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-05-04",
+      "type": "holiday",
+      "label": {
+        "ja": "みどりの日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-05-05",
+      "type": "holiday",
+      "label": {
+        "ja": "こどもの日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-05-07",
+      "type": "replacement",
+      "label": {
+        "ja": "火曜日の授業"
+      },
+      "replacementDay": 2
+    },
+    {
+      "date": "2027-05-22",
+      "type": "no-class",
+      "label": {
+        "ja": "ホームカミングデイ（大岡山）のため授業休み"
+      }
+    },
+    {
+      "date": "2027-07-08",
+      "type": "replacement",
+      "label": {
+        "ja": "月曜日の授業"
+      },
+      "replacementDay": 1
+    },
+    {
+      "date": "2027-07-19",
+      "type": "holiday",
+      "label": {
+        "ja": "海の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-08-11",
+      "type": "holiday",
+      "label": {
+        "ja": "山の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-09-20",
+      "type": "holiday",
+      "label": {
+        "ja": "敬老の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-09-23",
+      "type": "holiday",
+      "label": {
+        "ja": "秋分の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-10-08",
+      "type": "no-class",
+      "label": {
+        "ja": "大学祭（準備・片付け含む）のため授業休み"
+      }
+    },
+    {
+      "date": "2027-10-09",
+      "type": "no-class",
+      "label": {
+        "ja": "大学祭（準備・片付け含む）のため授業休み"
+      }
+    },
+    {
+      "date": "2027-10-10",
+      "type": "no-class",
+      "label": {
+        "ja": "大学祭（準備・片付け含む）のため授業休み"
+      }
+    },
+    {
+      "date": "2027-10-11",
+      "type": "no-class",
+      "label": {
+        "ja": "大学祭（準備・片付け含む）のため授業休み"
+      }
+    },
+    {
+      "date": "2027-11-03",
+      "type": "holiday",
+      "label": {
+        "ja": "文化の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2027-11-23",
+      "type": "holiday",
+      "label": {
+        "ja": "勤労感謝の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2028-01-01",
+      "type": "holiday",
+      "label": {
+        "ja": "元日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2028-01-10",
+      "type": "holiday",
+      "label": {
+        "ja": "成人の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2028-01-14",
+      "type": "no-class",
+      "label": {
+        "ja": "大学入学共通テスト（準備含む）のため授業休み"
+      }
+    },
+    {
+      "date": "2028-01-15",
+      "type": "no-class",
+      "label": {
+        "ja": "大学入学共通テスト（準備含む）のため授業休み"
+      }
+    },
+    {
+      "date": "2028-02-11",
+      "type": "holiday",
+      "label": {
+        "ja": "建国記念の日（国民の祝日）"
+      }
+    },
+    {
+      "date": "2028-02-23",
+      "type": "holiday",
+      "label": {
+        "ja": "天皇誕生日（国民の祝日）"
+      }
+    }
+  ]
+}
