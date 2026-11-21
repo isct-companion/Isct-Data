@@ -9,7 +9,7 @@
       "versionField": "schemaVersion",
       "pathValueField": "academicYear",
       "index": {"group": "academicYears", "field": "academicCalendar", "multiple": false},
-      "requiredFiles": ["academic-calendar/2025.json", "academic-calendar/2026.json"]
+      "requiredFiles": ["academic-calendar/2025.json", "academic-calendar/2026.json", "academic-calendar/2027.json"]
     },
     "departments": {
       "glob": "departments/**/*.json",
@@ -27,7 +27,7 @@
       "versionField": "schemaVersion",
       "pathValueField": "academicYear",
       "index": {"group": "academicYears", "field": "importantDates", "multiple": false},
-      "requiredFiles": ["important-dates/2025.json", "important-dates/2026.json"]
+      "requiredFiles": ["important-dates/2025.json", "important-dates/2026.json", "important-dates/2027.json"]
     },
     "class-schedules": {
       "glob": "class-schedules/**/*.json",

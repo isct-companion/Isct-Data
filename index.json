@@ -72,6 +72,18 @@
         "hash": "6c7b06faa0399ed7c5dc20db6614abb0578e34e0fe8340996827a67ec5e4111a",
         "ts": "2026-10-15T10:00:00Z"
       }
+    },
+    "2027": {
+      "academicCalendar": {
+        "source": "academic-calendar/2027.json",
+        "hash": "0aa3887f315d612587e8319b7506cbb0c5819a07ea97d4ecf169e313a94a809a",
+        "ts": "2026-11-21T01:17:22Z"
+      },
+      "importantDates": {
+        "source": "important-dates/2027.json",
+        "hash": "e30a8beea155682d02ea536af11bdaebbcf5899189a362cbdc7084ba9a890d02",
+        "ts": "2026-11-21T01:17:57Z"
+      }
     }
   },
   "admissionYears": {
