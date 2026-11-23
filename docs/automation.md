@@ -8,7 +8,6 @@
 | Update departments and course guidance | 入学年度別の学系・履修指南 | 日曜 10:47 | [学系](../prompts/update-departments.md) |
 | Update important dates | 行事・式典・入試の日程 | 毎日 10:17 | [重要日程](../prompts/update-important-dates.md) |
 | Update exams and exam-week classes | 期末試験と同じ PDF の授業・補講 | 毎日 09:17 | [試験](../prompts/update-exams.md) |
-| Update course catalog | 公開シラバスの開講科目（スクリプトのみ、AI なし） | 毎日 03:23、日曜は全件 | [開講科目カタログ](courses.md) |
 
 `update-*.yml` は対象と時刻だけを指定し、共通の
 [public-data-pipeline.yml](../.github/workflows/public-data-pipeline.yml) を呼び出します。
@@ -72,7 +71,7 @@ triage（スクリプト）─► 作成者 A（AI）─┐
 当該 PDF の全量に戻します。判定と 4 人の結果は `exam-shadow-result`
 成果物で確認できます。試行の出力先は Actions の成果物です。
 
-学校の公開ソースは `www.titech.ac.jp` に限定します（開講科目カタログだけは公開シラバス `syllabus.s.isct.ac.jp` を読みます。別の workflow で、AI は使いません）。校暦 workflow だけ、
+学校の公開ソースは `www.titech.ac.jp` に限定します（開講科目カタログだけは公開シラバス `syllabus.s.isct.ac.jp` を読みます。GitHub Actions ではなく保守者のホストで動くスクリプトで、AI は使いません。[開講科目カタログ](courses.md) を参照）。校暦 workflow だけ、
 国民の祝日のため `www8.cao.go.jp` を追加許可します。URL とリダイレクト先を
 スクリプトで検証し、別ホストへの移行を自動承認しません。GitHub/Copilot の
 実行基盤通信は gh-aw が別途管理します。

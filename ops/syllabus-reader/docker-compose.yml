@@ -1,0 +1,17 @@
+# The syllabus reader on its host (docs/courses.md). Copy this folder there, write .env from
+# .env.example, then `docker compose up -d --build`. One cycle now: `docker compose run --rm
+# syllabus-reader --once`.
+services:
+  syllabus-reader:
+    build: .
+    container_name: isct-syllabus-reader
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      RUN_AT: "03:23"
+    volumes:
+      - ./repo:/data/repo
+      - ./state:/data/state
+    # A background reader: one request at a time, little memory.
+    mem_limit: 512m
+    cpus: 1.0

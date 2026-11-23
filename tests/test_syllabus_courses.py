@@ -35,7 +35,7 @@ def catalog_file(offerings, group="programs"):
         "schemaVersion": 1,
         "academicYear": 2026,
         "group": {"id": group, "name": {"ja": "学位プログラム"}},
-        "source": [{"id": "syllabus", "url": f"{reader.ORIGIN}/courses/2026", "retrievedAt": "2026-11-23T00:00:00Z"}],
+        "source": [{"id": "syllabus", "url": f"{reader.ORIGIN}/courses/2026"}],
         "units": [{"id": UNIT, "school": "0", "level": "program", "name": {"ja": "保存した開講元"}}],
         "offerings": offerings,
     }
@@ -121,33 +121,51 @@ class CatalogContractTests(unittest.TestCase):
                 reader.list_in_index(root, 2027, {"courses/2027/programs.json": {}})
 
 
+class RotationTests(unittest.TestCase):
+    def test_the_least_recently_verified_files_are_due_up_to_a_share_of_the_offerings(self):
+        sizes = {"a": 600, "b": 30, "c": 30, "d": 300}
+        verified = {"a": "2026-11-01", "b": "2026-11-20", "c": "2026-10-01"}
+        # d was never read in full, so it comes first; it alone covers 960 // 30 = 32 offerings.
+        self.assertEqual(reader.due_files(sorted(sizes), sizes, verified), {"d"})
+        verified["d"] = "2026-11-21"
+        self.assertEqual(reader.due_files(sorted(sizes), sizes, verified), {"c"})
+        self.assertEqual(reader.due_files(sorted(sizes), sizes, verified, full=True), set(sizes))
+
+    def test_an_offering_read_only_in_japanese_keeps_its_published_english(self):
+        entry = listing_entry("202623170")
+        known = reader.record_from_listing(entry, UNITS)
+        japanese_only = dict(entry, en=None)
+        self.assertEqual(reader.record_from_listing(japanese_only, UNITS, known), known)
+        renamed = copy.deepcopy(japanese_only)
+        renamed["ja"]["instructors"] = ["別の 教員"]
+        self.assertEqual(reader.record_from_listing(renamed, UNITS, known)["instructors"], [{"ja": "別の 教員"}])
+        with self.assertRaises(reader.ShapeError):
+            reader.record_from_listing(japanese_only, UNITS)
+
+
 class PublicationTests(unittest.TestCase):
-    def test_only_changed_facts_make_a_pull_request(self):
+    def test_only_changed_files_make_a_pull_request(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             git = lambda *args: subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@example.invalid",
                                                 *args], cwd=root, check=True, capture_output=True)
             git("init", "-q")
-            offering = {"id": "202623170", "code": "TCM.B601"}
-            path = root / "courses/2026/programs.json"
-            path.parent.mkdir(parents=True)
-            published = catalog_file([offering])
-            path.write_text(json.dumps(published), encoding="utf-8")
-            for name in ("index.json", "index.sha256"):
-                (root / name).write_text("{}\n" if name == "index.json" else "0\n", encoding="utf-8")
+            name = "courses/2026/programs.json"
+            published = catalog_file([{"id": "202623170", "code": "TCM.B601"}])
+            reader.write_year(root, 2026, {name: published})
+            for other in ("index.json", "index.sha256"):
+                (root / other).write_text("{}\n", encoding="utf-8")
             git("add", "-A")
             git("commit", "-q", "-m", "base")
             base = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
-            reread = copy.deepcopy(published)
-            reread["source"][0]["retrievedAt"] = "2026-11-24T00:00:00Z"
-            path.write_text(json.dumps(reread), encoding="utf-8")
+            reader.write_year(root, 2026, {name: copy.deepcopy(published)})
             self.assertEqual(reader.publication(root, base), {})
-            reread["offerings"][0]["code"] = "TCM.B611"
-            path.write_text(json.dumps(reread), encoding="utf-8")
-            self.assertEqual(sorted(reader.publication(root, base)),
-                             ["courses/2026/programs.json", "index.json", "index.sha256"])
-            path.unlink()
-            self.assertIsNone(reader.publication(root, base)["courses/2026/programs.json"])
+            changed = copy.deepcopy(published)
+            changed["offerings"][0]["code"] = "TCM.B611"
+            reader.write_year(root, 2026, {name: changed})
+            self.assertEqual(sorted(reader.publication(root, base)), [name, "index.json", "index.sha256"])
+            reader.write_year(root, 2026, {})
+            self.assertIsNone(reader.publication(root, base)[name])
 
 
 if __name__ == "__main__":

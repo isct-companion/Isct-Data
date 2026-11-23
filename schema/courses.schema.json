@@ -94,7 +94,8 @@
     "source": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "url", "retrievedAt"],
+      "description": "No retrieval time: a file whose facts do not change keeps its bytes and its index hash. The index `ts` says when its content last changed; docs/courses.md says how often each file is read again in full.",
+      "required": ["id", "url"],
       "properties": {
         "id": {
           "const": "syllabus"
@@ -102,10 +103,6 @@
         "url": {
           "type": "string",
           "pattern": "^https://syllabus\\.s\\.isct\\.ac\\.jp/courses/[0-9]{4}$"
-        },
-        "retrievedAt": {
-          "type": "string",
-          "format": "date-time"
         }
       }
     },
