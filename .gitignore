@@ -7,10 +7,5 @@ __pycache__/
 .arbiter/
 
 /ops/data-pipeline/.env
-/ops/data-pipeline/ci.env
-/ops/data-pipeline/syllabus.env
-/ops/data-pipeline/status.env
+/ops/data-pipeline/pipeline.env
 /ops/data-pipeline/var/
-/ops/syllabus-reader/.env
-/ops/syllabus-reader/repo/
-/ops/syllabus-reader/state/

@@ -165,20 +165,7 @@ class PublicationTests(unittest.TestCase):
                     github_publish.push_main("base", {}, "Update courses", api=api)
                 api.assert_called_once()
 
-    def test_a_repository_without_auto_merge_still_gets_a_catalog_pr(self):
-        responses = iter([
-            {"object": {"sha": "base"}}, [], {"allow_auto_merge": False}, {"tree": {"sha": "old"}},
-            {"sha": "new"}, {"sha": "commit"}, {}, {"html_url": "https://example.test/pull/1"},
-        ])
-        with patch.object(reader, "publication", return_value={"courses/2026/programs.json": "{}"}):
-            with patch.object(reader, "github", side_effect=responses) as github:
-                result = reader.publish(ROOT, "base", "token", "2026-11-23")
-        self.assertFalse(result["autoMerge"])
-        self.assertEqual(result["pullRequest"], "https://example.test/pull/1")
-        self.assertEqual(github.call_args.args[2], "pulls")
-        self.assertIn("Please squash merge", github.call_args.args[3]["body"])
-
-    def test_only_changed_files_make_a_pull_request(self):
+    def test_only_changed_files_are_published(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             git = lambda *args: subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@example.invalid",

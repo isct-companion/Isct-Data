@@ -3,18 +3,12 @@
 import base64
 import json
 import os
-from pathlib import Path
 import subprocess
 import time
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 REPOSITORY = "isct-companion/Isct-Data"
-
-
-def app_configured():
-    return bool(os.getenv("ISCT_GITHUB_APP_ID") and os.getenv("ISCT_GITHUB_INSTALLATION_ID")
-                and Path("/run/isct-github/private-key.pem").is_file())
 
 
 def app_token():

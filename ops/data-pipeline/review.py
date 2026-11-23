@@ -77,9 +77,10 @@ class Review:
     def __init__(self, key):
         self.key = key
         self.tokens = 0
+        self.calls = []  # one entry per response, for the run record
         self.limit = int(os.getenv("OPENAI_RUN_TOKEN_LIMIT", "240000"))
 
-    def ask(self, root, model, role, context, effort="low"):
+    def ask(self, root, model, role, context, effort="low", label=None):
         messages = [{"role": "developer", "content": role},
                     {"role": "user", "content": context}]
         for _ in range(14):
@@ -92,6 +93,9 @@ class Review:
             })
             usage = result["usage"]
             self.tokens += usage["total_tokens"]
+            self.calls.append({"label": label, "model": model, "input": usage["input_tokens"],
+                               "cached": usage.get("input_tokens_details", {}).get("cached_tokens", 0),
+                               "output": usage["output_tokens"], "total": usage["total_tokens"]})
             print(json.dumps({"model": model, "inputTokens": usage["input_tokens"],
                               "cachedTokens": usage.get("input_tokens_details", {}).get("cached_tokens", 0),
                               "outputTokens": usage["output_tokens"], "runTokens": self.tokens}), flush=True)
