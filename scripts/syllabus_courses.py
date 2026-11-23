@@ -101,6 +101,20 @@ def parse(html):
     return builder.root
 
 
+def href(node):
+    """A link's target, with the site's own origin written one way: some pages write it with the
+    default port (`https://syllabus.s.isct.ac.jp:443/...`), others without."""
+    target = (node.attrs.get("href") or "") if node is not None else ""
+    parts = urlsplit(target)
+    try:
+        port = parts.port
+    except ValueError:
+        return target
+    if parts.scheme == "https" and parts.hostname == HOST and port in (None, 443):
+        return ORIGIN + parts.path + (f"?{parts.query}" if parts.query else "")
+    return target
+
+
 class ShapeError(ValueError):
     """A page does not have the shape this reader knows."""
 
@@ -139,7 +153,7 @@ def parse_year(html, year):
         elif node.tag == "h3":
             subsection = node.clean()
         elif node.tag == "a":
-            found = pattern.match(node.attrs.get("href") or "")
+            found = pattern.match(href(node))
             if not found or found[2] in seen:
                 continue
             level = "program" if section == PROGRAMS else LEVELS.get((section, subsection))
@@ -155,7 +169,7 @@ def parse_year(html, year):
             above = item.parent.parent if item is not None and item.parent is not None else None
             if above is not None and above.tag == "li":
                 link = next((child for child in above.kids("a")), None)
-                parent = pattern.match(link.attrs.get("href") or "") if link is not None else None
+                parent = pattern.match(href(link)) if link is not None else None
                 if parent:
                     unit["parent"] = parent[2]
             units.append(unit)
@@ -172,7 +186,7 @@ def unit_names(html, year):
     pattern = re.compile(rf"^{re.escape(ORIGIN)}/courses/{year}/\d+/([0-9-]+)(?:\?hl=(?:ja|en))?$")
     names = {}
     for link in parse(html).find_all("a"):
-        found = pattern.match(link.attrs.get("href") or "")
+        found = pattern.match(href(link))
         if found and found[1] not in names and link.clean():
             names[found[1]] = link.clean()
     return names
@@ -192,7 +206,7 @@ def parse_listing(html, year, lang):
             if len(cells) != 6:
                 raise ShapeError(f"a listing row has {len(cells)} cells")
             link = cells[1].find("a")
-            found = detail.match(link.attrs.get("href") or "") if link else None
+            found = detail.match(href(link)) if link else None
             if not found:
                 raise ShapeError("a listing row has no detail link")
             instructors = [name.strip() for name in cells[2].clean().split(" / ")]
