@@ -183,10 +183,13 @@ def publish(root, base, files, observed, write_token, branch_prefix, run_id, *, 
             "message": title, "tree": tree["sha"], "parents": [base]})
         api(write_token, "POST", "git/refs", {"ref": ref, "sha": commit["sha"]})
 
-    run_url = f"https://github.com/{REPOSITORY}/actions/runs/{run_id}"
+    receipt = (
+        f"in [the update workflow run](https://github.com/{REPOSITORY}/actions/runs/{run_id})"
+        if run_id.isdecimal() else f"on the NAS (run `{run_id}`)"
+    )
     sources = set().union(*(urls_in(data) for data in feeds.values())) & observed["sources"].keys()
     body = (
-        f"Validated against the official sources in [the update workflow run]({run_url}).\n\n"
+        f"Validated against the official sources {receipt}.\n\n"
         "Changed datasets\n\n" + "\n".join(f"- `{name}`" for name in sorted(feeds)) + "\n\n"
         "Official sources\n\n" + "\n".join(f"- <{url}>" for url in sorted(sources)) + "\n\n"
         "After CI passes, check the relevant changes against the official sources and squash merge."

@@ -11,6 +11,7 @@ there (an optional status receiver, e.g. a Cloudflare Worker; STATUS_TOKEN is se
 token). GITHUB_TOKEN publishes; RUN_AT (HH:MM, Japan time) schedules. `--once` runs one cycle now.
 """
 import argparse
+import fcntl
 import json
 import os
 import subprocess
@@ -40,6 +41,13 @@ def run(log, *command):
 
 
 def cycle():
+    STATE.mkdir(parents=True, exist_ok=True)
+    with (STATE / "reader.lock").open("a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        return read_and_publish()
+
+
+def read_and_publish():
     started = datetime.now(JAPAN)
     logs = STATE / "logs"
     logs.mkdir(parents=True, exist_ok=True)
@@ -109,7 +117,10 @@ def main():
         wake = next_run(datetime.now(JAPAN), at)
         print(f"next run at {wake.isoformat(timespec='minutes')}", flush=True)
         time.sleep(max(0, (wake - datetime.now(JAPAN)).total_seconds()))
-        cycle()
+        if os.getenv("GITHUB_TOKEN"):
+            cycle()
+        else:
+            print("scheduled publication paused: GITHUB_TOKEN is missing", flush=True)
 
 
 if __name__ == "__main__":

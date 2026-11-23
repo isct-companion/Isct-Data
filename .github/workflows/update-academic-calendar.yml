@@ -19,6 +19,7 @@ concurrency:
 
 jobs:
   pipeline:
+    if: vars.ISCT_DATA_EXECUTOR != 'nas'
     permissions:
       actions: read
       contents: read

@@ -27,7 +27,7 @@ concurrency:
 
 jobs:
   pipeline:
-    if: inputs.shadow_before_run == '' && inputs.shadow_after_run == ''
+    if: vars.ISCT_DATA_EXECUTOR != 'nas' && inputs.shadow_before_run == '' && inputs.shadow_after_run == ''
     permissions:
       actions: read
       contents: read
@@ -40,7 +40,7 @@ jobs:
     secrets: inherit
 
   page-shadow:
-    if: github.event_name == 'workflow_dispatch' && (inputs.shadow_before_run != '' || inputs.shadow_after_run != '')
+    if: vars.ISCT_DATA_EXECUTOR != 'nas' && github.event_name == 'workflow_dispatch' && (inputs.shadow_before_run != '' || inputs.shadow_after_run != '')
     permissions:
       actions: read
       contents: read

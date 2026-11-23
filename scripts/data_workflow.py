@@ -130,9 +130,9 @@ def public_exam_scopes(root, records, write_templates=False):
     return scopes, candidate_documents
 
 
-def prepare(root, dataset):
+def prepare(root, dataset, captured=None):
     from merge_exam_candidates import canonical_hash
-    state, records = acquire(root, dataset)
+    state, records = acquire(root, dataset, captured)
     task = root / RUN
     review = {'dataset': dataset, 'status': 'pending', 'summary': '',
               'sources': [{'url': url, 'outcome': 'pending', 'reviewedScope': '', 'unresolvedFacts': []}

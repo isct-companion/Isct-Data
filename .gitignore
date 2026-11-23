@@ -5,3 +5,8 @@ __pycache__/
 .data-runs/
 
 .arbiter/
+
+/ops/nas-ci/.env
+/ops/nas-ci/ci.env
+/ops/nas-ci/syllabus.env
+/ops/nas-ci/var/

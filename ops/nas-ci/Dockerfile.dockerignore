@@ -1,0 +1,9 @@
+**
+!requirements.txt
+!ops/
+!ops/nas-ci/
+!ops/nas-ci/Dockerfile
+!ops/nas-ci/runner.py
+!ops/nas-ci/review.py
+!ops/syllabus-reader/
+!ops/syllabus-reader/runner.py

@@ -1,0 +1,41 @@
+x-runtime: &runtime
+  image: isct-data-nas:local
+  restart: unless-stopped
+  init: true
+  user: "${PUID:-1026}:${PGID:-100}"
+  read_only: true
+  cap_drop: [ALL]
+  security_opt:
+    - no-new-privileges:true
+  tmpfs:
+    - /tmp
+  logging:
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+  public-data-ci:
+    <<: *runtime
+    build:
+      context: ../..
+      dockerfile: ops/nas-ci/Dockerfile
+    entrypoint: [python, /opt/isct/ci/runner.py]
+    command: [serve]
+    env_file: ci.env
+    volumes:
+      - "${STATE_ROOT:-./var}/ci:/data/state"
+    mem_limit: 1536m
+    cpus: 2
+
+  syllabus-reader:
+    <<: *runtime
+    entrypoint: [python, /opt/isct/syllabus.py]
+    env_file: syllabus.env
+    environment:
+      RUN_AT: "03:23"
+    volumes:
+      - "${STATE_ROOT:-./var}/syllabus/repo:/data/repo"
+      - "${STATE_ROOT:-./var}/syllabus/state:/data/state"
+    mem_limit: 512m
+    cpus: 1

@@ -25,6 +25,7 @@ permissions:
 
 jobs:
   exams:
+    if: vars.ISCT_DATA_EXECUTOR != 'nas'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

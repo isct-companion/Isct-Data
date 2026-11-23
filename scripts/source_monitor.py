@@ -137,8 +137,8 @@ def snapshot(root, dataset, fetcher=None):
     return with_content(state, documents), documents
 
 
-def acquire(root, dataset):
-    state, documents = snapshot(root, dataset)
+def acquire(root, dataset, captured=None):
+    state, documents = captured if captured is not None else snapshot(root, dataset)
     directory = root / '.data-runs'; directory.mkdir(exist_ok=True)
     downloads = directory / 'sources'; downloads.mkdir(exist_ok=True)
     # The exam writer keeps its established run paths; no tracked data is changed here.

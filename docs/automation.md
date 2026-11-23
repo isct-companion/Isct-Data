@@ -2,6 +2,10 @@
 
 [README](../README.md) · [保守コマンド](maintenance.md) · [試験データの更新](exams.md)
 
+NAS の Docker 運用と切替手順は [NAS CI](nas-ci.md) を参照してください。
+以下の GitHub 更新ワークフローは切替前と切り戻し時に使用します。
+PR の必須チェックとホームページのデプロイ通知は GitHub Actions で実行します。
+
 | Workflow | データ | 定期チェック（JST） | 個別 prompt |
 | --- | --- | --- | --- |
 | Update academic calendar | 校暦・授業期間・休講・祝日 | 毎日 09:47 | [校暦](../prompts/update-academic-calendar.md) |
