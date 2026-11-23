@@ -1,0 +1,1625 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "group": {
+    "id": "undergraduate-11",
+    "name": {
+      "ja": "工学院，物質理工学院，環境・社会理工学院共通科目 学士課程",
+      "en": "工学院，物質理工学院，環境・社会理工学院共通科目 Undergraduate"
+    }
+  },
+  "source": [
+    {
+      "id": "syllabus",
+      "url": "https://syllabus.s.isct.ac.jp/courses/2026",
+      "retrievedAt": "2026-11-22T16:07:47Z"
+    }
+  ],
+  "units": [
+    {
+      "id": "0-908-300001-0-0",
+      "school": "11",
+      "level": "undergraduate",
+      "name": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      }
+    }
+  ],
+  "offerings": [
+    {
+      "id": "202606757",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 機械系",
+        "en": "Advanced English Communication for Engineers 機械系"
+      },
+      "instructors": [
+        {
+          "ja": "阪口 基己",
+          "en": "Motoki Sakaguchi"
+        },
+        {
+          "ja": "田中 智久",
+          "en": "Tomohisa Tanaka"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null,
+      "class": "機械系"
+    },
+    {
+      "id": "202606758",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 システム制御系",
+        "en": "Advanced English Communication for Engineers システム制御系"
+      },
+      "instructors": [
+        {
+          "ja": "佐藤 進",
+          "en": "Susumu Sato"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            9,
+            10
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "システム制御系"
+    },
+    {
+      "id": "202606759",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 電気電子系",
+        "en": "Advanced English Communication for Engineers 電気電子系"
+      },
+      "instructors": [
+        {
+          "ja": "ファム ナムハイ",
+          "en": "Nam Hai Pham"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "電気電子系"
+    },
+    {
+      "id": "202606760",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 情報通信系",
+        "en": "Advanced English Communication for Engineers 情報通信系"
+      },
+      "instructors": [
+        {
+          "ja": "ファム ナムハイ",
+          "en": "Nam Hai Pham"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            9,
+            10
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "情報通信系"
+    },
+    {
+      "id": "202606761",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 経営工学系",
+        "en": "Advanced English Communication for Engineers 経営工学系"
+      },
+      "instructors": [
+        {
+          "ja": "魚住 龍史",
+          "en": "Ryuji Uozumi"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            9,
+            10
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "経営工学系"
+    },
+    {
+      "id": "202606762",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 応用化学系",
+        "en": "Advanced English Communication for Engineers 応用化学系"
+      },
+      "instructors": [
+        {
+          "ja": "山田 桂太",
+          "en": "Keita Yamada"
+        },
+        {
+          "ja": "梁 暁斌",
+          "en": "Xiaobin Liang"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "応用化学系"
+    },
+    {
+      "id": "202606763",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 材料系",
+        "en": "Advanced English Communication for Engineers 材料系"
+      },
+      "instructors": [
+        {
+          "ja": "CHIU WAN TING",
+          "en": "Wan Ting Chiu"
+        },
+        {
+          "ja": "安楽 泰孝",
+          "en": "Yasutaka Anraku"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            9,
+            10
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "材料系"
+    },
+    {
+      "id": "202606764",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 建築学系",
+        "en": "Advanced English Communication for Engineers 建築学系"
+      },
+      "instructors": [
+        {
+          "ja": "大風 翼",
+          "en": "Tsubasa Okaze"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null,
+      "class": "建築学系"
+    },
+    {
+      "id": "202606765",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 土木・環境工学系",
+        "en": "Advanced English Communication for Engineers 土木・環境工学系"
+      },
+      "instructors": [
+        {
+          "ja": "丸山 泰蔵",
+          "en": "Taizo Maruyama"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-202,W9-321, W9-322,W9-324,W9-325"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "土木・環境工学系"
+    },
+    {
+      "id": "202606766",
+      "code": "XEN.E301",
+      "title": {
+        "ja": "科学技術者実践英語 融合理工学系",
+        "en": "Advanced English Communication for Engineers 融合理工学系"
+      },
+      "instructors": [
+        {
+          "ja": "上ノ町 水紀",
+          "en": "Mizuki Uenomachi"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "S3-206,S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-16",
+      "class": "融合理工学系"
+    },
+    {
+      "id": "202614401",
+      "code": "XEN.P301",
+      "title": {
+        "ja": "国際創造設計プロジェクト",
+        "en": "International Creative Design Project"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0.5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-09"
+    },
+    {
+      "id": "202619482",
+      "code": "XEN.Q201",
+      "title": {
+        "ja": "工学基礎概論",
+        "en": "Fundamental Prospects of Engineering"
+      },
+      "instructors": [
+        {
+          "ja": "赤坂 大樹",
+          "en": "Hiroki Akasaka"
+        },
+        {
+          "ja": "伏信 一慶",
+          "en": "Kazuyoshi Fushinobu"
+        },
+        {
+          "ja": "中尾 裕也",
+          "en": "Hiroya Nakao"
+        },
+        {
+          "ja": "竹内 希",
+          "en": "Nozomi Takeuchi"
+        },
+        {
+          "ja": "尾形 わかは",
+          "en": "Wakaha Ogata"
+        },
+        {
+          "ja": "松井 知己",
+          "en": "Tomomi Matsui"
+        },
+        {
+          "ja": "多田 英司",
+          "en": "Eiji Tada"
+        },
+        {
+          "ja": "関口 秀俊",
+          "en": "Hidetoshi Sekiguchi"
+        },
+        {
+          "ja": "田村 修次",
+          "en": "Shuji Tamura"
+        },
+        {
+          "ja": "髙橋 邦夫",
+          "en": "Kunio Takahashi"
+        },
+        {
+          "ja": "盛川 仁",
+          "en": "Hitoshi Morikawa"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            9,
+            10
+          ],
+          "room": "S4-202, S4-203"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-08-04"
+    },
+    {
+      "id": "202634242",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 A(機械系)",
+        "en": "Independent Research Project for International Exchange Students A(機械系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "A(機械系)"
+    },
+    {
+      "id": "202634243",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 B(機械系)",
+        "en": "Independent Research Project for International Exchange Students B(機械系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "B(機械系)"
+    },
+    {
+      "id": "202634244",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 C(システム制御系)",
+        "en": "Independent Research Project for International Exchange Students C(システム制御系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "C(システム制御系)"
+    },
+    {
+      "id": "202634245",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 D(システム制御系)",
+        "en": "Independent Research Project for International Exchange Students D(システム制御系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "D(システム制御系)"
+    },
+    {
+      "id": "202634246",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 E(電気電子系)",
+        "en": "Independent Research Project for International Exchange Students E(電気電子系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "E(電気電子系)"
+    },
+    {
+      "id": "202634247",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 F(電気電子系)",
+        "en": "Independent Research Project for International Exchange Students F(電気電子系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "F(電気電子系)"
+    },
+    {
+      "id": "202634248",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 G(情報通信系)",
+        "en": "Independent Research Project for International Exchange Students G(情報通信系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "G(情報通信系)"
+    },
+    {
+      "id": "202634249",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 H(情報通信系)",
+        "en": "Independent Research Project for International Exchange Students H(情報通信系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "H(情報通信系)"
+    },
+    {
+      "id": "202634250",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 I(経営工学系)",
+        "en": "Independent Research Project for International Exchange Students I(経営工学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "I(経営工学系)"
+    },
+    {
+      "id": "202634251",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 J(経営工学系)",
+        "en": "Independent Research Project for International Exchange Students J(経営工学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "J(経営工学系)"
+    },
+    {
+      "id": "202634252",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 K(材料系)",
+        "en": "Independent Research Project for International Exchange Students K(材料系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "K(材料系)"
+    },
+    {
+      "id": "202634253",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 L(材料系)",
+        "en": "Independent Research Project for International Exchange Students L(材料系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "L(材料系)"
+    },
+    {
+      "id": "202634254",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 M(応用化学系 )",
+        "en": "Independent Research Project for International Exchange Students M(応用化学系 )"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "M(応用化学系 )"
+    },
+    {
+      "id": "202634255",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 N(応用化学系)",
+        "en": "Independent Research Project for International Exchange Students N(応用化学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "N(応用化学系)"
+    },
+    {
+      "id": "202634256",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 O(建築学系)",
+        "en": "Independent Research Project for International Exchange Students O(建築学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "O(建築学系)"
+    },
+    {
+      "id": "202634257",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 P(建築学系)",
+        "en": "Independent Research Project for International Exchange Students P(建築学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "P(建築学系)"
+    },
+    {
+      "id": "202634258",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 Q(土木・環境工学系)",
+        "en": "Independent Research Project for International Exchange Students Q(土木・環境工学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "Q(土木・環境工学系)"
+    },
+    {
+      "id": "202634259",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 R(土木・環境工学系)",
+        "en": "Independent Research Project for International Exchange Students R(土木・環境工学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "R(土木・環境工学系)"
+    },
+    {
+      "id": "202634260",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 S(融合理工学系)",
+        "en": "Independent Research Project for International Exchange Students S(融合理工学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "S(融合理工学系)"
+    },
+    {
+      "id": "202634261",
+      "code": "XEN.X301",
+      "title": {
+        "ja": "海外交流学生特定課題研究 T(融合理工学系)",
+        "en": "Independent Research Project for International Exchange Students T(融合理工学系)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        },
+        {
+          "ja": "系 主任",
+          "en": "Chair"
+        }
+      ],
+      "unit": {
+        "ja": "工学院，物質理工学院，環境・社会理工学院共通科目",
+        "en": "工学院，物質理工学院，環境・社会理工学院共通科目"
+      },
+      "units": [
+        "0-908-300001-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28",
+      "class": "T(融合理工学系)"
+    }
+  ]
+}

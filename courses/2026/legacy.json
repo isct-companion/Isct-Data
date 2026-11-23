@@ -1,0 +1,2404 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "group": {
+    "id": "legacy",
+    "name": {
+      "ja": "H27年度以前入学者向け",
+      "en": "For students admitted in or before 2015"
+    }
+  },
+  "source": [
+    {
+      "id": "syllabus",
+      "url": "https://syllabus.s.isct.ac.jp/courses/2026",
+      "retrievedAt": "2026-11-22T16:07:47Z"
+    }
+  ],
+  "units": [
+    {
+      "id": "0-951-113011-0-0",
+      "school": "100",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "理学部",
+        "en": "School of Science"
+      }
+    },
+    {
+      "id": "0-951-123111-0-0",
+      "school": "100",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "数学科",
+        "en": "Mathematics"
+      },
+      "parent": "0-951-113011-0-0"
+    },
+    {
+      "id": "0-951-123112-0-0",
+      "school": "100",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "物理学科",
+        "en": "Physics"
+      },
+      "parent": "0-951-113011-0-0"
+    },
+    {
+      "id": "0-951-123113-0-0",
+      "school": "100",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "化学科",
+        "en": "Chemistry"
+      },
+      "parent": "0-951-113011-0-0"
+    },
+    {
+      "id": "0-951-123115-0-0",
+      "school": "100",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "情報科学科",
+        "en": "Information Science"
+      },
+      "parent": "0-951-113011-0-0"
+    },
+    {
+      "id": "0-951-123118-0-0",
+      "school": "100",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "地球惑星科学科",
+        "en": "Earth and Planetary Sciences"
+      },
+      "parent": "0-951-113011-0-0"
+    },
+    {
+      "id": "0-951-123011-0-0",
+      "school": "100",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "理学部共通",
+        "en": "Common Cource of Science"
+      },
+      "parent": "0-951-113011-0-0"
+    },
+    {
+      "id": "0-952-114012-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "工学部",
+        "en": "School of Engineering"
+      }
+    },
+    {
+      "id": "0-952-114013-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "３類",
+        "en": "Group 3"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-114014-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "４類",
+        "en": "Group 4"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-114015-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "５類",
+        "en": "Group 5"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-114016-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "６類",
+        "en": "Group 6"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124211-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "金属工学科",
+        "en": "Metallurgical Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124212-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "有機材料工学科",
+        "en": "Organic and Polymeric Materials"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124213-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "無機材料工学科",
+        "en": "Inorganic Materials"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124311-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "化学工学科",
+        "en": "Chemical Engineering Course"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124315-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "化学工学科(化学工学コース）",
+        "en": "Chemical Engineering Course(Chemical Engineering)"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124316-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "化学工学科(応用化学コース）",
+        "en": "Applied Chemistry Course(Chemical Engineering)"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124312-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "高分子工学科",
+        "en": "Polymer Chemistry"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124421-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "機械科学科",
+        "en": "Mechanical Engineering and Science"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124422-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "機械知能システム学科",
+        "en": "Mechanical and Intelligent Systems Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124423-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "機械宇宙学科",
+        "en": "Mechano-Aerospace Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124416-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "国際開発工学科",
+        "en": "International Development Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124424-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "制御システム工学科",
+        "en": "Control and Systems Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124304-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "経営システム工学科",
+        "en": "Industrial and Systems Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124517-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "電気電子工学科",
+        "en": "Electrical and Electronic Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124513-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "情報工学科",
+        "en": "Computer Science"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124621-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "土木・環境工学科",
+        "en": "Civil Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124612-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "建築学科",
+        "en": "Architecture and Building Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124204-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "社会工学科",
+        "en": "Social Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-952-124011-0-0",
+      "school": "101",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "工学部共通",
+        "en": "Common Cource of Engineering"
+      },
+      "parent": "0-952-114012-0-0"
+    },
+    {
+      "id": "0-953-115017-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命理工学部",
+        "en": "School of Bioscience and Biotechnology"
+      }
+    },
+    {
+      "id": "0-953-125721-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命科学科",
+        "en": "Bioscience"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125722-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命工学科",
+        "en": "Biotechnology"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125723-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命科学科（分子生命コース）",
+        "en": "Bioscience"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125724-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命科学科（生体機構コース）",
+        "en": "Bioscience"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125725-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命科学科（生命情報コース)",
+        "en": "Biotechnology"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125726-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命工学科（生命情報コース）",
+        "en": "Biotechnology"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125727-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命工学科（生物工学コース）",
+        "en": "Biotechnology"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125728-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命工学科（生体分子コース）",
+        "en": "Bioscience"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-953-125011-0-0",
+      "school": "102",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "生命理工学部共通",
+        "en": "Common Cource of Bioscience and Biotechnology"
+      },
+      "parent": "0-953-115017-0-0"
+    },
+    {
+      "id": "0-954-100-0-0",
+      "school": "150",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "全学科目",
+        "en": "Common Course of Undergraduate School"
+      }
+    },
+    {
+      "id": "0-954-110040-0-0",
+      "school": "150",
+      "level": "legacy-undergraduate",
+      "name": {
+        "ja": "学部共通科目（B）",
+        "en": "Common Course of Undergraduate School(B)"
+      },
+      "parent": "0-954-100-0-0"
+    },
+    {
+      "id": "1-955-223111-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院理工学研究科(理学系・工学系)",
+        "en": "Graduate School of Science and Engineering"
+      }
+    },
+    {
+      "id": "1-955-223126-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "基礎物理学専攻",
+        "en": "Physics(Particle- Nuclear- and Astro-Physics)"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-223127-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "物性物理学専攻",
+        "en": "Physics(Condensed Matter Physics)"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-223113-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "化学専攻",
+        "en": "Chemistry"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-223118-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "地球惑星科学専攻",
+        "en": "Earth and Planetary Sciences"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-223129-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "物質科学専攻",
+        "en": "Chemistry and Materials Science"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224214-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "材料工学専攻",
+        "en": "Metallurgy and Ceramics Science"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224215-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "有機・高分子物質専攻",
+        "en": "Organic and Polymeric Materials"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224314-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "応用化学専攻",
+        "en": "Applied Chemistry"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224315-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "化学工学専攻",
+        "en": "Chemical Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224410-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "機械系３専攻",
+        "en": "Common Course of Mechanical Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224416-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "機械物理工学専攻",
+        "en": "Mechanical Sciences and Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224417-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "機械制御システム専攻",
+        "en": "Mechanical and Control Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224418-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "機械宇宙システム専攻",
+        "en": "Mechanical and Aerospace Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224510-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "電気系２専攻",
+        "en": "Common Course of Electronic Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224514-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "電気電子工学専攻",
+        "en": "Electrical and Electronic Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224515-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "電子物理工学専攻",
+        "en": "Physical Electronics"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224516-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "集積システム専攻",
+        "en": "Communications and Integrated Systems"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224526-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "通信情報工学専攻",
+        "en": "Communications and Computer Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224611-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224612-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224710-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "国際開発工学専攻",
+        "en": "International Development Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-955-224711-0-0",
+      "school": "223",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "原子核工学専攻",
+        "en": "Nuclear Engineering"
+      },
+      "parent": "1-955-223111-0-0"
+    },
+    {
+      "id": "1-956-225712-0-0",
+      "school": "225",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院生命理工学研究科",
+        "en": "Graduate School of Bioscience and Biotechnology"
+      }
+    },
+    {
+      "id": "1-956-225718-0-0",
+      "school": "225",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "分子生命科学専攻",
+        "en": "Life Science"
+      },
+      "parent": "1-956-225712-0-0"
+    },
+    {
+      "id": "1-956-225719-0-0",
+      "school": "225",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "生体分子機能工学専攻",
+        "en": "Biomolecular Engineering"
+      },
+      "parent": "1-956-225712-0-0"
+    },
+    {
+      "id": "1-956-225723-0-0",
+      "school": "225",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "生体システム専攻",
+        "en": "Biological Science"
+      },
+      "parent": "1-956-225712-0-0"
+    },
+    {
+      "id": "1-956-225724-0-0",
+      "school": "225",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "生物プロセス専攻",
+        "en": "Bioengineering"
+      },
+      "parent": "1-956-225712-0-0"
+    },
+    {
+      "id": "1-959-228822-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院総合理工学研究科",
+        "en": "Interdisciplinary Graduate School of Science and Engineering"
+      }
+    },
+    {
+      "id": "1-959-228823-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "創造エネルギー専攻",
+        "en": "Energy Sciences"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228824-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "知能システム科学専攻",
+        "en": "Computational Intelligence and Systems Science"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228825-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "物質電子化学専攻",
+        "en": "Electronic Chemistry"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228826-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "材料物理科学専攻",
+        "en": "Materials Science and Engineering"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228827-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "物質科学創造専攻",
+        "en": "Innovative and Engineered Materials"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228837-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "化学環境学専攻",
+        "en": "Environmental Chemistry and Engineering"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228838-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "環境理工学創造専攻",
+        "en": "Environmental Science and Technology"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228839-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "メカノマイクロ工学専攻",
+        "en": "Mechano-Micro Engineering"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228840-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "物理情報システム専攻",
+        "en": "Information Processing"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-959-228841-0-0",
+      "school": "228",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "物理電子システム創造専攻",
+        "en": "Electronics and Applied Physics"
+      },
+      "parent": "1-959-228822-0-0"
+    },
+    {
+      "id": "1-957-226715-0-0",
+      "school": "226",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院情報理工学研究科",
+        "en": "Graduate School of Information Science and Engineering"
+      }
+    },
+    {
+      "id": "1-957-226716-0-0",
+      "school": "226",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "計算工学専攻",
+        "en": "Computer Science"
+      },
+      "parent": "1-957-226715-0-0"
+    },
+    {
+      "id": "1-957-226717-0-0",
+      "school": "226",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "情報環境学専攻",
+        "en": "Mechanical and Environmental Informatics"
+      },
+      "parent": "1-957-226715-0-0"
+    },
+    {
+      "id": "1-958-227615-0-0",
+      "school": "227",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院社会理工学研究科",
+        "en": "Graduate School of Decision Science and Technology"
+      }
+    },
+    {
+      "id": "1-958-227616-0-0",
+      "school": "227",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "価値システム専攻",
+        "en": "Value and Decision Science"
+      },
+      "parent": "1-958-227615-0-0"
+    },
+    {
+      "id": "1-958-227617-0-0",
+      "school": "227",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "経営工学専攻",
+        "en": "Industrial Engineering and Management"
+      },
+      "parent": "1-958-227615-0-0"
+    },
+    {
+      "id": "1-958-227618-0-0",
+      "school": "227",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "社会工学専攻",
+        "en": "Social Engineering"
+      },
+      "parent": "1-958-227615-0-0"
+    },
+    {
+      "id": "1-960-229515-0-0",
+      "school": "229",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院イノベーションマネジメント研究科",
+        "en": "Graduate School of Innovation Management"
+      }
+    },
+    {
+      "id": "1-960-229516-0-0",
+      "school": "229",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "イノベーション専攻",
+        "en": "Innovation"
+      },
+      "parent": "1-960-229515-0-0"
+    },
+    {
+      "id": "1-961-250020-0-0",
+      "school": "250",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院共通科目",
+        "en": "Common Course of Graduate School"
+      }
+    },
+    {
+      "id": "1-961-250030-0-0",
+      "school": "250",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "国際コミュニケーション科目",
+        "en": "International Communication"
+      },
+      "parent": "1-961-250020-0-0"
+    },
+    {
+      "id": "1-961-250035-0-0",
+      "school": "250",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院留学生科目",
+        "en": "Courses for International Students"
+      },
+      "parent": "1-961-250020-0-0"
+    },
+    {
+      "id": "1-961-250045-0-0",
+      "school": "250",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院広域科目",
+        "en": "Interdepartmental Courses"
+      },
+      "parent": "1-961-250020-0-0"
+    },
+    {
+      "id": "1-961-250050-0-0",
+      "school": "250",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院文明科目",
+        "en": "Arts and Humanities"
+      },
+      "parent": "1-961-250020-0-0"
+    },
+    {
+      "id": "1-961-250055-0-0",
+      "school": "250",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "大学院キャリア科目",
+        "en": "Career Development Courses"
+      },
+      "parent": "1-961-250020-0-0"
+    },
+    {
+      "id": "1-962-250065-0-0",
+      "school": "251",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "リーディング大学院",
+        "en": "Program for Leading Graduate Schools"
+      }
+    },
+    {
+      "id": "1-962-250070-0-0",
+      "school": "251",
+      "level": "legacy-graduate",
+      "name": {
+        "ja": "環境エネルギー協創教育院科目",
+        "en": "Academy for Co-creative Education of Environment and Energy Science"
+      },
+      "parent": "1-962-250065-0-0"
+    }
+  ],
+  "offerings": [
+    {
+      "id": "202605679",
+      "code": "ZSS.Z491",
+      "title": {
+        "ja": "土木工学講究第一",
+        "en": "Seminar of Civil Engineering I"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605680",
+      "code": "ZSS.Z492",
+      "title": {
+        "ja": "土木工学講究第二",
+        "en": "Seminar of Civil Engineering II"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605681",
+      "code": "ZSS.Z591",
+      "title": {
+        "ja": "土木工学講究第三",
+        "en": "Seminar of Civil Engineering III"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605682",
+      "code": "ZSS.Z592",
+      "title": {
+        "ja": "土木工学講究第四",
+        "en": "Seminar of Civil Engineering IV"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605683",
+      "code": "ZSS.Y491",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) I",
+        "en": "Seminar of Development and Environmental Engineering (CE) I"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605684",
+      "code": "ZSS.Y492",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) II",
+        "en": "Seminar of Development and Environmental Engineering (CE) II"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605685",
+      "code": "ZSS.Y591",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) III",
+        "en": "Seminar of Development and Environmental Engineering (CE) III"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605686",
+      "code": "ZSS.Y592",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) IV",
+        "en": "Seminar of Development and Environmental Engineering (CE) IV"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605687",
+      "code": "ZSS.Z691",
+      "title": {
+        "ja": "土木工学講究第五",
+        "en": "Seminar of Civil Engineering V"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605688",
+      "code": "ZSS.Z692",
+      "title": {
+        "ja": "土木工学講究第六",
+        "en": "Seminar of Civil Engineering VI"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605689",
+      "code": "ZSS.Z693",
+      "title": {
+        "ja": "土木工学講究第七",
+        "en": "Seminar of Civil Engineering VII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605690",
+      "code": "ZSS.Z694",
+      "title": {
+        "ja": "土木工学講究第八",
+        "en": "Seminar of Civil Engineering VIII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605691",
+      "code": "ZSS.Z695",
+      "title": {
+        "ja": "土木工学講究第九",
+        "en": "Seminar of Civil Engineering IX"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605692",
+      "code": "ZSS.Z696",
+      "title": {
+        "ja": "土木工学講究第十",
+        "en": "Seminar of Civil Engineering X"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605693",
+      "code": "ZSS.Y691",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) V",
+        "en": "Seminar of Development and Environmental Engineering (CE) V"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605694",
+      "code": "ZSS.Y692",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) VI",
+        "en": "Seminar of Development and Environmental Engineering (CE) VI"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605695",
+      "code": "ZSS.Y693",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) VII",
+        "en": "Seminar of Development and Environmental Engineering (CE) VII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605696",
+      "code": "ZSS.Y694",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) VIII",
+        "en": "Seminar of Development and Environmental Engineering (CE) VIII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605697",
+      "code": "ZSS.Y695",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) IX",
+        "en": "Seminar of Development and Environmental Engineering (CE) IX"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605698",
+      "code": "ZSS.Y696",
+      "title": {
+        "ja": "Seminar of Development and Environmental Engineering (CE) X",
+        "en": "Seminar of Development and Environmental Engineering (CE) X"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "土木工学専攻",
+        "en": "Civil Engineering"
+      },
+      "units": [
+        "1-955-224611-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605705",
+      "code": "ZST.Z491",
+      "title": {
+        "ja": "建築学講究第一",
+        "en": "Seminar in Architecture and Building Engineering I"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605706",
+      "code": "ZST.Z492",
+      "title": {
+        "ja": "建築学講究第二",
+        "en": "Seminar in Architecture and Building Engineering II"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605707",
+      "code": "ZST.Z591",
+      "title": {
+        "ja": "建築学講究第三",
+        "en": "Seminar in Architecture and Building Engineering III"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605708",
+      "code": "ZST.Z592",
+      "title": {
+        "ja": "建築学講究第四",
+        "en": "Seminar in Architecture and Building Engineering IV"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605709",
+      "code": "ZST.Z691",
+      "title": {
+        "ja": "建築学講究第五",
+        "en": "Seminar in Architecture and Building Engineering V"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605710",
+      "code": "ZST.Z692",
+      "title": {
+        "ja": "建築学講究第六",
+        "en": "Seminar in Architecture and Building Engineering VI"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605711",
+      "code": "ZST.Z693",
+      "title": {
+        "ja": "建築学講究第七",
+        "en": "Seminar in Architecture and Building Engineering VII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605712",
+      "code": "ZST.Z694",
+      "title": {
+        "ja": "建築学講究第八",
+        "en": "Seminar in Architecture and Building Engineering VIII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605713",
+      "code": "ZST.Z695",
+      "title": {
+        "ja": "建築学講究第九",
+        "en": "Seminar in Architecture and Building Engineering IX"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202605714",
+      "code": "ZST.Z696",
+      "title": {
+        "ja": "建築学講究第十",
+        "en": "Seminar in Architecture and Building Engineering X"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "建築学専攻",
+        "en": "Architecture and Building Engineering"
+      },
+      "units": [
+        "1-955-224612-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607785",
+      "code": "ZDB.Z691",
+      "title": {
+        "ja": "価値システム講究第五",
+        "en": "Colloquium in Value and Decision Science V"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "価値システム専攻",
+        "en": "Value and Decision Science"
+      },
+      "units": [
+        "1-958-227616-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607786",
+      "code": "ZDB.Z692",
+      "title": {
+        "ja": "価値システム講究第六",
+        "en": "Colloquium in Value and Decision Science VI"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "価値システム専攻",
+        "en": "Value and Decision Science"
+      },
+      "units": [
+        "1-958-227616-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607787",
+      "code": "ZDB.Z693",
+      "title": {
+        "ja": "価値システム講究第七",
+        "en": "Colloquium in Value and Decision Science VII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "価値システム専攻",
+        "en": "Value and Decision Science"
+      },
+      "units": [
+        "1-958-227616-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607788",
+      "code": "ZDB.Z694",
+      "title": {
+        "ja": "価値システム講究第八",
+        "en": "Colloquium in Value and Decision Science VIII"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "価値システム専攻",
+        "en": "Value and Decision Science"
+      },
+      "units": [
+        "1-958-227616-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607789",
+      "code": "ZDB.Z695",
+      "title": {
+        "ja": "価値システム講究第九",
+        "en": "Colloquium in Value and Decision Science IX"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "価値システム専攻",
+        "en": "Value and Decision Science"
+      },
+      "units": [
+        "1-958-227616-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607790",
+      "code": "ZDB.Z696",
+      "title": {
+        "ja": "価値システム講究第十",
+        "en": "Colloquium in Value and Decision Science X"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "価値システム専攻",
+        "en": "Value and Decision Science"
+      },
+      "units": [
+        "1-958-227616-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    }
+  ]
+}

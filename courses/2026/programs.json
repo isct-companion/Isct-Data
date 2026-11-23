@@ -1,0 +1,8810 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "group": {
+    "id": "programs",
+    "name": {
+      "ja": "学位プログラムとして特別に設けた教育課程",
+      "en": "Special degree programs"
+    }
+  },
+  "source": [
+    {
+      "id": "syllabus",
+      "url": "https://syllabus.s.isct.ac.jp/courses/2026",
+      "retrievedAt": "2026-11-22T16:07:47Z"
+    }
+  ],
+  "units": [
+    {
+      "id": "1-981-400030-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      }
+    },
+    {
+      "id": "1-981-400034-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "物質・情報卓越教育課程",
+        "en": "Academy for Convergence of Materials and Informatics"
+      }
+    },
+    {
+      "id": "1-981-400035-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      }
+    },
+    {
+      "id": "1-981-400036-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      }
+    },
+    {
+      "id": "1-981-400037-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      }
+    },
+    {
+      "id": "1-981-400039-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "スタートアップ教育機構",
+        "en": "Center For Startup Education"
+      }
+    },
+    {
+      "id": "1-981-400040-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "超スマート社会卓越教育院プログラム",
+        "en": "Program by Academy of Super Smart Society"
+      }
+    },
+    {
+      "id": "0-981-400037-0-0",
+      "school": "0",
+      "level": "program",
+      "name": {
+        "ja": "学位プログラムとして特別に設けた教育課程",
+        "en": "Special graduate degree programs"
+      }
+    }
+  ],
+  "offerings": [
+    {
+      "id": "202617275",
+      "code": "TAL.C402",
+      "title": {
+        "ja": "グローバルコミュニケーション A",
+        "en": "Global Communication A"
+      },
+      "instructors": [
+        {
+          "ja": "秋山 泰",
+          "en": "Yutaka Akiyama"
+        },
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        },
+        {
+          "ja": "佐々木 藍子",
+          "en": "Aiko Sasaki"
+        },
+        {
+          "ja": "髙橋 将記",
+          "en": "Masaki Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "S3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-09",
+      "class": "A"
+    },
+    {
+      "id": "202617276",
+      "code": "TAL.C402",
+      "title": {
+        "ja": "グローバルコミュニケーション B",
+        "en": "Global Communication B"
+      },
+      "instructors": [
+        {
+          "ja": "秋山 泰",
+          "en": "Yutaka Akiyama"
+        },
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        },
+        {
+          "ja": "佐々木 藍子",
+          "en": "Aiko Sasaki"
+        },
+        {
+          "ja": "髙橋 将記",
+          "en": "Masaki Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "J2-304"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-09",
+      "class": "B"
+    },
+    {
+      "id": "202617289",
+      "code": "TAL.C601",
+      "title": {
+        "ja": "ストラテジックディベート A",
+        "en": "Strategic Debate A"
+      },
+      "instructors": [
+        {
+          "ja": "秋山 泰",
+          "en": "Yutaka Akiyama"
+        },
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        },
+        {
+          "ja": "佐々木 藍子",
+          "en": "Aiko Sasaki"
+        },
+        {
+          "ja": "髙橋 将記",
+          "en": "Masaki Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "G1-106"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-09",
+      "class": "A"
+    },
+    {
+      "id": "202617291",
+      "code": "TAL.C601",
+      "title": {
+        "ja": "ストラテジックディベート B",
+        "en": "Strategic Debate B"
+      },
+      "instructors": [
+        {
+          "ja": "秋山 泰",
+          "en": "Yutaka Akiyama"
+        },
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        },
+        {
+          "ja": "佐々木 藍子",
+          "en": "Aiko Sasaki"
+        },
+        {
+          "ja": "髙橋 将記",
+          "en": "Masaki Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W1-109"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-09",
+      "class": "B"
+    },
+    {
+      "id": "202617293",
+      "code": "TAL.C602",
+      "title": {
+        "ja": "紛争下のリーダーシップ",
+        "en": "Leadership in Conflict"
+      },
+      "instructors": [
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-135"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-09"
+    },
+    {
+      "id": "202617321",
+      "code": "TAL.I601",
+      "title": {
+        "ja": "リーダーシップ・オフキャンパスプロジェクト A",
+        "en": "Leadership Off-Campus Project A"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "A"
+    },
+    {
+      "id": "202617322",
+      "code": "TAL.I601",
+      "title": {
+        "ja": "リーダーシップ・オフキャンパスプロジェクト B",
+        "en": "Leadership Off-Campus Project B"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "B"
+    },
+    {
+      "id": "202617323",
+      "code": "TAL.I601",
+      "title": {
+        "ja": "リーダーシップ・オフキャンパスプロジェクト C",
+        "en": "Leadership Off-Campus Project C"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "C"
+    },
+    {
+      "id": "202617324",
+      "code": "TAL.I601",
+      "title": {
+        "ja": "リーダーシップ・オフキャンパスプロジェクト D",
+        "en": "Leadership Off-Campus Project D"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "D"
+    },
+    {
+      "id": "202623116",
+      "code": "TAL.S502",
+      "title": {
+        "ja": "プロフェッショナルと価値創造 A",
+        "en": "Professionals and Value Creation A"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "blended"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202623170",
+      "code": "TCM.B601",
+      "title": {
+        "ja": "物質・情報卓越プラクティススクール第一",
+        "en": "Practice School in Materials Informatics I"
+      },
+      "instructors": [
+        {
+          "ja": "下山 裕介",
+          "en": "Yusuke Shimoyama"
+        },
+        {
+          "ja": "小林 能直",
+          "en": "Yoshinao Kobayashi"
+        },
+        {
+          "ja": "松本 秀行",
+          "en": "Hideyuki Matsumoto"
+        },
+        {
+          "ja": "安尾 信明",
+          "en": "Nobuaki Yasuo"
+        },
+        {
+          "ja": "桑畑 和明",
+          "en": "Kazuaki Kuwahata"
+        },
+        {
+          "ja": "前園 涼",
+          "en": "Ryo Maezono"
+        }
+      ],
+      "unit": {
+        "ja": "物質・情報卓越教育課程",
+        "en": "Academy for Convergence of Materials and Informatics"
+      },
+      "units": [
+        "1-981-400034-0-0"
+      ],
+      "quarters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202623172",
+      "code": "TCM.B602",
+      "title": {
+        "ja": "物質・情報卓越プラクティススクール第二",
+        "en": "Practice School in Materials Informatics II"
+      },
+      "instructors": [
+        {
+          "ja": "下山 裕介",
+          "en": "Yusuke Shimoyama"
+        },
+        {
+          "ja": "小林 能直",
+          "en": "Yoshinao Kobayashi"
+        },
+        {
+          "ja": "松本 秀行",
+          "en": "Hideyuki Matsumoto"
+        },
+        {
+          "ja": "安尾 信明",
+          "en": "Nobuaki Yasuo"
+        },
+        {
+          "ja": "桑畑 和明",
+          "en": "Kazuaki Kuwahata"
+        },
+        {
+          "ja": "前園 涼",
+          "en": "Ryo Maezono"
+        }
+      ],
+      "unit": {
+        "ja": "物質・情報卓越教育課程",
+        "en": "Academy for Convergence of Materials and Informatics"
+      },
+      "units": [
+        "1-981-400034-0-0"
+      ],
+      "quarters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202623174",
+      "code": "TCM.B603",
+      "title": {
+        "ja": "物質・情報卓越海外オフキャンパスプロジェクト",
+        "en": "Off-campus Project in Materials Informatics"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "物質・情報卓越教育課程",
+        "en": "Academy for Convergence of Materials and Informatics"
+      },
+      "units": [
+        "1-981-400034-0-0"
+      ],
+      "quarters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202623176",
+      "code": "TCM.B604",
+      "title": {
+        "ja": "物質・情報卓越短期海外オフキャンパスプロジェクト第一",
+        "en": "Short-term Off-campus Project in Materials Informatics I"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "物質・情報卓越教育課程",
+        "en": "Academy for Convergence of Materials and Informatics"
+      },
+      "units": [
+        "1-981-400034-0-0"
+      ],
+      "quarters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202623178",
+      "code": "TCM.B605",
+      "title": {
+        "ja": "物質・情報卓越短期海外オフキャンパスプロジェクト第二",
+        "en": "Short-term Off-campus Project in Materials Informatics II"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "物質・情報卓越教育課程",
+        "en": "Academy for Convergence of Materials and Informatics"
+      },
+      "units": [
+        "1-981-400034-0-0"
+      ],
+      "quarters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "schedule": [],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202624120",
+      "code": "TAL.S406",
+      "title": {
+        "ja": "連合寄附講義 これから働く学生のためのワークルール入門 I",
+        "en": "Introduction to Work Rules I produced by JTUC-RENGO"
+      },
+      "instructors": [
+        {
+          "ja": "西田 亮介",
+          "en": "Ryosuke Nishida"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-156, J2-305"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202624121",
+      "code": "TAL.S504",
+      "title": {
+        "ja": "連合寄附講義 これから働く学生のためのワークルール入門 II",
+        "en": "Introduction to Work Rules II produced by JTUC-RENGO"
+      },
+      "instructors": [
+        {
+          "ja": "西田 亮介",
+          "en": "Ryosuke Nishida"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "S2-202, J2-305"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202624814",
+      "code": "TAL.L442",
+      "title": {
+        "ja": "リベラルアーツセミナー",
+        "en": "Graduate Seminar in Liberal Arts"
+      },
+      "instructors": [
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        },
+        {
+          "ja": "佐々木 藍子",
+          "en": "Aiko Sasaki"
+        },
+        {
+          "ja": "髙橋 将記",
+          "en": "Masaki Takahashi"
+        },
+        {
+          "ja": "澤井 勇海",
+          "en": "Isami Sawai"
+        },
+        {
+          "ja": "河西 棟馬",
+          "en": "Toma Kawanishi"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "S6-305, J3-309B"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-06"
+    },
+    {
+      "id": "202625186",
+      "code": "TAL.S505",
+      "title": {
+        "ja": "社会課題の認知ワークショップ A",
+        "en": "Recognition of Social Issues Workshop A"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09"
+    },
+    {
+      "id": "202625187",
+      "code": "TAL.S506",
+      "title": {
+        "ja": "社会課題の認知ワークショップ B",
+        "en": "Recognition of Social Issues Workshop B"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-11"
+    },
+    {
+      "id": "202628314",
+      "code": "TAL.W502",
+      "title": {
+        "ja": "リーダーシップ・グループワーク基礎 I S",
+        "en": "Fundamental Group Work for Leadership I S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "S"
+    },
+    {
+      "id": "202628315",
+      "code": "TAL.W502",
+      "title": {
+        "ja": "リーダーシップ・グループワーク基礎 I F",
+        "en": "Fundamental Group Work for Leadership I F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-11",
+      "class": "F"
+    },
+    {
+      "id": "202628316",
+      "code": "TAL.W503",
+      "title": {
+        "ja": "リーダーシップ・グループワーク基礎 II S",
+        "en": "Fundamental Group Work for Leadership II S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "S"
+    },
+    {
+      "id": "202628317",
+      "code": "TAL.W503",
+      "title": {
+        "ja": "リーダーシップ・グループワーク基礎 II F",
+        "en": "Fundamental Group Work for Leadership II F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-11",
+      "class": "F"
+    },
+    {
+      "id": "202628318",
+      "code": "TAL.W602",
+      "title": {
+        "ja": "博士リーダーシップ・グループワーク実践 I S",
+        "en": "Doctoral Practical Group Work for Leadership I S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "S"
+    },
+    {
+      "id": "202628319",
+      "code": "TAL.W602",
+      "title": {
+        "ja": "博士リーダーシップ・グループワーク実践 I F",
+        "en": "Doctoral Practical Group Work for Leadership I F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "F"
+    },
+    {
+      "id": "202628320",
+      "code": "TAL.W603",
+      "title": {
+        "ja": "博士リーダーシップ・グループワーク実践 II S",
+        "en": "Doctoral Practical Group Work for Leadership II S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "S"
+    },
+    {
+      "id": "202628321",
+      "code": "TAL.W603",
+      "title": {
+        "ja": "博士リーダーシップ・グループワーク実践 II F",
+        "en": "Doctoral Practical Group Work for Leadership II F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "F"
+    },
+    {
+      "id": "202628322",
+      "code": "TAL.W612",
+      "title": {
+        "ja": "リーダーシップ・グループワーク発展 I S",
+        "en": "Advanced Group Work for Leadership I S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "S"
+    },
+    {
+      "id": "202628323",
+      "code": "TAL.W612",
+      "title": {
+        "ja": "リーダーシップ・グループワーク発展 I F",
+        "en": "Advanced Group Work for Leadership I F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "F"
+    },
+    {
+      "id": "202628324",
+      "code": "TAL.W613",
+      "title": {
+        "ja": "リーダーシップ・グループワーク発展 II S",
+        "en": "Advanced Group Work for Leadership II S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "S"
+    },
+    {
+      "id": "202628325",
+      "code": "TAL.W613",
+      "title": {
+        "ja": "リーダーシップ・グループワーク発展 II F",
+        "en": "Advanced Group Work for Leadership II F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09",
+      "class": "F"
+    },
+    {
+      "id": "202628541",
+      "code": "SSS.S631",
+      "title": {
+        "ja": "サイバー・フィジカルオフキャンパスプロジェクト(博士)1 A",
+        "en": "Cyber-Physical Off-Campus Project (D) 1 A"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "A"
+    },
+    {
+      "id": "202628543",
+      "code": "SSS.S631",
+      "title": {
+        "ja": "サイバー・フィジカルオフキャンパスプロジェクト(博士)1 B",
+        "en": "Cyber-Physical Off-Campus Project (D) 1 B"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "B"
+    },
+    {
+      "id": "202628545",
+      "code": "SSS.S632",
+      "title": {
+        "ja": "サイバー・フィジカルオフキャンパスプロジェクト(博士)2 A",
+        "en": "Cyber-Physical Off-Campus Project (D) 2 A"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "A"
+    },
+    {
+      "id": "202628547",
+      "code": "SSS.S632",
+      "title": {
+        "ja": "サイバー・フィジカルオフキャンパスプロジェクト(博士)2 B",
+        "en": "Cyber-Physical Off-Campus Project (D) 2 B"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "B"
+    },
+    {
+      "id": "202628554",
+      "code": "SSS.G631",
+      "title": {
+        "ja": "グローバルオフキャンパスプロジェクトS",
+        "en": "Global Off-Campus Project S"
+      },
+      "instructors": [
+        {
+          "ja": "八木 透",
+          "en": "Tohru Yagi"
+        },
+        {
+          "ja": "TRAN GIA KHANH",
+          "en": "Gia Khanh Tran"
+        },
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28"
+    },
+    {
+      "id": "202628555",
+      "code": "SSS.G632",
+      "title": {
+        "ja": "グローバルオフキャンパスプロジェクトF",
+        "en": "Global Off-Campus Project F"
+      },
+      "instructors": [
+        {
+          "ja": "八木 透",
+          "en": "Tohru Yagi"
+        },
+        {
+          "ja": "TRAN GIA KHANH",
+          "en": "Gia Khanh Tran"
+        },
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28"
+    },
+    {
+      "id": "202628851",
+      "code": "TAL.L443",
+      "title": {
+        "ja": "マインドフルネス for リーダーシップ",
+        "en": "Mindfulness for Leadership"
+      },
+      "instructors": [
+        {
+          "ja": "中野 民夫",
+          "en": "Tamio Nakano"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-716"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09"
+    },
+    {
+      "id": "202631306",
+      "code": "ENI.I401",
+      "title": {
+        "ja": "エネルギービッグデータ科学演習",
+        "en": "Big Data in Energy: a practical introduction"
+      },
+      "instructors": [
+        {
+          "ja": "伊原 学",
+          "en": "Manabu Ihara"
+        },
+        {
+          "ja": "MANZHOS SERGEI",
+          "en": "Sergei Manzhos"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-155"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09"
+    },
+    {
+      "id": "202631307",
+      "code": "ENI.H401",
+      "title": {
+        "ja": "価値創造のためのマーケティング",
+        "en": "Marketing for Value Creation"
+      },
+      "instructors": [
+        {
+          "ja": "松井 剛",
+          "en": "Takeshi Matsui"
+        },
+        {
+          "ja": "福川 恭子",
+          "en": "Kyoko Fukukawa"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B43"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202631308",
+      "code": "ENI.H402",
+      "title": {
+        "ja": "エネルギー市場のファイナンスとデータ分析",
+        "en": "Finance and Data Analysis in Energy Markets"
+      },
+      "instructors": [
+        {
+          "ja": "大橋 和彦",
+          "en": "Kazuhiko Ohashi"
+        },
+        {
+          "ja": "山本 庸平",
+          "en": "Yohei Yamamoto"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "S4-203"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202631309",
+      "code": "ENI.H403",
+      "title": {
+        "ja": "経済開発とエネルギー政策",
+        "en": "Economic Development and Energy Policies"
+      },
+      "instructors": [
+        {
+          "ja": "山下 英俊",
+          "en": "Hidetoshi Yamashita"
+        },
+        {
+          "ja": "真野 裕吉",
+          "en": "Yukichi Mano"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "S2-204"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202631310",
+      "code": "ENI.A601",
+      "title": {
+        "ja": "InfoSyEnergyアウトリーチ 1",
+        "en": "InfoSyEnergy-outreach 1"
+      },
+      "instructors": [
+        {
+          "ja": "日髙 一義"
+        },
+        {
+          "ja": "伊原 学"
+        },
+        {
+          "ja": "末包 哲也"
+        },
+        {
+          "ja": "後藤 美香"
+        },
+        {
+          "ja": "秋山 智紀"
+        },
+        {
+          "ja": "吉田 裕次"
+        },
+        {
+          "ja": "小川 滋"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202631312",
+      "code": "ENI.A601",
+      "title": {
+        "ja": "InfoSyEnergyアウトリーチ 2",
+        "en": "InfoSyEnergy-outreach 2"
+      },
+      "instructors": [
+        {
+          "ja": "日髙 一義"
+        },
+        {
+          "ja": "伊原 学"
+        },
+        {
+          "ja": "末包 哲也"
+        },
+        {
+          "ja": "後藤 美香"
+        },
+        {
+          "ja": "秋山 智紀"
+        },
+        {
+          "ja": "吉田 裕次"
+        },
+        {
+          "ja": "小川 滋"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive",
+          "room": "EEI棟1階"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202631314",
+      "code": "ENI.A602",
+      "title": {
+        "ja": "InfoSyEnergyプロダクト・サービスデザイン",
+        "en": "InfoSyEnergy Product-service design"
+      },
+      "instructors": [
+        {
+          "ja": "日髙 一義"
+        },
+        {
+          "ja": "木見田 康治"
+        },
+        {
+          "ja": "Alan Meier"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202631315",
+      "code": "ENI.A603",
+      "title": {
+        "ja": "InfoSyEnergy政策立案ワークショップ 1",
+        "en": "InfoSyEnergy Policy-making workshop 1"
+      },
+      "instructors": [
+        {
+          "ja": "調 麻佐志",
+          "en": "Masashi Shirabe"
+        },
+        {
+          "ja": "高松 宏弥",
+          "en": "Hiroya Takamatsu"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202631316",
+      "code": "ENI.A603",
+      "title": {
+        "ja": "InfoSyEnergy政策立案ワークショップ 2",
+        "en": "InfoSyEnergy Policy-making workshop 2"
+      },
+      "instructors": [
+        {
+          "ja": "調 麻佐志",
+          "en": "Masashi Shirabe"
+        },
+        {
+          "ja": "高松 宏弥",
+          "en": "Hiroya Takamatsu"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202631320",
+      "code": "ENI.B611",
+      "title": {
+        "ja": "InfoSyEnergy国際フォーラム1",
+        "en": "InfoSyEnergy-international forum 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202631321",
+      "code": "ENI.B612",
+      "title": {
+        "ja": "InfoSyEnergy国際フォーラム2",
+        "en": "InfoSyEnergy-international forum 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202631325",
+      "code": "ENI.B613",
+      "title": {
+        "ja": "InfoSyEnergy国際フォーラム3",
+        "en": "InfoSyEnergy-international forum 3"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202631330",
+      "code": "ENI.C611",
+      "title": {
+        "ja": "InfoSyEnergy 共同研究プロジェクト1 1",
+        "en": "InfoSyEnergy-joint research projects 1 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202631332",
+      "code": "ENI.C611",
+      "title": {
+        "ja": "InfoSyEnergy 共同研究プロジェクト1 2",
+        "en": "InfoSyEnergy-joint research projects 1 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202631333",
+      "code": "ENI.C612",
+      "title": {
+        "ja": "InfoSyEnergy 共同研究プロジェクト2 1",
+        "en": "InfoSyEnergy-joint research projects 2 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202631334",
+      "code": "ENI.C612",
+      "title": {
+        "ja": "InfoSyEnergy 共同研究プロジェクト2 2",
+        "en": "InfoSyEnergy-joint research projects 2 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202631335",
+      "code": "ENI.C616",
+      "title": {
+        "ja": "InfoSyEnergy国際フィールドワーク(短期) 1",
+        "en": "InfoSyEnergy-international field work-short term 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202631337",
+      "code": "ENI.C616",
+      "title": {
+        "ja": "InfoSyEnergy国際フィールドワーク(短期) 2",
+        "en": "InfoSyEnergy-international field work-short term 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202631339",
+      "code": "ENI.C617",
+      "title": {
+        "ja": "InfoSyEnergy国際フィールドワーク(長期) 1",
+        "en": "InfoSyEnergy-international field work-long term 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202631340",
+      "code": "ENI.C617",
+      "title": {
+        "ja": "InfoSyEnergy国際フィールドワーク(長期) 2",
+        "en": "InfoSyEnergy-international field work-long term 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202631492",
+      "code": "TAL.S507",
+      "title": {
+        "ja": "プロフェッショナルと価値創造 C",
+        "en": "Professionals and Value Creation C"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "blended"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202631493",
+      "code": "TAL.S508",
+      "title": {
+        "ja": "プロフェッショナルと価値創造 D",
+        "en": "Professionals and Value Creation D"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202631494",
+      "code": "TAL.S509",
+      "title": {
+        "ja": "社会課題の認知ワークショップ C",
+        "en": "Recognition of Social Issues Workshop C"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-09"
+    },
+    {
+      "id": "202631495",
+      "code": "TAL.S510",
+      "title": {
+        "ja": "社会課題の認知ワークショップ D",
+        "en": "Recognition of Social Issues Workshop D"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-11"
+    },
+    {
+      "id": "202631497",
+      "code": "TAL.W504",
+      "title": {
+        "ja": "修士リーダーシップ・グループワーク実践 I S",
+        "en": "Master’s Practical Group Work for Leadership I S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-06",
+      "class": "S"
+    },
+    {
+      "id": "202631498",
+      "code": "TAL.W505",
+      "title": {
+        "ja": "修士リーダーシップ・グループワーク実践 II S",
+        "en": "Master’s Practical Group Work for Leadership II S"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-06",
+      "class": "S"
+    },
+    {
+      "id": "202631501",
+      "code": "TAL.W504",
+      "title": {
+        "ja": "修士リーダーシップ・グループワーク実践 I F",
+        "en": "Master’s Practical Group Work for Leadership I F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-06",
+      "class": "F"
+    },
+    {
+      "id": "202631502",
+      "code": "TAL.W505",
+      "title": {
+        "ja": "修士リーダーシップ・グループワーク実践 II F",
+        "en": "Master’s Practical Group Work for Leadership II F"
+      },
+      "instructors": [
+        {
+          "ja": "山田 圭介",
+          "en": "Keisuke Yamada"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        },
+        {
+          "ja": "渡邊 真由",
+          "en": "Mayu Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-06",
+      "class": "F"
+    },
+    {
+      "id": "202631627",
+      "code": "TAL.I602",
+      "title": {
+        "ja": "リーダーシップ・異分野研究プロジェクト A",
+        "en": "Leadership Interdisciplinary Research Project A"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "A"
+    },
+    {
+      "id": "202631628",
+      "code": "TAL.I602",
+      "title": {
+        "ja": "リーダーシップ・異分野研究プロジェクト B",
+        "en": "Leadership Interdisciplinary Research Project B"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "B"
+    },
+    {
+      "id": "202631629",
+      "code": "TAL.I602",
+      "title": {
+        "ja": "リーダーシップ・異分野研究プロジェクト C",
+        "en": "Leadership Interdisciplinary Research Project C"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "C"
+    },
+    {
+      "id": "202631630",
+      "code": "TAL.I602",
+      "title": {
+        "ja": "リーダーシップ・異分野研究プロジェクト D",
+        "en": "Leadership Interdisciplinary Research Project D"
+      },
+      "instructors": [
+        {
+          "ja": "店橋 護",
+          "en": "Mamoru Tanahashi"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "D"
+    },
+    {
+      "id": "202631741",
+      "code": "SSS.S633",
+      "title": {
+        "ja": "キャリア開発サイバー・フィジカルオフキャンパスプロジェクト(博⼠)１ A",
+        "en": "Cyber-Physical Off-Campus Project for Career Development (D) 1 A"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "A"
+    },
+    {
+      "id": "202631742",
+      "code": "SSS.S633",
+      "title": {
+        "ja": "キャリア開発サイバー・フィジカルオフキャンパスプロジェクト(博⼠)１ B",
+        "en": "Cyber-Physical Off-Campus Project for Career Development (D) 1 B"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "B"
+    },
+    {
+      "id": "202631743",
+      "code": "SSS.S634",
+      "title": {
+        "ja": "キャリア開発サイバー・フィジカルオフキャンパスプロジェクト(博⼠)２ A",
+        "en": "Cyber-Physical Off-Campus Project for Career Development (D) 2 A"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "A"
+    },
+    {
+      "id": "202631744",
+      "code": "SSS.S634",
+      "title": {
+        "ja": "キャリア開発サイバー・フィジカルオフキャンパスプロジェクト(博⼠)２ B",
+        "en": "Cyber-Physical Off-Campus Project for Career Development (D) 2 B"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育課程",
+        "en": "Academy for Super Smart Society"
+      },
+      "units": [
+        "1-981-400035-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-05-15",
+      "class": "B"
+    },
+    {
+      "id": "202632471",
+      "code": "TAL.C502",
+      "title": {
+        "ja": "多文化協働リーダーシップ S",
+        "en": "Multicultural Collaborative Leadership S"
+      },
+      "instructors": [
+        {
+          "ja": "小松 翠",
+          "en": "Midori Komatsu"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-322"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "S"
+    },
+    {
+      "id": "202632472",
+      "code": "TAL.C502",
+      "title": {
+        "ja": "多文化協働リーダーシップ F",
+        "en": "Multicultural Collaborative Leadership F"
+      },
+      "instructors": [
+        {
+          "ja": "小松 翠",
+          "en": "Midori Komatsu"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W1-102"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "F"
+    },
+    {
+      "id": "202634078",
+      "code": "DSA.B201",
+      "title": {
+        "ja": "応用基礎データサイエンス・AI第一 1",
+        "en": "Basics and Applications of Data Science and Artificial Intelligence I 1"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構(学士)",
+        "en": "Center of Data Science and Artificial Intelligence 2"
+      },
+      "units": [
+        "0-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W2-401"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0.5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202634079",
+      "code": "DSA.B202",
+      "title": {
+        "ja": "応用基礎データサイエンス・AI第二 1",
+        "en": "Basics and Applications of Data Science and Artificial Intelligence II 1"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構(学士)",
+        "en": "Center of Data Science and Artificial Intelligence 2"
+      },
+      "units": [
+        "0-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W2-401"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0.5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202634549",
+      "code": "TAL.C603",
+      "title": {
+        "ja": "リーダーシップの心理学",
+        "en": "The Psychology of Leadership"
+      },
+      "instructors": [
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-103"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-09"
+    },
+    {
+      "id": "202634912",
+      "code": "TAL.C503",
+      "title": {
+        "ja": "多文化就労リーダーシップ S",
+        "en": "Multicultural Business Leadership S"
+      },
+      "instructors": [
+        {
+          "ja": "小松 翠",
+          "en": "Midori Komatsu"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-374"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "S"
+    },
+    {
+      "id": "202634913",
+      "code": "TAL.C503",
+      "title": {
+        "ja": "多文化就労リーダーシップ F",
+        "en": "Multicultural Business Leadership F"
+      },
+      "instructors": [
+        {
+          "ja": "小松 翠",
+          "en": "Midori Komatsu"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W1-102"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09",
+      "class": "F"
+    },
+    {
+      "id": "202634914",
+      "code": "TAL.S603",
+      "title": {
+        "ja": "リーダーシップ・ファシリテーション演習",
+        "en": "Leadership Facilitation Practicum"
+      },
+      "instructors": [
+        {
+          "ja": "KIYAMA LORINDA ROBERTSON",
+          "en": "Lorinda Robertson Kiyama"
+        },
+        {
+          "ja": "松崎 由理",
+          "en": "Yuri Matsuzaki"
+        }
+      ],
+      "unit": {
+        "ja": "リーダーシップ教育課程",
+        "en": "Academy for Leadership"
+      },
+      "units": [
+        "1-981-400030-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S6-305A, J3-309B"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-09"
+    },
+    {
+      "id": "202635935",
+      "code": "DSA.A501",
+      "title": {
+        "ja": "先端データサイエンス・AI第一",
+        "en": "Advanced Data Science and Artificial Intelligence 1"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "井上 中順",
+          "en": "Nakamasa Inoue"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "山田 寛章",
+          "en": "Hiroaki Yamada"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202635936",
+      "code": "DSA.A502",
+      "title": {
+        "ja": "先端データサイエンス・AI第二",
+        "en": "Advanced Data Science and Artificial Intelligence 2"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "市瀨 龍太郎",
+          "en": "Ryutaro Ichise"
+        },
+        {
+          "ja": "MANZHOS SERGEI",
+          "en": "Sergei Manzhos"
+        },
+        {
+          "ja": "YAMASHITA RIOS DE SOUSA ARTHUR MATSUO",
+          "en": "Rios De Sousa Arthur Matsuo Yamashita"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "石井 秀明",
+          "en": "Hideaki Ishii"
+        },
+        {
+          "ja": "本村 陽一",
+          "en": "Yoichi Motomura"
+        },
+        {
+          "ja": "山崎 啓介",
+          "en": "Keisuke Yamazaki"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-30"
+    },
+    {
+      "id": "202635937",
+      "code": "DSA.A503",
+      "title": {
+        "ja": "先端データサイエンス・AI第三",
+        "en": "Advanced Data Science and Artificial Intelligence 3"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            9,
+            10
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202635938",
+      "code": "DSA.A601",
+      "title": {
+        "ja": "先端データサイエンス・AI発展第一",
+        "en": "Progressive Advanced Data Science and Artificial Intelligence 1"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "井上 中順",
+          "en": "Nakamasa Inoue"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "山田 寛章",
+          "en": "Hiroaki Yamada"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202635939",
+      "code": "DSA.A602",
+      "title": {
+        "ja": "先端データサイエンス・AI発展第二",
+        "en": "Progressive Advanced Data Science and Artificial Intelligence 2"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "市瀨 龍太郎",
+          "en": "Ryutaro Ichise"
+        },
+        {
+          "ja": "MANZHOS SERGEI",
+          "en": "Sergei Manzhos"
+        },
+        {
+          "ja": "YAMASHITA RIOS DE SOUSA ARTHUR MATSUO",
+          "en": "Rios De Sousa Arthur Matsuo Yamashita"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "石井 秀明",
+          "en": "Hideaki Ishii"
+        },
+        {
+          "ja": "本村 陽一",
+          "en": "Yoichi Motomura"
+        },
+        {
+          "ja": "山崎 啓介",
+          "en": "Keisuke Yamazaki"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-30"
+    },
+    {
+      "id": "202635940",
+      "code": "DSA.A603",
+      "title": {
+        "ja": "先端データサイエンス・AI発展第三",
+        "en": "Progressive Advanced Data Science and Artificial Intelligence 3"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            9,
+            10
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636177",
+      "code": "ENI.I402",
+      "title": {
+        "ja": "エネルギー計算化学演習",
+        "en": "Computational chemistry for energy technologies"
+      },
+      "instructors": [
+        {
+          "ja": "MANZHOS SERGEI",
+          "en": "Sergei Manzhos"
+        }
+      ],
+      "unit": {
+        "ja": "エネルギー・情報卓越教育課程",
+        "en": "Academy of Energy and Informatics program"
+      },
+      "units": [
+        "1-981-400036-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "W5-104"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636367",
+      "code": "DSA.A503",
+      "title": {
+        "ja": "先端データサイエンス・AI第三",
+        "en": "Advanced Data Science and Artificial Intelligence 3"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-110"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636368",
+      "code": "DSA.A603",
+      "title": {
+        "ja": "先端データサイエンス・AI発展第三",
+        "en": "Progressive Advanced Data Science and Artificial Intelligence 3"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-110"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636381",
+      "code": "DSA.P412",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第一B",
+        "en": "Applied Practical Data Science and Artificial Intelligence 1B"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己"
+        },
+        {
+          "ja": "横田 孝義"
+        },
+        {
+          "ja": "宮﨑 慧"
+        },
+        {
+          "ja": "奥村 圭司"
+        },
+        {
+          "ja": "橘 優太朗"
+        },
+        {
+          "ja": "三宅 美博"
+        },
+        {
+          "ja": "佐久間 淳"
+        },
+        {
+          "ja": "小野 功"
+        },
+        {
+          "ja": "中川 慶子"
+        },
+        {
+          "ja": "太田 佳宏"
+        },
+        {
+          "ja": "塔ノ上 亮太"
+        },
+        {
+          "ja": "菱田 寛之"
+        },
+        {
+          "ja": "梶原 善之"
+        },
+        {
+          "ja": "山田 健人"
+        },
+        {
+          "ja": "速川 徹"
+        },
+        {
+          "ja": "古賀 匠"
+        },
+        {
+          "ja": "村田 亘"
+        },
+        {
+          "ja": "柴原 琢磨"
+        },
+        {
+          "ja": "西元 秀明"
+        },
+        {
+          "ja": "白石 寛樹"
+        },
+        {
+          "ja": "岡本 大督"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636382",
+      "code": "DSA.P612",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第一B",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 1B"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己"
+        },
+        {
+          "ja": "横田 孝義"
+        },
+        {
+          "ja": "宮﨑 慧"
+        },
+        {
+          "ja": "奥村 圭司"
+        },
+        {
+          "ja": "橘 優太朗"
+        },
+        {
+          "ja": "三宅 美博"
+        },
+        {
+          "ja": "佐久間 淳"
+        },
+        {
+          "ja": "小野 功"
+        },
+        {
+          "ja": "中川 慶子"
+        },
+        {
+          "ja": "太田 佳宏"
+        },
+        {
+          "ja": "塔ノ上 亮太"
+        },
+        {
+          "ja": "菱田 寛之"
+        },
+        {
+          "ja": "梶原 善之"
+        },
+        {
+          "ja": "山田 健人"
+        },
+        {
+          "ja": "速川 徹"
+        },
+        {
+          "ja": "古賀 匠"
+        },
+        {
+          "ja": "村田 亘"
+        },
+        {
+          "ja": "柴原 琢磨"
+        },
+        {
+          "ja": "西元 秀明"
+        },
+        {
+          "ja": "白石 寛樹"
+        },
+        {
+          "ja": "岡本 大督"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-09"
+    },
+    {
+      "id": "202636383",
+      "code": "DSA.P613",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第一C",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 1C"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己"
+        },
+        {
+          "ja": "横田 孝義"
+        },
+        {
+          "ja": "宮﨑 慧"
+        },
+        {
+          "ja": "奥村 圭司"
+        },
+        {
+          "ja": "橘 優太朗"
+        },
+        {
+          "ja": "三宅 美博"
+        },
+        {
+          "ja": "佐久間 淳"
+        },
+        {
+          "ja": "小野 功"
+        },
+        {
+          "ja": "平島 大介"
+        },
+        {
+          "ja": "野村 剛彦"
+        },
+        {
+          "ja": "秋葉 正博"
+        },
+        {
+          "ja": "MAO ZAIXING"
+        },
+        {
+          "ja": "中 陽童"
+        },
+        {
+          "ja": "河野 幸弘"
+        },
+        {
+          "ja": "茂木 悠佑"
+        },
+        {
+          "ja": "福井 基文"
+        },
+        {
+          "ja": "佐藤 美徳"
+        },
+        {
+          "ja": "藤井 北斗"
+        },
+        {
+          "ja": "大平 祐生"
+        },
+        {
+          "ja": "村田 勇樹"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636384",
+      "code": "DSA.P623",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第二C",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 2C"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "庄司 大作",
+          "en": "Taisaku Shoji"
+        },
+        {
+          "ja": "河野 敬行",
+          "en": "Takayuki Kawano"
+        },
+        {
+          "ja": "白石 寛樹",
+          "en": "Hiroki Shiraishi"
+        },
+        {
+          "ja": "岡本 大督",
+          "en": "Daisuke Okamoto"
+        },
+        {
+          "ja": "菅原 健佑",
+          "en": "Kensuke Sugawara"
+        },
+        {
+          "ja": "井川 甲作",
+          "en": "Kosaku Igawa"
+        },
+        {
+          "ja": "上田 芳弘",
+          "en": "Yoshihiro Ueda"
+        },
+        {
+          "ja": "岡田 崇",
+          "en": "Takashi Okada"
+        },
+        {
+          "ja": "永井 健",
+          "en": "Ken Nagai"
+        },
+        {
+          "ja": "丹治 弘典",
+          "en": "Hironori Tanji"
+        },
+        {
+          "ja": "岡崎 良孝",
+          "en": "Yoshitaka Okazaki"
+        },
+        {
+          "ja": "古川 慧",
+          "en": "Kei Furukawa"
+        },
+        {
+          "ja": "生駒 和也",
+          "en": "Kazuya Ikoma"
+        },
+        {
+          "ja": "半田 貴志",
+          "en": "Takashi Handa"
+        },
+        {
+          "ja": "河本 倫志",
+          "en": "Michiyuki Komoto"
+        },
+        {
+          "ja": "南本 高志",
+          "en": "Takashi Nanmoto"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-303"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636385",
+      "code": "DSA.P433",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第三C",
+        "en": "Applied Practical Data Science and Artificial Intelligence 3C"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "内富 寛隆",
+          "en": "Hirotaka Uchitomi"
+        },
+        {
+          "ja": "富井 規雄",
+          "en": "Norio Tomii"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, G2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202636386",
+      "code": "DSA.P632",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第三B",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 3B"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "FERNANDO DE ARAUJO PAULO",
+          "en": "De Araujo Paulo Fernando"
+        },
+        {
+          "ja": "MESSAOUDI MEHDI",
+          "en": "Mehdi Messaoudi"
+        },
+        {
+          "ja": "森 孝夫",
+          "en": "Takao Mori"
+        },
+        {
+          "ja": "CHATTERJEE SOURISH",
+          "en": "Sourish Chatterjee"
+        },
+        {
+          "ja": "ERMAKOV PAVEL",
+          "en": "Pavel Ermakov"
+        },
+        {
+          "ja": "PELLEGRINI FABIO",
+          "en": "Fabio Pellegrini"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202636387",
+      "code": "DSA.P633",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第三C",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 3C"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "内富 寛隆",
+          "en": "Hirotaka Uchitomi"
+        },
+        {
+          "ja": "富井 規雄",
+          "en": "Norio Tomii"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, G2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202636429",
+      "code": "DSA.P411",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第一A",
+        "en": "Applied Practical Data Science and Artificial Intelligence 1A"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "西潟 裕介",
+          "en": "Yusuke Nishigata"
+        },
+        {
+          "ja": "田代 雄介",
+          "en": "Yusuke Tashiro"
+        },
+        {
+          "ja": "出口 淳",
+          "en": "Jun Deguchi"
+        },
+        {
+          "ja": "児玉 知也",
+          "en": "Tomoya Kodama"
+        },
+        {
+          "ja": "吉沢 竜太",
+          "en": "Ryota Yoshizawa"
+        },
+        {
+          "ja": "成瀬 健太",
+          "en": "Kenta Naruse"
+        },
+        {
+          "ja": "高橋 直紀",
+          "en": "Naoki Takahashi"
+        },
+        {
+          "ja": "中澤 満",
+          "en": "Mitsuru Nakazawa"
+        },
+        {
+          "ja": "田中 克郎",
+          "en": "Katsuro Tanaka"
+        },
+        {
+          "ja": "大田 雄介",
+          "en": "Yusuke Ota"
+        },
+        {
+          "ja": "小嶋 信矢",
+          "en": "Shinya Kojima"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636430",
+      "code": "DSA.P413",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第一C",
+        "en": "Applied Practical Data Science and Artificial Intelligence 1C"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己"
+        },
+        {
+          "ja": "横田 孝義"
+        },
+        {
+          "ja": "宮﨑 慧"
+        },
+        {
+          "ja": "奥村 圭司"
+        },
+        {
+          "ja": "橘 優太朗"
+        },
+        {
+          "ja": "三宅 美博"
+        },
+        {
+          "ja": "佐久間 淳"
+        },
+        {
+          "ja": "小野 功"
+        },
+        {
+          "ja": "平島 大介"
+        },
+        {
+          "ja": "野村 剛彦"
+        },
+        {
+          "ja": "秋葉 正博"
+        },
+        {
+          "ja": "MAO ZAIXING"
+        },
+        {
+          "ja": "中 陽童"
+        },
+        {
+          "ja": "河野 幸弘"
+        },
+        {
+          "ja": "茂木 悠佑"
+        },
+        {
+          "ja": "福井 基文"
+        },
+        {
+          "ja": "佐藤 美徳"
+        },
+        {
+          "ja": "藤井 北斗"
+        },
+        {
+          "ja": "大平 祐生"
+        },
+        {
+          "ja": "村田 勇樹"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636431",
+      "code": "DSA.P421",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第二A",
+        "en": "Applied Practical Data Science and Artificial Intelligence 2A"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "野間田 裕昭",
+          "en": "Hiroaki Nomada"
+        },
+        {
+          "ja": "山口 路夫",
+          "en": "Michio Yamaguchi"
+        },
+        {
+          "ja": "阿部 真晴",
+          "en": "Masaharu Abe"
+        },
+        {
+          "ja": "竹岡 邦紘",
+          "en": "Kunihiro Takeoka"
+        },
+        {
+          "ja": "杉浦 一基",
+          "en": "Kazuki Sugiura"
+        },
+        {
+          "ja": "山田 剛史",
+          "en": "Takeshi Yamada"
+        },
+        {
+          "ja": "田村 哲也",
+          "en": "Tetsuya Tamura"
+        },
+        {
+          "ja": "髙久 博史",
+          "en": "Hirofumi Takaku"
+        },
+        {
+          "ja": "春山 勉",
+          "en": "Tsutomu Haruyama"
+        },
+        {
+          "ja": "有坂 壮平",
+          "en": "Souhei Arisaka"
+        },
+        {
+          "ja": "橋爪 宗信",
+          "en": "Munenobu Hashizume"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-124, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636432",
+      "code": "DSA.P422",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第二B",
+        "en": "Applied Practical Data Science and Artificial Intelligence 2B"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "石井 千星",
+          "en": "Chise Ishii"
+        },
+        {
+          "ja": "田島 玲",
+          "en": "Akira Tajima"
+        },
+        {
+          "ja": "坂本 克",
+          "en": "Masaru Sakamoto"
+        },
+        {
+          "ja": "曲谷地 哲",
+          "en": "Tetsu Magariyachi"
+        },
+        {
+          "ja": "児玉 真一",
+          "en": "Shinichi Kodama"
+        },
+        {
+          "ja": "大沼 貴義",
+          "en": "Takayoshi Onuma"
+        },
+        {
+          "ja": "安達 太祐",
+          "en": "Daisuke Adachi"
+        },
+        {
+          "ja": "吉成 雄一郎",
+          "en": "Yuichiro Yoshinari"
+        },
+        {
+          "ja": "笈田 佳彰",
+          "en": "Yoshiaki Oida"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-303"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636433",
+      "code": "DSA.P423",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第二C",
+        "en": "Applied Practical Data Science and Artificial Intelligence 2C"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "庄司 大作",
+          "en": "Taisaku Shoji"
+        },
+        {
+          "ja": "河野 敬行",
+          "en": "Takayuki Kawano"
+        },
+        {
+          "ja": "白石 寛樹",
+          "en": "Hiroki Shiraishi"
+        },
+        {
+          "ja": "岡本 大督",
+          "en": "Daisuke Okamoto"
+        },
+        {
+          "ja": "菅原 健佑",
+          "en": "Kensuke Sugawara"
+        },
+        {
+          "ja": "井川 甲作",
+          "en": "Kosaku Igawa"
+        },
+        {
+          "ja": "上田 芳弘",
+          "en": "Yoshihiro Ueda"
+        },
+        {
+          "ja": "岡田 崇",
+          "en": "Takashi Okada"
+        },
+        {
+          "ja": "永井 健",
+          "en": "Ken Nagai"
+        },
+        {
+          "ja": "丹治 弘典",
+          "en": "Hironori Tanji"
+        },
+        {
+          "ja": "岡崎 良孝",
+          "en": "Yoshitaka Okazaki"
+        },
+        {
+          "ja": "古川 慧",
+          "en": "Kei Furukawa"
+        },
+        {
+          "ja": "生駒 和也",
+          "en": "Kazuya Ikoma"
+        },
+        {
+          "ja": "半田 貴志",
+          "en": "Takashi Handa"
+        },
+        {
+          "ja": "河本 倫志",
+          "en": "Michiyuki Komoto"
+        },
+        {
+          "ja": "南本 高志",
+          "en": "Takashi Nanmoto"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-303"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636434",
+      "code": "DSA.P431",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第三A",
+        "en": "Applied Practical Data Science and Artificial Intelligence 3A"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "松崎 なな美",
+          "en": "Nanami Matsuzaki"
+        },
+        {
+          "ja": "大西 洋平",
+          "en": "Yohei Onishi"
+        },
+        {
+          "ja": "角田 健",
+          "en": "Ken Sumida"
+        },
+        {
+          "ja": "酒井 啓江",
+          "en": "Hiroe Sakai"
+        },
+        {
+          "ja": "岩下 さゆり",
+          "en": "Sayuri Iwashita"
+        },
+        {
+          "ja": "Jimenez Pascual Adrian",
+          "en": "Adrian Jimenez Pascual"
+        },
+        {
+          "ja": "速川 徹",
+          "en": "Tetsu Hayakawa"
+        },
+        {
+          "ja": "斎藤 友樹",
+          "en": "Yuki Saito"
+        },
+        {
+          "ja": "大熊 美貴",
+          "en": "Miki Okuma"
+        },
+        {
+          "ja": "髙木 洋和",
+          "en": "Hirokazu Takagi"
+        },
+        {
+          "ja": "筈井 祐介",
+          "en": "Yusuke Hazui"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-374, G2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202636435",
+      "code": "DSA.P432",
+      "title": {
+        "ja": "応用実践データサイエンス・AI第三B",
+        "en": "Applied Practical Data Science and Artificial Intelligence 3B"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "FERNANDO DE ARAUJO PAULO",
+          "en": "De Araujo Paulo Fernando"
+        },
+        {
+          "ja": "MESSAOUDI MEHDI",
+          "en": "Mehdi Messaoudi"
+        },
+        {
+          "ja": "森 孝夫",
+          "en": "Takao Mori"
+        },
+        {
+          "ja": "CHATTERJEE SOURISH",
+          "en": "Sourish Chatterjee"
+        },
+        {
+          "ja": "ERMAKOV PAVEL",
+          "en": "Pavel Ermakov"
+        },
+        {
+          "ja": "PELLEGRINI FABIO",
+          "en": "Fabio Pellegrini"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202636436",
+      "code": "DSA.P611",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第一A",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 1A"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "西潟 裕介",
+          "en": "Yusuke Nishigata"
+        },
+        {
+          "ja": "田代 雄介",
+          "en": "Yusuke Tashiro"
+        },
+        {
+          "ja": "出口 淳",
+          "en": "Jun Deguchi"
+        },
+        {
+          "ja": "児玉 知也",
+          "en": "Tomoya Kodama"
+        },
+        {
+          "ja": "吉沢 竜太",
+          "en": "Ryota Yoshizawa"
+        },
+        {
+          "ja": "成瀬 健太",
+          "en": "Kenta Naruse"
+        },
+        {
+          "ja": "高橋 直紀",
+          "en": "Naoki Takahashi"
+        },
+        {
+          "ja": "中澤 満",
+          "en": "Mitsuru Nakazawa"
+        },
+        {
+          "ja": "田中 克郎",
+          "en": "Katsuro Tanaka"
+        },
+        {
+          "ja": "大田 雄介",
+          "en": "Yusuke Ota"
+        },
+        {
+          "ja": "小嶋 信矢",
+          "en": "Shinya Kojima"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636437",
+      "code": "DSA.P621",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第二A",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 2A"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "野間田 裕昭",
+          "en": "Hiroaki Nomada"
+        },
+        {
+          "ja": "山口 路夫",
+          "en": "Michio Yamaguchi"
+        },
+        {
+          "ja": "阿部 真晴",
+          "en": "Masaharu Abe"
+        },
+        {
+          "ja": "竹岡 邦紘",
+          "en": "Kunihiro Takeoka"
+        },
+        {
+          "ja": "杉浦 一基",
+          "en": "Kazuki Sugiura"
+        },
+        {
+          "ja": "山田 剛史",
+          "en": "Takeshi Yamada"
+        },
+        {
+          "ja": "田村 哲也",
+          "en": "Tetsuya Tamura"
+        },
+        {
+          "ja": "髙久 博史",
+          "en": "Hirofumi Takaku"
+        },
+        {
+          "ja": "春山 勉",
+          "en": "Tsutomu Haruyama"
+        },
+        {
+          "ja": "有坂 壮平",
+          "en": "Souhei Arisaka"
+        },
+        {
+          "ja": "橋爪 宗信",
+          "en": "Munenobu Hashizume"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-124, J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636438",
+      "code": "DSA.P622",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第二B",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 2B"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "石井 千星",
+          "en": "Chise Ishii"
+        },
+        {
+          "ja": "田島 玲",
+          "en": "Akira Tajima"
+        },
+        {
+          "ja": "坂本 克",
+          "en": "Masaru Sakamoto"
+        },
+        {
+          "ja": "曲谷地 哲",
+          "en": "Tetsu Magariyachi"
+        },
+        {
+          "ja": "児玉 真一",
+          "en": "Shinichi Kodama"
+        },
+        {
+          "ja": "大沼 貴義",
+          "en": "Takayoshi Onuma"
+        },
+        {
+          "ja": "安達 太祐",
+          "en": "Daisuke Adachi"
+        },
+        {
+          "ja": "吉成 雄一郎",
+          "en": "Yuichiro Yoshinari"
+        },
+        {
+          "ja": "笈田 佳彰",
+          "en": "Yoshiaki Oida"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B07, J2-303"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636439",
+      "code": "DSA.P631",
+      "title": {
+        "ja": "応用実践データサイエンス・AI発展第三A",
+        "en": "Progressive Applied Practical Data Science and Artificial Intelligence 3A"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "松崎 なな美",
+          "en": "Nanami Matsuzaki"
+        },
+        {
+          "ja": "大西 洋平",
+          "en": "Yohei Onishi"
+        },
+        {
+          "ja": "角田 健",
+          "en": "Ken Sumida"
+        },
+        {
+          "ja": "酒井 啓江",
+          "en": "Hiroe Sakai"
+        },
+        {
+          "ja": "岩下 さゆり",
+          "en": "Sayuri Iwashita"
+        },
+        {
+          "ja": "Jimenez Pascual Adrian",
+          "en": "Adrian Jimenez Pascual"
+        },
+        {
+          "ja": "速川 徹",
+          "en": "Tetsu Hayakawa"
+        },
+        {
+          "ja": "斎藤 友樹",
+          "en": "Yuki Saito"
+        },
+        {
+          "ja": "大熊 美貴",
+          "en": "Miki Okuma"
+        },
+        {
+          "ja": "髙木 洋和",
+          "en": "Hirokazu Takagi"
+        },
+        {
+          "ja": "筈井 祐介",
+          "en": "Yusuke Hazui"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-374, G2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202637258",
+      "code": "DSA.C401",
+      "title": {
+        "ja": "DS・AIインターンシップA 4",
+        "en": "Internship A（DS＆AI） 4"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "4"
+    },
+    {
+      "id": "202637259",
+      "code": "DSA.C501",
+      "title": {
+        "ja": "DS・AIインターンシップB 4",
+        "en": "Internship B（DS＆AI） 4"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "4"
+    },
+    {
+      "id": "202637260",
+      "code": "DSA.C601",
+      "title": {
+        "ja": "DS・AIインターンシップC 4",
+        "en": "Internship C（DS＆AI） 4"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "4"
+    },
+    {
+      "id": "202637306",
+      "code": "DSA.C602",
+      "title": {
+        "ja": "DS・AI博士フォーラム 1 S",
+        "en": "DS&AI Doctorial Forum 1 S"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null,
+      "class": "S"
+    },
+    {
+      "id": "202637307",
+      "code": "DSA.C602",
+      "title": {
+        "ja": "DS・AI博士フォーラム 1 F",
+        "en": "DS&AI Doctorial Forum 1 F"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null,
+      "class": "F"
+    },
+    {
+      "id": "202637308",
+      "code": "DSA.C603",
+      "title": {
+        "ja": "DS・AI博士フォーラム 2 S",
+        "en": "DS&AI Doctorial Forum 2 S"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null,
+      "class": "S"
+    },
+    {
+      "id": "202637309",
+      "code": "DSA.C603",
+      "title": {
+        "ja": "DS・AI博士フォーラム 2 F",
+        "en": "DS&AI Doctorial Forum 2 F"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null,
+      "class": "F"
+    },
+    {
+      "id": "202637310",
+      "code": "DSA.C604",
+      "title": {
+        "ja": "DS・AI博士フォーラム 3 S",
+        "en": "DS&AI Doctorial Forum 3 S"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null,
+      "class": "S"
+    },
+    {
+      "id": "202637596",
+      "code": "DSA.A504",
+      "title": {
+        "ja": "先端データサイエンス・AI第四",
+        "en": "Advanced Data Science and Artificial Intelligence 4"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B45"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0.5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-29"
+    },
+    {
+      "id": "202637597",
+      "code": "DSA.A604",
+      "title": {
+        "ja": "先端データサイエンス・AI発展第四",
+        "en": "Progressive Advanced Data Science and Artificial Intelligence 4"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "市川 類",
+          "en": "Tagui Ichikawa"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B45"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0.5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-29"
+    },
+    {
+      "id": "202637598",
+      "code": "DSA.C401",
+      "title": {
+        "ja": "DS・AIインターンシップA 1",
+        "en": "Internship A（DS＆AI） 1"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202637599",
+      "code": "DSA.C401",
+      "title": {
+        "ja": "DS・AIインターンシップA 2",
+        "en": "Internship A（DS＆AI） 2"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202637600",
+      "code": "DSA.C401",
+      "title": {
+        "ja": "DS・AIインターンシップA 3",
+        "en": "Internship A（DS＆AI） 3"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "3"
+    },
+    {
+      "id": "202637601",
+      "code": "DSA.C501",
+      "title": {
+        "ja": "DS・AIインターンシップB １",
+        "en": "Internship B（DS＆AI） １"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "１"
+    },
+    {
+      "id": "202637602",
+      "code": "DSA.C501",
+      "title": {
+        "ja": "DS・AIインターンシップB 2",
+        "en": "Internship B（DS＆AI） 2"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202637603",
+      "code": "DSA.C501",
+      "title": {
+        "ja": "DS・AIインターンシップB 3",
+        "en": "Internship B（DS＆AI） 3"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "3"
+    },
+    {
+      "id": "202637604",
+      "code": "DSA.C601",
+      "title": {
+        "ja": "DS・AIインターンシップC 1",
+        "en": "Internship C（DS＆AI） 1"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202637605",
+      "code": "DSA.C601",
+      "title": {
+        "ja": "DS・AIインターンシップC 2",
+        "en": "Internship C（DS＆AI） 2"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202637606",
+      "code": "DSA.C601",
+      "title": {
+        "ja": "DS・AIインターンシップC 3",
+        "en": "Internship C（DS＆AI） 3"
+      },
+      "instructors": [
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "3"
+    },
+    {
+      "id": "202638881",
+      "code": "DSA.B201",
+      "title": {
+        "ja": "応用基礎データサイエンス・AI第一 2",
+        "en": "Basics and Applications of Data Science and Artificial Intelligence I 2"
+      },
+      "instructors": [
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構(学士)",
+        "en": "Center of Data Science and Artificial Intelligence 2"
+      },
+      "units": [
+        "0-981-400037-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "南4号館3階第2演習室"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0.5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202638882",
+      "code": "DSA.B202",
+      "title": {
+        "ja": "応用基礎データサイエンス・AI第二 2",
+        "en": "Basics and Applications of Data Science and Artificial Intelligence II 2"
+      },
+      "instructors": [
+        {
+          "ja": "橘 優太朗",
+          "en": "Yutaro Tachibana"
+        },
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構(学士)",
+        "en": "Center of Data Science and Artificial Intelligence 2"
+      },
+      "units": [
+        "0-981-400037-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "南4号館3階第2演習室"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0.5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202639256",
+      "code": "DSA.S401",
+      "title": {
+        "ja": "AIと法",
+        "en": "AI and Law"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-135"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202639257",
+      "code": "DSA.S601",
+      "title": {
+        "ja": "AIと法発展",
+        "en": "Progressive AI and Law"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 健二",
+          "en": "Kenji Suzuki"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "データサイエンス・AI全学教育機構",
+        "en": "Center of Data Science and Artificial Intelligence"
+      },
+      "units": [
+        "1-981-400037-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-135"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202643870",
+      "code": "SUE.P501",
+      "title": {
+        "ja": "イノベーションチームズ（修士）",
+        "en": "Innovation Teams for Master"
+      },
+      "instructors": [
+        {
+          "ja": "辻本 将晴",
+          "en": "Masaharu Tsujimoto"
+        },
+        {
+          "ja": "木村 英一郎",
+          "en": "Eiichiro Kimura"
+        },
+        {
+          "ja": "齊藤 滋規",
+          "en": "Shigeki Saito"
+        },
+        {
+          "ja": "本條 晴一郎",
+          "en": "Seiichiro Honjo"
+        },
+        {
+          "ja": "大橋 匠",
+          "en": "Takumi Ohashi"
+        },
+        {
+          "ja": "田岡 祐樹",
+          "en": "Yuki Taoka"
+        },
+        {
+          "ja": "及部 智仁",
+          "en": "Tomohito Oyobe"
+        },
+        {
+          "ja": "名倉 勝",
+          "en": "Masaru Nagura"
+        },
+        {
+          "ja": "小田 拓也",
+          "en": "Takuya Oda"
+        },
+        {
+          "ja": "MOSER BRYAN ROBERT",
+          "en": "Bryan Moser"
+        },
+        {
+          "ja": "長尾 昂",
+          "en": "Taka Nagao"
+        }
+      ],
+      "unit": {
+        "ja": "スタートアップ教育機構",
+        "en": "Center For Startup Education"
+      },
+      "units": [
+        "1-981-400039-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "W3-201"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202643871",
+      "code": "SUE.P601",
+      "title": {
+        "ja": "イノベーションチームズ（博士）",
+        "en": "Innovation Teams for Doctor"
+      },
+      "instructors": [
+        {
+          "ja": "辻本 将晴",
+          "en": "Masaharu Tsujimoto"
+        },
+        {
+          "ja": "木村 英一郎",
+          "en": "Eiichiro Kimura"
+        },
+        {
+          "ja": "齊藤 滋規",
+          "en": "Shigeki Saito"
+        },
+        {
+          "ja": "本條 晴一郎",
+          "en": "Seiichiro Honjo"
+        },
+        {
+          "ja": "大橋 匠",
+          "en": "Takumi Ohashi"
+        },
+        {
+          "ja": "田岡 祐樹",
+          "en": "Yuki Taoka"
+        },
+        {
+          "ja": "及部 智仁",
+          "en": "Tomohito Oyobe"
+        },
+        {
+          "ja": "名倉 勝",
+          "en": "Masaru Nagura"
+        },
+        {
+          "ja": "小田 拓也",
+          "en": "Takuya Oda"
+        },
+        {
+          "ja": "MOSER BRYAN ROBERT",
+          "en": "Bryan Moser"
+        },
+        {
+          "ja": "長尾 昂",
+          "en": "Taka Nagao"
+        }
+      ],
+      "unit": {
+        "ja": "スタートアップ教育機構",
+        "en": "Center For Startup Education"
+      },
+      "units": [
+        "1-981-400039-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "W3-201"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-17"
+    },
+    {
+      "id": "202644016",
+      "code": "SEM.D510",
+      "title": {
+        "ja": "トランジションデザインスタジオ",
+        "en": "Transition Design Studio"
+      },
+      "instructors": [
+        {
+          "ja": "大橋 匠",
+          "en": "Takumi Ohashi"
+        },
+        {
+          "ja": "髙木 聡太",
+          "en": "Sota Takagi"
+        },
+        {
+          "ja": "佐藤 広生",
+          "en": "Hiroki Sato"
+        },
+        {
+          "ja": "小西 研司",
+          "en": "Kenji Konishi"
+        }
+      ],
+      "unit": {
+        "ja": "超スマート社会卓越教育院プログラム",
+        "en": "Program by Academy of Super Smart Society"
+      },
+      "units": [
+        "1-981-400040-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive",
+          "periods": [
+            5,
+            8
+          ],
+          "room": "大岡山北3号館 1階多目的ホール"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "exercise",
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-10-02"
+    }
+  ]
+}

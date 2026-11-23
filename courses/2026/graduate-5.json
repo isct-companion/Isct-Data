@@ -1,0 +1,5002 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "group": {
+    "id": "graduate-5",
+    "name": {
+      "ja": "生命理工学院 大学院課程",
+      "en": "School of Life Science and Technology Graduate"
+    }
+  },
+  "source": [
+    {
+      "id": "syllabus",
+      "url": "https://syllabus.s.isct.ac.jp/courses/2026",
+      "retrievedAt": "2026-11-22T16:07:47Z"
+    }
+  ],
+  "units": [
+    {
+      "id": "1-905-350000-120900-0",
+      "school": "5",
+      "level": "graduate",
+      "name": {
+        "ja": "生命理工学院",
+        "en": "School of Life Science and Technology"
+      }
+    },
+    {
+      "id": "1-24-452424-0-0",
+      "school": "5",
+      "level": "graduate",
+      "name": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      }
+    },
+    {
+      "id": "1-24-400003-0-0",
+      "school": "5",
+      "level": "graduate",
+      "name": {
+        "ja": "ライフエンジニアリングコース",
+        "en": "Graduate major in Human Centered Science and Biomedical Engineering"
+      }
+    },
+    {
+      "id": "1-24-400007-0-0",
+      "school": "5",
+      "level": "graduate",
+      "name": {
+        "ja": "地球生命コース",
+        "en": "Graduate major in Earth-Life Science"
+      }
+    },
+    {
+      "id": "1-24-400009-0-0",
+      "school": "5",
+      "level": "graduate",
+      "name": {
+        "ja": "人間医療科学技術コース",
+        "en": "Graduate major in Science and Technology for Health Care and Medicine"
+      }
+    },
+    {
+      "id": "1-24-400010-0-0",
+      "school": "5",
+      "level": "graduate",
+      "name": {
+        "ja": "物質・情報卓越コース",
+        "en": "Graduate major in Materials and Information Sciences"
+      }
+    },
+    {
+      "id": "1-24-400038-0-0",
+      "school": "5",
+      "level": "graduate",
+      "name": {
+        "ja": "超スマート社会卓越コース",
+        "en": "Graduate major in Super Smart Society"
+      }
+    }
+  ],
+  "offerings": [
+    {
+      "id": "202603100",
+      "code": "LST.A403",
+      "title": {
+        "ja": "生物物理学",
+        "en": "Biophysics"
+      },
+      "instructors": [
+        {
+          "ja": "小畠 英理",
+          "en": "Eiry Kobatake"
+        },
+        {
+          "ja": "上野 隆史",
+          "en": "Takafumi Ueno"
+        },
+        {
+          "ja": "蒲池 利章",
+          "en": "Toshiaki Kamachi"
+        },
+        {
+          "ja": "三重 正和",
+          "en": "Masayasu Mie"
+        },
+        {
+          "ja": "朝倉 則行",
+          "en": "Noriyuki Asakura"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-07"
+    },
+    {
+      "id": "202603101",
+      "code": "LST.A404",
+      "title": {
+        "ja": "分子生理学",
+        "en": "Cell Physiology"
+      },
+      "instructors": [
+        {
+          "ja": "立花 和則",
+          "en": "Kazunori Tachibana"
+        },
+        {
+          "ja": "中戸川 仁",
+          "en": "Hitoshi Nakatogawa"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        },
+        {
+          "ja": "加納 ふみ",
+          "en": "Fumi Kano"
+        },
+        {
+          "ja": "門之園 哲哉",
+          "en": "Tetsuya Kadonosono"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603102",
+      "code": "LST.A406",
+      "title": {
+        "ja": "分子発生・進化学",
+        "en": "Molecular Developmental Biology and Evolution"
+      },
+      "instructors": [
+        {
+          "ja": "粂 昭苑",
+          "en": "Shoen Kume"
+        },
+        {
+          "ja": "川上 厚志",
+          "en": "Atsushi Kawakami"
+        },
+        {
+          "ja": "田中 幹子",
+          "en": "Mikiko Tanaka"
+        },
+        {
+          "ja": "梶川 正樹",
+          "en": "Masaki Kajikawa"
+        },
+        {
+          "ja": "二階堂 雅人",
+          "en": "Masato Nikaido"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202603103",
+      "code": "LST.A408",
+      "title": {
+        "ja": "生物計算科学",
+        "en": "Computational Biology"
+      },
+      "instructors": [
+        {
+          "ja": "伊藤 武彦",
+          "en": "Takehiko Itoh"
+        },
+        {
+          "ja": "山田 拓司",
+          "en": "Takuji Yamada"
+        },
+        {
+          "ja": "北尾 彰朗",
+          "en": "Akio Kitao"
+        },
+        {
+          "ja": "瓜生 耕一郎",
+          "en": "Koichiro Uriu"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603104",
+      "code": "LST.A409",
+      "title": {
+        "ja": "細胞物理生物学",
+        "en": "Physical Biology of the Cell"
+      },
+      "instructors": [
+        {
+          "ja": "林 宣宏",
+          "en": "Nobuhiro Hayashi"
+        },
+        {
+          "ja": "村上 聡",
+          "en": "Satoshi Murakami"
+        },
+        {
+          "ja": "田口 英樹",
+          "en": "Hideki Taguchi"
+        },
+        {
+          "ja": "石井 佳誉",
+          "en": "Yoshitaka Ishii"
+        },
+        {
+          "ja": "瀧ノ上 正浩",
+          "en": "Masahiro Takinoue"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-26"
+    },
+    {
+      "id": "202603105",
+      "code": "LST.A417",
+      "title": {
+        "ja": "生命理工学概論（清華大学）",
+        "en": "Advanced Biological Science and Engineering (Tsinghua University)"
+      },
+      "instructors": [
+        {
+          "ja": "小倉 俊一郎",
+          "en": "Shunichiro Ogura"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "清華大"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202603106",
+      "code": "LST.A414",
+      "title": {
+        "ja": "生命理工学フロンティア第一",
+        "en": "LST Frontier Seminar 1"
+      },
+      "instructors": [
+        {
+          "ja": "田中 寛",
+          "en": "Kan Tanaka"
+        },
+        {
+          "ja": "尾﨑 省吾",
+          "en": "Shogo Ozaki"
+        },
+        {
+          "ja": "島田 友裕",
+          "en": "Tomohiro Shimada"
+        },
+        {
+          "ja": "相馬 亜希子",
+          "en": "Akiko Soma"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603107",
+      "code": "LST.A415",
+      "title": {
+        "ja": "生命理工学フロンティア第二",
+        "en": "LST Frontier Seminar 2"
+      },
+      "instructors": [
+        {
+          "ja": "五十嵐 龍治",
+          "en": "Ryuji Igarashi"
+        },
+        {
+          "ja": "坂口 秀哉",
+          "en": "Hideya Sakaguchi"
+        },
+        {
+          "ja": "田中 冴",
+          "en": "Sae Tanaka"
+        },
+        {
+          "ja": "衛藤 雄二郎",
+          "en": "Yujiro Etou"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603108",
+      "code": "LST.A413",
+      "title": {
+        "ja": "企業社会論",
+        "en": "Career Development Seminars"
+      },
+      "instructors": [
+        {
+          "ja": "田口 英樹",
+          "en": "Hideki Taguchi"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "乗竹 史智",
+          "en": "Fumitomo Noritake"
+        },
+        {
+          "ja": "藤田 大悟",
+          "en": "Daigo Fujita"
+        },
+        {
+          "ja": "藤原 謙",
+          "en": "Ken Fujiwara"
+        },
+        {
+          "ja": "岡村 直樹",
+          "en": "Naoki Okamura"
+        },
+        {
+          "ja": "髙柳 大",
+          "en": "Masaru Takayanagi"
+        },
+        {
+          "ja": "海老原 隆",
+          "en": "Takashi Ebihara"
+        },
+        {
+          "ja": "菅谷 理恵",
+          "en": "Rie Sugaya"
+        },
+        {
+          "ja": "丸山 健一",
+          "en": "Kenichi Maruyama"
+        },
+        {
+          "ja": "廣中 謙一",
+          "en": "Kenichi Hironaka"
+        },
+        {
+          "ja": "中島 隆夫",
+          "en": "Takao Nakajima"
+        },
+        {
+          "ja": "横地 佑一",
+          "en": "Yuichi Yokochi"
+        },
+        {
+          "ja": "村 剛",
+          "en": "Takashi Mura"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "S2-202, J2-203"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "blended"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-16"
+    },
+    {
+      "id": "202603109",
+      "code": "LST.A416",
+      "title": {
+        "ja": "バイオアカデミックライティング第一 A",
+        "en": "LST Academic Writing 1 A"
+      },
+      "instructors": [
+        {
+          "ja": "八波 利恵",
+          "en": "Rie Yatsunami"
+        },
+        {
+          "ja": "朝倉 則行",
+          "en": "Noriyuki Asakura"
+        },
+        {
+          "ja": "平塚 裕子",
+          "en": "Yuko Hiratsuka"
+        },
+        {
+          "ja": "佐藤 成美",
+          "en": "Narumi Sato"
+        },
+        {
+          "ja": "池田 亜希子",
+          "en": "Akiko Ikeda"
+        },
+        {
+          "ja": "大石 かおり",
+          "en": "Kaori Oishi"
+        },
+        {
+          "ja": "島田 祥輔",
+          "en": "Shosuke Shimada"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06",
+      "class": "A"
+    },
+    {
+      "id": "202603110",
+      "code": "LST.B401",
+      "title": {
+        "ja": "修士論文研究計画論第一",
+        "en": "MS Qualifying Presentation 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603111",
+      "code": "LST.B401",
+      "title": {
+        "ja": "修士論文研究計画論第一",
+        "en": "MS Qualifying Presentation 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603112",
+      "code": "LST.B402",
+      "title": {
+        "ja": "修士論文研究計画論第二",
+        "en": "MS Qualifying Presentation 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603113",
+      "code": "LST.B402",
+      "title": {
+        "ja": "修士論文研究計画論第二",
+        "en": "MS Qualifying Presentation 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603114",
+      "code": "LST.B403",
+      "title": {
+        "ja": "特別研究プロジェクト",
+        "en": "LST Directed Laboratory Work"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603115",
+      "code": "LST.B403",
+      "title": {
+        "ja": "特別研究プロジェクト",
+        "en": "LST Directed Laboratory Work"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603116",
+      "code": "LST.Z491",
+      "title": {
+        "ja": "生命理工学講究S1",
+        "en": "LST Seminar S1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603117",
+      "code": "LST.Z492",
+      "title": {
+        "ja": "生命理工学講究F1",
+        "en": "LST Seminar F1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603118",
+      "code": "LST.B603",
+      "title": {
+        "ja": "バイオリーダー実践第一",
+        "en": "LST Bioleader Training 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603119",
+      "code": "LST.B604",
+      "title": {
+        "ja": "バイオリーダー実践第二",
+        "en": "LST Bioleader Training 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-29"
+    },
+    {
+      "id": "202603122",
+      "code": "LST.C601",
+      "title": {
+        "ja": "博士インターンシップ第一",
+        "en": "PhD Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603123",
+      "code": "LST.C601",
+      "title": {
+        "ja": "博士インターンシップ第一",
+        "en": "PhD Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603124",
+      "code": "LST.C601",
+      "title": {
+        "ja": "博士インターンシップ第一",
+        "en": "PhD Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603125",
+      "code": "LST.C601",
+      "title": {
+        "ja": "博士インターンシップ第一",
+        "en": "PhD Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603126",
+      "code": "LST.C602",
+      "title": {
+        "ja": "博士インターンシップ第二",
+        "en": "PhD Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603127",
+      "code": "LST.C602",
+      "title": {
+        "ja": "博士インターンシップ第二",
+        "en": "PhD Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603128",
+      "code": "LST.C602",
+      "title": {
+        "ja": "博士インターンシップ第二",
+        "en": "PhD Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603129",
+      "code": "LST.C602",
+      "title": {
+        "ja": "博士インターンシップ第二",
+        "en": "PhD Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603130",
+      "code": "LST.C603",
+      "title": {
+        "ja": "博士インターンシップ第三",
+        "en": "PhD Internship 3"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 4,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603131",
+      "code": "LST.C603",
+      "title": {
+        "ja": "博士インターンシップ第三",
+        "en": "PhD Internship 3"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 4,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603132",
+      "code": "LST.C604",
+      "title": {
+        "ja": "博士インターンシップ第四",
+        "en": "PhD Internship 4"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603133",
+      "code": "LST.B601",
+      "title": {
+        "ja": "博士論文研究計画論第一",
+        "en": "PhD Qualifying Presentation 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-08-04"
+    },
+    {
+      "id": "202603134",
+      "code": "LST.B601",
+      "title": {
+        "ja": "博士論文研究計画論第一",
+        "en": "PhD Qualifying Presentation 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-08-04"
+    },
+    {
+      "id": "202603135",
+      "code": "LST.B602",
+      "title": {
+        "ja": "博士論文研究計画論第二",
+        "en": "PhD Qualifying Presentation 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-08-04"
+    },
+    {
+      "id": "202603136",
+      "code": "LST.B602",
+      "title": {
+        "ja": "博士論文研究計画論第二",
+        "en": "PhD Qualifying Presentation 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-08-04"
+    },
+    {
+      "id": "202603137",
+      "code": "LST.Z691",
+      "title": {
+        "ja": "生命理工学講究S3",
+        "en": "LST Seminar S3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603138",
+      "code": "LST.Z692",
+      "title": {
+        "ja": "生命理工学講究F3",
+        "en": "LST Seminar F3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603139",
+      "code": "LST.Z693",
+      "title": {
+        "ja": "生命理工学講究S4",
+        "en": "LST Seminar S4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603140",
+      "code": "LST.Z694",
+      "title": {
+        "ja": "生命理工学講究F4",
+        "en": "LST Seminar F4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603141",
+      "code": "LST.Z695",
+      "title": {
+        "ja": "生命理工学講究S5",
+        "en": "LST Seminar S5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603142",
+      "code": "LST.Z696",
+      "title": {
+        "ja": "生命理工学講究F5",
+        "en": "LST Seminar F5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603143",
+      "code": "LST.A503",
+      "title": {
+        "ja": "環境微生物学",
+        "en": "Environmental Microbiology"
+      },
+      "instructors": [
+        {
+          "ja": "本郷 裕一",
+          "en": "Yuichi Hongoh"
+        },
+        {
+          "ja": "八波 利恵",
+          "en": "Rie Yatsunami"
+        },
+        {
+          "ja": "MC GLYNN SHAWN ERIN",
+          "en": "Shawn Mcglynn"
+        },
+        {
+          "ja": "宮永 一彦",
+          "en": "Kazuhiko Miyanaga"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-18"
+    },
+    {
+      "id": "202603146",
+      "code": "LST.A505",
+      "title": {
+        "ja": "バイオアカデミックライティング第二 A",
+        "en": "LST Academic Writing 2 A"
+      },
+      "instructors": [
+        {
+          "ja": "TAKEUCHI CRAIG STACY",
+          "en": "Craig Stacy Takeuchi"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "A"
+    },
+    {
+      "id": "202603147",
+      "code": "LST.C501",
+      "title": {
+        "ja": "修士インターンシップ第一",
+        "en": "MS Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603148",
+      "code": "LST.C501",
+      "title": {
+        "ja": "修士インターンシップ第一",
+        "en": "MS Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603149",
+      "code": "LST.C501",
+      "title": {
+        "ja": "修士インターンシップ第一",
+        "en": "MS Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603150",
+      "code": "LST.C501",
+      "title": {
+        "ja": "修士インターンシップ第一",
+        "en": "MS Internship 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603151",
+      "code": "LST.C502",
+      "title": {
+        "ja": "修士インターンシップ第二",
+        "en": "MS Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603152",
+      "code": "LST.C502",
+      "title": {
+        "ja": "修士インターンシップ第二",
+        "en": "MS Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603153",
+      "code": "LST.C502",
+      "title": {
+        "ja": "修士インターンシップ第二",
+        "en": "MS Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603154",
+      "code": "LST.C502",
+      "title": {
+        "ja": "修士インターンシップ第二",
+        "en": "MS Internship 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603155",
+      "code": "LST.C503",
+      "title": {
+        "ja": "修士インターンシップ第三",
+        "en": "MS Internship 3"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 4,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603156",
+      "code": "LST.C503",
+      "title": {
+        "ja": "修士インターンシップ第三",
+        "en": "MS Internship 3"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 4,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603157",
+      "code": "LST.C504",
+      "title": {
+        "ja": "修士インターンシップ第四",
+        "en": "MS Internship 4"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603158",
+      "code": "LST.Z591",
+      "title": {
+        "ja": "生命理工学講究S2",
+        "en": "LST Seminar S2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603159",
+      "code": "LST.Z592",
+      "title": {
+        "ja": "生命理工学講究F2",
+        "en": "LST Seminar F2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202603160",
+      "code": "LST.A504",
+      "title": {
+        "ja": "医用生物工学",
+        "en": "Medical Biotechnology"
+      },
+      "instructors": [
+        {
+          "ja": "三浦 裕",
+          "en": "Yutaka Miura"
+        },
+        {
+          "ja": "西山 伸宏",
+          "en": "Nobuhiro Nishiyama"
+        },
+        {
+          "ja": "栁田 保子",
+          "en": "Yasuko Yanagida"
+        },
+        {
+          "ja": "門之園 哲哉",
+          "en": "Tetsuya Kadonosono"
+        },
+        {
+          "ja": "折原 芳波",
+          "en": "Kanami Orihara"
+        },
+        {
+          "ja": "正木 慶昭",
+          "en": "Yoshiaki Masaki"
+        },
+        {
+          "ja": "五十嵐 龍治",
+          "en": "Ryuji Igarashi"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202603161",
+      "code": "LST.A501",
+      "title": {
+        "ja": "生体分子計測",
+        "en": "Biomolecular Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "五十嵐 龍治",
+          "en": "Ryuji Igarashi"
+        },
+        {
+          "ja": "石井 佳誉",
+          "en": "Yoshitaka Ishii"
+        },
+        {
+          "ja": "野澤 佳世",
+          "en": "Kayo Nozawa"
+        },
+        {
+          "ja": "関 貴一",
+          "en": "Takakazu Seki"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603162",
+      "code": "LST.A502",
+      "title": {
+        "ja": "生物資源科学",
+        "en": "Science of Biological Resources"
+      },
+      "instructors": [
+        {
+          "ja": "田中 寛",
+          "en": "Kan Tanaka"
+        },
+        {
+          "ja": "下嶋 美恵",
+          "en": "Mie Shimojima"
+        },
+        {
+          "ja": "藤 泰子",
+          "en": "Taiko To"
+        },
+        {
+          "ja": "刑部 祐里子",
+          "en": "Yuriko Osakabe"
+        },
+        {
+          "ja": "吉田 啓亮",
+          "en": "Keisuke Yoshida"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603163",
+      "code": "LST.A401",
+      "title": {
+        "ja": "分子細胞生物学",
+        "en": "Molecular and Cellular Biology"
+      },
+      "instructors": [
+        {
+          "ja": "木村 宏",
+          "en": "Hiroshi Kimura"
+        },
+        {
+          "ja": "岩﨑 博史",
+          "en": "Hiroshi Iwasaki"
+        },
+        {
+          "ja": "山口 雄輝",
+          "en": "Yuki Yamaguchi"
+        },
+        {
+          "ja": "相澤 康則",
+          "en": "Yasunori Aizawa"
+        },
+        {
+          "ja": "藤 泰子",
+          "en": "Taiko To"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603164",
+      "code": "LST.A412",
+      "title": {
+        "ja": "応用生体材料工学",
+        "en": "Biomaterial Science and Engineering"
+      },
+      "instructors": [
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "森 俊明",
+          "en": "Toshiaki Mori"
+        },
+        {
+          "ja": "松田 知子",
+          "en": "Tomoko Matsuda"
+        },
+        {
+          "ja": "山吉 麻子",
+          "en": "Asako Yamayoshi"
+        },
+        {
+          "ja": "金原 数",
+          "en": "Kazushi Kinbara"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-26"
+    },
+    {
+      "id": "202603165",
+      "code": "LST.A411",
+      "title": {
+        "ja": "生体分子工学",
+        "en": "Biomolecular Engineering"
+      },
+      "instructors": [
+        {
+          "ja": "福居 俊昭",
+          "en": "Toshiaki Fukui"
+        },
+        {
+          "ja": "北口 哲也",
+          "en": "Tetsuya Kitaguchi"
+        },
+        {
+          "ja": "刑部 祐里子",
+          "en": "Yuriko Osakabe"
+        },
+        {
+          "ja": "堀江 朋子",
+          "en": "Tomoko Horie"
+        },
+        {
+          "ja": "戸田 安香",
+          "en": "Yasuka Toda"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603166",
+      "code": "LST.A407",
+      "title": {
+        "ja": "生物代謝科学",
+        "en": "Science of Metabolism"
+      },
+      "instructors": [
+        {
+          "ja": "平沢 敬",
+          "en": "Takashi Hirasawa"
+        },
+        {
+          "ja": "白木 伸明",
+          "en": "Nobuaki Shiraki"
+        },
+        {
+          "ja": "加藤 明",
+          "en": "Akira Kato"
+        },
+        {
+          "ja": "増田 真二",
+          "en": "Shinji Masuda"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202603168",
+      "code": "LST.A410",
+      "title": {
+        "ja": "神経科学",
+        "en": "Advanced Neuroscience"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 崇之",
+          "en": "Takashi Suzuki"
+        },
+        {
+          "ja": "廣田 順二",
+          "en": "Junji Hirota"
+        },
+        {
+          "ja": "黒田 公美",
+          "en": "Kumi Kuroda"
+        },
+        {
+          "ja": "葭田 貴子",
+          "en": "Takako Yoshida"
+        },
+        {
+          "ja": "實吉 岳郎",
+          "en": "Takeo Saneyoshi"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202608041",
+      "code": "LST.C506",
+      "title": {
+        "ja": "バイオ派遣研修第一（清華大学）",
+        "en": "Overseas Research Training 1 (Tsinghua University)"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "清華大"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202608042",
+      "code": "LST.C507",
+      "title": {
+        "ja": "バイオ派遣研修第二（清華大学）",
+        "en": "Overseas Research Training 2 (Tsinghua University)"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202609597",
+      "code": "LST.C504",
+      "title": {
+        "ja": "修士インターンシップ第四",
+        "en": "MS Internship 4"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202609598",
+      "code": "LST.C604",
+      "title": {
+        "ja": "博士インターンシップ第四",
+        "en": "PhD Internship 4"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202609599",
+      "code": "LST.B603",
+      "title": {
+        "ja": "バイオリーダー実践第一",
+        "en": "LST Bioleader Training 1"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09"
+    },
+    {
+      "id": "202609600",
+      "code": "LST.B604",
+      "title": {
+        "ja": "バイオリーダー実践第二",
+        "en": "LST Bioleader Training 2"
+      },
+      "instructors": [
+        {
+          "ja": "各教員",
+          "en": "Academic Supervisor"
+        },
+        {
+          "ja": "川井 清彦",
+          "en": "Kiyohiko Kawai"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "田川 陽一",
+          "en": "Yoh-Ichi Tagawa"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        },
+        {
+          "ja": "藤田 尚信",
+          "en": "Naonobu Fujita"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-29"
+    },
+    {
+      "id": "202612753",
+      "code": "LST.A416",
+      "title": {
+        "ja": "バイオアカデミックライティング第一 B",
+        "en": "LST Academic Writing 1 B"
+      },
+      "instructors": [
+        {
+          "ja": "八波 利恵",
+          "en": "Rie Yatsunami"
+        },
+        {
+          "ja": "朝倉 則行",
+          "en": "Noriyuki Asakura"
+        },
+        {
+          "ja": "平塚 裕子",
+          "en": "Yuko Hiratsuka"
+        },
+        {
+          "ja": "佐藤 成美",
+          "en": "Narumi Sato"
+        },
+        {
+          "ja": "池田 亜希子",
+          "en": "Akiko Ikeda"
+        },
+        {
+          "ja": "大石 かおり",
+          "en": "Kaori Oishi"
+        },
+        {
+          "ja": "島田 祥輔",
+          "en": "Shosuke Shimada"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06",
+      "class": "B"
+    },
+    {
+      "id": "202612754",
+      "code": "LST.A416",
+      "title": {
+        "ja": "バイオアカデミックライティング第一 C",
+        "en": "LST Academic Writing 1 C"
+      },
+      "instructors": [
+        {
+          "ja": "八波 利恵",
+          "en": "Rie Yatsunami"
+        },
+        {
+          "ja": "朝倉 則行",
+          "en": "Noriyuki Asakura"
+        },
+        {
+          "ja": "平塚 裕子",
+          "en": "Yuko Hiratsuka"
+        },
+        {
+          "ja": "佐藤 成美",
+          "en": "Narumi Sato"
+        },
+        {
+          "ja": "池田 亜希子",
+          "en": "Akiko Ikeda"
+        },
+        {
+          "ja": "大石 かおり",
+          "en": "Kaori Oishi"
+        },
+        {
+          "ja": "島田 祥輔",
+          "en": "Shosuke Shimada"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06",
+      "class": "C"
+    },
+    {
+      "id": "202612755",
+      "code": "LST.A416",
+      "title": {
+        "ja": "バイオアカデミックライティング第一 D",
+        "en": "LST Academic Writing 1 D"
+      },
+      "instructors": [
+        {
+          "ja": "八波 利恵",
+          "en": "Rie Yatsunami"
+        },
+        {
+          "ja": "朝倉 則行",
+          "en": "Noriyuki Asakura"
+        },
+        {
+          "ja": "平塚 裕子",
+          "en": "Yuko Hiratsuka"
+        },
+        {
+          "ja": "佐藤 成美",
+          "en": "Narumi Sato"
+        },
+        {
+          "ja": "池田 亜希子",
+          "en": "Akiko Ikeda"
+        },
+        {
+          "ja": "大石 かおり",
+          "en": "Kaori Oishi"
+        },
+        {
+          "ja": "島田 祥輔",
+          "en": "Shosuke Shimada"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            1,
+            2
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06",
+      "class": "D"
+    },
+    {
+      "id": "202619091",
+      "code": "LST.A505",
+      "title": {
+        "ja": "バイオアカデミックライティング第二 B",
+        "en": "LST Academic Writing 2 B"
+      },
+      "instructors": [
+        {
+          "ja": "TAKEUCHI CRAIG STACY",
+          "en": "Craig Stacy Takeuchi"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "B"
+    },
+    {
+      "id": "202619092",
+      "code": "LST.A505",
+      "title": {
+        "ja": "バイオアカデミックライティング第二 C",
+        "en": "LST Academic Writing 2 C"
+      },
+      "instructors": [
+        {
+          "ja": "TAKEUCHI CRAIG STACY",
+          "en": "Craig Stacy Takeuchi"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05",
+      "class": "C"
+    },
+    {
+      "id": "202620336",
+      "code": "LST.B404",
+      "title": {
+        "ja": "国際キャリア基礎",
+        "en": "International Career Development Basics"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 崇之",
+          "en": "Takashi Suzuki"
+        },
+        {
+          "ja": "小畠 英理",
+          "en": "Eiry Kobatake"
+        },
+        {
+          "ja": "粂 昭苑",
+          "en": "Shoen Kume"
+        },
+        {
+          "ja": "相澤 康則",
+          "en": "Yasunori Aizawa"
+        },
+        {
+          "ja": "MC GLYNN SHAWN ERIN",
+          "en": "Shawn Mcglynn"
+        },
+        {
+          "ja": "Woltjen Knut",
+          "en": "Knut Woltjen"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202620338",
+      "code": "LST.B605",
+      "title": {
+        "ja": "国際キャリア実践",
+        "en": "International Career Development Advanced"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 崇之",
+          "en": "Takashi Suzuki"
+        },
+        {
+          "ja": "小畠 英理",
+          "en": "Eiry Kobatake"
+        },
+        {
+          "ja": "粂 昭苑",
+          "en": "Shoen Kume"
+        },
+        {
+          "ja": "相澤 康則",
+          "en": "Yasunori Aizawa"
+        },
+        {
+          "ja": "MC GLYNN SHAWN ERIN",
+          "en": "Shawn Mcglynn"
+        },
+        {
+          "ja": "Woltjen Knut",
+          "en": "Knut Woltjen"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202629040",
+      "code": "LST.A421",
+      "title": {
+        "ja": "機能生命科学",
+        "en": "Functional Life Science"
+      },
+      "instructors": [
+        {
+          "ja": "中村 信大",
+          "en": "Nobuhiro Nakamura"
+        },
+        {
+          "ja": "折原 芳波",
+          "en": "Kanami Orihara"
+        },
+        {
+          "ja": "越川 直彦",
+          "en": "Naohiko Koshikawa"
+        },
+        {
+          "ja": "小倉 俊一郎",
+          "en": "Shunichiro Ogura"
+        },
+        {
+          "ja": "黒田 公美",
+          "en": "Kumi Kuroda"
+        },
+        {
+          "ja": "PROKOFEVA KSENIIA",
+          "en": "Kseniia Prokofeva"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202633512",
+      "code": "LST.C609",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ第一（生命理工学コース） 1",
+        "en": "Cooperative Education through Research Internships of (Life Science and Technology 1) 1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09",
+      "class": "1"
+    },
+    {
+      "id": "202633513",
+      "code": "LST.C609",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ第一（生命理工学コース） 2",
+        "en": "Cooperative Education through Research Internships of (Life Science and Technology 1) 2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09",
+      "class": "2"
+    },
+    {
+      "id": "202633514",
+      "code": "LST.C610",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ第二（生命理工学コース） 1",
+        "en": "Cooperative Education through Research Internships of (Life Science and Technology 2) 1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09",
+      "class": "1"
+    },
+    {
+      "id": "202633515",
+      "code": "LST.C610",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ第二（生命理工学コース） 2",
+        "en": "Cooperative Education through Research Internships of (Life Science and Technology 2) 2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-09",
+      "class": "2"
+    },
+    {
+      "id": "202634885",
+      "code": "LST.A422",
+      "title": {
+        "ja": "バイオDX産業デザイン",
+        "en": "Bio DX Industrial Design"
+      },
+      "instructors": [
+        {
+          "ja": "小倉 俊一郎",
+          "en": "Shunichiro Ogura"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202634886",
+      "code": "LST.C402",
+      "title": {
+        "ja": "バイオDXエコノミー実践",
+        "en": "Applied Economic and Digital Transformation in Bio-industries"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 崇之",
+          "en": "Takashi Suzuki"
+        },
+        {
+          "ja": "北尾 彰朗",
+          "en": "Akio Kitao"
+        },
+        {
+          "ja": "藤枝 俊宣",
+          "en": "Toshinori Fujie"
+        },
+        {
+          "ja": "粂 昭苑",
+          "en": "Shoen Kume"
+        },
+        {
+          "ja": "小畠 英理",
+          "en": "Eiry Kobatake"
+        },
+        {
+          "ja": "梶原 将",
+          "en": "Susumu Kajiwara"
+        },
+        {
+          "ja": "蒲池 利章",
+          "en": "Toshiaki Kamachi"
+        },
+        {
+          "ja": "小倉 俊一郎",
+          "en": "Shunichiro Ogura"
+        },
+        {
+          "ja": "門之園 哲哉",
+          "en": "Tetsuya Kadonosono"
+        },
+        {
+          "ja": "相澤 康則",
+          "en": "Yasunori Aizawa"
+        },
+        {
+          "ja": "山田 拓司",
+          "en": "Takuji Yamada"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            9
+          ],
+          "room": "B2-227"
+        }
+      ],
+      "credits": {
+        "lecture": 0.5,
+        "exercise": 0,
+        "lab": 0.5
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-11-13"
+    },
+    {
+      "id": "202635169",
+      "code": "LST.C611",
+      "title": {
+        "ja": "博士リカレント研修4（生命理工学コース） A",
+        "en": "Doctoral Recurrent Program 4 of (Life Science and Technology) A"
+      },
+      "instructors": [
+        {
+          "ja": "コース主任",
+          "en": "Head"
+        },
+        {
+          "ja": "北尾 彰朗",
+          "en": "Akio Kitao"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0",
+        "1-907-0-110600-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-24",
+      "class": "A"
+    },
+    {
+      "id": "202635170",
+      "code": "LST.C611",
+      "title": {
+        "ja": "博士リカレント研修4（生命理工学コース） B",
+        "en": "Doctoral Recurrent Program 4 of (Life Science and Technology) B"
+      },
+      "instructors": [
+        {
+          "ja": "コース主任",
+          "en": "Head"
+        },
+        {
+          "ja": "北尾 彰朗",
+          "en": "Akio Kitao"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0",
+        "1-907-0-110600-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-24",
+      "class": "B"
+    },
+    {
+      "id": "202635171",
+      "code": "LST.C508",
+      "title": {
+        "ja": "修士リカレント研修2（生命理工学コース） A",
+        "en": "Master's Recurrent Program 2 of (Life Science and Technology) A"
+      },
+      "instructors": [
+        {
+          "ja": "コース主任",
+          "en": "Head"
+        },
+        {
+          "ja": "北尾 彰朗",
+          "en": "Akio Kitao"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0",
+        "1-907-0-110600-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-24",
+      "class": "A"
+    },
+    {
+      "id": "202635172",
+      "code": "LST.C508",
+      "title": {
+        "ja": "修士リカレント研修2（生命理工学コース） B",
+        "en": "Master's Recurrent Program 2 of (Life Science and Technology) B"
+      },
+      "instructors": [
+        {
+          "ja": "コース主任",
+          "en": "Head"
+        },
+        {
+          "ja": "北尾 彰朗",
+          "en": "Akio Kitao"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0",
+        "1-907-0-110600-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-24",
+      "class": "B"
+    },
+    {
+      "id": "202636208",
+      "code": "LST.A423",
+      "title": {
+        "ja": "生命分子機能制御化学",
+        "en": "Functional Chemistry of Biomolecules"
+      },
+      "instructors": [
+        {
+          "ja": "湯浅 英哉",
+          "en": "Hideya Yuasa"
+        },
+        {
+          "ja": "清尾 康志",
+          "en": "Kohji Seio"
+        },
+        {
+          "ja": "堤 浩",
+          "en": "Hiroshi Tsutsumi"
+        },
+        {
+          "ja": "岡田 智",
+          "en": "Satoshi Okada"
+        },
+        {
+          "ja": "正木 慶昭",
+          "en": "Yoshiaki Masaki"
+        },
+        {
+          "ja": "淺沼 大祐",
+          "en": "Daisuke Asanuma"
+        }
+      ],
+      "unit": {
+        "ja": "生命理工学コース",
+        "en": "Graduate major in Life Science and Technology"
+      },
+      "units": [
+        "1-24-452424-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-13"
+    }
+  ]
+}

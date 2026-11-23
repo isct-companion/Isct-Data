@@ -71,7 +71,94 @@
         "source": "class-schedules/2026.json",
         "hash": "6c7b06faa0399ed7c5dc20db6614abb0578e34e0fe8340996827a67ec5e4111a",
         "ts": "2026-10-15T10:00:00Z"
-      }
+      },
+      "courses": [
+        {
+          "source": "courses/2026/graduate-1.json",
+          "hash": "c195a43eefcc63af172eccb3a7b3954910fe55ca25bc036efb7682305e8b4195",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/graduate-2.json",
+          "hash": "d2052ba06fa7dc332e4e36fd2cc8f657a680516b9e489b95bd531c73fc28302d",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/graduate-3.json",
+          "hash": "46a335ec474c4a2e3b8bbcf8a5be9aab71161dc9b12ebb86c54b00e76b1c4732",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/graduate-4.json",
+          "hash": "abd4780b96b1af31efe2928e8bedb80f97b189ccb4aa660ef645488cbf2967db",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/graduate-5.json",
+          "hash": "f6e2d8f049ca437ba86c4bf0cd5eb5981f90ef895c7a57f8d73622e13d3eee95",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/graduate-6.json",
+          "hash": "db0930907025f243f36c46f2b59c3e67b62e9feac6c7269d0e2730629b3e7dab",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/graduate-7.json",
+          "hash": "b1391b719233f48be6841d513b0a17d05f1bc69a4bcfde61436c033da50bfe9d",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/legacy.json",
+          "hash": "c8d17a818798a521be456441514f7698770f31e1be50b7ffae7d07f424d0e155",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/programs.json",
+          "hash": "b3d54a92ec688f1cbc7f0cb8778405b9d4a23ed95d224f16538fbd1f6ea3b63d",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-1.json",
+          "hash": "ec9a2a66435f9e8795a4f7703a342b15fcdeaf5b3a8b8336cfcf56bf043f0397",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-11.json",
+          "hash": "afd470606a5fd9a57ae3a709df257a6b438ee734bab181d8fc6026604cf95186",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-2.json",
+          "hash": "2e707fef40ee26a6d79648d31081f48191800e1a527aafc485f3cb21ed153531",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-3.json",
+          "hash": "ef9f6e86b298b2056104107970544cb78c12d697f66d9b1567d96658399326fe",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-4.json",
+          "hash": "08b83fa474f3a37d49da04c6d391c22c7c4780054d7b295131853b4340cf6e19",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-5.json",
+          "hash": "ba032815a2a871eb3aca67406affdef35eb99b8e28ca1b7eb0f40d8b1274cb3e",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-6.json",
+          "hash": "086845489e2495658de5e68dc7fba9bb88372a0e1bde30dee2ed0cbcccc0b3fe",
+          "ts": "2026-11-22T16:08:16Z"
+        },
+        {
+          "source": "courses/2026/undergraduate-7.json",
+          "hash": "fad5ec829ea293d8380bcf4722ae7c83162195dcafbef3911be65e208d9c7739",
+          "ts": "2026-11-22T16:08:16Z"
+        }
+      ]
     }
   },
   "admissionYears": {

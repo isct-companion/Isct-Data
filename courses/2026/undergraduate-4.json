@@ -1,0 +1,7458 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "group": {
+    "id": "undergraduate-4",
+    "name": {
+      "ja": "情報理工学院 学士課程",
+      "en": "School of Computing Undergraduate"
+    }
+  },
+  "source": [
+    {
+      "id": "syllabus",
+      "url": "https://syllabus.s.isct.ac.jp/courses/2026",
+      "retrievedAt": "2026-11-22T16:07:47Z"
+    }
+  ],
+  "units": [
+    {
+      "id": "0-904-342200-0-0",
+      "school": "4",
+      "level": "undergraduate",
+      "name": {
+        "ja": "情報理工学院",
+        "en": "School of Computing"
+      }
+    },
+    {
+      "id": "0-904-342300-0-0",
+      "school": "4",
+      "level": "undergraduate",
+      "name": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "parent": "0-904-342200-0-0"
+    },
+    {
+      "id": "0-904-340000-120900-20927",
+      "school": "4",
+      "level": "undergraduate",
+      "name": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "parent": "0-904-342200-0-0"
+    },
+    {
+      "id": "0-904-340000-120900-20922",
+      "school": "4",
+      "level": "undergraduate",
+      "name": {
+        "ja": "創造プロセス科目",
+        "en": "Creative process courses"
+      },
+      "parent": "0-904-342200-0-0"
+    },
+    {
+      "id": "0-904-340000-120900-20926",
+      "school": "4",
+      "level": "undergraduate",
+      "name": {
+        "ja": "共通専門科目",
+        "en": "Common courses"
+      },
+      "parent": "0-904-342200-0-0"
+    }
+  ],
+  "offerings": [
+    {
+      "id": "202602372",
+      "code": "MCS.T211",
+      "title": {
+        "ja": "応用微分積分",
+        "en": "Applied Calculus"
+      },
+      "instructors": [
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "S2-202"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "S2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-26"
+    },
+    {
+      "id": "202602373",
+      "code": "MCS.T201",
+      "title": {
+        "ja": "集合と位相第一",
+        "en": "Set and Topology I"
+      },
+      "instructors": [
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-123"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-123"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602374",
+      "code": "MCS.T202",
+      "title": {
+        "ja": "集合と位相第一演習",
+        "en": "Exercises in Set and Topology I"
+      },
+      "instructors": [
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-103"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602375",
+      "code": "MCS.T221",
+      "title": {
+        "ja": "集合と位相第二",
+        "en": "Set and Topology II"
+      },
+      "instructors": [
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602376",
+      "code": "MCS.T222",
+      "title": {
+        "ja": "集合と位相第二演習",
+        "en": "Exercises in Set and Topology II"
+      },
+      "instructors": [
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-24"
+    },
+    {
+      "id": "202602377",
+      "code": "MCS.T231",
+      "title": {
+        "ja": "代数系",
+        "en": "Algebra"
+      },
+      "instructors": [
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-24"
+    },
+    {
+      "id": "202602378",
+      "code": "MCS.T232",
+      "title": {
+        "ja": "複素解析",
+        "en": "Complex Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-123"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-123"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-26"
+    },
+    {
+      "id": "202602379",
+      "code": "MCS.T203",
+      "title": {
+        "ja": "応用線形代数",
+        "en": "Linear Algebra and Its Applications"
+      },
+      "instructors": [
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "横井 優",
+          "en": "Yu Yokoi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W5-107"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W5-107"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602380",
+      "code": "MCS.T212",
+      "title": {
+        "ja": "確率論基礎",
+        "en": "Fundamentals of Probability"
+      },
+      "instructors": [
+        {
+          "ja": "中野 張",
+          "en": "Yumiharu Nakano"
+        },
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "岡嵜 郁也",
+          "en": "Fumiya Okazaki"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-17"
+    },
+    {
+      "id": "202602381",
+      "code": "MCS.T223",
+      "title": {
+        "ja": "数理統計学",
+        "en": "Mathematical Statistics"
+      },
+      "instructors": [
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        },
+        {
+          "ja": "川島 孝行",
+          "en": "Takayuki Kawashima"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-323"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-323"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-323"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-08-31"
+    },
+    {
+      "id": "202602382",
+      "code": "MCS.T213",
+      "title": {
+        "ja": "アルゴリズムとデータ構造",
+        "en": "Introduction to Algorithms and Data Structures"
+      },
+      "instructors": [
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "吉田 雄祐",
+          "en": "Yusuke Yoshida"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-101"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-101"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602383",
+      "code": "MCS.T204",
+      "title": {
+        "ja": "計算機科学概論",
+        "en": "Introduction to Computer Science"
+      },
+      "instructors": [
+        {
+          "ja": "叢 悠悠",
+          "en": "Youyou Cong"
+        },
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602384",
+      "code": "MCS.T224",
+      "title": {
+        "ja": "プログラミング第一",
+        "en": "Programming I"
+      },
+      "instructors": [
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "七島 幹人",
+          "en": "Mikito Nanashima"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602385",
+      "code": "MCS.T214",
+      "title": {
+        "ja": "オートマトンと数理言語論",
+        "en": "Theory of Automata and Languages"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介",
+          "en": "Keisuke Tanaka"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-101"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-101"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202602387",
+      "code": "MCS.T233",
+      "title": {
+        "ja": "計算機システム",
+        "en": "Computer Systems"
+      },
+      "instructors": [
+        {
+          "ja": "遠藤 敏夫",
+          "en": "Toshio Endo"
+        },
+        {
+          "ja": "小林 諒平",
+          "en": "Ryohei Kobayashi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-103"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-103"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602388",
+      "code": "MCS.T301",
+      "title": {
+        "ja": "ベクトル解析と関数解析",
+        "en": "Vector and Functional analysis"
+      },
+      "instructors": [
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-308"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-15"
+    },
+    {
+      "id": "202602389",
+      "code": "MCS.T311",
+      "title": {
+        "ja": "応用微分方程式論",
+        "en": "Applied Theory on Differential Equations"
+      },
+      "instructors": [
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-322"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-322"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602390",
+      "code": "MCS.T331",
+      "title": {
+        "ja": "離散構造",
+        "en": "Discrete Mathematics"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-308"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202602392",
+      "code": "MCS.T302",
+      "title": {
+        "ja": "数理最適化",
+        "en": "Mathematical Optimization"
+      },
+      "instructors": [
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        },
+        {
+          "ja": "藤澤 克樹",
+          "en": "Katsuki Fujisawa"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "横井 優",
+          "en": "Yu Yokoi"
+        },
+        {
+          "ja": "東 悟大",
+          "en": "Godai Azuma"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            6
+          ],
+          "room": "W8E-308"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602393",
+      "code": "MCS.T322",
+      "title": {
+        "ja": "組合せアルゴリズム",
+        "en": "Combinatorial Algorithms"
+      },
+      "instructors": [
+        {
+          "ja": "馬原 凌河",
+          "en": "Ryoga Mahara"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "横井 優",
+          "en": "Yu Yokoi"
+        },
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S4-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S4-201"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602394",
+      "code": "MCS.T312",
+      "title": {
+        "ja": "マルコフ解析",
+        "en": "Markov Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "中野 張",
+          "en": "Yumiharu Nakano"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-322"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-322"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-17"
+    },
+    {
+      "id": "202602396",
+      "code": "MCS.T333",
+      "title": {
+        "ja": "情報理論",
+        "en": "Information Theory"
+      },
+      "instructors": [
+        {
+          "ja": "髙邉 賢史",
+          "en": "Satoshi Takabe"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "W2-402"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "W2-402"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-11"
+    },
+    {
+      "id": "202602397",
+      "code": "MCS.T313",
+      "title": {
+        "ja": "数理論理学",
+        "en": "Mathematical Logic"
+      },
+      "instructors": [
+        {
+          "ja": "鹿島 亮",
+          "en": "Ryo Kashima"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B43"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B43"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602398",
+      "code": "MCS.T303",
+      "title": {
+        "ja": "プログラミング第二",
+        "en": "Programming II"
+      },
+      "instructors": [
+        {
+          "ja": "増原 英彦",
+          "en": "Hidehiko Masuhara"
+        },
+        {
+          "ja": "田邉 裕大",
+          "en": "Yudai Tanabe"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-156"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            6
+          ],
+          "room": "M-156"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-08"
+    },
+    {
+      "id": "202602399",
+      "code": "MCS.T323",
+      "title": {
+        "ja": "計算の理論",
+        "en": "Theory of Computation"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介",
+          "en": "Keisuke Tanaka"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-308"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202602400",
+      "code": "MCS.T334",
+      "title": {
+        "ja": "プログラミング言語処理系",
+        "en": "Compiler Construction"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-B104"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-B104"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602401",
+      "code": "MCS.T314",
+      "title": {
+        "ja": "オペレーティングシステム",
+        "en": "Operating Systems"
+      },
+      "instructors": [
+        {
+          "ja": "坂本 龍一",
+          "en": "Ryuichi Sakamoto"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-308"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-07-13"
+    },
+    {
+      "id": "202602403",
+      "code": "MCS.Z381",
+      "title": {
+        "ja": "研究プロジェクト（数理・計算科学系）",
+        "en": "Research opportunity in Laboratories (MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202602404",
+      "code": "MCS.Z381",
+      "title": {
+        "ja": "研究プロジェクト（数理・計算科学系）",
+        "en": "Research opportunity in Laboratories (MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202602415",
+      "code": "CSC.T241",
+      "title": {
+        "ja": "計算基礎論",
+        "en": "Fundamentals of Computing"
+      },
+      "instructors": [
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W2-402"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W2-402"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602416",
+      "code": "CSC.T242",
+      "title": {
+        "ja": "確率論・統計学",
+        "en": "Probability Theory and Statistics"
+      },
+      "instructors": [
+        {
+          "ja": "石田 貴士",
+          "en": "Takashi Ishida"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "WL2-301"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "WL2-301"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202602417",
+      "code": "CSC.T243",
+      "title": {
+        "ja": "手続き型プログラミング基礎",
+        "en": "Procedural Programming Fundamentals"
+      },
+      "instructors": [
+        {
+          "ja": "宮藤 詩緒",
+          "en": "Shio Miyafuji"
+        },
+        {
+          "ja": "野村 将寛",
+          "en": "Masahiro Nomura"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "WL2-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "西8号館(E) 計算機室 E207"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202602419",
+      "code": "CSC.T251",
+      "title": {
+        "ja": "オートマトンと形式言語",
+        "en": "Automata and Formal Languages"
+      },
+      "instructors": [
+        {
+          "ja": "篠田 浩一",
+          "en": "Koichi Shinoda"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-301"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-301"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602421",
+      "code": "CSC.T252",
+      "title": {
+        "ja": "論理回路理論",
+        "en": "Switching Circuit Theory"
+      },
+      "instructors": [
+        {
+          "ja": "曹 洋",
+          "en": "Yang Cao"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-124"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-124"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602424",
+      "code": "CSC.T253",
+      "title": {
+        "ja": "手続き型プログラミング発展",
+        "en": "Advanced Procedural Programming"
+      },
+      "instructors": [
+        {
+          "ja": "伊藤 勇太",
+          "en": "Yuta Itoh"
+        },
+        {
+          "ja": "PHUA YIN JUN",
+          "en": "Yin Jun Phua"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "西8号館(E) 計算機室 E207"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-B07"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202602425",
+      "code": "CSC.T261",
+      "title": {
+        "ja": "情報論理",
+        "en": "Logic in Computer Science"
+      },
+      "instructors": [
+        {
+          "ja": "西崎 真也",
+          "en": "Shin-Ya Nishizaki"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S2-203"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S2-203"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-10-01"
+    },
+    {
+      "id": "202602427",
+      "code": "CSC.T262",
+      "title": {
+        "ja": "アセンブリ言語",
+        "en": "Assembly Language"
+      },
+      "instructors": [
+        {
+          "ja": "権藤 克彦",
+          "en": "Katsuhiko Gondow"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-324"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-324"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602429",
+      "code": "CSC.T271",
+      "title": {
+        "ja": "データ構造とアルゴリズム",
+        "en": "Data Structures and Algorithms"
+      },
+      "instructors": [
+        {
+          "ja": "小池 英樹",
+          "en": "Hideki Koike"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-324"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-324"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202602430",
+      "code": "CSC.T272",
+      "title": {
+        "ja": "人工知能",
+        "en": "Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "WL2-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "WL2-201"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-16"
+    },
+    {
+      "id": "202602431",
+      "code": "CSC.T273",
+      "title": {
+        "ja": "オブジェクト指向プログラミング",
+        "en": "Object-Oriented Programming"
+      },
+      "instructors": [
+        {
+          "ja": "小林 隆志",
+          "en": "Takashi Kobayashi"
+        },
+        {
+          "ja": "PARTACHI PROFIR PETRU",
+          "en": "Profir Petru Partachi"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B07, 情報工学系計算機室"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B07, 情報工学系計算機室"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202602432",
+      "code": "CSC.T341",
+      "title": {
+        "ja": "コンピュータ論理設計",
+        "en": "Computer Logic Design"
+      },
+      "instructors": [
+        {
+          "ja": "金子 晴彦",
+          "en": "Haruhiko Kaneko"
+        },
+        {
+          "ja": "XINPENG LIU",
+          "en": "Liu Xinpeng"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "情報工学系計算機室"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            4
+          ],
+          "room": "情報工学系計算機室"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602433",
+      "code": "CSC.T342",
+      "title": {
+        "ja": "最適化基礎",
+        "en": "Fundamentals of Optimization"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-326"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-326"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-10-01"
+    },
+    {
+      "id": "202602434",
+      "code": "CSC.T343",
+      "title": {
+        "ja": "データベース",
+        "en": "Databases"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 純",
+          "en": "Jun Miyazaki"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-101"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-101"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602435",
+      "code": "CSC.T344",
+      "title": {
+        "ja": "システムプログラミング",
+        "en": "System Programming"
+      },
+      "instructors": [
+        {
+          "ja": "鄭 顕志",
+          "en": "Kenji Tei"
+        },
+        {
+          "ja": "常 穹",
+          "en": "Qiong Chang"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-324, 西8号館(E) 計算機室 E207"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-324, 西8号館(E) 計算機室 E207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-06"
+    },
+    {
+      "id": "202602436",
+      "code": "CSC.T345",
+      "title": {
+        "ja": "コンピュータネットワーク",
+        "en": "Computer Networks"
+      },
+      "instructors": [
+        {
+          "ja": "横田 理央",
+          "en": "Rio Yokota"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "SL-101"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "SL-101"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602437",
+      "code": "CSC.T351",
+      "title": {
+        "ja": "システム解析",
+        "en": "System Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "WL2-301"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "WL2-301"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602438",
+      "code": "CSC.T352",
+      "title": {
+        "ja": "パターン認識",
+        "en": "Pattern Recognition"
+      },
+      "instructors": [
+        {
+          "ja": "下坂 正倫",
+          "en": "Masamichi Shimosaka"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-201"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202602439",
+      "code": "CSC.T353",
+      "title": {
+        "ja": "生命情報解析",
+        "en": "Biological Data Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "大上 雅史",
+          "en": "Masahito Ohue"
+        },
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        },
+        {
+          "ja": "瀧ノ上 正浩",
+          "en": "Masahiro Takinoue"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W3-301"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W3-301"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602440",
+      "code": "CSC.T354",
+      "title": {
+        "ja": "並列プログラミング",
+        "en": "Parallel Programming"
+      },
+      "instructors": [
+        {
+          "ja": "齋藤 豪",
+          "en": "Suguru Saito"
+        },
+        {
+          "ja": "MA YOUMI",
+          "en": "Youmi Ma"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-323"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-323"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202602441",
+      "code": "CSC.T361",
+      "title": {
+        "ja": "ソフトウェア設計と品質",
+        "en": "Software Design and Quality"
+      },
+      "instructors": [
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-326, 情報工学系計算機室"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-326, 情報工学系計算機室"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-10-13"
+    },
+    {
+      "id": "202602442",
+      "code": "CSC.T362",
+      "title": {
+        "ja": "数値計算法",
+        "en": "Numerical Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "S4-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "S4-201"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602443",
+      "code": "CSC.T363",
+      "title": {
+        "ja": "コンピュータアーキテクチャ",
+        "en": "Computer Architecture"
+      },
+      "instructors": [
+        {
+          "ja": "吉瀬 謙二",
+          "en": "Kenji Kise"
+        },
+        {
+          "ja": "BERJAB NESRINE",
+          "en": "Nesrine Berjab"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "情報工学系計算機室"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "情報工学系計算機室"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-10-01"
+    },
+    {
+      "id": "202602444",
+      "code": "CSC.T364",
+      "title": {
+        "ja": "システム設計演習",
+        "en": "Workshop on System Design"
+      },
+      "instructors": [
+        {
+          "ja": "小野 峻佑",
+          "en": "Shunsuke Ono"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "情報工学系計算機室"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "情報工学系計算機室"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602445",
+      "code": "CSC.T371",
+      "title": {
+        "ja": "システムソフトウェア",
+        "en": "System Software"
+      },
+      "instructors": [
+        {
+          "ja": "渡部 卓雄",
+          "en": "Takuo Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "S4-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "S4-201"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-10-05"
+    },
+    {
+      "id": "202602446",
+      "code": "CSC.T372",
+      "title": {
+        "ja": "コンパイラ構成",
+        "en": "Compiler Construction"
+      },
+      "instructors": [
+        {
+          "ja": "権藤 克彦",
+          "en": "Katsuhiko Gondow"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-101"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "WL2-101"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202602448",
+      "code": "CSC.T374",
+      "title": {
+        "ja": "システム制御",
+        "en": "Control Systems"
+      },
+      "instructors": [
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-123"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-123"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-11-17"
+    },
+    {
+      "id": "202602451",
+      "code": "CSC.T377",
+      "title": {
+        "ja": "情報工学英語プレゼンテーション",
+        "en": "English Writing and Presentation Skills (Computer Science)"
+      },
+      "instructors": [
+        {
+          "ja": "坪田 康",
+          "en": "Yasushi Tsubota"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202602452",
+      "code": "CSC.T263",
+      "title": {
+        "ja": "関数型プログラミング基礎",
+        "en": "Functional Programming Fundamentals"
+      },
+      "instructors": [
+        {
+          "ja": "渡部 卓雄",
+          "en": "Takuo Watanabe"
+        },
+        {
+          "ja": "森口 草介",
+          "en": "Sosuke Moriguchi"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-124, 情報工学系計算機室"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-124, 情報工学系計算機室"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202602454",
+      "code": "CSC.Z381",
+      "title": {
+        "ja": "研究プロジェクト（情報工学系）",
+        "en": "Research opportunity in Laboratories (CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202602455",
+      "code": "CSC.Z381",
+      "title": {
+        "ja": "研究プロジェクト（情報工学系）",
+        "en": "Research opportunity in Laboratories (CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607660",
+      "code": "MCS.Z389",
+      "title": {
+        "ja": "学士特定課題研究（数理・計算科学系）",
+        "en": "Independent research project(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202607661",
+      "code": "MCS.Z391",
+      "title": {
+        "ja": "学士特定課題プロジェクトF1c（数理・計算科学系）",
+        "en": "Advanced independent research project F1c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202607662",
+      "code": "MCS.Z391",
+      "title": {
+        "ja": "学士特定課題プロジェクトF1c（数理・計算科学系）",
+        "en": "Advanced independent research project F1c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202607663",
+      "code": "MCS.Z392",
+      "title": {
+        "ja": "学士特定課題プロジェクトF2c（数理・計算科学系）",
+        "en": "Advanced independent research project F2c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202607664",
+      "code": "MCS.Z392",
+      "title": {
+        "ja": "学士特定課題プロジェクトF2c（数理・計算科学系）",
+        "en": "Advanced independent research project F2c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202607665",
+      "code": "MCS.Z393",
+      "title": {
+        "ja": "学士特定課題プロジェクトF3c（数理・計算科学系）",
+        "en": "Advanced independent research project F3c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 3,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202607666",
+      "code": "MCS.Z393",
+      "title": {
+        "ja": "学士特定課題プロジェクトF3c（数理・計算科学系）",
+        "en": "Advanced independent research project F3c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 3,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202607667",
+      "code": "MCS.Z394",
+      "title": {
+        "ja": "学士特定課題プロジェクトF4c（数理・計算科学系）",
+        "en": "Advanced independent research project F4c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 4,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202607668",
+      "code": "MCS.Z395",
+      "title": {
+        "ja": "学士特定課題プロジェクトF5c（数理・計算科学系）",
+        "en": "Advanced independent research project F5c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202607669",
+      "code": "MCS.Z396",
+      "title": {
+        "ja": "学士特定課題プロジェクトF6c（数理・計算科学系）",
+        "en": "Advanced independent research project F6c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202607670",
+      "code": "CSC.Z389",
+      "title": {
+        "ja": "学士特定課題研究（情報工学系）",
+        "en": "Independent research project(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607671",
+      "code": "CSC.Z391",
+      "title": {
+        "ja": "学士特定課題プロジェクトF1c（情報工学系）",
+        "en": "Advanced independent research project F1c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607672",
+      "code": "CSC.Z391",
+      "title": {
+        "ja": "学士特定課題プロジェクトF1c（情報工学系）",
+        "en": "Advanced independent research project F1c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607673",
+      "code": "CSC.Z393",
+      "title": {
+        "ja": "学士特定課題プロジェクトF3c（情報工学系）",
+        "en": "Advanced independent research project F3c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 3
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607674",
+      "code": "CSC.Z393",
+      "title": {
+        "ja": "学士特定課題プロジェクトF3c（情報工学系）",
+        "en": "Advanced independent research project F3c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 3
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607675",
+      "code": "CSC.Z394",
+      "title": {
+        "ja": "学士特定課題プロジェクトF4c（情報工学系）",
+        "en": "Advanced independent research project F4c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607676",
+      "code": "CSC.Z395",
+      "title": {
+        "ja": "学士特定課題プロジェクトF5c（情報工学系）",
+        "en": "Advanced independent research project F5c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 5
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607677",
+      "code": "CSC.Z396",
+      "title": {
+        "ja": "学士特定課題プロジェクトF6c（情報工学系）",
+        "en": "Advanced independent research project F6c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607678",
+      "code": "CSC.Z392",
+      "title": {
+        "ja": "学士特定課題プロジェクトF2c（情報工学系）",
+        "en": "Advanced independent research project F2c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202607679",
+      "code": "CSC.Z392",
+      "title": {
+        "ja": "学士特定課題プロジェクトF2c（情報工学系）",
+        "en": "Advanced independent research project F2c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202616235",
+      "code": "CSC.Z389",
+      "title": {
+        "ja": "学士特定課題研究（情報工学系）",
+        "en": "Independent research project(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202617363",
+      "code": "MCS.Z389",
+      "title": {
+        "ja": "学士特定課題研究（数理・計算科学系）",
+        "en": "Independent research project(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202620850",
+      "code": "CSC.Z390",
+      "title": {
+        "ja": "学士特定演習（情報工学系）",
+        "en": "Independent Research Exercises(Computer Science)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202620851",
+      "code": "CSC.Z390",
+      "title": {
+        "ja": "学士特定演習（情報工学系）",
+        "en": "Independent Research Exercises(Computer Science)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202623918",
+      "code": "XCO.A101",
+      "title": {
+        "ja": "情報理工学リテラシー 1",
+        "en": "Literacy of Computing 1"
+      },
+      "instructors": [
+        {
+          "ja": "曹 洋",
+          "en": "Yang Cao"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-B101"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202623919",
+      "code": "XCO.A101",
+      "title": {
+        "ja": "情報理工学リテラシー 2",
+        "en": "Literacy of Computing 2"
+      },
+      "instructors": [
+        {
+          "ja": "宮藤 詩緒",
+          "en": "Shio Miyafuji"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-102"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-30",
+      "class": "2"
+    },
+    {
+      "id": "202623920",
+      "code": "XCO.A101",
+      "title": {
+        "ja": "情報理工学リテラシー 3",
+        "en": "Literacy of Computing 3"
+      },
+      "instructors": [
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W3-207"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-06",
+      "class": "3"
+    },
+    {
+      "id": "202623921",
+      "code": "XCO.A101",
+      "title": {
+        "ja": "情報理工学リテラシー 4",
+        "en": "Literacy of Computing 4"
+      },
+      "instructors": [
+        {
+          "ja": "中野 張",
+          "en": "Yumiharu Nakano"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W3-707"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-16",
+      "class": "4"
+    },
+    {
+      "id": "202623925",
+      "code": "XCO.A101",
+      "title": {
+        "ja": "情報理工学リテラシー 5",
+        "en": "Literacy of Computing 5"
+      },
+      "instructors": [
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-322"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "5"
+    },
+    {
+      "id": "202623927",
+      "code": "XCO.B101",
+      "title": {
+        "ja": "情報理工学基礎1",
+        "en": "Foundations of Computing 1"
+      },
+      "instructors": [
+        {
+          "ja": "井上 中順",
+          "en": "Nakamasa Inoue"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-B07"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202623928",
+      "code": "XCO.B102",
+      "title": {
+        "ja": "情報理工学基礎2",
+        "en": "Foundations of Computing 2"
+      },
+      "instructors": [
+        {
+          "ja": "井上 中順",
+          "en": "Nakamasa Inoue"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-178"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202623933",
+      "code": "XCO.B103",
+      "title": {
+        "ja": "情報理工学基礎3",
+        "en": "Foundations of Computing 3"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        },
+        {
+          "ja": "松尾 信一郎",
+          "en": "Shinichiroh Matsuo"
+        }
+      ],
+      "unit": {
+        "ja": "初年次専門科目",
+        "en": "First-Year Courses"
+      },
+      "units": [
+        "0-904-340000-120900-20927"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-178"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202623935",
+      "code": "XCO.P101",
+      "title": {
+        "ja": "科学・技術の創造プロセス【情報理工学院】",
+        "en": "Processes for creation in science and technology 【School of Computing】"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        },
+        {
+          "ja": "坂本 龍一",
+          "en": "Ryuichi Sakamoto"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "藤澤 克樹",
+          "en": "Katsuki Fujisawa"
+        }
+      ],
+      "unit": {
+        "ja": "創造プロセス科目",
+        "en": "Creative process courses"
+      },
+      "units": [
+        "0-904-340000-120900-20922"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S2-204"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-16"
+    },
+    {
+      "id": "202624103",
+      "code": "MCS.Z390",
+      "title": {
+        "ja": "学士特定演習（数理・計算科学系）",
+        "en": "Independent Research Exercises(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202624104",
+      "code": "MCS.Z390",
+      "title": {
+        "ja": "学士特定演習（数理・計算科学系）",
+        "en": "Independent Research Exercises(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202627634",
+      "code": "CSC.Z371",
+      "title": {
+        "ja": "学士特定課題プロジェクトS1c（情報工学系）",
+        "en": "Advanced independent research project S1c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627635",
+      "code": "CSC.Z371",
+      "title": {
+        "ja": "学士特定課題プロジェクトS1c（情報工学系）",
+        "en": "Advanced independent research project S1c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627636",
+      "code": "CSC.Z372",
+      "title": {
+        "ja": "学士特定課題プロジェクトS2c（情報工学系）",
+        "en": "Advanced independent research project S2c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627637",
+      "code": "CSC.Z372",
+      "title": {
+        "ja": "学士特定課題プロジェクトS2c（情報工学系）",
+        "en": "Advanced independent research project S2c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627638",
+      "code": "CSC.Z373",
+      "title": {
+        "ja": "学士特定課題プロジェクトS3c（情報工学系）",
+        "en": "Advanced independent research project S3c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 3
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627639",
+      "code": "CSC.Z373",
+      "title": {
+        "ja": "学士特定課題プロジェクトS3c（情報工学系）",
+        "en": "Advanced independent research project S3c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 3
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627640",
+      "code": "CSC.Z374",
+      "title": {
+        "ja": "学士特定課題プロジェクトS4c（情報工学系）",
+        "en": "Advanced independent research project S4c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627641",
+      "code": "CSC.Z375",
+      "title": {
+        "ja": "学士特定課題プロジェクトS5c（情報工学系）",
+        "en": "Advanced independent research project S5c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 5
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627642",
+      "code": "CSC.Z376",
+      "title": {
+        "ja": "学士特定課題プロジェクトS6c（情報工学系）",
+        "en": "Advanced independent research project S6c(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202627706",
+      "code": "MCS.Z371",
+      "title": {
+        "ja": "学士特定課題プロジェクトS1c（数理・計算科学系）",
+        "en": "Advanced independent research project S1c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202627707",
+      "code": "MCS.Z371",
+      "title": {
+        "ja": "学士特定課題プロジェクトS1c（数理・計算科学系）",
+        "en": "Advanced independent research project S1c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202627708",
+      "code": "MCS.Z372",
+      "title": {
+        "ja": "学士特定課題プロジェクトS2c（数理・計算科学系）",
+        "en": "Advanced independent research project S2c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202627709",
+      "code": "MCS.Z372",
+      "title": {
+        "ja": "学士特定課題プロジェクトS2c（数理・計算科学系）",
+        "en": "Advanced independent research project S2c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202627710",
+      "code": "MCS.Z373",
+      "title": {
+        "ja": "学士特定課題プロジェクトS3c（数理・計算科学系）",
+        "en": "Advanced independent research project S3c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 3,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202627711",
+      "code": "MCS.Z373",
+      "title": {
+        "ja": "学士特定課題プロジェクトS3c（数理・計算科学系）",
+        "en": "Advanced independent research project S3c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 3,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202627712",
+      "code": "MCS.Z374",
+      "title": {
+        "ja": "学士特定課題プロジェクトS4c（数理・計算科学系）",
+        "en": "Advanced independent research project S4c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 4,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202627713",
+      "code": "MCS.Z375",
+      "title": {
+        "ja": "学士特定課題プロジェクトS5c（数理・計算科学系）",
+        "en": "Advanced independent research project S5c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 5,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202627714",
+      "code": "MCS.Z376",
+      "title": {
+        "ja": "学士特定課題プロジェクトS6c（数理・計算科学系）",
+        "en": "Advanced independent research project S6c(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202627792",
+      "code": "CSC.T254",
+      "title": {
+        "ja": "機械学習",
+        "en": "Machine Learning"
+      },
+      "instructors": [
+        {
+          "ja": "岡﨑 直観",
+          "en": "Naoaki Okazaki"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-324"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-324"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202630177",
+      "code": "CSC.T244",
+      "title": {
+        "ja": "プログラミング創造演習",
+        "en": "Creative Programming Projects"
+      },
+      "instructors": [
+        {
+          "ja": "権藤 克彦",
+          "en": "Katsuhiko Gondow"
+        },
+        {
+          "ja": "西崎 真也",
+          "en": "Shin-Ya Nishizaki"
+        },
+        {
+          "ja": "渡部 卓雄",
+          "en": "Takuo Watanabe"
+        },
+        {
+          "ja": "西村 祐輝",
+          "en": "Yuki Nishimura"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-156"
+        },
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-156"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-156"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-156"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 6,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202630896",
+      "code": "MCS.T304",
+      "title": {
+        "ja": "ルベーグ積分論",
+        "en": "Lebesgue Interation"
+      },
+      "instructors": [
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-308"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202632618",
+      "code": "CSC.T255",
+      "title": {
+        "ja": "組合せゲーム理論入門",
+        "en": "Introduction to Combinatorial Game Theory"
+      },
+      "instructors": [
+        {
+          "ja": "BONNET FRANCOIS PIERRE ANDRE",
+          "en": "Francois Pierre Andre Bonnet"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202634815",
+      "code": "MCS.M201",
+      "title": {
+        "ja": "B2D研究基礎a（数理・計算科学系）",
+        "en": "B2D Research Basic A in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "髙邉 賢史",
+          "en": "Satoshi Takabe"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202634817",
+      "code": "MCS.M202",
+      "title": {
+        "ja": "B2D研究基礎b（数理・計算科学系）",
+        "en": "B2D Research Basic B in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202634818",
+      "code": "MCS.M203",
+      "title": {
+        "ja": "B2D研究基礎c（数理・計算科学系）",
+        "en": "B2D Research Basic C in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "髙邉 賢史",
+          "en": "Satoshi Takabe"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202634819",
+      "code": "MCS.M301",
+      "title": {
+        "ja": "B2Dプレ研究実践a（数理・計算科学系）",
+        "en": "B2D Practical Pre-research A in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202634820",
+      "code": "MCS.M302",
+      "title": {
+        "ja": "B2Dプレ研究実践b（数理・計算科学系）",
+        "en": "B2D Practical Pre-research B in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "髙邉 賢史",
+          "en": "Satoshi Takabe"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202634954",
+      "code": "CSC.T365",
+      "title": {
+        "ja": "時系列モデリング",
+        "en": "Time Series Modeling"
+      },
+      "instructors": [
+        {
+          "ja": "高安 美佐子",
+          "en": "Misako Takayasu"
+        },
+        {
+          "ja": "高安 秀樹",
+          "en": "Hideki Takayasu"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "WL2-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "WL2-201"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636058",
+      "code": "MCS.Z388",
+      "title": {
+        "ja": "学士特定課題研究（数理・計算科学系）",
+        "en": "Independent research project(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636059",
+      "code": "MCS.Z388",
+      "title": {
+        "ja": "学士特定課題研究（数理・計算科学系）",
+        "en": "Independent research project(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636060",
+      "code": "CSC.Z388",
+      "title": {
+        "ja": "学士特定課題研究（情報工学系）",
+        "en": "Independent research project(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202636061",
+      "code": "CSC.Z388",
+      "title": {
+        "ja": "学士特定課題研究（情報工学系）",
+        "en": "Independent research project(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202636092",
+      "code": "MCS.Z380",
+      "title": {
+        "ja": "学士特定課題研究S（数理・計算科学系）",
+        "en": "Independent research project S(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 8
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636093",
+      "code": "MCS.Z380",
+      "title": {
+        "ja": "学士特定課題研究S（数理・計算科学系）",
+        "en": "Independent research project S(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 8
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636094",
+      "code": "CSC.Z380",
+      "title": {
+        "ja": "学士特定課題研究S（情報工学系）",
+        "en": "Independent research project S(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 8
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202636095",
+      "code": "CSC.Z380",
+      "title": {
+        "ja": "学士特定課題研究S（情報工学系）",
+        "en": "Independent research project S(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課研"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 8
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202636126",
+      "code": "MCS.Z399",
+      "title": {
+        "ja": "学士特定課題プロジェクト（数理・計算科学系）",
+        "en": "Advanced independent research project(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202636127",
+      "code": "MCS.Z399",
+      "title": {
+        "ja": "学士特定課題プロジェクト（数理・計算科学系）",
+        "en": "Advanced independent research project(MCS)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202636128",
+      "code": "CSC.Z399",
+      "title": {
+        "ja": "学士特定課題プロジェクト（情報工学系）",
+        "en": "Advanced independent research project(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202636129",
+      "code": "CSC.Z399",
+      "title": {
+        "ja": "学士特定課題プロジェクト（情報工学系）",
+        "en": "Advanced independent research project(CSC)"
+      },
+      "instructors": [
+        {
+          "ja": "各 教員",
+          "en": "Teaching Staffs"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学系",
+        "en": "Undergraduate major in Computer Science"
+      },
+      "units": [
+        "0-904-342300-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "特課PJ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 6
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202637660",
+      "code": "MCS.T335",
+      "title": {
+        "ja": "数値解析",
+        "en": "Numerical Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "田中 健一郎",
+          "en": "Kenichiro Tanaka"
+        },
+        {
+          "ja": "牛山 寛生",
+          "en": "Kansei Ushiyama"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学系",
+        "en": "Undergraduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "0-904-342200-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W5-107"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W5-107"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202638323",
+      "code": "XCO.U379",
+      "title": {
+        "ja": "情報理工学学士インターンシップ 01",
+        "en": "Internship UG (Computing) 01"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "共通専門科目",
+        "en": "Common courses"
+      },
+      "units": [
+        "0-904-340000-120900-20926"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "01"
+    },
+    {
+      "id": "202638324",
+      "code": "XCO.U379",
+      "title": {
+        "ja": "情報理工学学士インターンシップ 02",
+        "en": "Internship UG (Computing) 02"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "共通専門科目",
+        "en": "Common courses"
+      },
+      "units": [
+        "0-904-340000-120900-20926"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "02"
+    },
+    {
+      "id": "202638325",
+      "code": "XCO.U379",
+      "title": {
+        "ja": "情報理工学学士インターンシップ 03",
+        "en": "Internship UG (Computing) 03"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "共通専門科目",
+        "en": "Common courses"
+      },
+      "units": [
+        "0-904-340000-120900-20926"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "03"
+    },
+    {
+      "id": "202638326",
+      "code": "XCO.U379",
+      "title": {
+        "ja": "情報理工学学士インターンシップ 04",
+        "en": "Internship UG (Computing) 04"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "共通専門科目",
+        "en": "Common courses"
+      },
+      "units": [
+        "0-904-340000-120900-20926"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "04"
+    }
+  ]
+}

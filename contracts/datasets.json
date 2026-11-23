@@ -74,6 +74,33 @@
       "pathValueField": "formatVersion",
       "index": {"group": "campusMap", "field": null, "multiple": false},
       "requiredFiles": ["campus-map/v1/campus-map.json.gz", "campus-map/v2/campus-map.json.gz"]
+    },
+    "courses": {
+      "glob": "courses/**/*.json",
+      "pathPattern": "courses/([0-9]{4})/[a-z0-9]+(?:-[a-z0-9]+)*\\.json",
+      "schema": "schema/courses.schema.json",
+      "versionField": "schemaVersion",
+      "pathValueField": "academicYear",
+      "index": {"group": "academicYears", "field": "courses", "multiple": true},
+      "requiredFiles": [
+        "courses/2026/graduate-1.json",
+        "courses/2026/graduate-2.json",
+        "courses/2026/graduate-3.json",
+        "courses/2026/graduate-4.json",
+        "courses/2026/graduate-5.json",
+        "courses/2026/graduate-6.json",
+        "courses/2026/graduate-7.json",
+        "courses/2026/legacy.json",
+        "courses/2026/programs.json",
+        "courses/2026/undergraduate-1.json",
+        "courses/2026/undergraduate-11.json",
+        "courses/2026/undergraduate-2.json",
+        "courses/2026/undergraduate-3.json",
+        "courses/2026/undergraduate-4.json",
+        "courses/2026/undergraduate-5.json",
+        "courses/2026/undergraduate-6.json",
+        "courses/2026/undergraduate-7.json"
+      ]
     }
   }
 }

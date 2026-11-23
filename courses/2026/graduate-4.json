@@ -1,0 +1,9380 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2026,
+  "group": {
+    "id": "graduate-4",
+    "name": {
+      "ja": "情報理工学院 大学院課程",
+      "en": "School of Computing Graduate"
+    }
+  },
+  "source": [
+    {
+      "id": "syllabus",
+      "url": "https://syllabus.s.isct.ac.jp/courses/2026",
+      "retrievedAt": "2026-11-22T16:07:47Z"
+    }
+  ],
+  "units": [
+    {
+      "id": "1-904-340000-120900-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "情報理工学院",
+        "en": "School of Computing"
+      }
+    },
+    {
+      "id": "1-22-442222-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      }
+    },
+    {
+      "id": "1-22-400005-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      }
+    },
+    {
+      "id": "1-23-442323-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      }
+    },
+    {
+      "id": "1-23-400003-120900-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "ライフエンジニアリングコース",
+        "en": "Graduate major in Human Centered Science and Biomedical Engineering"
+      }
+    },
+    {
+      "id": "1-23-400005-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      }
+    },
+    {
+      "id": "1-23-400008-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "エネルギー・情報コース",
+        "en": "Graduate major in Energy Science and Informatics"
+      }
+    },
+    {
+      "id": "1-23-400009-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "人間医療科学技術コース",
+        "en": "Graduate major in Science and Technology for Health Care and Medicine"
+      }
+    },
+    {
+      "id": "1-23-400010-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "物質・情報卓越コース",
+        "en": "Graduate major in Materials and Information Sciences"
+      }
+    },
+    {
+      "id": "1-23-400038-0-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "超スマート社会卓越コース",
+        "en": "Graduate major in Super Smart Society"
+      }
+    },
+    {
+      "id": "1-904-340000-121100-0",
+      "school": "4",
+      "level": "graduate",
+      "name": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "parent": "1-904-340000-120900-0"
+    }
+  ],
+  "offerings": [
+    {
+      "id": "202604013",
+      "code": "MCS.T408",
+      "title": {
+        "ja": "離散・代数・幾何構造",
+        "en": "Discrete, Algebraic and Geometric Structures"
+      },
+      "instructors": [
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W3-205"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W3-205"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-08-28"
+    },
+    {
+      "id": "202604015",
+      "code": "MCS.T410",
+      "title": {
+        "ja": "応用確率論",
+        "en": "Applied Probability"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "中野 張",
+          "en": "Yumiharu Nakano"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-306"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-306"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-28"
+    },
+    {
+      "id": "202604019",
+      "code": "MCS.T414",
+      "title": {
+        "ja": "数理・計算科学特論EA",
+        "en": "Topics on Mathematical and Computing Science EA"
+      },
+      "instructors": [
+        {
+          "ja": "小川 卓克",
+          "en": "Takayoshi Ogawa"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604021",
+      "code": "MCS.T415",
+      "title": {
+        "ja": "数理・計算科学特論EB",
+        "en": "Topics on Mathematical and Computing Science EB"
+      },
+      "instructors": [
+        {
+          "ja": "江利口 礼央",
+          "en": "Reo Eriguchi"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-10-21"
+    },
+    {
+      "id": "202604023",
+      "code": "MCS.U481",
+      "title": {
+        "ja": "数理・計算科学特別演習・実験第一",
+        "en": "Advanced Exercises and Experiments in Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604024",
+      "code": "MCS.U482",
+      "title": {
+        "ja": "数理・計算科学特別演習・実験第二",
+        "en": "Advanced Exercises and Experiments in Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604025",
+      "code": "MCS.Z491",
+      "title": {
+        "ja": "数理・計算科学講究S1",
+        "en": "Seminar on Mathematical and Computing Science S1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604026",
+      "code": "MCS.Z492",
+      "title": {
+        "ja": "数理・計算科学講究F1",
+        "en": "Seminar on Mathematical and Computing Science F1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604033",
+      "code": "MCS.Z691",
+      "title": {
+        "ja": "数理・計算科学講究S3",
+        "en": "Seminar on Mathematical and Computing Science S3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604034",
+      "code": "MCS.Z692",
+      "title": {
+        "ja": "数理・計算科学講究F3",
+        "en": "Seminar on Mathematical and Computing Science F3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604035",
+      "code": "MCS.Z693",
+      "title": {
+        "ja": "数理・計算科学講究S4",
+        "en": "Seminar on Mathematical and Computing Science S4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604036",
+      "code": "MCS.Z694",
+      "title": {
+        "ja": "数理・計算科学講究F4",
+        "en": "Seminar on Mathematical and Computing Science F4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604037",
+      "code": "MCS.Z695",
+      "title": {
+        "ja": "数理・計算科学講究S5",
+        "en": "Seminar on Mathematical and Computing Science S5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604038",
+      "code": "MCS.Z696",
+      "title": {
+        "ja": "数理・計算科学講究F5",
+        "en": "Seminar on Mathematical and Computing Science F5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604041",
+      "code": "MCS.T506",
+      "title": {
+        "ja": "計算機支援数理",
+        "en": "Mathematical Models and Computer Science"
+      },
+      "instructors": [
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        },
+        {
+          "ja": "天谷 賢治",
+          "en": "Kenji Amaya"
+        },
+        {
+          "ja": "倉林 大輔",
+          "en": "Daisuke Kurabayashi"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-325"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-325"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-07-13"
+    },
+    {
+      "id": "202604050",
+      "code": "MCS.Z591",
+      "title": {
+        "ja": "数理・計算科学講究S2",
+        "en": "Seminar on Mathematical and Computing Science S2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604051",
+      "code": "MCS.Z592",
+      "title": {
+        "ja": "数理・計算科学講究F2",
+        "en": "Seminar on Mathematical and Computing Science F2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604052",
+      "code": "MCS.T503",
+      "title": {
+        "ja": "プログラミング言語設計論",
+        "en": "Programming Language Design"
+      },
+      "instructors": [
+        {
+          "ja": "増原 英彦",
+          "en": "Hidehiko Masuhara"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-306"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-306"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604053",
+      "code": "MCS.T418",
+      "title": {
+        "ja": "実践的並列コンピューティング",
+        "en": "Practical Parallel Computing"
+      },
+      "instructors": [
+        {
+          "ja": "遠藤 敏夫",
+          "en": "Toshio Endo"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "G2-202"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "G2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604059",
+      "code": "MCS.T403",
+      "title": {
+        "ja": "統計的学習理論",
+        "en": "Statistical Learning Theory"
+      },
+      "instructors": [
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-155"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-155"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-13"
+    },
+    {
+      "id": "202604060",
+      "code": "MCS.T416",
+      "title": {
+        "ja": "論理と計算",
+        "en": "Logic and Computation"
+      },
+      "instructors": [
+        {
+          "ja": "鹿島 亮",
+          "en": "Ryo Kashima"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-306"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-306"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604061",
+      "code": "MCS.T401",
+      "title": {
+        "ja": "連続系の数理",
+        "en": "Analysis on Continuous Systems"
+      },
+      "instructors": [
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-306"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-306"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604062",
+      "code": "MCS.T509",
+      "title": {
+        "ja": "ソフトウェア検証論",
+        "en": "Software Verification"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-306"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-306"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604806",
+      "code": "ART.T454",
+      "title": {
+        "ja": "知能情報特別講義S",
+        "en": "Advanced Topics in Artificial Intelligence S"
+      },
+      "instructors": [
+        {
+          "ja": "鈴村 豊太郎"
+        },
+        {
+          "ja": "町田 元也"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604813",
+      "code": "ART.U481",
+      "title": {
+        "ja": "知能情報特別演習・実験第一",
+        "en": "Workshop on Artificial Intelligence I"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604814",
+      "code": "ART.U482",
+      "title": {
+        "ja": "知能情報特別演習・実験第二",
+        "en": "Workshop on Artificial Intelligence II"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604815",
+      "code": "ART.Z491",
+      "title": {
+        "ja": "知能情報講究S1",
+        "en": "Seminar on Artificial Intelligence S1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604816",
+      "code": "ART.Z492",
+      "title": {
+        "ja": "知能情報講究F1",
+        "en": "Seminar on Artificial Intelligence F1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604823",
+      "code": "ART.Z691",
+      "title": {
+        "ja": "知能情報講究S3",
+        "en": "Seminar on Artificial Intelligence S3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604824",
+      "code": "ART.Z692",
+      "title": {
+        "ja": "知能情報講究F3",
+        "en": "Seminar on Artificial Intelligence F3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604825",
+      "code": "ART.Z693",
+      "title": {
+        "ja": "知能情報講究S4",
+        "en": "Seminar on Artificial Intelligence S4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604826",
+      "code": "ART.Z694",
+      "title": {
+        "ja": "知能情報講究F4",
+        "en": "Seminar on Artificial Intelligence F4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604827",
+      "code": "ART.Z695",
+      "title": {
+        "ja": "知能情報講究S5",
+        "en": "Seminar on Artificial Intelligence S5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604828",
+      "code": "ART.Z696",
+      "title": {
+        "ja": "知能情報講究F5",
+        "en": "Seminar on Artificial Intelligence F5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604832",
+      "code": "ART.T544",
+      "title": {
+        "ja": "知能情報特別講義F",
+        "en": "Advanced Topics in Artificial Intelligence F"
+      },
+      "instructors": [
+        {
+          "ja": "萩原 茂樹",
+          "en": "Shigeki Hagihara"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-06-16"
+    },
+    {
+      "id": "202604834",
+      "code": "ART.T545",
+      "title": {
+        "ja": "分子シミュレーション",
+        "en": "Molecular Simulation"
+      },
+      "instructors": [
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "吉野 龍ノ介",
+          "en": "Ryunosuke Yoshino"
+        },
+        {
+          "ja": "安尾 信明",
+          "en": "Nobuaki Yasuo"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604838",
+      "code": "ART.Z591",
+      "title": {
+        "ja": "知能情報講究S2",
+        "en": "Seminar on Artificial Intelligence S2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604839",
+      "code": "ART.Z592",
+      "title": {
+        "ja": "知能情報講究F2",
+        "en": "Seminar on Artificial Intelligence F2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604840",
+      "code": "ART.T543",
+      "title": {
+        "ja": "バイオインフォマティクス",
+        "en": "Bioinformatics"
+      },
+      "instructors": [
+        {
+          "ja": "秋山 泰",
+          "en": "Yutaka Akiyama"
+        },
+        {
+          "ja": "石田 貴士",
+          "en": "Takashi Ishida"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604841",
+      "code": "ART.T547",
+      "title": {
+        "ja": "マルチメディア情報処理論",
+        "en": "Multimedia Information Processing"
+      },
+      "instructors": [
+        {
+          "ja": "篠田 浩一",
+          "en": "Koichi Shinoda"
+        },
+        {
+          "ja": "下坂 正倫",
+          "en": "Masamichi Shimosaka"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-135, G1-102"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-135, G1-102"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202604842",
+      "code": "ART.T548",
+      "title": {
+        "ja": "先端人工知能",
+        "en": "Advanced Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "J2-203"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "J2-203"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-01"
+    },
+    {
+      "id": "202604843",
+      "code": "ART.T463",
+      "title": {
+        "ja": "コンピューターグラフィクス",
+        "en": "Computer Graphics"
+      },
+      "instructors": [
+        {
+          "ja": "齋藤 豪",
+          "en": "Suguru Saito"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-325"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W9-325"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604845",
+      "code": "ART.T458",
+      "title": {
+        "ja": "先端機械学習",
+        "en": "Advanced Machine Learning"
+      },
+      "instructors": [
+        {
+          "ja": "岡﨑 直観",
+          "en": "Naoaki Okazaki"
+        },
+        {
+          "ja": "下坂 正倫",
+          "en": "Masamichi Shimosaka"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-307, G2-202"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-307, G2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-06-16"
+    },
+    {
+      "id": "202604846",
+      "code": "ART.T459",
+      "title": {
+        "ja": "自然言語処理",
+        "en": "Natural Language Processing"
+      },
+      "instructors": [
+        {
+          "ja": "荒瀬 由紀",
+          "en": "Yuki Arase"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604847",
+      "code": "ART.T462",
+      "title": {
+        "ja": "複雑ネットワーク",
+        "en": "Complex Networks"
+      },
+      "instructors": [
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-307"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-06-16"
+    },
+    {
+      "id": "202604850",
+      "code": "CSC.T422",
+      "title": {
+        "ja": "プログラム理論",
+        "en": "Mathematical Theory of Programs"
+      },
+      "instructors": [
+        {
+          "ja": "西崎 真也",
+          "en": "Shin-Ya Nishizaki"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "WL1-301"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "WL1-301"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-27"
+    },
+    {
+      "id": "202604851",
+      "code": "CSC.T423",
+      "title": {
+        "ja": "システム開発プロジェクト基礎第一",
+        "en": "Software Development Studio: Basic I"
+      },
+      "instructors": [
+        {
+          "ja": "権藤 克彦",
+          "en": "Katsuhiko Gondow"
+        },
+        {
+          "ja": "坂井 麻里恵",
+          "en": "Marie Sakai"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-157"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604854",
+      "code": "CSC.T426",
+      "title": {
+        "ja": "ソフトウェア開発方法論",
+        "en": "Software Development Methodology"
+      },
+      "instructors": [
+        {
+          "ja": "小林 隆志",
+          "en": "Takashi Kobayashi"
+        },
+        {
+          "ja": "鄭 顕志",
+          "en": "Kenji Tei"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-155, J2-303"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-155, J2-303"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604855",
+      "code": "CSC.T427",
+      "title": {
+        "ja": "システム開発プロジェクト基礎第二",
+        "en": "Software Development Studio: Basic II"
+      },
+      "instructors": [
+        {
+          "ja": "権藤 克彦",
+          "en": "Katsuhiko Gondow"
+        },
+        {
+          "ja": "坂井 麻里恵",
+          "en": "Marie Sakai"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-107"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604862",
+      "code": "CSC.T431",
+      "title": {
+        "ja": "サイバーフィジカルシステム",
+        "en": "Cyber-Physical Systems"
+      },
+      "instructors": [
+        {
+          "ja": "渡部 卓雄",
+          "en": "Takuo Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "M-356"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "M-356"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-05"
+    },
+    {
+      "id": "202604866",
+      "code": "CSC.T435",
+      "title": {
+        "ja": "実践的ソフトウェア工学",
+        "en": "Practical Software Engineering"
+      },
+      "instructors": [
+        {
+          "ja": "権藤 克彦",
+          "en": "Katsuhiko Gondow"
+        },
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-356"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-356"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-13"
+    },
+    {
+      "id": "202604869",
+      "code": "CSC.U481",
+      "title": {
+        "ja": "情報工学特別演習・実験第一",
+        "en": "Workshop on Computer Science I"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604870",
+      "code": "CSC.U482",
+      "title": {
+        "ja": "情報工学特別演習・実験第二",
+        "en": "Workshop on Computer Science II"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604871",
+      "code": "CSC.Z491",
+      "title": {
+        "ja": "情報工学講究S1",
+        "en": "Seminar on Computer Science S1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604872",
+      "code": "CSC.Z492",
+      "title": {
+        "ja": "情報工学講究F1",
+        "en": "Seminar on Computer Science F1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604879",
+      "code": "CSC.Z691",
+      "title": {
+        "ja": "情報工学講究S3",
+        "en": "Seminar on Computer Science S3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604880",
+      "code": "CSC.Z692",
+      "title": {
+        "ja": "情報工学講究F3",
+        "en": "Seminar on Computer Science F3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604881",
+      "code": "CSC.Z693",
+      "title": {
+        "ja": "情報工学講究S4",
+        "en": "Seminar on Computer Science S4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604882",
+      "code": "CSC.Z694",
+      "title": {
+        "ja": "情報工学講究F4",
+        "en": "Seminar on Computer Science F4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604883",
+      "code": "CSC.Z695",
+      "title": {
+        "ja": "情報工学講究S5",
+        "en": "Seminar on Computer Science S5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604884",
+      "code": "CSC.Z696",
+      "title": {
+        "ja": "情報工学講究F5",
+        "en": "Seminar on Computer Science F5"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604885",
+      "code": "CSC.T521",
+      "title": {
+        "ja": "先端データ管理",
+        "en": "Advanced Data Management"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 純",
+          "en": "Jun Miyazaki"
+        },
+        {
+          "ja": "曹 洋",
+          "en": "Yang Cao"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W3-301"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W3-301"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604888",
+      "code": "CSC.T524",
+      "title": {
+        "ja": "ディペンダブルシステム",
+        "en": "Dependable System"
+      },
+      "instructors": [
+        {
+          "ja": "金子 晴彦",
+          "en": "Haruhiko Kaneko"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-B45"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604890",
+      "code": "CSC.Z591",
+      "title": {
+        "ja": "情報工学講究S2",
+        "en": "Seminar on Computer Science S2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604891",
+      "code": "CSC.Z592",
+      "title": {
+        "ja": "情報工学講究F2",
+        "en": "Seminar on Computer Science F2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "講究等"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604892",
+      "code": "XCO.U671",
+      "title": {
+        "ja": "情報理工学インターンシップC",
+        "en": "Internship C (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604893",
+      "code": "XCO.U671",
+      "title": {
+        "ja": "情報理工学インターンシップC",
+        "en": "Internship C (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604894",
+      "code": "XCO.U671",
+      "title": {
+        "ja": "情報理工学インターンシップC",
+        "en": "Internship C (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604895",
+      "code": "XCO.U671",
+      "title": {
+        "ja": "情報理工学インターンシップC",
+        "en": "Internship C (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604896",
+      "code": "XCO.U672",
+      "title": {
+        "ja": "情報理工学英語プレゼンテーションB",
+        "en": "English Presentation Skills B (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "小張 敬之",
+          "en": "Hiroyuki Obari"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-202"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604897",
+      "code": "XCO.U571",
+      "title": {
+        "ja": "情報理工学インターンシップB",
+        "en": "Internship B (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604898",
+      "code": "XCO.U571",
+      "title": {
+        "ja": "情報理工学インターンシップB",
+        "en": "Internship B (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604899",
+      "code": "XCO.U571",
+      "title": {
+        "ja": "情報理工学インターンシップB",
+        "en": "Internship B (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604900",
+      "code": "XCO.U571",
+      "title": {
+        "ja": "情報理工学インターンシップB",
+        "en": "Internship B (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604903",
+      "code": "CSC.T421",
+      "title": {
+        "ja": "ヒューマンコンピュータインタラクション",
+        "en": "Human Computer Interaction"
+      },
+      "instructors": [
+        {
+          "ja": "小池 英樹",
+          "en": "Hideki Koike"
+        },
+        {
+          "ja": "吉村 奈津江",
+          "en": "Natsue Yoshimura"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S2-202"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "S2-202"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202604904",
+      "code": "XCO.U471",
+      "title": {
+        "ja": "情報理工学インターンシップA",
+        "en": "Internship A (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604905",
+      "code": "XCO.U471",
+      "title": {
+        "ja": "情報理工学インターンシップA",
+        "en": "Internship A (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604906",
+      "code": "XCO.U471",
+      "title": {
+        "ja": "情報理工学インターンシップA",
+        "en": "Internship A (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604907",
+      "code": "XCO.U471",
+      "title": {
+        "ja": "情報理工学インターンシップA",
+        "en": "Internship A (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 2
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202604908",
+      "code": "XCO.U472",
+      "title": {
+        "ja": "情報理工学英語プレゼンテーションA",
+        "en": "English Presentation Skills A (Computing)"
+      },
+      "instructors": [
+        {
+          "ja": "小張 敬之",
+          "en": "Hiroyuki Obari"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-202"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202607746",
+      "code": "CSC.T526",
+      "title": {
+        "ja": "高性能科学技術計算",
+        "en": "High Performance Scientific Computing"
+      },
+      "instructors": [
+        {
+          "ja": "横田 理央",
+          "en": "Rio Yokota"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "M-135"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            1,
+            2
+          ],
+          "room": "M-135"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202608045",
+      "code": "XCO.T473",
+      "title": {
+        "ja": "サイバーセキュリティ概論",
+        "en": "Foundation of Cybersecurity"
+      },
+      "instructors": [
+        {
+          "ja": "森口 草介",
+          "en": "Sosuke Moriguchi"
+        },
+        {
+          "ja": "尾形 わかは",
+          "en": "Wakaha Ogata"
+        },
+        {
+          "ja": "北口 善明",
+          "en": "Yoshiaki Kitaguchi"
+        },
+        {
+          "ja": "小池 英樹",
+          "en": "Hideki Koike"
+        },
+        {
+          "ja": "坂本 龍一",
+          "en": "Ryuichi Sakamoto"
+        },
+        {
+          "ja": "佐々木 広",
+          "en": "Hiroshi Sasaki"
+        },
+        {
+          "ja": "田中 圭介",
+          "en": "Keisuke Tanaka"
+        },
+        {
+          "ja": "DEFAGO XAVIER",
+          "en": "Xavier Defago"
+        },
+        {
+          "ja": "友石 正彦",
+          "en": "Masahiko Tomoishi"
+        },
+        {
+          "ja": "西崎 真也",
+          "en": "Shin-Ya Nishizaki"
+        },
+        {
+          "ja": "増原 英彦",
+          "en": "Hidehiko Masuhara"
+        },
+        {
+          "ja": "松浦 知史",
+          "en": "Satoshi Matsuura"
+        },
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "宮﨑 純",
+          "en": "Jun Miyazaki"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "山岡 克式",
+          "en": "Katsunori Yamaoka"
+        },
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        },
+        {
+          "ja": "渡部 卓雄",
+          "en": "Takuo Watanabe"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "WL1-301"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "WL1-301"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-11"
+    },
+    {
+      "id": "202608046",
+      "code": "XCO.T474",
+      "title": {
+        "ja": "サイバーセキュリティ暗号理論",
+        "en": "Theory of Cryptography for Cybersecurity"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介",
+          "en": "Keisuke Tanaka"
+        },
+        {
+          "ja": "草川 恵太",
+          "en": "Keita Xagawa"
+        },
+        {
+          "ja": "西巻 陵",
+          "en": "Ryo Nishimaki"
+        },
+        {
+          "ja": "松田 隆宏",
+          "en": "Takahiro Matsuda"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-327"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-327"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-11"
+    },
+    {
+      "id": "202608047",
+      "code": "XCO.T475",
+      "title": {
+        "ja": "サイバーセキュリティ攻撃・防御第一",
+        "en": "Attack and Defense on Cybersecurity I"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介"
+        },
+        {
+          "ja": "時田 剛"
+        },
+        {
+          "ja": "大塚 淳平"
+        },
+        {
+          "ja": "郡司 健史"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-11"
+    },
+    {
+      "id": "202608048",
+      "code": "XCO.T476",
+      "title": {
+        "ja": "サイバーセキュリティ攻撃・防御第二",
+        "en": "Attack and Defense on Cybersecurity II"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介",
+          "en": "Keisuke Tanaka"
+        },
+        {
+          "ja": "福本 佳成",
+          "en": "Yoshinari Fukumoto"
+        },
+        {
+          "ja": "山手 雄太",
+          "en": "Yuta Yamate"
+        },
+        {
+          "ja": "石井 将大",
+          "en": "Masahiro Ishii"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        2,
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-11"
+    },
+    {
+      "id": "202608049",
+      "code": "XCO.T477",
+      "title": {
+        "ja": "サイバーセキュリティ攻撃・防御第三",
+        "en": "Attack and Defense on Cybersecurity III"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介"
+        },
+        {
+          "ja": "時田 剛"
+        },
+        {
+          "ja": "大塚 淳平"
+        },
+        {
+          "ja": "郡司 健史"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-11"
+    },
+    {
+      "id": "202610377",
+      "code": "CSC.T438",
+      "title": {
+        "ja": "分散アルゴリズム",
+        "en": "Distributed Algorithms"
+      },
+      "instructors": [
+        {
+          "ja": "DEFAGO XAVIER",
+          "en": "Xavier Defago"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-103"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-103"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202612866",
+      "code": "XCO.T478",
+      "title": {
+        "ja": "サイバーセキュリティガバナンス",
+        "en": "Cybersecurity Governance"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介",
+          "en": "Keisuke Tanaka"
+        },
+        {
+          "ja": "間宮 正行",
+          "en": "Masayuki Mamiya"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-143A"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-26"
+    },
+    {
+      "id": "202617437",
+      "code": "MCS.T419",
+      "title": {
+        "ja": "確率微分方程式",
+        "en": "Stochastic differential equations"
+      },
+      "instructors": [
+        {
+          "ja": "中野 張",
+          "en": "Yumiharu Nakano"
+        },
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-322"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W9-322"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202619738",
+      "code": "CSC.T443",
+      "title": {
+        "ja": "コーチングとコミュニケーションA",
+        "en": "Coaching and communication A"
+      },
+      "instructors": [
+        {
+          "ja": "堀田 淳",
+          "en": "Jun Hotta"
+        },
+        {
+          "ja": "熊澤 真",
+          "en": "Masami Kumazawa"
+        },
+        {
+          "ja": "中谷 明代",
+          "en": "Akiyo Nakatani"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "西8号館E棟2階E204/E205号室"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202620339",
+      "code": "CSC.T527",
+      "title": {
+        "ja": "フォールトトレラント分散アルゴリズム",
+        "en": "Fault Tolerant Distributed Algorithms"
+      },
+      "instructors": [
+        {
+          "ja": "BONNET FRANCOIS PIERRE ANDRE",
+          "en": "Francois Pierre Andre Bonnet"
+        },
+        {
+          "ja": "DEFAGO XAVIER",
+          "en": "Xavier Defago"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-155"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-155"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-01"
+    },
+    {
+      "id": "202621130",
+      "code": "MCS.T601",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第一",
+        "en": "Presentation Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621131",
+      "code": "MCS.T601",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第一",
+        "en": "Presentation Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621132",
+      "code": "MCS.T601",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第一",
+        "en": "Presentation Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621133",
+      "code": "MCS.T601",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第一",
+        "en": "Presentation Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621134",
+      "code": "MCS.T602",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第二",
+        "en": "Presentation Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621135",
+      "code": "MCS.T602",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第二",
+        "en": "Presentation Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621136",
+      "code": "MCS.T602",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第二",
+        "en": "Presentation Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621137",
+      "code": "MCS.T602",
+      "title": {
+        "ja": "数理・計算科学プレゼンテーション実践第二",
+        "en": "Presentation Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621138",
+      "code": "MCS.T603",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第一",
+        "en": "Tutorial Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621139",
+      "code": "MCS.T603",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第一",
+        "en": "Tutorial Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621140",
+      "code": "MCS.T603",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第一",
+        "en": "Tutorial Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621141",
+      "code": "MCS.T603",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第一",
+        "en": "Tutorial Exercises on Mathematical and Computing Science I"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621142",
+      "code": "MCS.T604",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第二",
+        "en": "Tutorial Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621143",
+      "code": "MCS.T604",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第二",
+        "en": "Tutorial Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621144",
+      "code": "MCS.T604",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第二",
+        "en": "Tutorial Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621145",
+      "code": "MCS.T604",
+      "title": {
+        "ja": "数理・計算科学チュートリアル実践第二",
+        "en": "Tutorial Exercises on Mathematical and Computing Science II"
+      },
+      "instructors": [
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        },
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621146",
+      "code": "MCS.T605",
+      "title": {
+        "ja": "数理・計算科学キャリア開発",
+        "en": "Career Development in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        },
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621147",
+      "code": "MCS.T605",
+      "title": {
+        "ja": "数理・計算科学キャリア開発",
+        "en": "Career Development in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        },
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621148",
+      "code": "MCS.T605",
+      "title": {
+        "ja": "数理・計算科学キャリア開発",
+        "en": "Career Development in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        },
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621149",
+      "code": "MCS.T605",
+      "title": {
+        "ja": "数理・計算科学キャリア開発",
+        "en": "Career Development in Mathematical and Computing Science"
+      },
+      "instructors": [
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        },
+        {
+          "ja": "三好 直人",
+          "en": "Naoto Miyoshi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202621719",
+      "code": "CSC.T643",
+      "title": {
+        "ja": "コーチングとコミュニケーションB",
+        "en": "Coaching and communication B"
+      },
+      "instructors": [
+        {
+          "ja": "堀田 淳",
+          "en": "Jun Hotta"
+        },
+        {
+          "ja": "熊澤 真",
+          "en": "Masami Kumazawa"
+        },
+        {
+          "ja": "中谷 明代",
+          "en": "Akiyo Nakatani"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "西8号館E棟2階E204/E205号室"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 2,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202621757",
+      "code": "MCS.T412",
+      "title": {
+        "ja": "情報可視化",
+        "en": "Information Visualization"
+      },
+      "instructors": [
+        {
+          "ja": "脇田 建",
+          "en": "Ken Wakita"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-322"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-322"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202621759",
+      "code": "MCS.T417",
+      "title": {
+        "ja": "代数学特論",
+        "en": "Topics in Algebra"
+      },
+      "instructors": [
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-306"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-306"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202626658",
+      "code": "XCO.T487",
+      "title": {
+        "ja": "基盤データサイエンス",
+        "en": "Fundamentals of Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202626659",
+      "code": "XCO.T488",
+      "title": {
+        "ja": "基盤データサイエンス演習",
+        "en": "Exercises in Fundamentals of Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "南6号館219演習室,南6号館211演習室,南6号館109演習室,J2-203"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202626660",
+      "code": "XCO.T489",
+      "title": {
+        "ja": "基盤人工知能",
+        "en": "Fundamentals of Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "岡﨑 直観",
+          "en": "Naoaki Okazaki"
+        },
+        {
+          "ja": "下坂 正倫",
+          "en": "Masamichi Shimosaka"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202626661",
+      "code": "XCO.T490",
+      "title": {
+        "ja": "基盤人工知能演習",
+        "en": "Exercises in Fundamentals of Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "岡﨑 直観",
+          "en": "Naoaki Okazaki"
+        },
+        {
+          "ja": "下坂 正倫",
+          "en": "Masamichi Shimosaka"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "南6号館219演習室,南6号館211演習室,南6号館109演習室,J2-203"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202627940",
+      "code": "ART.T465",
+      "title": {
+        "ja": "スパース信号処理と最適化",
+        "en": "Sparse Signal Processing and Optimization"
+      },
+      "instructors": [
+        {
+          "ja": "小野 峻佑",
+          "en": "Shunsuke Ono"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "J2-305"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "J2-305"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-06-16"
+    },
+    {
+      "id": "202628453",
+      "code": "XCO.T487",
+      "title": {
+        "ja": "基盤データサイエンス",
+        "en": "Fundamentals of Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "石川 敦之",
+          "en": "Atsushi Ishikawa"
+        },
+        {
+          "ja": "MANZHOS SERGEI",
+          "en": "Sergei Manzhos"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202628454",
+      "code": "XCO.T488",
+      "title": {
+        "ja": "基盤データサイエンス演習",
+        "en": "Exercises in Fundamentals of Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "佐藤 健吾",
+          "en": "Kengo Sato"
+        },
+        {
+          "ja": "岸本 まき",
+          "en": "Maki Kishimoto"
+        },
+        {
+          "ja": "野口 寛貴",
+          "en": "Hiroki Noguchi"
+        },
+        {
+          "ja": "亀田 恵佑",
+          "en": "Keisuke Kameda"
+        },
+        {
+          "ja": "内田 誠",
+          "en": "Makoto Uchida"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202628458",
+      "code": "XCO.T489",
+      "title": {
+        "ja": "基盤人工知能",
+        "en": "Fundamentals of Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "SLAVAKIS KONSTANTINOS",
+          "en": "Konstantino Slavakis"
+        },
+        {
+          "ja": "篠﨑 隆宏",
+          "en": "Takahiro Shinozaki"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202628459",
+      "code": "XCO.T490",
+      "title": {
+        "ja": "基盤人工知能演習",
+        "en": "Exercises in Fundamentals of Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "佐藤 広生",
+          "en": "Hiroki Sato"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631039",
+      "code": "CSC.T444",
+      "title": {
+        "ja": "ソフトウェアプロジェクトマネージメントと品質管理",
+        "en": "Software Project Management and Quality Control"
+      },
+      "instructors": [
+        {
+          "ja": "端山 毅",
+          "en": "Takeshi Hayama"
+        },
+        {
+          "ja": "南澤 吉昭",
+          "en": "Yoshiaki Minamisawa"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "intensive"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": null
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202631041",
+      "code": "MCS.M421",
+      "title": {
+        "ja": "離散最適化",
+        "en": "Discrete Optimization"
+      },
+      "instructors": [
+        {
+          "ja": "澄田 範奈",
+          "en": "Hanna Sumita"
+        },
+        {
+          "ja": "山下 真",
+          "en": "Makoto Yamashita"
+        },
+        {
+          "ja": "横井 優",
+          "en": "Yu Yokoi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-124"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-124"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202631698",
+      "code": "XCO.T677",
+      "title": {
+        "ja": "基盤データサイエンス発展",
+        "en": "Fundamentals of Progressive Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631699",
+      "code": "XCO.T677",
+      "title": {
+        "ja": "基盤データサイエンス発展",
+        "en": "Fundamentals of Progressive Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631700",
+      "code": "XCO.T678",
+      "title": {
+        "ja": "基盤データサイエンス発展演習",
+        "en": "Exercises in Fundamentals of Progressive Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "金森 敬文",
+          "en": "Takafumi Kanamori"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "南6号館219演習室,南6号館211演習室,南6号館109演習室,J2-203"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631701",
+      "code": "XCO.T678",
+      "title": {
+        "ja": "基盤データサイエンス発展演習",
+        "en": "Exercises in Fundamentals of Progressive Data Science"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "村田 剛志",
+          "en": "Tsuyoshi Murata"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631702",
+      "code": "XCO.T679",
+      "title": {
+        "ja": "基盤人工知能発展",
+        "en": "Fundamentals of Progressive Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "岡﨑 直観",
+          "en": "Naoaki Okazaki"
+        },
+        {
+          "ja": "下坂 正倫",
+          "en": "Masamichi Shimosaka"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631703",
+      "code": "XCO.T679",
+      "title": {
+        "ja": "基盤人工知能発展",
+        "en": "Fundamentals of Progressive Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631704",
+      "code": "XCO.T680",
+      "title": {
+        "ja": "基盤人工知能発展演習",
+        "en": "Exercises in Fundamentals of Progressive Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "岡﨑 直観",
+          "en": "Naoaki Okazaki"
+        },
+        {
+          "ja": "下坂 正倫",
+          "en": "Masamichi Shimosaka"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "南6号館219演習室,南6号館211演習室,南6号館109演習室,J2-203"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202631705",
+      "code": "XCO.T680",
+      "title": {
+        "ja": "基盤人工知能発展演習",
+        "en": "Exercises in Fundamentals of Progressive Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "宮﨑 慧",
+          "en": "Kei Miyazaki"
+        },
+        {
+          "ja": "奥村 圭司",
+          "en": "Keiji Okumura"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "関嶋 政和",
+          "en": "Masakazu Sekijima"
+        },
+        {
+          "ja": "横田 孝義",
+          "en": "Takayoshi Yokota"
+        },
+        {
+          "ja": "新田 克己",
+          "en": "Katsumi Nitta"
+        },
+        {
+          "ja": "三宅 美博",
+          "en": "Yoshihiro Miyake"
+        },
+        {
+          "ja": "小野 功",
+          "en": "Isao Ono"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ]
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "exercise"
+        ],
+        "delivery": "live"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-09-14"
+    },
+    {
+      "id": "202632824",
+      "code": "ART.T553",
+      "title": {
+        "ja": "メディカル・ヘルスケアインフォマティクス",
+        "en": "Medical and Health Informatics"
+      },
+      "instructors": [
+        {
+          "ja": "大上 雅史",
+          "en": "Masahito Ohue"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-134"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-134"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202632846",
+      "code": "XCO.U681",
+      "title": {
+        "ja": "情報理工学フォーラムS3",
+        "en": "Forum on Computing S3"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        },
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        },
+        {
+          "ja": "東 悟大",
+          "en": "Godai Azuma"
+        },
+        {
+          "ja": "荒井 俊太",
+          "en": "Shunta Arai"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "牛山 寛生",
+          "en": "Kansei Ushiyama"
+        },
+        {
+          "ja": "岡嵜 郁也",
+          "en": "Fumiya Okazaki"
+        },
+        {
+          "ja": "川島 孝行",
+          "en": "Takayuki Kawashima"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "田邉 裕大",
+          "en": "Yudai Tanabe"
+        },
+        {
+          "ja": "七島 幹人",
+          "en": "Mikito Nanashima"
+        },
+        {
+          "ja": "吉田 雄祐",
+          "en": "Yusuke Yoshida"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "MARTINEZ TEJADA LAURA ALEJANDRA",
+          "en": "Laura Alejandra Martinez Tejada"
+        },
+        {
+          "ja": "WEN RUI",
+          "en": "Rui Wen"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W5-106"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-23"
+    },
+    {
+      "id": "202632847",
+      "code": "XCO.U682",
+      "title": {
+        "ja": "情報理工学フォーラムF3",
+        "en": "Forum on Computing F3"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        },
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        },
+        {
+          "ja": "東 悟大",
+          "en": "Godai Azuma"
+        },
+        {
+          "ja": "荒井 俊太",
+          "en": "Shunta Arai"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "牛山 寛生",
+          "en": "Kansei Ushiyama"
+        },
+        {
+          "ja": "岡嵜 郁也",
+          "en": "Fumiya Okazaki"
+        },
+        {
+          "ja": "川島 孝行",
+          "en": "Takayuki Kawashima"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "田邉 裕大",
+          "en": "Yudai Tanabe"
+        },
+        {
+          "ja": "七島 幹人",
+          "en": "Mikito Nanashima"
+        },
+        {
+          "ja": "吉田 雄祐",
+          "en": "Yusuke Yoshida"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "MARTINEZ TEJADA LAURA ALEJANDRA",
+          "en": "Laura Alejandra Martinez Tejada"
+        },
+        {
+          "ja": "WEN RUI",
+          "en": "Rui Wen"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-B104"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-23"
+    },
+    {
+      "id": "202632848",
+      "code": "XCO.U683",
+      "title": {
+        "ja": "情報理工学フォーラムS4",
+        "en": "Forum on Computing S4"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        },
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        },
+        {
+          "ja": "東 悟大",
+          "en": "Godai Azuma"
+        },
+        {
+          "ja": "荒井 俊太",
+          "en": "Shunta Arai"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "牛山 寛生",
+          "en": "Kansei Ushiyama"
+        },
+        {
+          "ja": "岡嵜 郁也",
+          "en": "Fumiya Okazaki"
+        },
+        {
+          "ja": "川島 孝行",
+          "en": "Takayuki Kawashima"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "田邉 裕大",
+          "en": "Yudai Tanabe"
+        },
+        {
+          "ja": "七島 幹人",
+          "en": "Mikito Nanashima"
+        },
+        {
+          "ja": "吉田 雄祐",
+          "en": "Yusuke Yoshida"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "MARTINEZ TEJADA LAURA ALEJANDRA",
+          "en": "Laura Alejandra Martinez Tejada"
+        },
+        {
+          "ja": "WEN RUI",
+          "en": "Rui Wen"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W5-106"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-23"
+    },
+    {
+      "id": "202632849",
+      "code": "XCO.U684",
+      "title": {
+        "ja": "情報理工学フォーラムF4",
+        "en": "Forum on Computing F4"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        },
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        },
+        {
+          "ja": "東 悟大",
+          "en": "Godai Azuma"
+        },
+        {
+          "ja": "荒井 俊太",
+          "en": "Shunta Arai"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "牛山 寛生",
+          "en": "Kansei Ushiyama"
+        },
+        {
+          "ja": "岡嵜 郁也",
+          "en": "Fumiya Okazaki"
+        },
+        {
+          "ja": "川島 孝行",
+          "en": "Takayuki Kawashima"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "田邉 裕大",
+          "en": "Yudai Tanabe"
+        },
+        {
+          "ja": "七島 幹人",
+          "en": "Mikito Nanashima"
+        },
+        {
+          "ja": "吉田 雄祐",
+          "en": "Yusuke Yoshida"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "MARTINEZ TEJADA LAURA ALEJANDRA",
+          "en": "Laura Alejandra Martinez Tejada"
+        },
+        {
+          "ja": "WEN RUI",
+          "en": "Rui Wen"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-B104"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-23"
+    },
+    {
+      "id": "202632850",
+      "code": "XCO.U685",
+      "title": {
+        "ja": "情報理工学フォーラムS5",
+        "en": "Forum on Computing S5"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        },
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        },
+        {
+          "ja": "東 悟大",
+          "en": "Godai Azuma"
+        },
+        {
+          "ja": "荒井 俊太",
+          "en": "Shunta Arai"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "牛山 寛生",
+          "en": "Kansei Ushiyama"
+        },
+        {
+          "ja": "岡嵜 郁也",
+          "en": "Fumiya Okazaki"
+        },
+        {
+          "ja": "川島 孝行",
+          "en": "Takayuki Kawashima"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "田邉 裕大",
+          "en": "Yudai Tanabe"
+        },
+        {
+          "ja": "七島 幹人",
+          "en": "Mikito Nanashima"
+        },
+        {
+          "ja": "吉田 雄祐",
+          "en": "Yusuke Yoshida"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "MARTINEZ TEJADA LAURA ALEJANDRA",
+          "en": "Laura Alejandra Martinez Tejada"
+        },
+        {
+          "ja": "WEN RUI",
+          "en": "Rui Wen"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        1,
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W5-106"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-23"
+    },
+    {
+      "id": "202632851",
+      "code": "XCO.U686",
+      "title": {
+        "ja": "情報理工学フォーラムF5",
+        "en": "Forum on Computing F5"
+      },
+      "instructors": [
+        {
+          "ja": "南出 靖彦",
+          "en": "Yasuhiko Minamide"
+        },
+        {
+          "ja": "安永 憲司",
+          "en": "Kenji Yasunaga"
+        },
+        {
+          "ja": "林 晋平",
+          "en": "Shinpei Hayashi"
+        },
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        },
+        {
+          "ja": "東 悟大",
+          "en": "Godai Azuma"
+        },
+        {
+          "ja": "荒井 俊太",
+          "en": "Shunta Arai"
+        },
+        {
+          "ja": "一木 俊助",
+          "en": "Shunsuke Ichiki"
+        },
+        {
+          "ja": "牛山 寛生",
+          "en": "Kansei Ushiyama"
+        },
+        {
+          "ja": "岡嵜 郁也",
+          "en": "Fumiya Okazaki"
+        },
+        {
+          "ja": "川島 孝行",
+          "en": "Takayuki Kawashima"
+        },
+        {
+          "ja": "黄 裕淙",
+          "en": "Yucong Huang"
+        },
+        {
+          "ja": "後藤田 剛",
+          "en": "Takeshi Gotoda"
+        },
+        {
+          "ja": "田邉 裕大",
+          "en": "Yudai Tanabe"
+        },
+        {
+          "ja": "七島 幹人",
+          "en": "Mikito Nanashima"
+        },
+        {
+          "ja": "吉田 雄祐",
+          "en": "Yusuke Yoshida"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        },
+        {
+          "ja": "MARTINEZ TEJADA LAURA ALEJANDRA",
+          "en": "Laura Alejandra Martinez Tejada"
+        },
+        {
+          "ja": "WEN RUI",
+          "en": "Rui Wen"
+        }
+      ],
+      "unit": {
+        "ja": "研究関連科目",
+        "en": "Research-related courses"
+      },
+      "units": [
+        "1-904-340000-121100-0"
+      ],
+      "quarters": [
+        3,
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "M-B104"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 1
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "blended"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-23"
+    },
+    {
+      "id": "202632858",
+      "code": "MCS.M422",
+      "title": {
+        "ja": "情報統計力学",
+        "en": "Statistical Mechanics for Information Processing"
+      },
+      "instructors": [
+        {
+          "ja": "髙邉 賢史",
+          "en": "Satoshi Takabe"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-308"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W8E-308"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202634196",
+      "code": "XCO.U697",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ（情報理工学院） 1",
+        "en": "Cooperative Education through Research Internships of Computing 1"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "1"
+    },
+    {
+      "id": "202634197",
+      "code": "XCO.U697",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ（情報理工学院） 2",
+        "en": "Cooperative Education through Research Internships of Computing 2"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "2"
+    },
+    {
+      "id": "202634198",
+      "code": "XCO.U697",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ（情報理工学院） 3",
+        "en": "Cooperative Education through Research Internships of Computing 3"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "3"
+    },
+    {
+      "id": "202634199",
+      "code": "XCO.U697",
+      "title": {
+        "ja": "ジョブ型研究インターンシップ（情報理工学院） 4",
+        "en": "Cooperative Education through Research Internships of Computing 4"
+      },
+      "instructors": [
+        {
+          "ja": "指導教員",
+          "en": "Academic Supervisor"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "other",
+          "label": "インターンシップ"
+        }
+      ],
+      "credits": {
+        "lecture": 0,
+        "exercise": 0,
+        "lab": 4
+      },
+      "format": {
+        "kinds": [
+          "experiment"
+        ],
+        "delivery": "other"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-05",
+      "class": "4"
+    },
+    {
+      "id": "202634920",
+      "code": "ART.T468",
+      "title": {
+        "ja": "モデリングの数理",
+        "en": "Mathematical Modeling"
+      },
+      "instructors": [
+        {
+          "ja": "高安 美佐子",
+          "en": "Misako Takayasu"
+        },
+        {
+          "ja": "高安 秀樹",
+          "en": "Hideki Takayasu"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "G1-103"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "G1-103"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202635926",
+      "code": "ART.T555",
+      "title": {
+        "ja": "高信頼人工知能",
+        "en": "Responsible Artificial Intelligence"
+      },
+      "instructors": [
+        {
+          "ja": "佐久間 淳",
+          "en": "Jun Sakuma"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-157"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-06-16"
+    },
+    {
+      "id": "202636458",
+      "code": "MCS.M427",
+      "title": {
+        "ja": "位相的データ解析",
+        "en": "Topological Data Analysis"
+      },
+      "instructors": [
+        {
+          "ja": "荒井 迅",
+          "en": "Zin Arai"
+        },
+        {
+          "ja": "西畑 伸也",
+          "en": "Shinya Nishibata"
+        },
+        {
+          "ja": "梅原 雅顕",
+          "en": "Masaaki Umehara"
+        },
+        {
+          "ja": "鈴木 咲衣",
+          "en": "Sakie Suzuki"
+        },
+        {
+          "ja": "土岡 俊介",
+          "en": "Shunsuke Tsuchioka"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B107"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B107"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-26"
+    },
+    {
+      "id": "202636459",
+      "code": "MCS.M428",
+      "title": {
+        "ja": "プログラミング言語理論",
+        "en": "Programming Language Theory"
+      },
+      "instructors": [
+        {
+          "ja": "叢 悠悠",
+          "en": "Youyou Cong"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W3-201"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W3-201"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202636460",
+      "code": "MCS.M429",
+      "title": {
+        "ja": "分散システム",
+        "en": "Distributed Systems"
+      },
+      "instructors": [
+        {
+          "ja": "坂本 龍一",
+          "en": "Ryuichi Sakamoto"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B43"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "M-B43"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-09-30"
+    },
+    {
+      "id": "202636461",
+      "code": "MCS.M430",
+      "title": {
+        "ja": "暗号通貨・ブロックチェーン技術",
+        "en": "Cryptocurrency and Blockchain Technology"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介",
+          "en": "Keisuke Tanaka"
+        },
+        {
+          "ja": "REBELLO LARANGEIRA JUNIOR MARIO",
+          "en": "Larangeira Junior Mario Rebello"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-324"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "W9-324"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202637661",
+      "code": "MCS.M431",
+      "title": {
+        "ja": "非線形拡散方程式",
+        "en": "Nonlinear Diffusion Equations"
+      },
+      "instructors": [
+        {
+          "ja": "高橋 仁",
+          "en": "Jin Takahashi"
+        }
+      ],
+      "unit": {
+        "ja": "数理・計算科学コース",
+        "en": "Graduate major in Mathematical and Computing Science"
+      },
+      "units": [
+        "1-22-442222-0-0"
+      ],
+      "quarters": [
+        2
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B107"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B107"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-03-05"
+    },
+    {
+      "id": "202637730",
+      "code": "ART.T475",
+      "title": {
+        "ja": "コンピュータビジョン基礎",
+        "en": "Fundamentals of Computer Vision"
+      },
+      "instructors": [
+        {
+          "ja": "井上 中順",
+          "en": "Nakamasa Inoue"
+        },
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        1
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B43"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-B43"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-04-14"
+    },
+    {
+      "id": "202637731",
+      "code": "ART.T476",
+      "title": {
+        "ja": "コンピュータビジョン発展",
+        "en": "Advanced Topics in Computer Vision"
+      },
+      "instructors": [
+        {
+          "ja": "佐藤 育郎",
+          "en": "Ikuro Sato"
+        },
+        {
+          "ja": "金﨑 朝子",
+          "en": "Asako Kanezaki"
+        },
+        {
+          "ja": "関川 雄介",
+          "en": "Yusuke Sekikawa"
+        },
+        {
+          "ja": "池畑 諭",
+          "en": "Satoshi Ikehata"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W5-106"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "W5-106"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202637926",
+      "code": "CSC.T440",
+      "title": {
+        "ja": "コンピュータ構成とアーキテクチャ",
+        "en": "Computer Organization and Architecture"
+      },
+      "instructors": [
+        {
+          "ja": "吉瀬 謙二",
+          "en": "Kenji Kise"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "M-112"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-01"
+    },
+    {
+      "id": "202638832",
+      "code": "XCO.T480",
+      "title": {
+        "ja": "サイバーセキュリティ実践・応用",
+        "en": "Practice and Application for Cybersecurity"
+      },
+      "instructors": [
+        {
+          "ja": "田中 圭介"
+        },
+        {
+          "ja": "小田島 潤"
+        }
+      ],
+      "unit": {
+        "ja": "専門科目",
+        "en": "Major courses"
+      },
+      "units": [
+        "1-904-340000-120900-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 3,
+          "periods": [
+            5,
+            8
+          ],
+          "room": "W8E-307"
+        }
+      ],
+      "credits": {
+        "lecture": 1,
+        "exercise": 1,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture",
+          "exercise"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "ja",
+      "syllabusUpdated": "2026-03-11"
+    },
+    {
+      "id": "202638879",
+      "code": "CSC.T529",
+      "title": {
+        "ja": "空間拡張現実感",
+        "en": "Spatial Augmented Reality"
+      },
+      "instructors": [
+        {
+          "ja": "宮藤 詩緒",
+          "en": "Shio Miyafuji"
+        }
+      ],
+      "unit": {
+        "ja": "情報工学コース",
+        "en": "Graduate major in Computer Science"
+      },
+      "units": [
+        "1-23-442323-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-134"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            3,
+            4
+          ],
+          "room": "M-134"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": null
+    },
+    {
+      "id": "202638880",
+      "code": "ART.T556",
+      "title": {
+        "ja": "分子ロボットインフォマティクス",
+        "en": "Molecular Robot Informatics"
+      },
+      "instructors": [
+        {
+          "ja": "濵田 省吾",
+          "en": "Shogo Hamada"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        4
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 1,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "J2-302"
+        },
+        {
+          "kind": "weekly",
+          "day": 4,
+          "periods": [
+            5,
+            6
+          ],
+          "room": "J2-302"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "hyflex"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-11-17"
+    },
+    {
+      "id": "202643873",
+      "code": "ART.T469",
+      "title": {
+        "ja": "量子情報基礎",
+        "en": "Fundamentals of Quantum Information"
+      },
+      "instructors": [
+        {
+          "ja": "中田 芳史",
+          "en": "Yoshifumi Nakata"
+        },
+        {
+          "ja": "柳澤 渓甫",
+          "en": "Keisuke Yanagisawa"
+        }
+      ],
+      "unit": {
+        "ja": "知能情報コース",
+        "en": "Graduate major in Artificial Intelligence"
+      },
+      "units": [
+        "1-22-400005-0-0",
+        "1-23-400005-0-0"
+      ],
+      "quarters": [
+        3
+      ],
+      "schedule": [
+        {
+          "kind": "weekly",
+          "day": 2,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-306"
+        },
+        {
+          "kind": "weekly",
+          "day": 5,
+          "periods": [
+            7,
+            8
+          ],
+          "room": "W8E-306"
+        }
+      ],
+      "credits": {
+        "lecture": 2,
+        "exercise": 0,
+        "lab": 0
+      },
+      "format": {
+        "kinds": [
+          "lecture"
+        ],
+        "delivery": "in-person"
+      },
+      "language": "en",
+      "syllabusUpdated": "2026-10-02"
+    }
+  ]
+}

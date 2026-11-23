@@ -1,0 +1,334 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Campus Life course catalog v1",
+  "description": "The offerings of one academic year from the public Science Tokyo syllabus (理工学系), one file per group of offering units. Read deterministically from the syllabus listing and detail pages; nothing here is personal to a student (requirement groups, recommendation marks and registration state stay with 教務Web).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "academicYear",
+    "group",
+    "source",
+    "units",
+    "offerings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "academicYear": {
+      "type": "integer",
+      "minimum": 2000,
+      "maximum": 2200
+    },
+    "group": {
+      "description": "The file's group: the offering units it holds share it, and it names the file.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/groupId"
+        },
+        "name": {
+          "$ref": "#/$defs/localized"
+        }
+      }
+    },
+    "source": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "units": {
+      "description": "Every offering unit of the group the syllabus lists, with or without offerings this year.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/unit"
+      }
+    },
+    "offerings": {
+      "description": "Each offering once, in the file of the first unit that lists it; `units` names every unit that lists it.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/offering"
+      }
+    }
+  },
+  "$defs": {
+    "groupId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "unitId": {
+      "description": "The syllabus's own unit identifier, as in /courses/{year}/{school}/{unit}.",
+      "type": "string",
+      "pattern": "^[0-9]+(?:-[0-9]+)+$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "localized": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ja"],
+      "properties": {
+        "ja": {
+          "$ref": "#/$defs/text"
+        },
+        "en": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "url", "retrievedAt"],
+      "properties": {
+        "id": {
+          "const": "syllabus"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://syllabus\\.s\\.isct\\.ac\\.jp/courses/[0-9]{4}$"
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "school", "level", "name"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/unitId"
+        },
+        "school": {
+          "description": "The school segment of the unit's URL.",
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "level": {
+          "description": "The year page's section the unit is listed under.",
+          "enum": ["undergraduate", "graduate", "program", "legacy-undergraduate", "legacy-graduate"]
+        },
+        "name": {
+          "$ref": "#/$defs/localized"
+        },
+        "parent": {
+          "description": "The unit this one is listed under on the year page, if any.",
+          "$ref": "#/$defs/unitId"
+        }
+      }
+    },
+    "periods": {
+      "type": "array",
+      "prefixItems": [
+        {"type": "integer", "minimum": 1, "maximum": 14},
+        {"type": "integer", "minimum": 1, "maximum": 14}
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "credits": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 30
+    },
+    "slot": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "day", "periods"],
+          "properties": {
+            "kind": {
+              "const": "weekly"
+            },
+            "day": {
+              "description": "1 Monday … 7 Sunday.",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 7
+            },
+            "periods": {
+              "$ref": "#/$defs/periods"
+            },
+            "room": {
+              "description": "The room text as the syllabus prints it; several rooms are not split.",
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {
+            "kind": {
+              "description": "オンデマンド, 集中講義等, 申告専用, 未定.",
+              "enum": ["on-demand", "intensive", "registration-only", "tba"]
+            },
+            "periods": {
+              "$ref": "#/$defs/periods"
+            },
+            "room": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "label"],
+          "properties": {
+            "kind": {
+              "const": "other"
+            },
+            "label": {
+              "description": "A non-weekly arrangement as printed (インターンシップ, 講究等, 特課研 …).",
+              "$ref": "#/$defs/text"
+            },
+            "periods": {
+              "$ref": "#/$defs/periods"
+            },
+            "room": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        }
+      ]
+    },
+    "offering": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "code",
+        "title",
+        "instructors",
+        "unit",
+        "units",
+        "quarters",
+        "schedule",
+        "credits",
+        "format",
+        "language",
+        "syllabusUpdated"
+      ],
+      "properties": {
+        "id": {
+          "description": "The syllabus offering id; the first four digits are the academic year. 教務Web and LMS name the same offering by it.",
+          "type": "string",
+          "pattern": "^[0-9]{9}$"
+        },
+        "code": {
+          "description": "The course code without a class suffix, e.g. LAS.P106.",
+          "type": "string",
+          "pattern": "^[A-Z]{2,4}\\.[A-Z][0-9]{3}(?:\\([A-Z]{2,4}\\.[A-Z][0-9]{3}\\))?$"
+        },
+        "title": {
+          "description": "The title as listed, class name included.",
+          "$ref": "#/$defs/localized"
+        },
+        "class": {
+          "description": "The class the syllabus names separately (English Class, 1a(IL1), A …).",
+          "$ref": "#/$defs/text"
+        },
+        "instructors": {
+          "description": "In listed order. `en` only when the English listing names as many people.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/localized"
+          }
+        },
+        "unit": {
+          "description": "開講元 as listed.",
+          "$ref": "#/$defs/localized"
+        },
+        "units": {
+          "description": "Every unit whose listing holds the offering.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/unitId"
+          }
+        },
+        "quarters": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          }
+        },
+        "schedule": {
+          "description": "曜日・時限(講義室) in printed order; empty when the syllabus prints none.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/slot"
+          }
+        },
+        "credits": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lecture", "exercise", "lab"],
+          "properties": {
+            "lecture": {"$ref": "#/$defs/credits"},
+            "exercise": {"$ref": "#/$defs/credits"},
+            "lab": {"$ref": "#/$defs/credits"}
+          }
+        },
+        "format": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kinds", "delivery"],
+          "properties": {
+            "kinds": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": ["lecture", "exercise", "experiment"]
+              }
+            },
+            "delivery": {
+              "enum": ["in-person", "hyflex", "blended", "live", "on-demand", "other", null]
+            }
+          }
+        },
+        "language": {
+          "enum": ["ja", "en", "other", null]
+        },
+        "media": {
+          "description": "メディア利用科目 when the syllabus names one.",
+          "$ref": "#/$defs/text"
+        },
+        "syllabusUpdated": {
+          "description": "シラバス更新日; null while the syllabus of the offering is not written yet.",
+          "oneOf": [
+            {"$ref": "#/$defs/date"},
+            {"type": "null"}
+          ]
+        }
+      }
+    }
+  }
+}

@@ -95,6 +95,57 @@ def check_calendar(name, value):
     return issues
 
 
+def check_courses_file(name, value):
+    """One course catalog file: its name and group agree, every offering belongs to the year and to
+    a unit of this file first, and its periods run forwards."""
+    issues = []
+    if Path(name).stem != value["group"]["id"]:
+        issues.append(Issue("courses.group", name, pointer(("group", "id")), "Group id must match the file name"))
+    units = {unit["id"] for unit in value["units"]}
+    for i, offering in enumerate(value["offerings"]):
+        if not offering["id"].startswith(str(value["academicYear"])):
+            issues.append(Issue("courses.year", name, pointer(("offerings", i, "id")),
+                                "Offering id must start with the academic year"))
+        if offering["units"][0] not in units:
+            issues.append(Issue("courses.unit", name, pointer(("offerings", i, "units", 0)),
+                                "An offering belongs to the file of the first unit listing it"))
+        for j, slot in enumerate(offering["schedule"]):
+            if slot["kind"] == "weekly" and slot["periods"][0] > slot["periods"][1]:
+                issues.append(Issue("courses.periods", name, pointer(("offerings", i, "schedule", j, "periods")),
+                                    "Periods must run forwards"))
+    return issues
+
+
+def check_course_years(paths):
+    """Across a year's catalog files: each offering once, and every unit an offering names is listed."""
+    issues, years = [], {}
+    for name, path in sorted(paths.items()):
+        try:
+            value = read_json(path)
+        except (OSError, ValueError):
+            continue  # reported by the per-file check
+        if not isinstance(value, dict) or not isinstance(value.get("offerings"), list):
+            continue
+        year = years.setdefault(value.get("academicYear"), {"units": set(), "offerings": {}, "files": []})
+        year["units"].update(unit.get("id") for unit in value.get("units", []) if isinstance(unit, dict))
+        year["files"].append((name, value))
+    for year in years.values():
+        for name, value in year["files"]:
+            for i, offering in enumerate(value["offerings"]):
+                if not isinstance(offering, dict):
+                    continue
+                if offering.get("id") in year["offerings"]:
+                    issues.append(Issue("courses.duplicate", name, pointer(("offerings", i, "id")),
+                                        f"Offering {offering.get('id')} is also in {year['offerings'][offering.get('id')]}"))
+                else:
+                    year["offerings"][offering.get("id")] = name
+                for j, unit in enumerate(offering.get("units") or []):
+                    if unit not in year["units"]:
+                        issues.append(Issue("courses.unit_missing", name, pointer(("offerings", i, "units", j)),
+                                            f"Unit {unit} is not listed in this year's files"))
+    return issues
+
+
 class DatasetContracts:
     def __init__(self, root=ROOT):
         self.root = Path(root)
@@ -179,6 +230,8 @@ class DatasetContracts:
             issues.append(Issue("dataset.path_value", name, pointer((field,)), f"{field} must match path key {key}"))
         if dataset == "academic-calendar":
             issues.extend(check_calendar(name, value))
+        elif dataset == "courses":
+            issues.extend(check_courses_file(name, value))
         elif dataset == "campus-map" and not issues:
             messages = []
             check_content(value, messages)
@@ -278,6 +331,8 @@ class DatasetContracts:
                     issues.append(Issue("dataset.read", name, "", str(error)))
                     continue
                 issues.extend(self.validate_candidate(dataset, name, value))
+        issues.extend(check_course_years({name: path for name, path in present.items()
+                                          if self.patterns["courses"].fullmatch(name)}))
         for name in sorted(required - present.keys()):
             issues.append(Issue("dataset.required_file", name, "", "Required dataset file is missing"))
         try:
