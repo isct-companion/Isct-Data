@@ -31,6 +31,7 @@ REPO = "isct-companion/Isct-Data"
 STATE = Path("/data/state")
 RUNS = STATE / "runs"
 ROTATION = STATE / "courses-rotation.json"
+HEARTBEAT = STATE / "heartbeat.json"  # the scheduler loop's last tick, for the status page's alerts
 APP_KEY = Path("/run/isct-github/private-key.pem")
 JST = timezone(timedelta(hours=9))
 KEEP_ARTIFACT_DAYS, KEEP_LOG_DAYS, KEEP_RECORD_DAYS = 7, 30, 180
@@ -555,8 +556,9 @@ def serve(args):
     RUNS.mkdir(parents=True, exist_ok=True)
     with locked():
         mark_interrupted()
-    status.start(RUNS, ROTATION, list(SCHEDULE), upcoming)
+    status.start(RUNS, ROTATION, SCHEDULE, upcoming, HEARTBEAT)
     while True:
+        save(HEARTBEAT, {"at": datetime.now(JST).isoformat(timespec="seconds")})
         try:
             for job, plan in upcoming().items():
                 if plan["due"]:
