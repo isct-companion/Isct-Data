@@ -670,9 +670,7 @@ def github(token, method, path, body=None):
 
 
 def publish(root, base, token, label):
-    """Opens a pull request with the changed catalog files and turns on auto-merge, so it lands as
-    soon as the required CI passes. Nothing is opened while an earlier catalog pull request is open:
-    that one failed CI or awaits a person."""
+    """Open a catalog PR and request auto-merge if the repository allows it."""
     files = publication(root, base)
     if not files:
         return {"changed": False}
@@ -684,6 +682,8 @@ def publish(root, base, token, label):
                if pull["head"]["ref"].startswith("automation/courses/")]
     if waiting:
         return {"changed": True, "held": waiting[0]["html_url"]}
+    settings = github(token, "GET", f"https://api.github.com/repos/{REPOSITORY}")
+    auto_merge = settings.get("allow_auto_merge", False)
     branch = f"automation/courses/{label}"
     original = github(token, "GET", f"git/commits/{base}")
     tree = github(token, "POST", "git/trees", {"base_tree": original["tree"]["sha"], "tree": [
@@ -696,16 +696,20 @@ def publish(root, base, token, label):
     body = (f"Read from the public syllabus <{ORIGIN}> on {label} by the syllabus reader (docs/courses.md).\n\n"
             "Changed files\n\n"
             + "\n".join(f"- `{name}`" + (" (removed)" if files[name] is None else "") for name in courses)
-            + "\n\nAuto-merge is on: it lands once CI passes.")
+            + ("\n\nAuto-merge requested after CI passes." if auto_merge
+               else "\n\nPlease squash merge after the required CI passes."))
     pull = github(token, "POST", "pulls", {"title": "Update the course catalog", "head": branch, "base": "main",
                                           "body": body})
+    result = {"changed": True, "pullRequest": pull["html_url"], "files": courses, "autoMerge": False}
+    if not auto_merge:
+        return result
     merge = github(token, "POST", "https://api.github.com/graphql", {
         "query": "mutation($id: ID!) { enablePullRequestAutoMerge(input: {pullRequestId: $id, mergeMethod: SQUASH})"
                  " { pullRequest { number } } }",
         "variables": {"id": pull["node_id"]}})
     if merge.get("errors"):
         raise ValueError(f"auto-merge was not turned on for {pull['html_url']}: {merge['errors'][0].get('message')}")
-    return {"changed": True, "pullRequest": pull["html_url"], "files": courses}
+    return dict(result, autoMerge=True)
 
 
 def read_state(path):

@@ -6,6 +6,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -144,6 +145,19 @@ class RotationTests(unittest.TestCase):
 
 
 class PublicationTests(unittest.TestCase):
+    def test_a_repository_without_auto_merge_still_gets_a_catalog_pr(self):
+        responses = iter([
+            {"object": {"sha": "base"}}, [], {"allow_auto_merge": False}, {"tree": {"sha": "old"}},
+            {"sha": "new"}, {"sha": "commit"}, {}, {"html_url": "https://example.test/pull/1"},
+        ])
+        with patch.object(reader, "publication", return_value={"courses/2026/programs.json": "{}"}):
+            with patch.object(reader, "github", side_effect=responses) as github:
+                result = reader.publish(ROOT, "base", "token", "2026-11-23")
+        self.assertFalse(result["autoMerge"])
+        self.assertEqual(result["pullRequest"], "https://example.test/pull/1")
+        self.assertEqual(github.call_args.args[2], "pulls")
+        self.assertIn("Please squash merge", github.call_args.args[3]["body"])
+
     def test_only_changed_files_make_a_pull_request(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

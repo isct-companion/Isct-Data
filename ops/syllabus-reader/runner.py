@@ -2,7 +2,7 @@
 """Runs the syllabus reader on a schedule, on the host that keeps its state (docs/courses.md).
 
 Each run starts from the latest main: it reads the syllabus with the rotation state, rebuilds the
-index, validates every dataset the way CI does, and opens an auto-merging pull request when a
+index, validates every dataset the way CI does, and opens a pull request when a
 course file changed. The rotation state moves forward only after a run published (or found nothing
 to publish), so a failed or held run reads the same files in full again next time.
 
