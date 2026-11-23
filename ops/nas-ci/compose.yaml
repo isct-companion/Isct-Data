@@ -26,7 +26,6 @@ services:
     volumes:
       - "${STATE_ROOT:-./var}/ci:/data/state"
     mem_limit: 1536m
-    cpus: 2
 
   syllabus-reader:
     <<: *runtime
@@ -38,4 +37,3 @@ services:
       - "${STATE_ROOT:-./var}/syllabus/repo:/data/repo"
       - "${STATE_ROOT:-./var}/syllabus/state:/data/state"
     mem_limit: 512m
-    cpus: 1
