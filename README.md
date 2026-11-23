@@ -2,7 +2,7 @@
 
 Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion 向けの JSON データとして公開しています。日付は JST です。
 
-## データ
+## 公開データを利用する
 
 アプリは [`index.json`](index.json) から年度別のデータと更新ハッシュを取得します。各形式は [`schema/`](schema/) を参照してください。
 
@@ -11,28 +11,30 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 | [`academic-calendar/`](academic-calendar/) | 校暦、授業・試験期間、休講日 |
 | [`departments/`](departments/) | 学系と標準履修科目 |
 | [`important-dates/`](important-dates/) | 行事・入試などの重要日程 |
-| [`class-schedules/`](class-schedules/) | 人工保守の個別・隔週授業日程 |
+| [`class-schedules/`](class-schedules/) | 手動で保守する個別・隔週授業日程 |
 | [`exam/`](exam/) | 学部・大学院の期末試験 |
 | [`exam-week-classes/`](exam-week-classes/) | 試験期間中の授業・補講 |
 | [`courses/`](courses/) | 公開シラバス（理工学系）の開講科目カタログ（科目・時間割・教室・単位、形式は [courses.md](docs/courses.md)） |
 | [`campus-map/`](campus-map/) | 大岡山・すずかけ台のキャンパスマップ（アプリ用 gzip、形式は [campus-map-export.md](docs/campus-map-export.md)。元データは非公開リポジトリ） |
 
-2025・2026 年度を収録しています。試験の公開データは 2026 2Q を収録済みで、3Q は出典付きの空 feed を準備しています。公式の集中試験時間割と LMS 上の個別告知では収録範囲が異なります。空データや未収録は、試験・授業が存在しないことを意味しません。
+収録年度と配信ファイルは [`index.json`](index.json) で確認できます。出典、収録範囲、既知の欠落は [データ仕様](docs/data.md) と [試験データの更新](docs/exams.md) を参照してください。未収録の試験・授業は公式情報で確認してください。
 
-## ドキュメント
+## 取得・検証・公開
 
-- [データ契約と共通の更新経路](docs/data-contracts.md) — 外部 AI と CI の共通 contract、検証、収録範囲、[更新 skill](.agents/skills/update-public-data/SKILL.md)
+| 目的 | コード・設定 | 手順 |
+| --- | --- | --- |
+| NAS で公開データを取得・検証する | [`ops/nas-ci/compose.yaml`](ops/nas-ci/compose.yaml) | [NAS の起動と運用](docs/nas-ci.md) |
+| 公開シラバスから開講科目を取得する | [`scripts/syllabus_courses.py`](scripts/syllabus_courses.py) · [`ops/syllabus-reader/`](ops/syllabus-reader/) | [シラバスの取得とデータ形式](docs/courses.md) |
+| スキーマや購読 index を検証する | [`contracts/`](contracts/) · [`schema/`](schema/) · [`scripts/`](scripts/) | [データ契約](docs/data-contracts.md) · [保守コマンド](docs/maintenance.md) |
+| GitHub の検証と切り戻しを確認する | [`.github/workflows/`](.github/workflows/) | [自動更新と CI](docs/automation.md) |
 
-- [データ仕様と収録範囲](docs/data.md) — 各データの意味、出典、既知の欠落
-- [開講科目カタログ](docs/courses.md) — シラバスの読み方、ファイル構成、収録しないもの、更新頻度
-- [保守コマンド](docs/maintenance.md) — 全量検証、購読 index の再生成、履修表の照合
-- [試験データの更新](docs/exams.md) — 候補の確認、固定 writer、試験週授業の同時更新
-- [自動更新と CI の運用](docs/automation.md) — 種類別 workflow、Copilot、権限と設定
-- [エージェント向け指示](prompts/update-official-data.md) · [試験専用指示](prompts/update-exams.md)
+公開データと生成・検証コードは同じリポジトリで管理します。Docker の設定例も公開し、実行環境の資格情報・作業用チェックアウト・取得状態・ログは運用ホストに置きます。
+
+手動更新には [更新 skill](.agents/skills/update-public-data/SKILL.md) と [共通プロンプト](prompts/update-official-data.md) を使います。
 
 ## データの誤りを見つけたら
 
-このデータは、公式ページを毎日（学系・履修は毎週）確認する AI の workflow が自動で更新しています。
+公開データは NAS の定期処理が確認し、検証を通過した差分を公開します。
 日付や科目の誤り・欠落に気づいたら、[issue](https://github.com/isct-companion/Isct-Data/issues/new/choose) のフォームで、
 該当する項目、現在の値と正しい値、根拠となる公式ページの URL を添えて報告してください。日本語・英語・中国語のどれでもかまいません。
 

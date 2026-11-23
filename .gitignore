@@ -10,3 +10,6 @@ __pycache__/
 /ops/nas-ci/ci.env
 /ops/nas-ci/syllabus.env
 /ops/nas-ci/var/
+/ops/syllabus-reader/.env
+/ops/syllabus-reader/repo/
+/ops/syllabus-reader/state/

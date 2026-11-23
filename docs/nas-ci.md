@@ -7,6 +7,8 @@
 - `public-data-ci` は GitHub の main を 10 分間隔で確認し、新しいコミットを全量検証します。公開データの更新時刻は [従来の日程](automation.md) と同じ JST です。NAS が停止していた日の更新は同日中に再開したときに実行します。
 - `syllabus-reader` は毎日 03:23 JST に動き、1 リクエストずつ取得してファイルの全件再読を輪番します。輪番状態とログは永続ボリュームに保存します。AI は呼び出しません。
 
+シラバス取得処理は [`scripts/syllabus_courses.py`](../scripts/syllabus_courses.py)、スケジューラは [`ops/syllabus-reader/runner.py`](../ops/syllabus-reader/runner.py) です。NAS では両サービスを [`ops/nas-ci/compose.yaml`](../ops/nas-ci/compose.yaml) で管理します。`ops/syllabus-reader/docker-compose.yml` はシラバスだけを実行する構成です。
+
 GitHub Actions には公開 PR の必須チェック `Validate all datasets` と、main の検証成功後のホームページのデプロイ通知を残します。NAS が取得して実行するコードは公式リポジトリの main です。
 
 ## 起動と切替
@@ -25,6 +27,8 @@ docker compose up -d
 ```
 
 Compose を実行するユーザーとボリュームの所有者が異なる場合は、コンテナの `PUID` と `PGID` を `.env` に設定します。データをチェックアウトの外に置くには、事前に同じディレクトリ構成で `STATE_ROOT` を設定します。
+
+実際の `ci.env`、`syllabus.env`、GitHub App の秘密鍵、ローテーション状態、作業用 checkout、ログは運用ホストに保存します。Git には資格情報を空にした設定例を登録します。
 
 1. この変更を main に反映します。`ci.env` の `OPENAI_API_KEY=` に OpenAI のキーを設定します。シラバスには OpenAI のキーは不要です。
 2. **Contents: Read and write** の GitHub App を Isct-Data のみにインストールします。秘密鍵は `var/github-app/private-key.pem` に所有者のみ読み取り可能な権限で保存します。両方の環境ファイルに `ISCT_GITHUB_APP_ID`、`ISCT_GITHUB_INSTALLATION_ID`、`ISCT_PUBLICATION_MODE=main` を設定します。NAS は公開の直前に短期トークンを発行します。

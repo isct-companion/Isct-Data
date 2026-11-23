@@ -2,9 +2,13 @@
 
 [README](../README.md) · [保守コマンド](maintenance.md) · [試験データの更新](exams.md)
 
-NAS の Docker 運用と切替手順は [NAS CI](nas-ci.md) を参照してください。
-以下の GitHub 更新ワークフローは切替前と切り戻し時に使用します。
-PR の必須チェックとホームページのデプロイ通知は GitHub Actions で実行します。
+## 通常運用
+
+NAS の Docker が公式情報を確認し、検証済みの差分を GitHub App で main に公開します。シラバスの取得は同じ Compose 構成の別サービスで毎日 03:23 JST に行います。[NAS の運用](nas-ci.md) · [シラバスの取得](courses.md)
+
+GitHub Actions は PR と main の検証、ホームページのデプロイ通知を実行します。main の必須チェックは NAS の公開用 GitHub App に限りバイパスできます。
+
+## 公開データの確認時刻
 
 | Workflow | データ | 定期チェック（JST） | 個別 prompt |
 | --- | --- | --- | --- |
@@ -12,6 +16,10 @@ PR の必須チェックとホームページのデプロイ通知は GitHub Act
 | Update departments and course guidance | 入学年度別の学系・履修指南 | 日曜 10:47 | [学系](../prompts/update-departments.md) |
 | Update important dates | 行事・式典・入試の日程 | 毎日 10:17 | [重要日程](../prompts/update-important-dates.md) |
 | Update exams and exam-week classes | 期末試験と同じ PDF の授業・補講 | 毎日 09:17 | [試験](../prompts/update-exams.md) |
+
+## GitHub Actions への切り戻し
+
+以下の GitHub 更新ワークフローは切り戻し時に使用します。切り替える手順は [NAS の起動と切替](nas-ci.md#起動と切替) を参照してください。
 
 `update-*.yml` は対象と時刻だけを指定し、共通の
 [public-data-pipeline.yml](../.github/workflows/public-data-pipeline.yml) を呼び出します。
@@ -22,7 +30,7 @@ AI 部分は gh-aw の [author-public-data.md](../.github/workflows/author-publi
 [shared/public-data.md](../.github/workflows/shared/public-data.md) が共有します。
 Markdown を変更したら `gh aw compile` で lock を再生成します。
 
-## 公開までの流れ
+### 切り戻し時の公開までの流れ
 
 ```
 triage（スクリプト）─► 作成者 A（AI）─┐
@@ -59,8 +67,6 @@ triage（スクリプト）─► 作成者 A（AI）─┐
 コマンド失敗時は同じ入力で再実行せず、不完全として終了します。
 `.data-runs/` と `.exam-runs/` は実行成果物として 7 日間保持します。
 
-## 公開ソースと人工保守の境界
-
 ### 試験 PDF のページ単位レビュー試行
 
 「Update exams and exam-week classes」の手動実行で `shadow_before_run`
@@ -75,7 +81,9 @@ triage（スクリプト）─► 作成者 A（AI）─┐
 当該 PDF の全量に戻します。判定と 4 人の結果は `exam-shadow-result`
 成果物で確認できます。試行の出力先は Actions の成果物です。
 
-学校の公開ソースは `www.titech.ac.jp` に限定します（開講科目カタログだけは公開シラバス `syllabus.s.isct.ac.jp` を読みます。GitHub Actions ではなく保守者のホストで動くスクリプトで、AI は使いません。[開講科目カタログ](courses.md) を参照）。校暦 workflow だけ、
+## 公開ソースと手動保守の境界
+
+学校の公開ソースは `www.titech.ac.jp` を使用します。開講科目カタログは公開シラバス `syllabus.s.isct.ac.jp` から取得します。校暦の更新だけ、
 国民の祝日のため `www8.cao.go.jp` を追加許可します。URL とリダイレクト先を
 スクリプトで検証し、別ホストへの移行を自動承認しません。GitHub/Copilot の
 実行基盤通信は gh-aw が別途管理します。
@@ -84,15 +92,14 @@ LMS ログイン・取得の機能は提供しません。既存の `class-sched
 手動ソースを持つ試験記録は保持し、人が更新します。自動公開はこれらの記録・
 出典を変更・削除できません。全量 CI は人工保守データも継続検証します。
 
-## GitHub の設定
+## 切り戻し用 GitHub Actions の設定
 
 - `COPILOT_GITHUB_TOKEN`: 個人の fine-grained PAT、**Copilot Requests: read**。
   個人のプランで自動選模し、組織課金権限は使いません。
 - `DATA_PR_TOKEN`: Isct-Data だけに限定した既存 PAT。**Contents: read/write** と
   **Pull requests: read/write** を持ちます。専用ジョブがブランチと PR を作成し、
   その PR で通常の Actions CI が起動します。モデルへは渡しません。
-- main は **Validate all datasets** を GitHub Actions 発行の必須チェックとし、
-  管理者にも適用します。PR のマージ方式は squash のみです。main の強制 push と削除は禁止します。
+- main は **Validate all datasets** を GitHub Actions 発行の必須チェックとし、NAS の公開用 GitHub App だけをバイパス対象とします。PR のマージ方式は squash のみです。main の強制 push と削除は禁止します。
 
 Copilot CLI は資格情報を保持する AWF proxy を通してネイティブ `/auto` を使います。
 固定 gh-aw v0.93.2 の起動処理には SHA-256 検証付きの互換処理を適用します。
@@ -101,7 +108,7 @@ BYOK の無指定モデルへのフォールバックを避け、上流 harness 
 
 ## 全量 CI と人工候補の確認
 
-`validate-data.yml` は全 PR と main への全 push で、パスフィルタなしに六種類の
+`validate-data.yml` は全 PR と main への全 push で、パスフィルタなしに
 全データ、index、試験の関連整合性と境界テストを確認します。
 `review-exam-candidates.yml` は手動で渡した候補のパッチを成果物にする専用入口です。
 PR 時の重複した試験専用 CI は全量 CI に統合しました。
