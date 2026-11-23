@@ -1,74 +1,74 @@
-# Docker によるデータ更新と検証
+# Docker によるデータ更新
 
 [自動更新](automation.md) · [シラバス](courses.md)
 
-`ops/data-pipeline/compose.yaml` は 3 つのサービスを起動します。
+`ops/data-pipeline/compose.yaml` は 1 つのサービス `isct-data` だけを起動します。1 つのプロセスがすべての定期取得を 1 件ずつ実行し、検証済みの変更を GitHub App で main に公開し、同じプロセスが状態ページを提供します。
 
-- `public-data-ci` は GitHub の main を 10 分間隔で確認し、新しいコミットを全量検証します。公開データの更新時刻は [従来の日程](automation.md) と同じ JST です。NAS が停止していた日の更新は同日中に再開したときに実行します。
-- `syllabus-reader` は毎日 03:23 JST に動き、1 リクエストずつ取得してファイルの全件再読を輪番します。輪番状態とログは永続ボリュームに保存します。AI は呼び出しません。
-- `status` は両サービスの最新の実行記録を読み取り専用で表示します。設定済みの Cloudflare Access が発行したトークンを検証します。
+| ジョブ | データ | 時刻（JST） | モデル |
+| --- | --- | --- | --- |
+| `courses` | 開講科目（シラバス、[輪番](courses.md#自動更新)） | 毎日 03:23 | 使わない |
+| `exams` | 期末試験と試験週の授業 | 毎日 09:17 | Terra ×2、差分時 Sol |
+| `academic-calendar` | 校暦 | 毎日 09:47 | 同上 |
+| `important-dates` | 重要日程 | 毎日 10:17 | 同上 |
+| `departments` | 学系・履修指南 | 日曜 10:47 | 同上 |
 
-シラバス取得処理は [`scripts/syllabus_courses.py`](../scripts/syllabus_courses.py)、スケジューラは [`ops/syllabus-reader/runner.py`](../ops/syllabus-reader/runner.py) です。[共通の Compose 構成](../ops/data-pipeline/compose.yaml) で両サービスを管理します。`ops/syllabus-reader/docker-compose.yml` はシラバスだけを実行する構成です。
+各ジョブは 1 日 1 回です。NAS が止まっていた日は、同じ日のうちに再開した時点で実行します。失敗した回も同じ日には再実行せず、次の予定時刻に最新の main から読み直します。どのジョブも実行のたびに main を取得し、その checkout のスクリプトを使います。イメージに入っているのはスケジューラ（`runner.py`）、モデル呼び出し（`review.py`）、状態ページ（`status.py`）だけです。
 
-GitHub Actions には公開 PR の必須チェック `Validate all datasets` と、main の検証成功後のホームページのデプロイ通知を残します。NAS が取得して実行するコードは公式リポジトリの main です。
+公開の前には必須チェック `Validate all datasets` と同じ全量検証を通します。main は GitHub Actions の同じチェックで再検証され、ホームページのデプロイ通知もそこから出ます。
 
-## 起動と切替
+## 起動
 
-リポジトリのルートから実行します。Synology の SSH セッションで Docker が PATH にない場合は `/usr/local/bin/docker` を使います。
+リポジトリの checkout の `ops/data-pipeline` で実行します。Synology の SSH セッションで Docker が PATH にない場合は `/usr/local/bin/docker` を使います。
 
 ```sh
 cd ops/data-pipeline
 umask 077
-cp -n ci.env.example ci.env
-cp -n ../syllabus-reader/.env.example syllabus.env
-cp -n status/status.env.example status.env
-mkdir -p var/ci/runs var/syllabus/repo var/syllabus/state
-touch var/syllabus/state/runs.jsonl
-mkdir -m 700 -p var/github-app
+cp -n pipeline.env.example pipeline.env
+mkdir -p var/state var/github-app
 docker compose up -d --build
 ```
 
-Compose を実行するユーザーとボリュームの所有者が異なる場合は、コンテナの `PUID` と `PGID` を `.env` に設定します。データをチェックアウトの外に置くには、事前に同じディレクトリ構成で `STATE_ROOT` を設定します。
+- `pipeline.env`：OpenAI のキーと GitHub App の ID。シラバスだけならキーは不要です。
+- `var/github-app/private-key.pem`：**Contents: Read and write** で Isct-Data だけにインストールした GitHub App の秘密鍵（所有者のみ読み取り可）。公開の直前に短期トークンを発行します。main のルールセットでは、この App だけが必須チェックをバイパスできます。
+- `var/state/`：作業用の bare リポジトリ、各回の記録とログ、実行済みの日付、シラバスの輪番状態。Git には入れません。
+- `.env`（任意）：`PUID`・`PGID`、データを checkout の外に置く `STATE_ROOT`。
 
-実際の `ci.env`、`syllabus.env`、`status.env`、GitHub App の秘密鍵、ローテーション状態、作業用 checkout、ログは運用ホストに保存します。Git には資格情報を空にした設定例を登録します。
-
-1. この変更を main に反映します。`ci.env` の `OPENAI_API_KEY=` に OpenAI のキーを設定します。シラバスには OpenAI のキーは不要です。
-2. **Contents: Read and write** の GitHub App を Isct-Data のみにインストールします。秘密鍵は `var/github-app/private-key.pem` に所有者のみ読み取り可能な権限で保存します。両方の環境ファイルに `ISCT_GITHUB_APP_ID`、`ISCT_GITHUB_INSTALLATION_ID`、`ISCT_PUBLICATION_MODE=main` を設定します。NAS は公開の直前に短期トークンを発行します。
-3. main の必須チェックをブランチルールセットで管理し、そのチェックだけに NAS の GitHub App をバイパス対象として登録します。強制 push とブランチ削除の拒否は App にも適用します。
-4. main の検証と公式ソースの取得を確認します。以下の `--poll-only` はモデルも公開機能も呼び出しません。
-5. `ci.env` の `ISCT_DATA_EXECUTOR` を `nas` に設定し、両サービスを `docker compose up -d --force-recreate` で再作成します。
-
-旧 GitHub 更新に切り戻す場合は、[ワークフローの復元手順](../archive/github-actions/README.md) を参照してください。
+資格情報が足りないジョブは実行せず、状態ページに「暂停」と理由を表示します。コードの更新は checkout を `git pull` してから `docker compose up -d --build` します。
 
 ## 状態ページ
 
-既定の接続先は `http://127.0.0.1:8787` です。別のホストから来る Tunnel に公開する場合は、Compose の `.env` に `STATUS_BIND` を設定して、Tunnel が到達できるホストのアドレスで待ち受けます。
+NAS の `http://127.0.0.1:8787/` だけで待ち受けます。ページ自体には認証がないため、外から見る場合は NAS 上のトンネルで公開し、アクセス制御はトンネル側で設定します。
 
-Cloudflare Zero Trust で Self-hosted Access アプリを作成し、One-time PIN と許可するメールアドレスを設定します。`status.env` にチームの発行元 URL、アプリの AUD、カンマ区切りのメールアドレスを入力します。
+| ページ | 内容 |
+| --- | --- |
+| `/` 概览 | 7 日間の集計、ジョブごとのカード（最新回の結果・時刻・所要時間・リクエスト数・変化・公開コミット・次回の時刻・直近 14 回・7 日以内の失敗とその要約）、ジョブと結果で絞り込める実行一覧。実行中の回は上部に表示します。 |
+| `/jobs/<job>` 任务 | 30 日間の日ごとの結果、各回の所要時間・リクエスト数・トークン数のグラフ（同じ値の表付き）、実行一覧。 |
+| `/runs/<run-id>` 运行 | 各ステップ（コマンドと、ソース取得・各レビュー・比較・仲裁）の開始と所要時間、各公式ソースの基線との差（可視内容・バイトのみ・新規・消失・未変更）、2 つのレビューの比較と仲裁、モデル呼び出しごとのトークン、シラバスの読み取り範囲、科目ごとの変化、失敗時のエラーとログ末尾、残っている成果物。実行中は 15 秒ごとに更新します。 |
+| `/courses` 课程轮转 | 各課程ファイルの学院名・科目数・前回の全件再読、30 日間の全件再読と変化の日、最近の課程変化（科目コード・課名・変わった項目）。 |
 
-```dotenv
-CF_ACCESS_ISSUER=https://YOUR-TEAM.cloudflareaccess.com
-CF_ACCESS_AUDIENCE=YOUR-APPLICATION-AUDIENCE
-CF_ACCESS_EMAILS=you@example.com
-```
+結果は 已发布・无变化・已检查・保留・失败・中断・进行中 で、色と文字の両方で示します。`/api/status` は概览の JSON、`/runs/<run-id>/log` はその回のログ（末尾 1 MiB）、`/runs/<run-id>/files/<path>` は成果物のうちテキストのもの、`/healthz` は稼働確認です。
 
-設定変更は `docker compose up -d --force-recreate status` で反映します。`/healthz` は稼働確認用です。状態ページと `/api/status` は Access 設定前に 503 を返します。
+各回の記録は `var/state/runs/` に残ります。成果物（試験の証拠、レビュー結果など）は 7 日、`run.log` は 30 日、`status.json` は 180 日で消えます。実行中に再起動した回は「中断」と記録します。
 
 ## 手動実行
 
+起動中のコンテナで実行します。定期ジョブと同じロックを使うので、実行中のジョブが終わってから始まります。
+
 ```sh
-docker compose run --rm public-data-ci validate
-docker compose run --rm public-data-ci update exams --poll-only
-docker compose run --rm public-data-ci update exams
-docker compose run --rm public-data-ci candidates 2026 2Q undergraduate review/exam-candidates/2026-2q-undergraduate.json
-docker compose run --rm public-data-ci shadow /data/state/runs/<run-id>/exam-evidence.zip
-docker compose run --rm syllabus-reader --once
+docker compose exec isct-data python /opt/isct/runner.py update exams --poll-only
+docker compose exec isct-data python /opt/isct/runner.py update exams
+docker compose exec isct-data python /opt/isct/runner.py courses
+docker compose exec isct-data python /opt/isct/runner.py courses --full
+docker compose exec isct-data python /opt/isct/runner.py candidates 2026 2Q undergraduate review/exam-candidates/2026-2q-undergraduate.json
+docker compose exec isct-data python /opt/isct/runner.py shadow /data/state/runs/<run-id>/exam-evidence.zip
 ```
 
-`update` は `exams`、`academic-calendar`、`important-dates`、`departments` に対応します。`--force` は変更検出と前回の同一ソース判定を省略します。試験の shadow には同一クォーターの 2 版を使い、第 2 引数を省略すると最新の公式 PDF と比較します。候補パッチ、判定、試験ソースのスナップショット、各実行の `status.json` は `var/ci/runs/` に 7 日間保存します。
+`update` は `exams`、`academic-calendar`、`important-dates`、`departments` に対応します。`--poll-only` は公式ソースの変更確認だけを行い、モデルも公開も呼び出しません。`--force` は変更検出と前回の同一ソース判定を省略します。`courses --full` はすべてのファイルを全件再読します。試験の shadow には同一クォーターの 2 版を使い、第 2 引数を省略すると最新の公式 PDF と比較します。
 
 ## モデルとトークン
 
-変更が見つかった場合だけ、取得済みの同じ証拠を使って 2 回の Terra レビューを独立して行います。データが一致した場合はコードが採用します。両者が有効で差分があれば、各 Terra は差分だけを相互確認し、Sol が公式出典と突き合わせて選択します。片方だけが有効な場合も既存の仲裁規則で Sol が確認します。固定の比較・書き込み・全量検証に通った変更を main に fast-forward で公開します。検証中に main が進んだ場合は次の実行で最新の main を取り直します。
+公開データに変更が見つかった場合だけ、取得済みの同じ証拠を使って 2 回の Terra レビューを独立して行います。データが一致した場合はコードが採用します。両者が有効で差分があれば、各 Terra は差分だけを相互確認し、Sol が公式出典と突き合わせて選択します。片方だけが有効な場合も既存の仲裁規則で Sol が確認します。固定の比較・書き込み・全量検証に通った変更を main に fast-forward で公開します。検証中に main が進んだ回は「保留」と記録し、次の予定時刻に最新の main から読み直します。
 
-全文の添付を避け、証拠は必要な箇所を読み取り専用ツールで取得します。変更なしと検証済みのコミット・出典が同一の場合も再推論を省きます。レビューは low、仲裁は medium で、各レビューのラウンド数とレスポンス出力を制限します。`OPENAI_RUN_TOKEN_LIMIT` は実測の累計を見て次の呼び出しを止める目安です。実行中の 1 リクエストが上限を超える場合があります。Docker ログに入力・キャッシュ入力・出力のトークン数が残ります。
+全文の添付を避け、証拠は必要な箇所を読み取り専用ツールで取得します。変更なしと検証済みのコミット・出典が同一の場合も再推論を省きます。レビューは low、仲裁は medium で、各レビューのラウンド数とレスポンス出力を制限します。`OPENAI_RUN_TOKEN_LIMIT` は実測の累計を見て次の呼び出しを止める目安です。実行中の 1 リクエストが上限を超える場合があります。各回のログに入力・キャッシュ入力・出力のトークン数が残ります。モデルのキーはスクリプトには渡しません。
+
+旧 GitHub 更新に切り戻す場合は、[ワークフローの復元手順](../archive/github-actions/README.md) を参照してください。

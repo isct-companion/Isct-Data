@@ -4,7 +4,7 @@
 
 ## 通常運用
 
-Docker が公式情報を確認し、検証済みの差分を GitHub App で main に公開します。シラバスの取得は同じ Compose 構成の別サービスで毎日 03:23 JST に行います。[Docker の運用](data-pipeline.md) · [シラバスの取得](courses.md)
+NAS の 1 つの Docker サービスが公式情報とシラバスを確認し、検証済みの差分を GitHub App で main に公開します。シラバスの取得は毎日 03:23 JST です。[Docker の運用](data-pipeline.md) · [シラバスの取得](courses.md)
 
 GitHub Actions は PR と main の検証、ホームページのデプロイ通知を実行します。main の必須チェックは NAS の公開用 GitHub App に限りバイパスできます。
 

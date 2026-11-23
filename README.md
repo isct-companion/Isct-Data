@@ -24,7 +24,7 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 | 目的 | コード・設定 | 手順 |
 | --- | --- | --- |
 | Docker で公開データを取得・検証し、実行状態を確認する | [`ops/data-pipeline/compose.yaml`](ops/data-pipeline/compose.yaml) | [起動と運用](docs/data-pipeline.md) |
-| 公開シラバスから開講科目を取得する | [`scripts/syllabus_courses.py`](scripts/syllabus_courses.py) · [`ops/syllabus-reader/`](ops/syllabus-reader/) | [シラバスの取得とデータ形式](docs/courses.md) |
+| 公開シラバスから開講科目を取得する | [`scripts/syllabus_courses.py`](scripts/syllabus_courses.py) · [`ops/data-pipeline/`](ops/data-pipeline/) | [シラバスの取得とデータ形式](docs/courses.md) |
 | スキーマや購読 index を検証する | [`contracts/`](contracts/) · [`schema/`](schema/) · [`scripts/`](scripts/) | [データ契約](docs/data-contracts.md) · [保守コマンド](docs/maintenance.md) |
 | GitHub の検証と旧ワークフローを確認する | [検証ワークフロー](.github/workflows/validate-data.yml) · [旧ワークフロー](archive/github-actions/) | [自動更新と CI](docs/automation.md) |
 

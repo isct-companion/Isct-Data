@@ -586,7 +586,6 @@ def build(site, year, previous=None, verified=None, *, full=False):
 # A run that would drop this share of a year's offerings is not written: a site
 # that answers a near-empty listing must not empty the catalog.
 MAX_SHRINK = 0.2
-REPOSITORY = "isct-companion/Isct-Data"
 
 
 def published_offerings(root, year):
@@ -643,7 +642,7 @@ def git(root, *args):
 
 
 def publication(root, base):
-    """The files a pull request carries: course files added, changed or removed since `base`, with
+    """The files a publication carries: course files added, changed or removed since `base`, with
     the index; `{}` when none did. Unchanged files keep their bytes (`write_year`)."""
     names = set(git(root, "diff", "--name-only", base, "--", "courses").split())
     names |= set(git(root, "ls-files", "--others", "--exclude-standard", "--", "courses").split())
@@ -656,63 +655,9 @@ def publication(root, base):
     return changed
 
 
-def github(token, method, path, body=None):
-    from urllib.request import Request, urlopen
-    url = path if path.startswith("https://") else f"https://api.github.com/repos/{REPOSITORY}/{path}"
-    request = Request(url, method=method, data=json.dumps(body).encode() if body is not None else None,
-                      headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
-                               "Content-Type": "application/json", "User-Agent": "Isct-Data-syllabus-reader"})
-    try:
-        with urlopen(request, timeout=60) as response:
-            return json.load(response)
-    except HTTPError as error:
-        raise ValueError(f"GitHub API {method} {path} failed with HTTP {error.code}") from None
-
-
-def publish(root, base, token, label):
-    """Open a catalog PR and request auto-merge if the repository allows it."""
-    files = publication(root, base)
-    if not files:
-        return {"changed": False}
-    if not token:
-        raise ValueError("publisher credentials are missing")
-    if github(token, "GET", "git/ref/heads/main")["object"]["sha"] != base:
-        raise ValueError("main advanced during the read; the next run publishes on the latest main")
-    waiting = [pull for pull in github(token, "GET", "pulls?state=open&base=main&per_page=100")
-               if pull["head"]["ref"].startswith("automation/courses/")]
-    if waiting:
-        return {"changed": True, "held": waiting[0]["html_url"]}
-    settings = github(token, "GET", f"https://api.github.com/repos/{REPOSITORY}")
-    auto_merge = settings.get("allow_auto_merge", False)
-    branch = f"automation/courses/{label}"
-    original = github(token, "GET", f"git/commits/{base}")
-    tree = github(token, "POST", "git/trees", {"base_tree": original["tree"]["sha"], "tree": [
-        {"path": name, "mode": "100644", "type": "blob", **({"content": text} if text is not None else {"sha": None})}
-        for name, text in files.items()]})
-    commit = github(token, "POST", "git/commits", {"message": "Update the course catalog", "tree": tree["sha"],
-                                                    "parents": [base]})
-    github(token, "POST", "git/refs", {"ref": f"refs/heads/{branch}", "sha": commit["sha"]})
-    courses = sorted(name for name in files if name.startswith("courses/"))
-    body = (f"Read from the public syllabus <{ORIGIN}> on {label} by the syllabus reader (docs/courses.md).\n\n"
-            "Changed files\n\n"
-            + "\n".join(f"- `{name}`" + (" (removed)" if files[name] is None else "") for name in courses)
-            + ("\n\nAuto-merge requested after CI passes." if auto_merge
-               else "\n\nPlease squash merge after the required CI passes."))
-    pull = github(token, "POST", "pulls", {"title": "Update the course catalog", "head": branch, "base": "main",
-                                          "body": body})
-    result = {"changed": True, "pullRequest": pull["html_url"], "files": courses, "autoMerge": False}
-    if not auto_merge:
-        return result
-    merge = github(token, "POST", "https://api.github.com/graphql", {
-        "query": "mutation($id: ID!) { enablePullRequestAutoMerge(input: {pullRequestId: $id, mergeMethod: SQUASH})"
-                 " { pullRequest { number } } }",
-        "variables": {"id": pull["node_id"]}})
-    if merge.get("errors"):
-        raise ValueError(f"auto-merge was not turned on for {pull['html_url']}: {merge['errors'][0].get('message')}")
-    return dict(result, autoMerge=True)
-
-
-def publish_main(root, base):
+def publish(root, base):
+    """Fast-forwards main to what a previous run wrote (`github_publish.push_main`); nothing when no
+    course file changed."""
     from github_publish import push_main
 
     files = publication(root, base)
@@ -738,18 +683,14 @@ def main():
                         "without it every file is due")
     parser.add_argument("--cache", type=Path, help="keep raw pages here (development runs only)")
     parser.add_argument("--publish", metavar="BASE_SHA",
-                        help="open an auto-merging pull request with what a previous run wrote, against this main commit")
+                        help="publish what a previous run wrote on top of this main commit")
     args = parser.parse_args()
     root = args.root.resolve()
     # The date in Japan, when the reader runs.
     today = datetime.fromtimestamp(datetime.now(timezone.utc).timestamp() + 9 * 3600, timezone.utc).date().isoformat()
     if args.publish:
-        import os
         try:
-            if os.environ.get("ISCT_PUBLICATION_MODE") == "main":
-                result = publish_main(root, args.publish)
-            else:
-                result = publish(root, args.publish, os.environ.get("GITHUB_TOKEN"), today)
+            result = publish(root, args.publish)
         except (OSError, ValueError, KeyError) as error:
             print(f"course catalog publication failed: {error}", file=sys.stderr)
             return 2

@@ -1,0 +1,234 @@
+"""The status page of the data service, served from the runner's own process.
+
+It only reads the run receipts (`runs/<id>/status.json`, `run.log` and the artifacts beside them)
+and the course rotation state. It has no sign-in: Compose publishes it on the NAS's loopback only,
+and whatever reaches it from outside (the maintainer's tunnel) must bring its own access control.
+The pages themselves are rendered by `status_pages.py`.
+"""
+
+from datetime import datetime, timedelta, timezone
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+import json
+from pathlib import Path
+import re
+import threading
+from urllib.parse import parse_qs, unquote, urlsplit
+
+import status_pages as pages
+
+JST = timezone(timedelta(hours=9))
+RUN_ID = re.compile(r"nas-\d{8}-\d{6}-[0-9a-f]{8}")
+LOG_LIMIT = 1024 * 1024
+TEXT_FILES = {".json", ".jsonl", ".md", ".txt", ".log", ".csv"}
+HISTORY_DAYS = 30
+
+
+def moment(value):
+    try:
+        parsed = datetime.fromisoformat(value)
+    except (TypeError, ValueError):
+        return None
+    return parsed.astimezone(JST) if parsed.tzinfo else None
+
+
+def read_record(path):
+    try:
+        with path.open("rb") as file:
+            value = json.loads(file.read(4 * 1024 * 1024))
+    except (OSError, ValueError):
+        return None
+    if not isinstance(value, dict) or not moment(value.get("startedAt")):
+        return None
+    value["run"] = path.parent.name
+    if "job" not in value:  # receipts written before the runner was one service
+        value["job"] = value.get("dataset") if value.get("action") == "update" else value.get("action")
+    return value if value.get("job") in pages.JOBS and value.get("status") in pages.STATES else None
+
+
+def records(runs):
+    """Every readable run record, newest first."""
+    found = filter(None, (read_record(path) for path in Path(runs).glob("nas-*/status.json")))
+    return sorted(found, key=lambda record: record["startedAt"], reverse=True)
+
+
+def seconds(record):
+    start, end = moment(record.get("startedAt")), moment(record.get("finishedAt"))
+    return int((end - start).total_seconds()) if start and end else None
+
+
+def overview(found, jobs, plan, now, job=None, state=None):
+    """The front page: one card per job, then the run list (optionally filtered)."""
+    cards = []
+    for name in [*jobs, *sorted({record["job"] for record in found} - set(jobs))]:
+        mine = [record for record in found if record["job"] == name]
+        cards.append({"job": name, "last": mine[0] if mine else None, "recent": mine[:14],
+                      "lastFailure": next((record for record in mine if record["status"] in pages.FAILED), None),
+                      "plan": plan.get(name)})
+    week = [record for record in found if now - moment(record["startedAt"]) <= timedelta(days=7)]
+    listed = [record for record in found
+              if (not job or record["job"] == job) and (not state or record["status"] == state)]
+    return {"generatedAt": now.isoformat(timespec="seconds"), "cards": cards,
+            "running": [record for record in found if record["status"] == "running"],
+            "week": {"runs": len(week), "failed": sum(record["status"] in pages.FAILED for record in week),
+                     "published": sum(record["status"] == "published" for record in week),
+                     "requests": sum(record.get("requests") or 0 for record in week),
+                     "tokens": sum(record.get("tokens") or 0 for record in week)},
+            "filter": {"job": job, "status": state}, "runs": listed[:60], "matching": len(listed)}
+
+
+def history(found, job, plan, now, days=HISTORY_DAYS):
+    """One job over the last `days` days: the last result of each day and every run's figures."""
+    since = now - timedelta(days=days)
+    mine = [record for record in found if record["job"] == job and moment(record["startedAt"]) >= since]
+    by_day = {}
+    for record in reversed(mine):  # oldest first, so the day keeps its last run
+        by_day[moment(record["startedAt"]).date().isoformat()] = record
+    calendar = [{"day": day.isoformat(), "record": by_day.get(day.isoformat())}
+                for day in (now.date() - timedelta(days=offset) for offset in range(days - 1, -1, -1))]
+    return {"job": job, "plan": plan.get(job), "days": days, "calendar": calendar,
+            "runs": mine, "series": [{"run": record["run"], "at": record["startedAt"], "status": record["status"],
+                                      "seconds": seconds(record), "requests": record.get("requests"),
+                                      "tokens": record.get("tokens")} for record in reversed(mine)]}
+
+
+def courses(found, rotation, now, days=HISTORY_DAYS):
+    """The course rotation: each file's full reads over the last `days` days and recent changes."""
+    try:
+        verified = json.loads(Path(rotation).read_text(encoding="utf-8")).get("verified", {})
+    except (OSError, ValueError, AttributeError):
+        verified = {}
+    since = now.date() - timedelta(days=days - 1)
+    mine = [record for record in found if record["job"] == "courses"]
+    latest = next((record for record in mine if record.get("courseFiles")), None)
+    counts = (latest or {}).get("courseFiles") or {}
+    names = (latest or {}).get("courseNames") or {}
+    reads, changed = {}, {}
+    for record in mine:
+        day = moment(record["startedAt"]).date()
+        if day < since:
+            continue
+        for year in record.get("years") or []:
+            for name in year.get("readInFull") or []:
+                reads.setdefault(name, set()).add(day.isoformat())
+        for change in record.get("changes") or []:
+            changed.setdefault(change["file"], set()).add(day.isoformat())
+    files = sorted({*verified, *counts}, key=lambda name: (verified.get(name) or "", name))
+    covered = sum(1 for name in files if (verified.get(name) or "") >= since.isoformat())
+    return {"days": [(since + timedelta(days=offset)).isoformat() for offset in range(days)],
+            "files": [{"file": name, "name": names.get(name), "offerings": counts.get(name),
+                       "verified": verified.get(name), "reads": sorted(reads.get(name, ())), "changed": sorted(changed.get(name, ()))}
+                      for name in files],
+            "summary": {"files": len(files), "offerings": sum(counts.values()), "covered": covered,
+                        "oldest": min((verified[name] for name in files if verified.get(name)), default=None),
+                        "unverified": sum(1 for name in files if not verified.get(name))},
+            "latest": latest, "changes": [record for record in mine if record.get("changes")][:20]}
+
+
+def receipt_files(directory):
+    """The artifacts a run kept beside its record, as (relative path, bytes, viewable)."""
+    listed = []
+    for path in sorted(Path(directory).rglob("*")):
+        if path.is_file() and path.name not in ("status.json", "run.log"):
+            listed.append({"path": path.relative_to(directory).as_posix(), "bytes": path.stat().st_size,
+                           "text": path.suffix in TEXT_FILES})
+    return listed[:200]
+
+
+def log_tail(path, lines=60):
+    try:
+        with Path(path).open("rb") as file:
+            file.seek(max(0, file.seek(0, 2) - 64 * 1024))
+            return file.read().decode("utf-8", "replace").splitlines()[-lines:]
+    except OSError:
+        return []
+
+
+def detail(runs, run_id):
+    directory = Path(runs) / run_id
+    record = read_record(directory / "status.json")
+    if not record:
+        return None
+    return {"record": record, "files": receipt_files(directory),
+            "hasLog": (directory / "run.log").is_file(),
+            "logTail": log_tail(directory / "run.log") if record["status"] in pages.FAILED else []}
+
+
+def safe_file(runs, run_id, relative):
+    """A text artifact inside the run's own folder, or None."""
+    directory = (Path(runs) / run_id).resolve()
+    target = (directory / relative).resolve()
+    if directory not in target.parents or target.suffix not in TEXT_FILES or not target.is_file():
+        return None
+    return target
+
+
+# -- Server -------------------------------------------------------------------
+
+class Handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        url = urlsplit(self.path)
+        parts = [unquote(part) for part in url.path.strip("/").split("/")] if url.path.strip("/") else []
+        query = {key: values[0] for key, values in parse_qs(url.query).items()}
+        server, now = self.server, datetime.now(JST)
+        if parts == ["healthz"]:
+            return self.reply(200, b"ok\n")
+        if parts in ([], ["api", "status"]):
+            job = query.get("job") if query.get("job") in pages.JOBS else None
+            state = query.get("status") if query.get("status") in pages.STATES else None
+            view = overview(records(server.runs), server.jobs, server.upcoming(), now, job, state)
+            if parts:
+                return self.reply(200, json.dumps(view, ensure_ascii=False).encode(), "application/json")
+            return self.reply(200, pages.overview(view), "text/html")
+        if len(parts) == 2 and parts[0] == "jobs" and parts[1] in pages.JOBS:
+            view = history(records(server.runs), parts[1], server.upcoming(), now)
+            return self.reply(200, pages.history(view, now), "text/html")
+        if parts == ["courses"]:
+            view = courses(records(server.runs), server.rotation, now)
+            return self.reply(200, pages.courses(view), "text/html")
+        if len(parts) >= 2 and parts[0] == "runs" and RUN_ID.fullmatch(parts[1]):
+            if len(parts) == 2:
+                view = detail(server.runs, parts[1])
+                return (self.reply(200, pages.detail(view), "text/html") if view
+                        else self.reply(404, b"no such run\n"))
+            if parts[2:] == ["log"]:
+                return self.send_log(server.runs / parts[1] / "run.log")
+            if parts[2] == "files" and len(parts) > 3:
+                target = safe_file(server.runs, parts[1], "/".join(parts[3:]))
+                if target:
+                    return self.reply(200, target.read_bytes()[:LOG_LIMIT])
+        self.reply(404, b"not found\n")
+
+    def send_log(self, path):
+        try:
+            with path.open("rb") as file:
+                size = file.seek(0, 2)
+                file.seek(max(0, size - LOG_LIMIT))
+                data = file.read()
+        except OSError:
+            return self.reply(404, b"no log for this run\n")
+        if size > LOG_LIMIT:
+            data = f"[showing the last {LOG_LIMIT} of {size} bytes]\n".encode() + data
+        self.reply(200, data)
+
+    def reply(self, status, data, mime="text/plain"):
+        self.send_response(status)
+        self.send_header("Content-Type", mime + "; charset=utf-8")
+        self.send_header("Content-Length", str(len(data)))
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("Content-Security-Policy",
+                         "default-src 'none'; style-src 'unsafe-inline'; img-src data:; frame-ancestors 'none'")
+        self.end_headers()
+        self.wfile.write(data)
+
+    def log_message(self, *_):
+        pass
+
+
+def start(runs, rotation, jobs, upcoming, port=8787):
+    """Serves the pages on a daemon thread; the container's port mapping decides who reaches them."""
+    server = ThreadingHTTPServer(("0.0.0.0", port), Handler)
+    server.daemon_threads = True
+    server.runs, server.rotation, server.jobs, server.upcoming = Path(runs), Path(rotation), jobs, upcoming
+    threading.Thread(target=server.serve_forever, name="status", daemon=True).start()
+    return server

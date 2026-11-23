@@ -112,19 +112,19 @@ index では `academicYears.{year}.courses` に、その年度の全ファイル
 
 ## 自動更新
 
-読み取りは GitHub Actions ではなく、状態を持てるホスト（現在は保守者の NAS）の Docker で動かします
-（[`ops/syllabus-reader/`](../ops/syllabus-reader/)）。輪番の記録と実行ログはそのホストに残り、リポジトリには
-コミットしません。各回の流れは次のとおりです。
+読み取りは GitHub Actions ではなく、状態を持てるホスト（現在は保守者の NAS）の
+[データ更新サービス](data-pipeline.md) が毎日 03:23 JST に行います。輪番の記録と実行ログはそのホストに残り、
+リポジトリにはコミットしません。各回の流れは次のとおりです。
 
 1. 最新の main に合わせ、`syllabus_courses.py --state` で読み、ファイルと index を書きます。
-2. CI と同じ `validate_datasets.py` と `update_subscription_index.py --check` を通します。
-3. NAS では全量テストに通った変更を `syllabus_courses.py --publish` が main に直接公開します。
+2. index を更新し、必須チェック `Validate all datasets` と同じ全量検証を通します。
+3. 変更があれば `syllabus_courses.py --publish` が GitHub App で main に直接公開します。
    公開前に main が進んだ場合は、次回最新の main から読み直します。
 4. 公開できた（または変更がなかった）回だけ輪番の記録を進めます。失敗・保留の回に全件読んだファイルは、
    次回もう一度全件読みます。
 
-各回の結果は `state/runs.jsonl` に 1 行ずつ残り、`STATUS_URL` を設定すればそこにも送ります。
-公開用の短期トークンは Isct-Data 専用の GitHub App から発行します。[Docker の設定](data-pipeline.md) を参照してください。
+各回のリクエスト数、ファイルごとの科目の追加・削除・変更数、全件読んだファイル、公開コミットは
+[状態ページ](data-pipeline.md#状態ページ) に表示します。
 
 ローカルでは次のように実行します（`--cache` は取得したページを保存し、再実行で読み直しません。`--state` を
 付けなければすべてのファイルを全件読みます）。

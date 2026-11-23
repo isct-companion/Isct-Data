@@ -1,66 +1,31 @@
+# The one Isct-Data service (docs/data-pipeline.md): schedules every job, publishes to main and
+# serves the status page on the NAS's loopback only; a tunnel on the NAS publishes it.
 name: isct-data
 
-x-runtime: &runtime
-  image: isct-data-pipeline:local
-  restart: unless-stopped
-  init: true
-  user: "${PUID:-1026}:${PGID:-100}"
-  read_only: true
-  cap_drop: [ALL]
-  security_opt:
-    - no-new-privileges:true
-  tmpfs:
-    - /tmp
-  logging:
-    options:
-      max-size: "10m"
-      max-file: "3"
-
 services:
-  public-data-ci:
-    <<: *runtime
+  isct-data:
     build:
       context: ../..
       dockerfile: ops/data-pipeline/Dockerfile
-    entrypoint: [python, /opt/isct/ci/runner.py]
-    command: [serve]
-    env_file: ci.env
-    volumes:
-      - "${STATE_ROOT:-./var}/ci:/data/state"
-      - "${GITHUB_APP_ROOT:-./var/github-app}:/run/isct-github:ro"
-    mem_limit: 1536m
-
-  syllabus-reader:
-    <<: *runtime
-    entrypoint: [python, /opt/isct/syllabus.py]
-    env_file: syllabus.env
-    environment:
-      RUN_AT: "03:23"
-    volumes:
-      - "${STATE_ROOT:-./var}/syllabus/repo:/data/repo"
-      - "${STATE_ROOT:-./var}/syllabus/state:/data/state"
-      - "${GITHUB_APP_ROOT:-./var/github-app}:/run/isct-github:ro"
-    mem_limit: 512m
-
-  status:
-    <<: *runtime
-    image: isct-data-status:local
-    build: ./status
-    command: [python, /opt/status/server.py]
-    env_file: status.env
+    image: isct-data:local
+    container_name: isct-data
+    restart: unless-stopped
+    init: true
+    user: "${PUID:-1026}:${PGID:-100}"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+    env_file: pipeline.env
     ports:
-      - "${STATUS_BIND:-127.0.0.1}:8787:8787"
+      - "127.0.0.1:8787:8787"
     volumes:
-      - type: bind
-        source: "${STATE_ROOT:-./var}/ci/runs"
-        target: /status/ci
-        read_only: true
-        bind:
-          create_host_path: false
-      - type: bind
-        source: "${STATE_ROOT:-./var}/syllabus/state/runs.jsonl"
-        target: /status/syllabus.jsonl
-        read_only: true
-        bind:
-          create_host_path: false
-    mem_limit: 96m
+      - "${STATE_ROOT:-./var}/state:/data/state"
+      - "${STATE_ROOT:-./var}/github-app:/run/isct-github:ro"
+    mem_limit: 1536m
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
