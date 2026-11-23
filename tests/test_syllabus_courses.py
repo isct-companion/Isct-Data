@@ -11,6 +11,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import syllabus_courses as reader
+import github_publish
 from dataset_contracts import DatasetContracts, check_course_years
 
 PAGES = ROOT / "tests/fixtures/syllabus"
@@ -145,6 +146,25 @@ class RotationTests(unittest.TestCase):
 
 
 class PublicationTests(unittest.TestCase):
+    def test_nas_publishes_a_fast_forward_and_refuses_a_stale_base(self):
+        responses = iter([
+            {"object": {"sha": "base"}}, {"tree": {"sha": "old"}}, {"sha": "new"},
+            {"sha": "commit"}, {"object": {"sha": "commit"}},
+        ])
+        with patch.object(github_publish, "app_token", return_value="token"):
+            with patch.object(github_publish, "request", side_effect=responses) as api:
+                result = github_publish.push_main("base", {"courses/2026/programs.json": "{}"},
+                                                 "Update courses", api=api)
+            self.assertEqual(result["commit"], "commit")
+            self.assertEqual(api.call_args.args[1:], (
+                "PATCH", "/repos/isct-companion/Isct-Data/git/refs/heads/main",
+                {"sha": "commit", "force": False},
+            ))
+            with patch.object(github_publish, "request", return_value={"object": {"sha": "advanced"}}) as api:
+                with self.assertRaisesRegex(ValueError, "main advanced"):
+                    github_publish.push_main("base", {}, "Update courses", api=api)
+                api.assert_called_once()
+
     def test_a_repository_without_auto_merge_still_gets_a_catalog_pr(self):
         responses = iter([
             {"object": {"sha": "base"}}, [], {"allow_auto_merge": False}, {"tree": {"sha": "old"}},

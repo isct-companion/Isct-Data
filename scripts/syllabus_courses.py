@@ -712,6 +712,15 @@ def publish(root, base, token, label):
     return dict(result, autoMerge=True)
 
 
+def publish_main(root, base):
+    from github_publish import push_main
+
+    files = publication(root, base)
+    if not files:
+        return {"changed": False}
+    return push_main(base, files, "Update the course catalog")
+
+
 def read_state(path):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -737,7 +746,10 @@ def main():
     if args.publish:
         import os
         try:
-            result = publish(root, args.publish, os.environ.get("GITHUB_TOKEN"), today)
+            if os.environ.get("ISCT_PUBLICATION_MODE") == "main":
+                result = publish_main(root, args.publish)
+            else:
+                result = publish(root, args.publish, os.environ.get("GITHUB_TOKEN"), today)
         except (OSError, ValueError, KeyError) as error:
             print(f"course catalog publication failed: {error}", file=sys.stderr)
             return 2

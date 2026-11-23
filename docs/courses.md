@@ -118,16 +118,13 @@ index では `academicYears.{year}.courses` に、その年度の全ファイル
 
 1. 最新の main に合わせ、`syllabus_courses.py --state` で読み、ファイルと index を書きます。
 2. CI と同じ `validate_datasets.py` と `update_subscription_index.py --check` を通します。
-3. 変わったファイルがあれば `syllabus_courses.py --publish` が PR を作ります。
-   リポジトリで auto-merge が有効なら必須チェック（Validate all datasets）の成功後に squash merge されます。
-   無効なら担当者が squash merge します。前回の科目カタログ PR が
-   まだ開いている（CI が落ちた、または人の確認待ち）ときは、新しい PR を作らずその回を保留として記録します。
+3. NAS では全量テストに通った変更を `syllabus_courses.py --publish` が main に直接公開します。
+   公開前に main が進んだ場合は、次回最新の main から読み直します。
 4. 公開できた（または変更がなかった）回だけ輪番の記録を進めます。失敗・保留の回に全件読んだファイルは、
    次回もう一度全件読みます。
 
 各回の結果は `state/runs.jsonl` に 1 行ずつ残り、`STATUS_URL` を設定すればそこにも送ります。
-トークン（`GITHUB_TOKEN`、Isct-Data だけの fine-grained、Contents と Pull requests の read/write）は
-ホストの環境ファイルにだけ置きます。
+公開用の短期トークンは Isct-Data 専用の GitHub App から発行します。[NAS の設定](nas-ci.md) を参照してください。
 
 ローカルでは次のように実行します（`--cache` は取得したページを保存し、再実行で読み直しません。`--state` を
 付けなければすべてのファイルを全件読みます）。

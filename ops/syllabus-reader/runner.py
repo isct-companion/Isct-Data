@@ -66,6 +66,9 @@ def read_and_publish():
         run(log, sys.executable, "scripts/update_subscription_index.py")
         run(log, sys.executable, "scripts/validate_datasets.py")
         run(log, sys.executable, "scripts/update_subscription_index.py", "--check")
+        if os.getenv("ISCT_PUBLICATION_MODE") == "main":
+            run(log, sys.executable, "scripts/exam_workflow.py", "--check")
+            run(log, sys.executable, "-m", "unittest", "discover", "-s", "tests")
         published = json.loads(run(log, sys.executable, "scripts/syllabus_courses.py", "--publish", base)
                                .strip().splitlines()[-1])
         status["published"] = published
@@ -117,10 +120,10 @@ def main():
         wake = next_run(datetime.now(JAPAN), at)
         print(f"next run at {wake.isoformat(timespec='minutes')}", flush=True)
         time.sleep(max(0, (wake - datetime.now(JAPAN)).total_seconds()))
-        if os.getenv("GITHUB_TOKEN"):
+        if os.getenv("GITHUB_TOKEN") or os.getenv("ISCT_GITHUB_INSTALLATION_ID"):
             cycle()
         else:
-            print("scheduled publication paused: GITHUB_TOKEN is missing", flush=True)
+            print("scheduled publication paused: GitHub publishing credentials are missing", flush=True)
 
 
 if __name__ == "__main__":

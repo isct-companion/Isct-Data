@@ -25,6 +25,7 @@ services:
     env_file: ci.env
     volumes:
       - "${STATE_ROOT:-./var}/ci:/data/state"
+      - "${GITHUB_APP_ROOT:-./var/github-app}:/run/isct-github:ro"
     mem_limit: 1536m
 
   syllabus-reader:
@@ -36,4 +37,5 @@ services:
     volumes:
       - "${STATE_ROOT:-./var}/syllabus/repo:/data/repo"
       - "${STATE_ROOT:-./var}/syllabus/state:/data/state"
+      - "${GITHUB_APP_ROOT:-./var/github-app}:/run/isct-github:ro"
     mem_limit: 512m

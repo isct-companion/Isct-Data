@@ -263,9 +263,17 @@ def main():
             files = apply_and_validate(root, bundle, args.base, fresh_state=fresh, dataset=args.dataset)
             if args.dataset == 'exams':
                 verify_public_exam_artifacts(root, documents)
-            result = publish(root, args.base, files, fresh, os.environ.get("DATA_PR_TOKEN"),
-                             os.environ["PUBLICATION_BRANCH_PREFIX"], os.environ["GITHUB_RUN_ID"],
-                             dataset=args.dataset)
+            if os.environ.get("ISCT_PUBLICATION_MODE") == "main":
+                from github_publish import push_main
+                result = {"changed": False}
+                if changed_feeds(root, args.base, files, args.dataset):
+                    subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "tests"],
+                                   cwd=root, check=True)
+                    result = push_main(args.base, files, f"Update public {args.dataset} data")
+            else:
+                result = publish(root, args.base, files, fresh, os.environ.get("DATA_PR_TOKEN"),
+                                 os.environ["PUBLICATION_BRANCH_PREFIX"], os.environ["GITHUB_RUN_ID"],
+                                 dataset=args.dataset)
             if result.get("pullRequest"):
                 with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
                     summary.write(f'[Data update pull request]({result["pullRequest"]})\n')

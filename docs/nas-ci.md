@@ -19,15 +19,18 @@ umask 077
 cp -n ci.env.example ci.env
 cp -n ../syllabus-reader/.env.example syllabus.env
 mkdir -p var/ci var/syllabus/repo var/syllabus/state
+mkdir -m 700 -p var/github-app
 docker compose build public-data-ci
 docker compose up -d
 ```
 
 Compose を実行するユーザーとボリュームの所有者が異なる場合は、コンテナの `PUID` と `PGID` を `.env` に設定します。データをチェックアウトの外に置くには、事前に同じディレクトリ構成で `STATE_ROOT` を設定します。
 
-1. この変更を main にマージします。`ci.env` に `OPENAI_API_KEY` と、Isct-Data に限定した `DATA_PR_TOKEN` を設定します。GitHub のトークンには **Contents と Pull requests の read/write** が必要です。`syllabus.env` の `GITHUB_TOKEN` にも同じ権限のトークンを設定します。
-2. main の検証と公式ソースの取得を確認します。以下の `--poll-only` はモデルも公開機能も呼び出しません。
-3. GitHub のリポジトリ変数 `ISCT_DATA_EXECUTOR` を `nas` に設定し、進行中の旧更新が終わったことを確認します。次に `ci.env` の同じ変数を `nas` に変え、両サービスを `docker compose up -d --force-recreate` で再作成します。
+1. この変更を main に反映します。`ci.env` の `OPENAI_API_KEY=` に OpenAI のキーを設定します。シラバスには OpenAI のキーは不要です。
+2. **Contents: Read and write** の GitHub App を Isct-Data のみにインストールします。秘密鍵は `var/github-app/private-key.pem` に所有者のみ読み取り可能な権限で保存します。両方の環境ファイルに `ISCT_GITHUB_APP_ID`、`ISCT_GITHUB_INSTALLATION_ID`、`ISCT_PUBLICATION_MODE=main` を設定します。NAS は公開の直前に短期トークンを発行します。
+3. main の必須チェックをブランチルールセットで管理し、そのチェックだけに NAS の GitHub App をバイパス対象として登録します。強制 push とブランチ削除の拒否は App にも適用します。
+4. main の検証と公式ソースの取得を確認します。以下の `--poll-only` はモデルも公開機能も呼び出しません。
+5. GitHub のリポジトリ変数 `ISCT_DATA_EXECUTOR` を `nas` に設定し、進行中の旧更新が終わったことを確認します。次に `ci.env` の同じ変数を `nas` に変え、両サービスを `docker compose up -d --force-recreate` で再作成します。
 
 切り戻す場合は、まず NAS の `ci.env` を `ISCT_DATA_EXECUTOR=github` に戻してサービスを再作成し、GitHub の変数を削除します。
 
@@ -42,10 +45,10 @@ docker compose run --rm public-data-ci shadow /data/state/runs/<run-id>/exam-evi
 docker compose run --rm syllabus-reader --once
 ```
 
-`update` は `exams`、`academic-calendar`、`important-dates`、`departments` に対応します。`--force` は変更検出と前回の同一ソース判定を省略します。既存の更新 PR が開いている間は保留します。試験の shadow には同一クォーターの 2 版を使い、第 2 引数を省略すると最新の公式 PDF と比較します。候補パッチ、判定、試験ソースのスナップショットは `var/ci/runs/` に 7 日間保存します。
+`update` は `exams`、`academic-calendar`、`important-dates`、`departments` に対応します。`--force` は変更検出と前回の同一ソース判定を省略します。試験の shadow には同一クォーターの 2 版を使い、第 2 引数を省略すると最新の公式 PDF と比較します。候補パッチ、判定、試験ソースのスナップショットは `var/ci/runs/` に 7 日間保存します。
 
 ## モデルとトークン
 
-変更が見つかった場合だけ、取得済みの同じ証拠を使って 2 回の Terra レビューを独立して行います。データが一致した場合はコードが採用します。両者が有効で差分があれば、各 Terra は差分だけを相互確認し、Sol が公式出典と突き合わせて選択します。片方だけが有効な場合も既存の仲裁規則で Sol が確認します。固定の比較・書き込み・公開前検証を通して更新 PR を作成します。
+変更が見つかった場合だけ、取得済みの同じ証拠を使って 2 回の Terra レビューを独立して行います。データが一致した場合はコードが採用します。両者が有効で差分があれば、各 Terra は差分だけを相互確認し、Sol が公式出典と突き合わせて選択します。片方だけが有効な場合も既存の仲裁規則で Sol が確認します。固定の比較・書き込み・全量検証に通った変更を main に fast-forward で公開します。検証中に main が進んだ場合は次の実行で最新の main を取り直します。
 
 全文の添付を避け、証拠は必要な箇所を読み取り専用ツールで取得します。変更なしと検証済みのコミット・出典が同一の場合も再推論を省きます。レビューは low、仲裁は medium で、各レビューのラウンド数とレスポンス出力を制限します。`OPENAI_RUN_TOKEN_LIMIT` は実測の累計を見て次の呼び出しを止める目安です。実行中の 1 リクエストが上限を超える場合があります。Docker ログに入力・キャッシュ入力・出力のトークン数が残ります。

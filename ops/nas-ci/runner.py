@@ -115,11 +115,16 @@ def update(root, mirror, base, dataset, receipt, force, poll_only):
     token = os.getenv("DATA_PR_TOKEN")
     key = os.getenv("OPENAI_API_KEY")
     if not poll_only:
-        if os.getenv("ISCT_DATA_EXECUTOR") != "nas" or not token or not key:
+        from github_publish import app_configured
+
+        direct = os.getenv("ISCT_PUBLICATION_MODE") == "main"
+        publisher_ready = app_configured() if direct else bool(token)
+        if os.getenv("ISCT_DATA_EXECUTOR") != "nas" or not publisher_ready or not key:
             raise ValueError("activate the NAS executor and configure OpenAI and GitHub credentials first")
-        if held := open_update(publish_data.request, token, dataset):
-            log({"dataset": dataset, "held": held})
-            return
+        if not direct:
+            if held := open_update(publish_data.request, token, dataset):
+                log({"dataset": dataset, "held": held})
+                return
     captured = snapshot(root, dataset)
     state_file = root / state_path(dataset)
     previous = load(state_file) if state_file.exists() else None
@@ -283,7 +288,7 @@ def serve(args):
                 schedule = STATE / "schedule.json"
                 attempted = load(schedule) if schedule.exists() else {}
                 if (os.getenv("ISCT_DATA_EXECUTOR") == "nas" and os.getenv("OPENAI_API_KEY")
-                        and os.getenv("DATA_PR_TOKEN")):
+                        and (os.getenv("DATA_PR_TOKEN") or os.getenv("ISCT_GITHUB_INSTALLATION_ID"))):
                     for dataset, at in SCHEDULE.items():
                         if (now.strftime("%H:%M") < at or attempted.get(dataset) == now.date().isoformat()
                                 or (dataset == "departments" and now.weekday() != 6)):
