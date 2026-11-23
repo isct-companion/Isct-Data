@@ -31,13 +31,13 @@ docker compose up -d --build
 - `pipeline.env`：OpenAI のキーと GitHub App の ID。シラバスだけならキーは不要です。
 - `var/github-app/private-key.pem`：**Contents: Read and write** で Isct-Data だけにインストールした GitHub App の秘密鍵（所有者のみ読み取り可）。公開の直前に短期トークンを発行します。main のルールセットでは、この App だけが必須チェックをバイパスできます。
 - `var/state/`：作業用の bare リポジトリ、各回の記録とログ、実行済みの日付、シラバスの輪番状態。Git には入れません。
-- `.env`（任意）：`PUID`・`PGID`、データを checkout の外に置く `STATE_ROOT`。
+- `.env`（任意）：`PUID`・`PGID`、データを checkout の外に置く `STATE_ROOT`、状態ページの待ち受けアドレス `STATUS_BIND`。
 
 資格情報が足りないジョブは実行せず、状態ページに「暂停」と理由を表示します。コードの更新は checkout を `git pull` してから `docker compose up -d --build` します。
 
 ## 状態ページ
 
-NAS の `http://127.0.0.1:8787/` だけで待ち受けます。ページ自体には認証がないため、外から見る場合は NAS 上のトンネルで公開し、アクセス制御はトンネル側で設定します。
+既定では NAS の `http://127.0.0.1:8787/` だけで待ち受けます。ページ自体には認証がないため、外から見る場合はトンネルで公開し、アクセス制御はトンネル側で設定します。トンネルが別のコンテナやホストから回源する場合は、`.env` の `STATUS_BIND` にトンネルが到達できる NAS のアドレス（例：LAN の IP）を一つだけ設定します。`0.0.0.0` にするとすべてのインターフェースに認証なしで公開されます。
 
 | ページ | 内容 |
 | --- | --- |
