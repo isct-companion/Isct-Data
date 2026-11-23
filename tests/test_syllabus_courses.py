@@ -53,6 +53,11 @@ class ReaderTests(unittest.TestCase):
         # An English page read as the Japanese list (a language redirect gone wrong) stops the run.
         with self.assertRaises(reader.ShapeError):
             reader.parse_listing(page(f"unit-{UNIT}.en.html"), 2026, "ja")
+        # Some units write their detail links with the default port (`…isct.ac.jp:443/…`); they are
+        # the same offerings, not unknown rows.
+        ported = reader.parse_listing(page("unit-1-16-400002-0-0.ja.html"), 2026, "ja")
+        self.assertEqual(ported[0]["id"], "202603574")
+        self.assertEqual(len(ported), len({row["id"] for row in ported}))
 
     def test_detail_pages_give_credits_slots_and_rooms_as_printed(self):
         half = reader.parse_detail(page("offering-202607164.html"))
