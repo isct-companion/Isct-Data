@@ -1,0 +1,9 @@
+**
+!requirements.txt
+!ops/
+!ops/data-pipeline/
+!ops/data-pipeline/Dockerfile
+!ops/data-pipeline/runner.py
+!ops/data-pipeline/review.py
+!ops/syllabus-reader/
+!ops/syllabus-reader/runner.py

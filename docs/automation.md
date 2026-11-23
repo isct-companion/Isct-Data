@@ -4,7 +4,7 @@
 
 ## 通常運用
 
-NAS の Docker が公式情報を確認し、検証済みの差分を GitHub App で main に公開します。シラバスの取得は同じ Compose 構成の別サービスで毎日 03:23 JST に行います。[NAS の運用](nas-ci.md) · [シラバスの取得](courses.md)
+Docker が公式情報を確認し、検証済みの差分を GitHub App で main に公開します。シラバスの取得は同じ Compose 構成の別サービスで毎日 03:23 JST に行います。[Docker の運用](data-pipeline.md) · [シラバスの取得](courses.md)
 
 GitHub Actions は PR と main の検証、ホームページのデプロイ通知を実行します。main の必須チェックは NAS の公開用 GitHub App に限りバイパスできます。
 
@@ -19,15 +19,15 @@ GitHub Actions は PR と main の検証、ホームページのデプロイ通�
 
 ## GitHub Actions への切り戻し
 
-以下の GitHub 更新ワークフローは切り戻し時に使用します。切り替える手順は [NAS の起動と切替](nas-ci.md#起動と切替) を参照してください。
+旧 GitHub 更新ワークフローは [アーカイブ](../archive/github-actions/) に保存しています。以下は復元する場合の構成です。
 
 `update-*.yml` は対象と時刻だけを指定し、共通の
-[public-data-pipeline.yml](../.github/workflows/public-data-pipeline.yml) を呼び出します。
-AI 部分は gh-aw の [author-public-data.md](../.github/workflows/author-public-data.md)
-（2 回呼ばれる作成者）と [arbitrate-public-data.md](../.github/workflows/arbitrate-public-data.md)
+[public-data-pipeline.yml](../archive/github-actions/workflows/public-data-pipeline.yml) を呼び出します。
+AI 部分は gh-aw の [author-public-data.md](../archive/github-actions/workflows/author-public-data.md)
+（2 回呼ばれる作成者）と [arbitrate-public-data.md](../archive/github-actions/workflows/arbitrate-public-data.md)
 （仲裁者）です。エンジン（Student プランのためネイティブ auto、現在は GPT-5.6 Luna）は
-[shared/copilot-engine.md](../.github/workflows/shared/copilot-engine.md)、証拠準備と予算は
-[shared/public-data.md](../.github/workflows/shared/public-data.md) が共有します。
+[shared/copilot-engine.md](../archive/github-actions/workflows/shared/copilot-engine.md)、証拠準備と予算は
+[shared/public-data.md](../archive/github-actions/workflows/shared/public-data.md) が共有します。
 Markdown を変更したら `gh aw compile` で lock を再生成します。
 
 ### 切り戻し時の公開までの流れ
@@ -106,9 +106,8 @@ Copilot CLI は資格情報を保持する AWF proxy を通してネイティブ
 BYOK の無指定モデルへのフォールバックを避け、上流 harness が変われば設定を停止します。
 組み込み MCP、ネイティブ web ツールと sub-agent は無効にし、明示したツールだけを使います。
 
-## 全量 CI と人工候補の確認
+## 全量 CI と手動候補の確認
 
 `validate-data.yml` は全 PR と main への全 push で、パスフィルタなしに
 全データ、index、試験の関連整合性と境界テストを確認します。
-`review-exam-candidates.yml` は手動で渡した候補のパッチを成果物にする専用入口です。
-PR 時の重複した試験専用 CI は全量 CI に統合しました。
+試験候補のパッチ生成は [Docker の `candidates` コマンド](data-pipeline.md#手動実行) を使います。

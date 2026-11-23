@@ -1,5 +1,7 @@
+name: isct-data
+
 x-runtime: &runtime
-  image: isct-data-nas:local
+  image: isct-data-pipeline:local
   restart: unless-stopped
   init: true
   user: "${PUID:-1026}:${PGID:-100}"
@@ -19,7 +21,7 @@ services:
     <<: *runtime
     build:
       context: ../..
-      dockerfile: ops/nas-ci/Dockerfile
+      dockerfile: ops/data-pipeline/Dockerfile
     entrypoint: [python, /opt/isct/ci/runner.py]
     command: [serve]
     env_file: ci.env

@@ -256,9 +256,13 @@ def execute(args, dataset=None):
     if args.command == "serve" and action == "validate" and validated.exists() and load(validated) == base:
         return
     receipt.mkdir()
-    log({"run": receipt.name, "base": base, "action": action, "dataset": dataset})
-    with tempfile.TemporaryDirectory(dir=STATE) as tmp:
-        with checkout(mirror, base, Path(tmp) / "base") as root:
+    record = {"run": receipt.name, "base": base, "action": action, "dataset": dataset,
+              "status": "running", "startedAt": datetime.now(JST).isoformat(timespec="seconds")}
+    status_path = receipt / "status.json"
+    save(status_path, record)
+    log(record)
+    try:
+        with tempfile.TemporaryDirectory(dir=STATE) as tmp, checkout(mirror, base, Path(tmp) / "base") as root:
             sys.path.insert(0, str(root / "scripts"))
             try:
                 if action == "validate":
@@ -276,6 +280,14 @@ def execute(args, dataset=None):
                     shadow(root, receipt, args.before, args.after)
             finally:
                 sys.path.pop(0)
+    except Exception:
+        record["status"] = "failed"
+        raise
+    else:
+        record["status"] = "ok"
+    finally:
+        record["finishedAt"] = datetime.now(JST).isoformat(timespec="seconds")
+        save(status_path, record)
 
 
 def serve(args):

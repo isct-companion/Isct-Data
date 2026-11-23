@@ -124,7 +124,7 @@ index では `academicYears.{year}.courses` に、その年度の全ファイル
    次回もう一度全件読みます。
 
 各回の結果は `state/runs.jsonl` に 1 行ずつ残り、`STATUS_URL` を設定すればそこにも送ります。
-公開用の短期トークンは Isct-Data 専用の GitHub App から発行します。[NAS の設定](nas-ci.md) を参照してください。
+公開用の短期トークンは Isct-Data 専用の GitHub App から発行します。[Docker の設定](data-pipeline.md) を参照してください。
 
 ローカルでは次のように実行します（`--cache` は取得したページを保存し、再実行で読み直しません。`--state` を
 付けなければすべてのファイルを全件読みます）。

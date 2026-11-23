@@ -23,10 +23,10 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 
 | 目的 | コード・設定 | 手順 |
 | --- | --- | --- |
-| NAS で公開データを取得・検証する | [`ops/nas-ci/compose.yaml`](ops/nas-ci/compose.yaml) | [NAS の起動と運用](docs/nas-ci.md) |
+| Docker で公開データを取得・検証する | [`ops/data-pipeline/compose.yaml`](ops/data-pipeline/compose.yaml) | [起動と運用](docs/data-pipeline.md) |
 | 公開シラバスから開講科目を取得する | [`scripts/syllabus_courses.py`](scripts/syllabus_courses.py) · [`ops/syllabus-reader/`](ops/syllabus-reader/) | [シラバスの取得とデータ形式](docs/courses.md) |
 | スキーマや購読 index を検証する | [`contracts/`](contracts/) · [`schema/`](schema/) · [`scripts/`](scripts/) | [データ契約](docs/data-contracts.md) · [保守コマンド](docs/maintenance.md) |
-| GitHub の検証と切り戻しを確認する | [`.github/workflows/`](.github/workflows/) | [自動更新と CI](docs/automation.md) |
+| GitHub の検証と旧ワークフローを確認する | [検証ワークフロー](.github/workflows/validate-data.yml) · [旧ワークフロー](archive/github-actions/) | [自動更新と CI](docs/automation.md) |
 
 公開データと生成・検証コードは同じリポジトリで管理します。Docker の設定例も公開し、実行環境の資格情報・作業用チェックアウト・取得状態・ログは運用ホストに置きます。
 

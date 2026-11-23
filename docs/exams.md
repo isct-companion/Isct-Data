@@ -10,7 +10,7 @@ The central exam PDFs cover the rows explicitly published in the public timetabl
 Existing manually maintained source records remain available and are updated by
 people; the automated workflows do not acquire or modify them.
 
-Exam-only agent instructions are in [`prompts/update-exams.md`](../prompts/update-exams.md). The shared write entry point is `python3 scripts/exam_workflow.py --year 2026 --quarter 2Q --level undergraduate --candidates .exam-runs/reviewed-candidates.json`; run `python3 scripts/exam_workflow.py --check` before and after. The GitHub workflow `.github/workflows/review-exam-candidates.yml` uses that same entry point and emits an exam patch for review. The [scheduled agentic workflow](automation.md) supplies public-source acquisition and Copilot invocation; only public sources are supported by automation.
+Exam-only agent instructions are in [`prompts/update-exams.md`](../prompts/update-exams.md). The shared write entry point is `python3 scripts/exam_workflow.py --year 2026 --quarter 2Q --level undergraduate --candidates .exam-runs/reviewed-candidates.json`. Run `python3 scripts/exam_workflow.py --check` before and after. The [Docker pipeline](data-pipeline.md) includes a `candidates` command to emit an exam patch and an `update exams` command for public-source acquisition and review.
 
 The source scope and authentication policy are recorded in `source-manifest/2026-2q.json`; candidate files must validate against `schema/exam-candidates.schema.json`. Candidate evidence is a short excerpt with `evidenceHash = SHA-256(UTF-8 evidenceText)`. Automated candidates use public official PDFs. Historical manual-source metadata is retained; login and source acquisition are outside these workflows.
 

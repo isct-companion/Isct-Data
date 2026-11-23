@@ -1,13 +1,13 @@
-# NAS のデータ更新と検証
+# Docker によるデータ更新と検証
 
 [自動更新](automation.md) · [シラバス](courses.md)
 
-`ops/nas-ci/compose.yaml` は 2 つのサービスを起動します。
+`ops/data-pipeline/compose.yaml` は 2 つのサービスを起動します。
 
 - `public-data-ci` は GitHub の main を 10 分間隔で確認し、新しいコミットを全量検証します。公開データの更新時刻は [従来の日程](automation.md) と同じ JST です。NAS が停止していた日の更新は同日中に再開したときに実行します。
 - `syllabus-reader` は毎日 03:23 JST に動き、1 リクエストずつ取得してファイルの全件再読を輪番します。輪番状態とログは永続ボリュームに保存します。AI は呼び出しません。
 
-シラバス取得処理は [`scripts/syllabus_courses.py`](../scripts/syllabus_courses.py)、スケジューラは [`ops/syllabus-reader/runner.py`](../ops/syllabus-reader/runner.py) です。NAS では両サービスを [`ops/nas-ci/compose.yaml`](../ops/nas-ci/compose.yaml) で管理します。`ops/syllabus-reader/docker-compose.yml` はシラバスだけを実行する構成です。
+シラバス取得処理は [`scripts/syllabus_courses.py`](../scripts/syllabus_courses.py)、スケジューラは [`ops/syllabus-reader/runner.py`](../ops/syllabus-reader/runner.py) です。[共通の Compose 構成](../ops/data-pipeline/compose.yaml) で両サービスを管理します。`ops/syllabus-reader/docker-compose.yml` はシラバスだけを実行する構成です。
 
 GitHub Actions には公開 PR の必須チェック `Validate all datasets` と、main の検証成功後のホームページのデプロイ通知を残します。NAS が取得して実行するコードは公式リポジトリの main です。
 
@@ -16,7 +16,7 @@ GitHub Actions には公開 PR の必須チェック `Validate all datasets` と
 リポジトリのルートから実行します。Synology の SSH セッションで Docker が PATH にない場合は `/usr/local/bin/docker` を使います。
 
 ```sh
-cd ops/nas-ci
+cd ops/data-pipeline
 umask 077
 cp -n ci.env.example ci.env
 cp -n ../syllabus-reader/.env.example syllabus.env
@@ -34,9 +34,9 @@ Compose を実行するユーザーとボリュームの所有者が異なる場
 2. **Contents: Read and write** の GitHub App を Isct-Data のみにインストールします。秘密鍵は `var/github-app/private-key.pem` に所有者のみ読み取り可能な権限で保存します。両方の環境ファイルに `ISCT_GITHUB_APP_ID`、`ISCT_GITHUB_INSTALLATION_ID`、`ISCT_PUBLICATION_MODE=main` を設定します。NAS は公開の直前に短期トークンを発行します。
 3. main の必須チェックをブランチルールセットで管理し、そのチェックだけに NAS の GitHub App をバイパス対象として登録します。強制 push とブランチ削除の拒否は App にも適用します。
 4. main の検証と公式ソースの取得を確認します。以下の `--poll-only` はモデルも公開機能も呼び出しません。
-5. GitHub のリポジトリ変数 `ISCT_DATA_EXECUTOR` を `nas` に設定し、進行中の旧更新が終わったことを確認します。次に `ci.env` の同じ変数を `nas` に変え、両サービスを `docker compose up -d --force-recreate` で再作成します。
+5. `ci.env` の `ISCT_DATA_EXECUTOR` を `nas` に設定し、両サービスを `docker compose up -d --force-recreate` で再作成します。
 
-切り戻す場合は、まず NAS の `ci.env` を `ISCT_DATA_EXECUTOR=github` に戻してサービスを再作成し、GitHub の変数を削除します。
+旧 GitHub 更新に切り戻す場合は、[ワークフローの復元手順](../archive/github-actions/README.md) を参照してください。
 
 ## 手動実行
 
@@ -49,7 +49,7 @@ docker compose run --rm public-data-ci shadow /data/state/runs/<run-id>/exam-evi
 docker compose run --rm syllabus-reader --once
 ```
 
-`update` は `exams`、`academic-calendar`、`important-dates`、`departments` に対応します。`--force` は変更検出と前回の同一ソース判定を省略します。試験の shadow には同一クォーターの 2 版を使い、第 2 引数を省略すると最新の公式 PDF と比較します。候補パッチ、判定、試験ソースのスナップショットは `var/ci/runs/` に 7 日間保存します。
+`update` は `exams`、`academic-calendar`、`important-dates`、`departments` に対応します。`--force` は変更検出と前回の同一ソース判定を省略します。試験の shadow には同一クォーターの 2 版を使い、第 2 引数を省略すると最新の公式 PDF と比較します。候補パッチ、判定、試験ソースのスナップショット、各実行の `status.json` は `var/ci/runs/` に 7 日間保存します。
 
 ## モデルとトークン
 
