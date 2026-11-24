@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "academicYear": 2027,
+  "timezone": "Asia/Tokyo",
+  "source": [
+    {
+      "id": "official-calendar-2027",
+      "title": "Science Tokyo 2027年度 授業日程",
+      "url": "https://www.titech.ac.jp/student/students/life/schedules"
+    }
+  ],
+  "entries": [
+    {
+      "id": "2027-04-01-academic-orientation",
+      "startDate": "2027-04-01",
+      "endDate": "2027-04-01",
+      "label": {
+        "ja": "新入生総合オリ",
+        "en": "Orientation for 1st-year undergraduate"
+      },
+      "category": "academic",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    },
+    {
+      "id": "2027-04-02-ceremony-entrance",
+      "startDate": "2027-04-02",
+      "endDate": "2027-04-02",
+      "label": {
+        "ja": "入学式",
+        "en": "Entrance ceremonies"
+      },
+      "category": "ceremony",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    },
+    {
+      "id": "2027-04-02-school-orientation",
+      "startDate": "2027-04-02",
+      "endDate": "2027-04-02",
+      "label": {
+        "ja": "学院別オリ",
+        "en": "School orientations"
+      },
+      "category": "academic",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    },
+    {
+      "id": "2027-05-22-campus-homecoming",
+      "startDate": "2027-05-22",
+      "endDate": "2027-05-22",
+      "label": {
+        "ja": "ホームカミングデイ",
+        "en": "Homecoming Day"
+      },
+      "category": "other",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    },
+    {
+      "id": "2027-09-22-ceremony-graduation",
+      "startDate": "2027-09-22",
+      "endDate": "2027-09-22",
+      "label": {
+        "ja": "学位記授与式",
+        "en": "Graduation ceremonies"
+      },
+      "category": "ceremony",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    },
+    {
+      "id": "2027-09-30-ceremony-entrance",
+      "startDate": "2027-09-30",
+      "endDate": "2027-09-30",
+      "label": {
+        "ja": "入学式",
+        "en": "Entrance ceremonies"
+      },
+      "category": "ceremony",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    },
+    {
+      "id": "2027-10-09-campus-festival",
+      "startDate": "2027-10-09",
+      "endDate": "2027-10-10",
+      "label": {
+        "ja": "大学祭",
+        "en": "Campus Festival"
+      },
+      "category": "campus-festival",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    },
+    {
+      "id": "2028-01-15-common-test",
+      "startDate": "2028-01-15",
+      "endDate": "2028-01-16",
+      "label": {
+        "ja": "大学入学共通テスト"
+      },
+      "category": "academic",
+      "sourceIds": [
+        "official-calendar-2027"
+      ]
+    },
+    {
+      "id": "2028-02-25-general-selection",
+      "startDate": "2028-02-25",
+      "endDate": "2028-02-26",
+      "label": {
+        "ja": "前期日程入試"
+      },
+      "category": "academic",
+      "sourceIds": [
+        "official-calendar-2027"
+      ]
+    },
+    {
+      "id": "2028-03-27-ceremony-graduation",
+      "startDate": "2028-03-27",
+      "endDate": "2028-03-27",
+      "label": {
+        "ja": "学位記授与式",
+        "en": "Graduation ceremonies"
+      },
+      "category": "ceremony",
+      "sourceIds": [
+        "official-calendar-2027"
+      ],
+      "labelEnglishSource": "official"
+    }
+  ]
+}

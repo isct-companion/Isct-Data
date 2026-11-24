@@ -159,6 +159,13 @@
           "ts": "2026-11-23T00:59:35Z"
         }
       ]
+    },
+    "2027": {
+      "importantDates": {
+        "source": "important-dates/2027.json",
+        "hash": "7ef7f92c7e8323561da6aba5d4fb369b5cca9ca4f8318a9b09c6de181378c3e7",
+        "ts": "2026-11-24T07:42:54Z"
+      }
     }
   },
   "admissionYears": {
