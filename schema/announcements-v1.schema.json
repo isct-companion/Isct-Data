@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "announcements"],
+  "properties": {
+    "formatVersion": {"const": 1},
+    "announcements": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/announcement"}
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ja", "en"],
+      "properties": {
+        "ja": {"type": "string", "pattern": "\\S"},
+        "en": {"type": "string", "pattern": "\\S"}
+      }
+    },
+    "instant": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "version": {"type": "string", "pattern": "^[0-9]{1,9}\\.[0-9]{1,9}\\.[0-9]{1,9}$"},
+    "announcement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "level", "startsAt", "expiresAt", "title", "body"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 64},
+        "level": {"enum": ["info", "important"]},
+        "startsAt": {"$ref": "#/$defs/instant"},
+        "expiresAt": {"$ref": "#/$defs/instant"},
+        "title": {"$ref": "#/$defs/text"},
+        "body": {"$ref": "#/$defs/text"},
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"enum": ["macos", "windows", "ios", "android"]}
+        },
+        "minAppVersion": {"$ref": "#/$defs/version"},
+        "maxAppVersion": {"$ref": "#/$defs/version"},
+        "link": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "label"],
+          "properties": {
+            "url": {"type": "string", "pattern": "^https://"},
+            "label": {"$ref": "#/$defs/text"}
+          }
+        }
+      }
+    }
+  }
+}
