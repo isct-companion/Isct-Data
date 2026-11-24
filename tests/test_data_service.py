@@ -356,9 +356,9 @@ class StatusPageTest(unittest.TestCase):
         self.assertIn("每次用时", pages.history(status.history(found, "exams", self.plan, NOW), NOW).decode())
 
     def test_the_server_serves_pages_logs_and_text_artifacts_only_inside_a_run(self):
-        self.heartbeat.write_text(json.dumps({"at": datetime.now(status.JST).isoformat()}), encoding="utf-8")
         server = status.start(self.runs, self.rotation, runner.SCHEDULE, lambda: self.plan, self.heartbeat,
                               Path(self.runs.parent) / "checks.json", port=0)
+        server.clock = lambda: NOW
         self.addCleanup(server.server_close)
         self.addCleanup(server.shutdown)
         origin = f"http://127.0.0.1:{server.server_address[1]}"

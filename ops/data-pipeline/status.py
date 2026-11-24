@@ -347,7 +347,8 @@ class Handler(BaseHTTPRequestHandler):
         url = urlsplit(self.path)
         parts = [unquote(part) for part in url.path.strip("/").split("/")] if url.path.strip("/") else []
         query = {key: values[0] for key, values in parse_qs(url.query).items()}
-        server, now = self.server, datetime.now(JST)
+        server = self.server
+        now = server.clock()
         if parts in ([], ["api", "status"], ["healthz"]):
             view = overview(records(server.runs), server.schedule, server.upcoming(),
                             verified_dates(server.rotation), read_heartbeat(server.heartbeat), now,
@@ -422,5 +423,6 @@ def start(runs, rotation, schedule, upcoming, heartbeat, checks, port=8787):
     server.daemon_threads = True
     server.runs, server.rotation, server.heartbeat, server.checks = Path(runs), Path(rotation), Path(heartbeat), Path(checks)
     server.schedule, server.upcoming = schedule, upcoming
+    server.clock = lambda: datetime.now(JST)  # the tests pin it
     threading.Thread(target=server.serve_forever, name="status", daemon=True).start()
     return server
