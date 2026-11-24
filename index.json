@@ -3,8 +3,8 @@
     "2025": {
       "academicCalendar": {
         "source": "academic-calendar/2025.json",
-        "hash": "0bd605d4fc79d32a67c405c1762b40d2531d1dbc133c00233f0c3d0113492738",
-        "ts": "2026-10-03T06:12:56Z"
+        "hash": "538da510710f2545b3541f9c974c499e3140302b63067f64f55204c6971aefcc",
+        "ts": "2026-11-24T09:20:51Z"
       },
       "importantDates": {
         "source": "important-dates/2025.json",
@@ -165,6 +165,11 @@
         "source": "important-dates/2027.json",
         "hash": "7ef7f92c7e8323561da6aba5d4fb369b5cca9ca4f8318a9b09c6de181378c3e7",
         "ts": "2026-11-24T07:42:54Z"
+      },
+      "academicCalendar": {
+        "source": "academic-calendar/2027.json",
+        "hash": "b0ab695b9dc3d4d1a362fc14f7029fe9d838afb4cfb605f99ee3bf02469fe8a7",
+        "ts": "2026-11-24T09:20:51Z"
       }
     }
   },
