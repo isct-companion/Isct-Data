@@ -1,8 +1,8 @@
 # 試験データの更新
 
-[README](../README.md) · [データ仕様と収録範囲](data.md) · [保守コマンド](maintenance.md) · [試験データの更新](exams.md) · [自動更新の運用](automation.md)
+[README](../README.md) · [データ仕様と収録範囲](data.md) · [試験データの更新](exams.md)
 
-Install dependencies and run the repository-wide checks described in [maintenance.md](maintenance.md).
+Install dependencies with `python -m pip install -r requirements.txt`.
 
 Run `python3 scripts/validate_exam_feed.py exam/undergraduate/2026-2q.json` and the same command for the graduate feed before publishing. The default checks are feed-wide: source references, IDs, dates, periods/times, status, labels, and malformed room values. Run `python3 scripts/validate_exam_feed.py --check-las-b102 exam/undergraduate/2026-2q.json` only when reviewing the 2026 2Q undergraduate PDF page-16 LAS.B102 regression. The script does not infer class suffixes or alter course matching.
 
@@ -10,7 +10,7 @@ The central exam PDFs cover the rows explicitly published in the public timetabl
 Existing manually maintained source records remain available and are updated by
 people; the automated workflows do not acquire or modify them.
 
-Exam-only agent instructions are in [`prompts/update-exams.md`](../prompts/update-exams.md). The shared write entry point is `python3 scripts/exam_workflow.py --year 2026 --quarter 2Q --level undergraduate --candidates .exam-runs/reviewed-candidates.json`. Run `python3 scripts/exam_workflow.py --check` before and after. The [Docker pipeline](data-pipeline.md) includes a `candidates` command to emit an exam patch and an `update exams` command for public-source acquisition and review.
+Exam-only agent instructions live in the private operations repository (`prompts/update-exams.md`). The shared write entry point is `python3 scripts/exam_workflow.py --year 2026 --quarter 2Q --level undergraduate --candidates .exam-runs/reviewed-candidates.json`. Run `python3 scripts/exam_workflow.py --check` before and after. The data pipeline in the operations repository includes a `candidates` command to emit an exam patch and an `update exams` command for public-source acquisition and review.
 
 The source scope and authentication policy are recorded in `source-manifest/2026-2q.json`; candidate files must validate against `schema/exam-candidates.schema.json`. Candidate evidence is a short excerpt with `evidenceHash = SHA-256(UTF-8 evidenceText)`. Automated candidates use public official PDFs. Historical manual-source metadata is retained; login and source acquisition are outside these workflows.
 

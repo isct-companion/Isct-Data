@@ -21,16 +21,13 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 
 ## 取得・検証・公開
 
-| 目的 | コード・設定 | 手順 |
-| --- | --- | --- |
-| Docker で公開データを取得・検証し、実行状態を確認する | [`ops/data-pipeline/compose.yaml`](ops/data-pipeline/compose.yaml) | [起動と運用](docs/data-pipeline.md) |
-| 公開シラバスから開講科目を取得する | [`scripts/syllabus_courses.py`](scripts/syllabus_courses.py) · [`ops/data-pipeline/`](ops/data-pipeline/) | [シラバスの取得とデータ形式](docs/courses.md) |
-| スキーマや購読 index を検証する | [`contracts/`](contracts/) · [`schema/`](schema/) · [`scripts/`](scripts/) | [データ契約](docs/data-contracts.md) · [保守コマンド](docs/maintenance.md) |
-| GitHub の検証と旧ワークフローを確認する | [検証ワークフロー](.github/workflows/validate-data.yml) · [旧ワークフロー](archive/github-actions/) | [自動更新と CI](docs/automation.md) |
+このリポジトリは公開用の写しです。取得・審査・公開は非公開の運用リポジトリで行い、検証を通ったデータだけをここへ反映します。ここへの直接の変更は反映時に検出され、取り込まれません。誤りの報告は下の issue フォームへお願いします。
 
-公開データと生成・検証コードは同じリポジトリで管理します。Docker の設定例も公開し、実行環境の資格情報・作業用チェックアウト・取得状態・ログは運用ホストに置きます。
-
-手動更新には [更新 skill](.agents/skills/update-public-data/SKILL.md) と [共通プロンプト](prompts/update-official-data.md) を使います。
+| 目的 | 場所 |
+| --- | --- |
+| 形式と収録範囲を確認する | [`schema/`](schema/) · [`contracts/`](contracts/) · [データ仕様](docs/data.md) · [データ契約](docs/data-contracts.md) |
+| 公開データを手元で検証する | [`scripts/validate_datasets.py`](scripts/validate_datasets.py) · [検証ワークフロー](.github/workflows/validate-data.yml) |
+| 開講科目カタログの形式を確認する | [シラバスの取得とデータ形式](docs/courses.md) |
 
 ## データの誤りを見つけたら
 
