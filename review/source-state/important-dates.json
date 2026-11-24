@@ -3,18 +3,24 @@
   "dataset": "important-dates",
   "sources": {
     "https://www.titech.ac.jp/student/pdf/life-schedules-month-ay2025.pdf": "c7572da54356789faf080a9fe476029d61be0472fa8b2e60975ae11d133daa34",
+    "https://www.titech.ac.jp/student/pdf/life-schedules-month-ay2026.pdf": "416b8ddff9df89bffcc7ec058cae0aa91b8f9d80b50506f811560fbd00f22f2e",
     "https://www.titech.ac.jp/student/pdf/life-schedules-month-ay2027.pdf": "0767073d1bd1af8b10a217db2b095ddf930e89d0af6717bb614161824bcbf90d",
     "https://www.titech.ac.jp/student/pdf/life-schedules-week-ay2025.pdf": "fceaeee0739616750ab084f3ee282fbb7ac511b17d7da4e0a7047a165dc9f3ad",
+    "https://www.titech.ac.jp/student/pdf/life-schedules-week-ay2026.pdf": "fa127766e156332740eb2b30fd1a24bf964a60b8c3ec636082781b9a789377bb",
     "https://www.titech.ac.jp/student/pdf/life-schedules-week-ay2027.pdf": "04199cd66a328c7c6998496d5e472213f60fce69972c78e4b130387a6c41f87b",
     "https://www.titech.ac.jp/student/students/life/schedules": "b1dfb019bae4aff703e900ac6a0b603c4a445e7e8df5170f96fba93dee066c9b",
-    "https://www.titech.ac.jp/student/students/life/schedules/2025": "b4493337d5da25bf9a2e57552b37d2115e2dda1dd917eead33897c3c4ca5a51b"
+    "https://www.titech.ac.jp/student/students/life/schedules/2025": "b4493337d5da25bf9a2e57552b37d2115e2dda1dd917eead33897c3c4ca5a51b",
+    "https://www.titech.ac.jp/student/students/life/schedules/2026": "18c994ff754f7d4759daf4604422f96ef46f9bcd80c2eea102138a267cf8b5d1"
   },
   "content": {
     "https://www.titech.ac.jp/student/pdf/life-schedules-month-ay2025.pdf": "8b8ced2f58408eeda7aaca5be941eea02ca39bc4fbf08f0d72d7d80bddc46483",
+    "https://www.titech.ac.jp/student/pdf/life-schedules-month-ay2026.pdf": "3276d8eb0c46240c209492c9f364f7bac6e138d40a00ed4417138a9538210bbe",
     "https://www.titech.ac.jp/student/pdf/life-schedules-month-ay2027.pdf": "863a2c166f485b5e3d9416f397aa6b11f7cde9fb0611f74e252c448c62420c26",
     "https://www.titech.ac.jp/student/pdf/life-schedules-week-ay2025.pdf": "ecd872baf4e25e49679b57a2a74f24183eebbaa96db6f28bc32d30af5fe017c7",
+    "https://www.titech.ac.jp/student/pdf/life-schedules-week-ay2026.pdf": "230858223677925274455acf700047ee462a814c1285b44f758c986ffe9317fa",
     "https://www.titech.ac.jp/student/pdf/life-schedules-week-ay2027.pdf": "b6a09742604aed238338921845fc6abd84b55882625fc111835c979a3349fe39",
     "https://www.titech.ac.jp/student/students/life/schedules": "7c391df8d75e479c0b90436df2645e2c0e02788085c8aac41621ba4e9623177f",
-    "https://www.titech.ac.jp/student/students/life/schedules/2025": "71366a34e2b35f3b56e9b987b26237eaf94c44741090799d56b4075bdee065db"
+    "https://www.titech.ac.jp/student/students/life/schedules/2025": "71366a34e2b35f3b56e9b987b26237eaf94c44741090799d56b4075bdee065db",
+    "https://www.titech.ac.jp/student/students/life/schedules/2026": "baacc627b8f452d3921522e7f735df04f5fe0c648fa2a70d9097a34c3e090a1a"
   }
 }

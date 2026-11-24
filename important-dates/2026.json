@@ -6,7 +6,7 @@
     {
       "id": "official-calendar-2026",
       "title": "Science Tokyo 2026年度 授業日程",
-      "url": "https://www.titech.ac.jp/student/students/life/schedules"
+      "url": "https://www.titech.ac.jp/student/students/life/schedules/2026"
     }
   ],
   "entries": [
@@ -37,6 +37,20 @@
         "official-calendar-2026"
       ],
       "labelEnglishSource": "translation"
+    },
+    {
+      "id": "2026-04-02-academic-school-orientation",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-02",
+      "label": {
+        "ja": "学院別オリ",
+        "en": "School orientations"
+      },
+      "category": "academic",
+      "sourceIds": [
+        "official-calendar-2026"
+      ],
+      "labelEnglishSource": "official"
     },
     {
       "id": "2026-09-24-ceremony-graduation",
@@ -121,6 +135,20 @@
         "official-calendar-2026"
       ],
       "labelEnglishSource": "translation"
+    },
+    {
+      "id": "2027-01-22-admissions-duties",
+      "startDate": "2027-01-22",
+      "endDate": "2027-01-24",
+      "label": {
+        "ja": "入試関係業務",
+        "en": "University Admissions-Related Duties"
+      },
+      "category": "other",
+      "sourceIds": [
+        "official-calendar-2026"
+      ],
+      "labelEnglishSource": "official"
     }
   ]
 }

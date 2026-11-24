@@ -64,8 +64,8 @@
       ],
       "importantDates": {
         "source": "important-dates/2026.json",
-        "hash": "62797565eeb914bd8ba9443d05da529503f0a63a834ac4a0c2b50507098e6eae",
-        "ts": "2026-10-03T06:12:56Z"
+        "hash": "d814eedd9c3ac08af987cac7fc3d8ba07e51161d81aac6486755c209a404d271",
+        "ts": "2026-11-24T17:29:58Z"
       },
       "classSchedules": {
         "source": "class-schedules/2026.json",
