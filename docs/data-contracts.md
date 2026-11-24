@@ -9,7 +9,7 @@ NAS の OpenAI レビュー、切り戻し用 CI の Copilot、外部の AI エ�
 - [`contracts/datasets.json`](../contracts/datasets.json): データ種別、ファイル名、schema、年度・版、index の対応と、維持するファイルの収録範囲。
 - [`schema/`](../schema/): 各公開形式の必須フィールド、型、列挙値、対応する schemaVersion。
 - [`scripts/dataset_contracts.py`](../scripts/dataset_contracts.py): schema を使う共通検証と、ファイル・年度・index・校暦の意味的整合性。
-- [`prompts/update-official-data.md`](../prompts/update-official-data.md) と各分野の prompt: 出典の読み方と抽出・レビューの要件。
+- 運用リポジトリの `prompts/update-official-data.md` と各分野の prompt: 出典の読み方と抽出・レビューの要件。
 
 必須フィールドを prompt に書き直して二重管理しません。契約の変更はコードレビュー対象で、
 通常のデータ抽出では変更しません。公開形式の互換性は既存クライアントに対して維持します。
@@ -27,7 +27,7 @@ NAS の OpenAI レビュー、切り戻し用 CI の Copilot、外部の AI エ�
 外部エージェントも、CI と同じ review を書いて同じ writer を使用します。
 ローカルでの確認だけなら公開資格情報は不要です。複数作者を使う場合は同じ比較器を呼び、
 モデル自身に「一致した」と判定させません。作者同士の一致は正しさの証明ではありません。
-片方しか完了しない場合の仲裁や試験のサンプリング方針は [自動更新の運用](automation.md) を参照してください。
+片方しか完了しない場合の仲裁や試験のサンプリング方針は運用リポジトリの `docs/automation.md` にあります。
 
 ## 検証の境界
 
@@ -82,7 +82,7 @@ publisher は再取得した出典と照合します。公開データに差分�
 
 ## Skill と MCP
 
-[update-public-data skill](../.agents/skills/update-public-data/SKILL.md) は共通処理を案内する入口です。
+運用リポジトリの update-public-data skill（`.agents/skills/update-public-data/SKILL.md`） は共通処理を案内する入口です。
 スキル自体に別の validator や抽出仕様を持たせません。実行ツールのない AI には、利用者が
 このファイルを渡して手順を共有できます。
 

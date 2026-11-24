@@ -1,6 +1,6 @@
 # Campus map export
 
-[README](../README.md) · [データ仕様と収録範囲](data.md) · [保守コマンド](maintenance.md)
+[README](../README.md) · [データ仕様と収録範囲](data.md)
 
 The Isct Companion app draws the Ookayama and Suzukakedai campus maps (buildings, floors, rooms, entrances,
 elevators, restrooms, AEDs and lounges) from one file: `campus-map/v2/campus-map.json.gz`, format version 2.
