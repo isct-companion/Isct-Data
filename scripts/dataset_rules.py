@@ -66,10 +66,23 @@ def urls_in(item):
     return urls
 
 
+SCHEDULES = 'https://www.titech.ac.jp/student/students/life/schedules'
+
+
+def monthly_pdf(year):
+    return f'https://www.titech.ac.jp/student/pdf/life-schedules-month-ay{year}.pdf'
+
+
 def source_urls(root, dataset):
-    return {url for directory in DATASETS[dataset]['directories']
+    urls = {url for directory in DATASETS[dataset]['directories']
             for path in sorted((root / directory).rglob('*.json'))
             for url in urls_in(json.loads(path.read_text()))}
+    if dataset in ('academic-calendar', 'important-dates'):
+        # The live 授業日程 page shows only the newest year; earlier years move to their own archive
+        # page, which no data file names once the live page moves on.
+        years = sorted(int(path.stem) for path in (root / dataset).glob('*.json'))
+        urls.update(f'{SCHEDULES}/{year}' for year in years[:-1])
+    return urls
 
 
 def assert_public_provenance(root, name, data, observed, dataset):
