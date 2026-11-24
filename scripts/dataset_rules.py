@@ -69,6 +69,10 @@ def urls_in(item):
 SCHEDULES = 'https://www.titech.ac.jp/student/students/life/schedules'
 
 
+HOLIDAYS_PAGE = 'https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html'
+HOLIDAYS_CSV = 'https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv'
+
+
 def monthly_pdf(year):
     return f'https://www.titech.ac.jp/student/pdf/life-schedules-month-ay{year}.pdf'
 
