@@ -26,7 +26,10 @@ STATES = {
     "failed": ("失败", "critical", "运行出错，没有发布"),
     "interrupted": ("中断", "serious", "服务重启时运行尚未结束"),
     "running": ("进行中", "running", "正在运行"),
+    "held": ("暂缓", "quiet", "这些来源今天已经审核失败过一次，明天或来源再变时再审核"),
 }
+TRIGGERS = {"schedule": "定时", "manual": "手动", "change": "来源变化"}
+CHECK_OUTCOMES = {"unchanged": "无变化", "review": "有变化，已开始运行", "held": "有变化，今天暂缓"}
 FAILED = {"failed", "interrupted", "retry"}
 SOURCE_CHANGES = {
     "content": ("可见内容有变", "warning"), "bytes": ("仅标记或编码变化", "neutral"),
@@ -275,7 +278,7 @@ def runs_table(found, *, show_job=True):
     rows = "".join(
         f'<tr><td>{run_link(record)}</td>' + (f'<td>{esc(JOBS[record["job"]])}</td>' if show_job else "")
         + f'<td>{badge(record["status"])}</td>'
-        f'<td class="muted">{"定时" if record.get("trigger") == "schedule" else "手动" if record.get("trigger") else "—"}</td>'
+        f'<td class="muted">{TRIGGERS.get(record.get("trigger"), "—")}</td>'
         f'<td class="tab">{took(record) or "—"}</td><td class="num">{number(record.get("requests"))}</td>'
         f'<td class="num">{compact(record.get("tokens")) if record.get("tokens") else "—"}</td>'
         f'<td>{change_summary(record)}</td><td>{commit_link(record)}</td></tr>' for record in found)
@@ -321,21 +324,45 @@ def bar_chart(series, key, title, fmt=compact, scale=1):
 
 # -- Pages --------------------------------------------------------------------
 
+def checks_text(counts):
+    if not counts:
+        return ""
+    return f' · 检查 {counts["ok"]} 次' + (f'，失败 {counts["failed"]} 次' if counts["failed"] else "")
+
+
+def day_cell(day):
+    """A day's last run, or, on a day with only source checks, whether they found nothing or failed."""
+    record, counts = day["record"], day.get("checks")
+    if record:
+        label, tone, _ = STATES[record["status"]]
+        return (f'<a class="cell t-{tone}" href="/runs/{esc(record["run"])}" '
+                f'title="{esc(day["day"])} · {esc(label)}{esc(checks_text(counts))}"></a>')
+    if counts:
+        tone = "warning" if counts["failed"] and not counts["ok"] else "neutral"
+        return f'<span class="cell t-{tone}" title="{esc(day["day"])}{esc(checks_text(counts))}，没有需要审核的变化"></span>'
+    return f'<span class="cell none" title="{esc(day["day"])} · 无运行"></span>'
+
+
 def day_bars(calendar):
-    """One cell per day, coloured by that day's last run, like an uptime bar."""
-    cells = "".join(
-        f'<a class="cell t-{STATES[day["record"]["status"]][1]}" href="/runs/{esc(day["record"]["run"])}" '
-        f'title="{esc(day["day"])} · {esc(STATES[day["record"]["status"]][0])}"></a>' if day["record"]
-        else f'<span class="cell none" title="{esc(day["day"])} · 无运行"></span>' for day in calendar)
-    return f'<div class="bars">{cells}</div>'
+    """One cell per day, like an uptime bar."""
+    return f'<div class="bars">{"".join(day_cell(day) for day in calendar)}</div>'
+
+
+def check_line(check, now):
+    if not check:
+        return '<span class="muted">—</span>'
+    if not check.get("ok"):
+        return (f'{tone_badge("失败", "warning", check.get("error") or "")} '
+                f'<span class="muted">{esc(ago(check["at"], now))}</span>')
+    return (f'<span title="{esc(NOTES.get(check.get("reason"), check.get("reason") or ""))}">'
+            f'{esc(CHECK_OUTCOMES.get(check.get("outcome"), check.get("outcome") or ""))}</span> '
+            f'<span class="muted">{esc(ago(check["at"], now))}</span>')
 
 
 def freshness(row, now):
-    success = row["lastSuccess"]
-    if not success:
+    if not row["current"]:
         return '<span class="muted">never</span>'
-    return (f'<time title="{esc(when(success["startedAt"], "%Y-%m-%d %H:%M"))}">'
-            f'{esc(ago(success.get("finishedAt") or success["startedAt"], now))}</time>')
+    return f'<time title="{esc(when(row["current"], "%Y-%m-%d %H:%M"))}">{esc(ago(row["current"], now))}</time>'
 
 
 def job_row(row, now):
@@ -344,9 +371,11 @@ def job_row(row, now):
     state = health_mark(row["health"]) if row["scheduled"] else '<span class="muted">手动</span>'
     latest = (f'{badge(last["status"])} <span class="muted">{run_link(last, esc(ago(last["startedAt"], now)))}</span>'
               if last else '<span class="muted">暂无记录</span>')
+    every = f' <span class="muted">· every {row["every"] // 60}h</span>' if row.get("every") else ""
     return (f'<tr><td>{state}</td><td><a href="/jobs/{esc(row["job"])}"><b>{esc(JOBS[row["job"]])}</b></a></td>'
-            f'<td class="tab">{freshness(row, now)}</td><td>{latest}</td>'
-            f'<td class="tab">{next_run(plan, last) if row["scheduled"] else "—"}</td>'
+            f'<td class="tab">{freshness(row, now)}</td>'
+            f'<td class="tab">{check_line(row["check"], now) if row.get("every") else "—"}</td><td>{latest}</td>'
+            f'<td class="tab">{next_run(plan, last) if row["scheduled"] else "—"}{every}</td>'
             f'<td style="width:28%">{day_bars(row["calendar"])}</td>'
             f'<td class="num">{f"{done}/{total}" if total else "—"}</td></tr>')
 
@@ -399,8 +428,9 @@ def overview(view):
         (compact(week["requests"]), "Source requests"), (compact(week["tokens"]), "Model tokens")))
     rows = "".join(job_row(row, now) for row in view["jobs"] if row["scheduled"] or row["last"])
     jobs = ('<div class="panel scroll"><table><thead><tr><th>Status</th><th>Job</th>'
-            '<th><abbr title="最近一次成功运行（已发布、无变化或已检查）的时间：数据最多旧到这里">Last success</abbr></th>'
-            '<th>Last run</th><th>Next run</th><th>Last 30 days</th><th class="num">30d OK</th></tr></thead>'
+            '<th><abbr title="最近一次确认已发布数据与来源一致的时间：成功的运行，或没发现变化的检查">Last success</abbr></th>'
+            '<th><abbr title="只读取官方来源、由代码判断有没有需要审核的变化；有变化才开始一次运行">Last check</abbr></th>'
+            '<th>Last run</th><th>Next</th><th>Last 30 days</th><th class="num">30d OK</th></tr></thead>'
             f'<tbody>{rows}</tbody></table></div>')
     body = f"""{state}
 {f'<h2>Running</h2>{live}' if live else ""}
@@ -435,10 +465,7 @@ def runs(view):
 def history(view, now):
     job = view["job"]
     runs = view["runs"]
-    cells = "".join(
-        f'<a class="cell t-{STATES[day["record"]["status"]][1]}" href="/runs/{esc(day["record"]["run"])}" '
-        f'title="{esc(day["day"])} · {esc(STATES[day["record"]["status"]][0])}"></a>' if day["record"]
-        else f'<span class="cell none" title="{esc(day["day"])} · 无运行"></span>' for day in view["calendar"])
+    cells = "".join(day_cell(day) for day in view["calendar"])
     done = [record for record in runs if record["status"] != "running"]
     ok = sum(record["status"] in ("published", "unchanged", "checked", "ok") for record in done)
     durations = [point["seconds"] for point in view["series"] if point["seconds"] is not None]
@@ -457,7 +484,7 @@ def history(view, now):
     first = view["calendar"][0]["day"][5:]
     live = "".join(live_run(record, now, compact_log=True) for record in view.get("running") or [])
     body = f"""<p class="sub"><a href="/">Overview</a> / Job</p><h1>{esc(JOBS[job])}</h1>
-<p class="sub">Next run: {next_run(view["plan"], runs[0] if runs else None)}</p>
+<p class="sub">Next: {next_run(view["plan"], runs[0] if runs else None)}{f" · Last check: {check_line(view['check'], now)}" if view.get("check") else ""}</p>
 {f'<h2>Running</h2>{live}' if live else ""}
 {f'<h2>Alerts</h2>{alert_rows(view["alerts"], now)}' if view.get("alerts") else ""}
 <h2>Last {view["days"]} days</h2><div class="tiles">{tiles}</div>
@@ -531,7 +558,7 @@ def detail(view):
              ("结果", badge(record["status"]) + (f' <span class="muted">{note(record)}</span>' if record.get("note") else "")),
              ("开始", f'<time>{esc(when(record["startedAt"], "%Y-%m-%d %H:%M:%S"))}</time>'),
              ("用时", took(record) or "进行中"),
-             ("触发", {"schedule": "定时", "manual": "手动"}.get(record.get("trigger"), "—")),
+             ("触发", TRIGGERS.get(record.get("trigger"), "—")),
              ("运行时的 main", f'<a class="mono" href="{REPO_URL}/commit/{esc(record["base"])}">{esc(record["base"][:7])}</a>'
               if record.get("base") else "—"),
              ("发布的提交", commit_link(record)),

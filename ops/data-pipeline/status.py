@@ -65,17 +65,46 @@ def seconds(record):
     return int((end - start).total_seconds()) if start and end else None
 
 
-def daily(mine, now, days=HISTORY_DAYS):
-    """The last run of each of the last `days` days, oldest day first (`mine` is newest first)."""
+def daily(mine, now, days=HISTORY_DAYS, checks=None):
+    """The last run of each of the last `days` days, oldest day first (`mine` is newest first), with
+    that day's source check counts."""
     by_day = {}
     for record in reversed(mine):  # oldest first, so the day keeps its last run
         by_day[moment(record["startedAt"]).date().isoformat()] = record
-    return [{"day": day.isoformat(), "record": by_day.get(day.isoformat())}
+    counts = (checks or {}).get("days") or {}
+    return [{"day": day.isoformat(), "record": by_day.get(day.isoformat()), "checks": counts.get(day.isoformat())}
             for day in (now.date() - timedelta(days=offset) for offset in range(days - 1, -1, -1))]
 
 
 def period(rule):
+    if rule.get("every"):
+        return timedelta(minutes=rule["every"])
     return timedelta(days=7 if rule.get("weekday") is not None else 1)
+
+
+def read_checks(path):
+    """Each dataset's last source check (`runner.check`), by job."""
+    try:
+        value = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError):
+        return {}
+    return value if isinstance(value, dict) else {}
+
+
+def last_current(mine, entry):
+    """When the published data was last known to match the sources: a successful run, or a check
+    that found nothing to review. Returns (moment, record or None)."""
+    success = next((record for record in mine if record["status"] in SUCCESS), None)
+    ran = moment(success.get("finishedAt") or success["startedAt"]) if success else None
+    checked = moment((entry or {}).get("lastCurrent"))
+    if checked and (not ran or checked > ran):
+        return checked, None
+    return ran, success
+
+
+def age(delta):
+    hours = int(delta.total_seconds() // 3600)
+    return f"{hours} 小时" if hours < 48 else f"{hours // 24} 天"
 
 
 def verified_dates(rotation):
@@ -99,38 +128,43 @@ def alert(level, title, detail="", job=None, record=None, since=None):
             "run": record["run"] if record else None, "since": since or (record or {}).get("startedAt")}
 
 
-def job_alerts(job, rule, mine, plan, now, limit):
+def job_alerts(job, rule, mine, plan, now, limit, entry=None):
     """What needs a person in one scheduled job: stopped, stale, failing, or reading a changed site."""
     if (plan or {}).get("paused"):
         return [alert("critical", "已暂停", f"{plan['paused']}，补上后自动恢复", job)]
-    finished = [record for record in mine if record["status"] != "running"]
-    if not finished:
-        return []
+    finished = [record for record in mine if record["status"] not in ("running", "held")]
     found = []
-    success = next((record for record in finished if record["status"] in SUCCESS), None)
+    if entry and entry.get("failures", 0) >= 3:
+        found.append(alert("warning", f"来源检查连续失败 {entry['failures']} 次", entry.get("error") or "", job,
+                           since=entry.get("at")))
+    if not finished and not entry:
+        return found
+    current, success = last_current(mine, entry)
     streak = []
     for record in finished:
         if record["status"] in SUCCESS:
             break
         streak.append(record)
-    allowed = 2 * period(rule) + timedelta(hours=6)  # two missed runs, then the data is old
-    if not success:
-        found.append(alert("critical", "从未成功", (streak[0].get("error") or "")[:300], job, streak[0]))
-    elif now - moment(success.get("finishedAt") or success["startedAt"]) > allowed:
-        days = (now - moment(success["startedAt"])).days
-        found.append(alert("critical", f"数据 {days} 天没有更新", (streak[0].get("error") or "")[:300] if streak else
-                           "没有新的成功运行", job, streak[0] if streak else success, success["startedAt"]))
+    allowed = 2 * period(rule) + timedelta(hours=6)  # two missed checks or runs, then the data is old
+    error = (streak[0].get("error") or "")[:300] if streak else ""
+    if not current:
+        if streak:
+            found.append(alert("critical", "从未成功", error, job, streak[0]))
+    elif now - current > allowed:
+        found.append(alert("critical", f"数据 {age(now - current)}没有确认", error or "没有新的成功运行或检查", job,
+                           streak[0] if streak else success, current.isoformat(timespec="seconds")))
     elif streak and (len(streak) >= 2 or streak[0]["status"] != "retry"):
         hard = any(record["status"] != "retry" for record in streak)
         found.append(alert("critical" if hard and len(streak) >= 2 else "warning",
                            f"连续 {len(streak)} 次未成功" if len(streak) >= 2 else "最近一次失败",
-                           (streak[0].get("error") or "")[:300], job, streak[0], streak[-1]["startedAt"]))
-    last = finished[0]
-    removed = sum(source["change"] == "removed" for source in last.get("sources") or [])
-    if removed:
-        found.append(alert("warning", f"{removed} 个官方来源消失", "学校网页可能改了地址或结构，检查来源清单", job, last))
-    if limit and (last.get("tokens") or 0) > limit:
-        found.append(alert("warning", "超出 token 上限", f"{last['tokens']:,} / {limit:,}", job, last))
+                           error, job, streak[0], streak[-1]["startedAt"]))
+    if finished:
+        last = finished[0]
+        removed = sum(source["change"] == "removed" for source in last.get("sources") or [])
+        if removed:
+            found.append(alert("warning", f"{removed} 个官方来源消失", "学校网页可能改了地址或结构，检查来源清单", job, last))
+        if limit and (last.get("tokens") or 0) > limit:
+            found.append(alert("warning", "超出 token 上限", f"{last['tokens']:,} / {limit:,}", job, last))
     return found
 
 
@@ -152,7 +186,7 @@ def course_alerts(mine, verified, now):
     return found
 
 
-def alerts(found, schedule, plan, verified, heartbeat, now, limit=None):
+def alerts(found, schedule, plan, verified, heartbeat, now, limit=None, checks=None):
     """Every standing alert, critical first: the one judgement of whether anything needs a person."""
     raised = []
     running = [record for record in found if record["status"] == "running"]
@@ -165,7 +199,7 @@ def alerts(found, schedule, plan, verified, heartbeat, now, limit=None):
                             since=heartbeat.isoformat(timespec="seconds") if heartbeat else None))
     for job, rule in schedule.items():
         mine = [record for record in found if record["job"] == job]
-        raised += job_alerts(job, rule, mine, plan.get(job), now, limit)
+        raised += job_alerts(job, rule, mine, plan.get(job), now, limit, (checks or {}).get(job))
         if job == "courses" and not (plan.get(job) or {}).get("paused"):
             raised += course_alerts(mine, verified, now)
     return sorted(raised, key=lambda item: item["level"] != "critical")
@@ -182,18 +216,22 @@ def health(raised):
     return "critical" if any(item["level"] == "critical" for item in raised) else "warning" if raised else "ok"
 
 
-def overview(found, schedule, plan, verified, heartbeat, now):
+def overview(found, schedule, plan, verified, heartbeat, now, checks=None):
     """The front page: overall health and its alerts, then one row per job with its last 30 days."""
-    raised = alerts(found, schedule, plan, verified, heartbeat, now, token_limit())
+    checks = checks or {}
+    raised = alerts(found, schedule, plan, verified, heartbeat, now, token_limit(), checks)
     rows = []
     for name in [*schedule, *sorted({record["job"] for record in found} - set(schedule))]:
         mine = [record for record in found if record["job"] == name]
         month = [record for record in mine if now - moment(record["startedAt"]) <= timedelta(days=HISTORY_DAYS)]
         done = [record for record in month if record["status"] != "running"]
+        current, _ = last_current(mine, checks.get(name))
         rows.append({"job": name, "scheduled": name in schedule, "last": mine[0] if mine else None,
-                     "lastSuccess": next((record for record in mine if record["status"] in SUCCESS), None),
+                     "current": current.isoformat(timespec="seconds") if current else None,
+                     "check": {key: value for key, value in (checks.get(name) or {}).items() if key != "days"} or None,
+                     "every": (schedule.get(name) or {}).get("every"),
                      "health": health([item for item in raised if item["job"] == name]),
-                     "calendar": daily(mine, now), "plan": plan.get(name),
+                     "calendar": daily(mine, now, checks=checks.get(name)), "plan": plan.get(name),
                      "success": [sum(record["status"] in SUCCESS for record in done), len(done)]})
     week = [record for record in found if now - moment(record["startedAt"]) <= timedelta(days=7)]
     return {"generatedAt": now.isoformat(timespec="seconds"), "health": health(raised), "alerts": raised,
@@ -214,11 +252,13 @@ def run_list(found, now, job=None, state=None):
             "runs": listed[:200], "matching": len(listed)}
 
 
-def history(found, job, plan, now, days=HISTORY_DAYS):
+def history(found, job, plan, now, days=HISTORY_DAYS, checks=None):
     """One job over the last `days` days: the last result of each day and every run's figures."""
     since = now - timedelta(days=days)
     mine = [record for record in found if record["job"] == job and moment(record["startedAt"]) >= since]
-    return {"job": job, "plan": plan.get(job), "days": days, "calendar": daily(mine, now, days),
+    entry = (checks or {}).get(job)
+    return {"job": job, "plan": plan.get(job), "days": days, "calendar": daily(mine, now, days, entry),
+            "check": {key: value for key, value in (entry or {}).items() if key != "days"} or None,
             "runs": mine, "series": [{"run": record["run"], "at": record["startedAt"], "status": record["status"],
                                       "seconds": seconds(record), "requests": record.get("requests"),
                                       "tokens": record.get("tokens")} for record in reversed(mine)]}
@@ -310,7 +350,8 @@ class Handler(BaseHTTPRequestHandler):
         server, now = self.server, datetime.now(JST)
         if parts in ([], ["api", "status"], ["healthz"]):
             view = overview(records(server.runs), server.schedule, server.upcoming(),
-                            verified_dates(server.rotation), read_heartbeat(server.heartbeat), now)
+                            verified_dates(server.rotation), read_heartbeat(server.heartbeat), now,
+                            read_checks(server.checks))
             view["running"] = [with_log(server.runs, record, 12) for record in view["running"]]
             if parts == ["healthz"]:
                 critical = [f'{pages.JOBS[item["job"]] if item["job"] else "数据服务"}：{item["title"]}'
@@ -324,10 +365,10 @@ class Handler(BaseHTTPRequestHandler):
             state = query.get("status") if query.get("status") in pages.STATES else None
             return self.reply(200, pages.runs(run_list(records(server.runs), now, job, state)), "text/html")
         if len(parts) == 2 and parts[0] == "jobs" and parts[1] in pages.JOBS:
-            found, plan = records(server.runs), server.upcoming()
-            view = history(found, parts[1], plan, now)
+            found, plan, checks = records(server.runs), server.upcoming(), read_checks(server.checks)
+            view = history(found, parts[1], plan, now, checks=checks)
             view["alerts"] = [item for item in alerts(found, server.schedule, plan, verified_dates(server.rotation),
-                                                      read_heartbeat(server.heartbeat), now, token_limit())
+                                                      read_heartbeat(server.heartbeat), now, token_limit(), checks)
                               if item["job"] == parts[1]]
             view["running"] = [with_log(server.runs, record, 12) for record in found
                                if record["job"] == parts[1] and record["status"] == "running"]
@@ -375,11 +416,11 @@ class Handler(BaseHTTPRequestHandler):
         pass
 
 
-def start(runs, rotation, schedule, upcoming, heartbeat, port=8787):
+def start(runs, rotation, schedule, upcoming, heartbeat, checks, port=8787):
     """Serves the pages on a daemon thread; the container's port mapping decides who reaches them."""
     server = ThreadingHTTPServer(("0.0.0.0", port), Handler)
     server.daemon_threads = True
-    server.runs, server.rotation, server.heartbeat = Path(runs), Path(rotation), Path(heartbeat)
+    server.runs, server.rotation, server.heartbeat, server.checks = Path(runs), Path(rotation), Path(heartbeat), Path(checks)
     server.schedule, server.upcoming = schedule, upcoming
     threading.Thread(target=server.serve_forever, name="status", daemon=True).start()
     return server

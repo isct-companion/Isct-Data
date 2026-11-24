@@ -31,18 +31,21 @@ REPO = "isct-companion/Isct-Data"
 STATE = Path("/data/state")
 RUNS = STATE / "runs"
 ROTATION = STATE / "courses-rotation.json"
+CHECKS = STATE / "checks.json"  # each dataset's last source check, for the status page
+CHECK_DAYS = 31
 HEARTBEAT = STATE / "heartbeat.json"  # the scheduler loop's last tick, for the status page's alerts
 APP_KEY = Path("/run/isct-github/private-key.pem")
 JST = timezone(timedelta(hours=9))
 KEEP_ARTIFACT_DAYS, KEEP_LOG_DAYS, KEEP_RECORD_DAYS = 7, 30, 180
-SUNDAY = 6
-# Japan time of each job; departments only on Sundays.
+# The syllabus is read once a day (Japan time). The four public datasets are checked every `every`
+# minutes: a check only reads the official sources and decides by code whether anything really
+# changed, and only then starts a full run with a record of its own.
 SCHEDULE = {
     "courses": {"at": "03:23"},
-    "exams": {"at": "09:17"},
-    "academic-calendar": {"at": "09:47"},
-    "important-dates": {"at": "10:17"},
-    "departments": {"at": "10:47", "weekday": SUNDAY},
+    "exams": {"every": 60},
+    "academic-calendar": {"every": 60},
+    "important-dates": {"every": 60},
+    "departments": {"every": 1440},
 }
 DATASETS = [job for job in SCHEDULE if job != "courses"]
 REVIEW_CONTRACT = (
@@ -174,6 +177,20 @@ def locked():
 
 
 @contextmanager
+def scripts_of(root):
+    """Imports this checkout's `scripts/` for the duration, then forgets them, so the next run imports
+    its own checkout's scripts instead of a deleted earlier one's."""
+    sys.path.insert(0, str(root / "scripts"))
+    try:
+        yield
+    finally:
+        sys.path.remove(str(root / "scripts"))
+        for name, module in list(sys.modules.items()):
+            if str(getattr(module, "__file__", "") or "").startswith(str(root)):
+                del sys.modules[name]
+
+
+@contextmanager
 def checkout(mirror, base, path):
     run(mirror, "git", "worktree", "add", "--quiet", "--detach", str(path), base)
     try:
@@ -239,61 +256,34 @@ def source_changes(state, previous):
     return rows + [{"url": url, "change": "removed"} for url in sorted(before.keys() - now.keys())]
 
 
-def update(root, mirror, base, dataset, receipt, record, force=False, poll_only=False):
+def review_with_models(root, dataset, receipt, record, template, write, paths, comparison_dir, base):
+    """Two Terra authors review the changed sources independently; Sol settles any difference.
+    Each model checks its draft with the runner's own validator before returning it."""
     import compare_publications as comparisons
     import data_workflow
-    import publish_data
-    from source_monitor import snapshot, state_path, triage
 
-    with phase("读取官方来源"):
-        captured = snapshot(root, dataset)
-    record["requests"] = len(captured[1])
-    state_file = root / state_path(dataset)
-    previous = load(state_file) if state_file.exists() else None
-    changed, reason, _ = triage(captured[0], previous)
-    record["note"], record["sources"] = reason, source_changes(captured[0], previous)
-    log({"dataset": dataset, "changed": changed, "reason": reason})
-    if poll_only:
-        return "checked"
-    if not (changed or force):
-        return "unchanged"
-
-    no_change = STATE / f"{dataset}-unchanged.json"
-    if not force and load(no_change, {}) == {"base": base, "state": captured[0]}:
-        record["note"] = "来源与上次审核后确认无变化的运行相同"
-        return "unchanged"
-    prepared = root / ".data-runs"
-    data_workflow.prepare(root, dataset, captured)
-    if dataset == "exams":
-        retain_exam_evidence(root, receipt)
     instructions = "\n\n".join((root / f"prompts/{name}.md").read_text(encoding="utf-8")
                                 for name in ("update-official-data", f"update-{dataset}"))
-    task = (prepared / "task.md").read_text(encoding="utf-8")
+    task = (root / ".data-runs/task.md").read_text(encoding="utf-8")
     review = Review(os.environ["OPENAI_API_KEY"])
-    paths = {}
-    comparison_dir = root / ".arbiter"
-    def author(slot):
-        candidate = review.ask(
-            root, TERRA, f"{REVIEW_CONTRACT}\n\n{instructions}",
-            f"{task}\nReturn the complete review JSON using .data-runs/review.json as the template.",
-            label=f"作者 {slot.upper()}")
-        save(receipt / f"review-{slot}.json", candidate)
-        with checkout(mirror, base, root.parent / f"author-{slot}") as tree:
-            shutil.copytree(prepared, tree / ".data-runs")
-            if (root / ".exam-runs").exists():
-                shutil.copytree(root / ".exam-runs", tree / ".exam-runs")
-            save(tree / ".data-runs/review.json", candidate)
-            data_workflow.apply_review(tree, dataset, dry_run=True)
-            data_workflow.apply_review(tree, dataset)
-            path = receipt / f"publication-{slot}.json"
-            save(path, publish_data.prepare(tree, base, dataset))
-            paths[slot] = path
+
+    def check_review(value):
+        original = template.read_bytes()
+        try:
+            save(template, value)
+            return "passed: " + json.dumps(data_workflow.apply_review(root, dataset, dry_run=True))
+        finally:
+            template.write_bytes(original)
 
     try:
         for slot in ("a", "b"):
             try:
                 with phase(f"作者 {slot.upper()}：审核并写入"):
-                    author(slot)
+                    candidate = review.ask(
+                        root, TERRA, f"{REVIEW_CONTRACT}\n\n{instructions}",
+                        f"{task}\nReturn the complete review JSON using .data-runs/review.json as the template.",
+                        label=f"作者 {slot.upper()}", check=check_review)
+                    write(slot, candidate)
             except Exception as error:
                 log({"dataset": dataset, "author": slot, "error": str(error)})
                 record.setdefault("authorErrors", {})[slot] = str(error)[:400]
@@ -307,6 +297,12 @@ def update(root, mirror, base, dataset, receipt, record, force=False, poll_only=
             verdict_path = comparison_dir / "verdict.json"
             arbitration = (root / "prompts/arbitrate-public-data.md").read_text(encoding="utf-8")
             task = (comparison_dir / "task.md").read_text(encoding="utf-8")
+
+            def check_verdict(value):
+                save(verdict_path, value)
+                _, choices, unresolved = comparisons.check_verdict(comparison_dir, verdict_path)
+                return f"passed: {len(choices)} items, unresolved: {unresolved}"
+
             notes = []
             if len(paths) == 2:
                 for slot, peer in (("a", "b"), ("b", "a")):
@@ -323,17 +319,98 @@ def update(root, mirror, base, dataset, receipt, record, force=False, poll_only=
                     root, SOL, f"{REVIEW_CONTRACT}\n\n{arbitration}",
                     f"{task}\nReturn the complete verdict JSON using .arbiter/verdict.json as the template. "
                     f"Independently verify advisory peer notes: {json.dumps(notes, ensure_ascii=False)[:16000]}",
-                    effort="medium", label="仲裁")
+                    effort="medium", label="仲裁", check=check_verdict)
                 save(receipt / "verdict.json", verdict)
                 save(verdict_path, verdict)
                 comparisons.resolve(root, dataset, comparison_dir, verdict_path, base)
     finally:
         record["tokens"], record["modelCalls"] = review.tokens, review.calls
-    bundle = comparison_dir / "final.json"
+    return comparison_dir / "final.json"
+
+
+def attempt_marker(dataset, captured):
+    return STATE / f"{dataset}-attempt.json", {"state": captured[0], "day": datetime.now(JST).date().isoformat()}
+
+
+def triaged(root, dataset, base, force=False):
+    """Reads a dataset's official sources and decides by code whether a review is due. Returns
+    (captured, previous, reason, outcome); outcome is None when a review is due, else the result."""
+    from source_monitor import snapshot, state_path, triage
+
+    captured = snapshot(root, dataset)
+    state_file = root / state_path(dataset)
+    previous = load(state_file) if state_file.exists() else None
+    changed, reason, _ = triage(captured[0], previous)
+    if force:
+        return captured, previous, reason, None
+    if not changed:
+        return captured, previous, reason, "unchanged"
+    if load(STATE / f"{dataset}-unchanged.json", {}) == {"base": base, "state": captured[0]}:
+        return captured, previous, "来源与上次审核后确认无变化的运行相同", "unchanged"
+    # A review that failed on these exact sources is not repeated the same day: the hourly checks
+    # would otherwise pay for the same failing review every hour.
+    path, marker = attempt_marker(dataset, captured)
+    if load(path, {}) == marker:
+        return captured, previous, "这些来源今天已经审核失败过一次，明天或来源再变时重试", "held"
+    return captured, previous, reason, None
+
+
+def update(root, mirror, base, dataset, receipt, record, force=False, poll_only=False):
+    import data_workflow
+    import publish_data
+
+    with phase("读取官方来源"):
+        captured, previous, reason, outcome = triaged(root, dataset, base, force)
+    record["requests"] = len(captured[1])
+    record["note"], record["sources"] = reason, source_changes(captured[0], previous)
+    log({"dataset": dataset, "reason": reason, "outcome": outcome or "review"})
+    if poll_only:
+        return "checked"
+    if outcome:
+        return outcome
+
+    no_change = STATE / f"{dataset}-unchanged.json"
+    attempt, marker = attempt_marker(dataset, captured)
+    prepared = root / ".data-runs"
+    with phase("预处理：只留下真正变化的部分"):
+        summary = data_workflow.prepare(root, dataset, captured)
+    record["changedSources"] = summary["changedSources"]
+    if dataset == "exams":
+        retain_exam_evidence(root, receipt)
+    template = prepared / "review.json"
+    paths = {}
+    comparison_dir = root / ".arbiter"
+
+    def write(slot, candidate):
+        """Applies one complete review in its own checkout and keeps the publication bundle."""
+        save(receipt / f"review-{slot}.json", candidate)
+        with checkout(mirror, base, root.parent / f"author-{slot}") as tree:
+            shutil.copytree(prepared, tree / ".data-runs")
+            if (root / ".exam-runs").exists():
+                shutil.copytree(root / ".exam-runs", tree / ".exam-runs")
+            save(tree / ".data-runs/review.json", candidate)
+            data_workflow.apply_review(tree, dataset, dry_run=True)
+            data_workflow.apply_review(tree, dataset)
+            path = receipt / f"publication-{slot}.json"
+            save(path, publish_data.prepare(tree, base, dataset))
+            paths[slot] = path
+
+    if not summary["needsReview"]:
+        record["note"] = "预处理确认：提取出的考试数据与已发布一致，不需要模型"
+        with phase("按预处理结果写入（不调用模型）"):
+            write("code", load(template))
+        bundle = paths["code"]
+    else:
+        save(attempt, marker)  # before the models run, so a crash also counts as today's attempt
+        bundle = review_with_models(root, dataset, receipt, record, template, write, paths, comparison_dir, base)
     shutil.copyfile(bundle, receipt / "final.json")
-    with checkout(mirror, base, root.parent / "publisher") as publisher:
-        published = last_json(script(publisher, "publish_data", "--dataset", dataset, "--base", base,
-                                     "--bundle", str(bundle), capture=True))
+    try:
+        with checkout(mirror, base, root.parent / "publisher") as publisher:
+            published = last_json(script(publisher, "publish_data", "--dataset", dataset, "--base", base,
+                                         "--bundle", str(bundle), capture=True))
+    except Retry:
+        attempt.unlink(missing_ok=True)  # main moved on, not the review: the next check reviews again
+        raise
     record["requests"] += len(captured[1])  # publish_data reads the sources again before it writes
     log(published)
     if not published["changed"]:
@@ -487,8 +564,7 @@ def execute(job, args, trigger="manual"):
         record["base"] = base
         save(status_path, record)
         with tempfile.TemporaryDirectory(dir=STATE) as tmp, checkout(mirror, base, Path(tmp) / "base") as root:
-            sys.path.insert(0, str(root / "scripts"))
-            try:
+            with scripts_of(root):
                 if job == "courses":
                     outcome = courses(root, base, record, args.full)
                 elif job == "candidates":
@@ -497,8 +573,6 @@ def execute(job, args, trigger="manual"):
                     outcome = shadow(root, receipt, args.before, args.after)
                 else:
                     outcome = update(root, mirror, base, job, receipt, record, args.force, args.poll_only)
-            finally:
-                sys.path.pop(0)
         record["status"] = outcome
     except Retry as error:
         record["status"], record["error"] = "retry", str(error)[:600]
@@ -511,6 +585,38 @@ def execute(job, args, trigger="manual"):
         log({key: record[key] for key in ("run", "job", "status", "error") if key in record})
         Log.path = Log.record = None
     return record["status"]
+
+
+def check(job, args):
+    """One look at a dataset's official sources, without a run record of its own: the result lands in
+    `checks.json` for the status page, and only a change that needs a review starts a full run."""
+    checks = load(CHECKS, {})
+    entry = checks.setdefault(job, {})
+    now = datetime.now(JST)
+    day = entry.setdefault("days", {}).setdefault(now.date().isoformat(), {"ok": 0, "failed": 0})
+    outcome = "error"
+    with tempfile.TemporaryDirectory(dir=STATE) as tmp:
+        Log.path, Log.record = Path(tmp) / "check.log", None
+        try:
+            mirror, base = fetch()
+            with checkout(mirror, base, Path(tmp) / "base") as root, scripts_of(root):
+                captured, _, reason, outcome = triaged(root, job, base)
+            entry.update(at=now.isoformat(timespec="seconds"), ok=True, reason=reason, error=None, failures=0,
+                         requests=len(captured[1]), outcome=outcome or "review")
+            if outcome == "unchanged":  # the published data still matches the sources
+                entry["lastCurrent"] = now.isoformat(timespec="seconds")
+            day["ok"] += 1
+        except Exception as error:
+            entry.update(at=now.isoformat(timespec="seconds"), ok=False, error=(str(error) or type(error).__name__)[:300],
+                         failures=entry.get("failures", 0) + 1)
+            day["failed"] += 1
+        finally:
+            Log.path = None
+    oldest = (now.date() - timedelta(days=CHECK_DAYS)).isoformat()
+    entry["days"] = {name: counts for name, counts in entry["days"].items() if name >= oldest}
+    save(CHECKS, checks)
+    if outcome is None:
+        execute(job, args, trigger="change")
 
 
 def due_at(job, day):
@@ -528,9 +634,17 @@ def upcoming(now=None, attempted=None):
     now = now or datetime.now(JST)
     attempted = load(STATE / "schedule.json", {}) if attempted is None else attempted
     plan = {}
-    for job in SCHEDULE:
+    for job, rule in SCHEDULE.items():
         if reason := missing_credentials(job):
             plan[job] = {"next": None, "due": False, "paused": reason}
+            continue
+        if rule.get("every"):
+            try:
+                last = datetime.fromisoformat(attempted[job])
+            except (KeyError, TypeError, ValueError):
+                last = None
+            at = last + timedelta(minutes=rule["every"]) if last and last.tzinfo else now
+            plan[job] = {"next": max(at, now).isoformat(timespec="minutes"), "due": at <= now, "paused": None}
             continue
         for offset in range(8):
             day = now.date() + timedelta(days=offset)
@@ -556,7 +670,7 @@ def serve(args):
     RUNS.mkdir(parents=True, exist_ok=True)
     with locked():
         mark_interrupted()
-    status.start(RUNS, ROTATION, SCHEDULE, upcoming, HEARTBEAT)
+    status.start(RUNS, ROTATION, SCHEDULE, upcoming, HEARTBEAT, CHECKS)
     while True:
         save(HEARTBEAT, {"at": datetime.now(JST).isoformat(timespec="seconds")})
         try:
@@ -564,9 +678,14 @@ def serve(args):
                 if plan["due"]:
                     with locked():
                         attempted = load(STATE / "schedule.json", {})
-                        attempted[job] = datetime.now(JST).date().isoformat()
+                        every = SCHEDULE[job].get("every")
+                        now = datetime.now(JST)
+                        attempted[job] = now.isoformat(timespec="seconds") if every else now.date().isoformat()
                         save(STATE / "schedule.json", attempted)
-                        execute(job, args, trigger="schedule")
+                        if every:
+                            check(job, args)
+                        else:
+                            execute(job, args, trigger="schedule")
         except Exception as error:
             log({"error": str(error)})
         time.sleep(60)
