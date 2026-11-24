@@ -75,13 +75,13 @@
       "courses": [
         {
           "source": "courses/2026/graduate-1.json",
-          "hash": "c53c492d6c822716a2b2dc9c8979af525858f403ed4bc16b4527ea03e64bd013",
-          "ts": "2026-11-23T00:59:35Z"
+          "hash": "5cd0feef3d54c199745fdc00b93824cbf945c09f09107f99adccb15deefecbdf",
+          "ts": "2026-11-24T18:28:36Z"
         },
         {
           "source": "courses/2026/graduate-2.json",
-          "hash": "941a59434213fa5b87353d976871ae9a27ae822a305263506569a48be28e10e5",
-          "ts": "2026-11-23T00:59:35Z"
+          "hash": "83542aed5349b41e21766c9182a916eab3802ebabeceaaa6c3bca138c1a62f88",
+          "ts": "2026-11-24T18:28:36Z"
         },
         {
           "source": "courses/2026/graduate-3.json",
@@ -105,8 +105,8 @@
         },
         {
           "source": "courses/2026/graduate-7.json",
-          "hash": "e5fda8e0d01694bdba67f89feb53fa6a43a7c34ccbaf6bab0aa644a8b456785c",
-          "ts": "2026-11-23T00:59:35Z"
+          "hash": "f06a8fcca7986818b48b5126b6207a6d9201e3d46e78c048994407a84365ad91",
+          "ts": "2026-11-24T18:28:36Z"
         },
         {
           "source": "courses/2026/legacy.json",
@@ -130,8 +130,8 @@
         },
         {
           "source": "courses/2026/undergraduate-2.json",
-          "hash": "aafd6336f120ef5c0998fbb2f4b041a07a750d6d09c919b1f37e81a4584641e9",
-          "ts": "2026-11-23T00:59:35Z"
+          "hash": "c9466e9b571209ff6da77e117e81342edc63a99ff48396e24fd9ca824674d0bf",
+          "ts": "2026-11-24T18:28:36Z"
         },
         {
           "source": "courses/2026/undergraduate-3.json",
@@ -155,8 +155,8 @@
         },
         {
           "source": "courses/2026/undergraduate-7.json",
-          "hash": "24c37b4df0bc3f5c4e4d43ef8095bd7417508f9526c1473924b37724b4821931",
-          "ts": "2026-11-23T00:59:35Z"
+          "hash": "eb0a146b3d78164f4fe88948df4b7a6b9bb2d858c2406ff1f5c412433873af27",
+          "ts": "2026-11-24T18:28:36Z"
         }
       ]
     },
