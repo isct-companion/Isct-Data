@@ -20,6 +20,15 @@ DATASETS = {
 VERSIONED_INDEX = {'campusMap': 'campus-map/v{version}/campus-map.json.gz'}
 
 
+def register_feeds(index, dataset, names):
+    """Lists new yearly feed files in the index (non-exam datasets: one file per year); existing
+    entries are kept, and their hashes are refreshed by update_subscription_index."""
+    group, fields = DATASETS[dataset]['index']
+    for name in names:
+        index[group].setdefault(Path(name).stem, {}).setdefault(fields[0], name)
+    return index
+
+
 def state_path(dataset):
     return 'review/exam-source-state.json' if dataset == 'exams' else f'review/source-state/{dataset}.json'
 
