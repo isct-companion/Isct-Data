@@ -8,14 +8,16 @@ NAS の 1 つの Docker サービスが公式情報とシラバスを確認し�
 
 GitHub Actions は PR と main の検証、ホームページのデプロイ通知を実行します。main の必須チェックは NAS の公開用 GitHub App に限りバイパスできます。
 
-## 公開データの確認時刻
+## 公開データの確認頻度
 
-| Workflow | データ | 定期チェック（JST） | 個別 prompt |
+確認は公式ソースだけを読み、審査が要る変化があったときだけ実行を始めます（[詳細](data-pipeline.md)）。
+
+| Workflow | データ | 確認の頻度 | 個別 prompt |
 | --- | --- | --- | --- |
-| Update academic calendar | 校暦・授業期間・休講・祝日 | 毎日 09:47 | [校暦](../prompts/update-academic-calendar.md) |
-| Update departments and course guidance | 入学年度別の学系・履修指南 | 日曜 10:47 | [学系](../prompts/update-departments.md) |
-| Update important dates | 行事・式典・入試の日程 | 毎日 10:17 | [重要日程](../prompts/update-important-dates.md) |
-| Update exams and exam-week classes | 期末試験と同じ PDF の授業・補講 | 毎日 09:17 | [試験](../prompts/update-exams.md) |
+| Update academic calendar | 校暦・授業期間・休講・祝日 | 1 時間ごと | [校暦](../prompts/update-academic-calendar.md) |
+| Update departments and course guidance | 入学年度別の学系・履修指南 | 1 日ごと | [学系](../prompts/update-departments.md) |
+| Update important dates | 行事・式典・入試の日程 | 1 時間ごと | [重要日程](../prompts/update-important-dates.md) |
+| Update exams and exam-week classes | 期末試験と同じ PDF の授業・補講 | 1 時間ごと | [試験](../prompts/update-exams.md) |
 
 ## GitHub Actions への切り戻し
 

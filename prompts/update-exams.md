@@ -7,7 +7,9 @@ updates them.
 
 Preparation has already inspected actual PDF headings, extracted geometry rows,
 rendered pages, and generated candidate files for each public manifest scope.
-Read `.data-runs/task.md` and its exact paths; do not guess hashes or PDF names.
+Read the task and its exact paths; do not guess hashes or PDF names. A scope
+the template already marks `confirmed` has an unchanged PDF and no drift from
+the published feed; keep it as it is.
 
 1. Compare each generated scope with the actual PDF year, quarter and level.
    Confirm `not_yet_published` when the PDF still shows an earlier quarter, or
@@ -34,15 +36,13 @@ Read `.data-runs/task.md` and its exact paths; do not guess hashes or PDF names.
    PDF belong in `exam-week-classes/`. The fixed batch command invokes
    `exam_workflow.py` with the exact PDF so its shared
    `extract_exam_timetable.py classes` implementation updates both and rejects
-   remaining exam drift. Do not run separate extraction/write commands yourself.
+   remaining exam drift. The runner runs it after your review; you write nothing.
 5. Confirm every public scope in `.data-runs/review.json`, set accurate source
    review scopes and resolve all extraction facts. Only then approve the review.
 
-Run `python3 scripts/data_workflow.py --dataset exams --check-review` until it
-passes (at most three checks), then exactly once
-`python3 scripts/data_workflow.py --dataset exams --apply-review`.
-This calls `scripts/exam_workflow.py` for all tracked exam writes and source-state
-acknowledgement. Do not supply `all`, `full` or `none` as filenames. On any failure,
-STOP and report incomplete; repeating the same command cannot repair its inputs.
-After success call `publish_data`. The independent publisher also re-extracts
-fresh official PDF rows before publishing and protects all manual-source records.
+Call `check` with the complete review (at most three checks), then return it.
+The runner then calls `scripts/exam_workflow.py` for all tracked exam writes and
+source-state acknowledgement. On a check you cannot fix from the evidence,
+return the review with `status: pending` and the unresolved facts. The
+independent publisher also re-extracts fresh official PDF rows before
+publishing and protects all manual-source records.

@@ -13,6 +13,9 @@ from urllib.request import urlopen
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "ops/data-pipeline"))
+sys.path.insert(1, str(ROOT / "scripts"))
+import data_workflow
+import review
 import runner
 import status
 import status_pages as pages
@@ -37,21 +40,20 @@ class ScheduleTest(unittest.TestCase):
             patcher.start()
             self.addCleanup(patcher.stop)
 
-    def test_each_job_runs_once_a_day_and_catches_up_the_same_day(self):
+    def test_datasets_are_checked_every_interval_and_the_syllabus_once_a_day(self):
         monday = datetime(2026, 11, 23, 12, 0, tzinfo=runner.JST)
-        plan = runner.upcoming(monday, {"exams": "2026-11-23"})
+        plan = runner.upcoming(monday, {"exams": "2026-11-23T11:30:00+09:00", "important-dates": "2026-11-23T10:59:00+09:00",
+                                        "departments": "2026-11-23", "courses": "2026-11-23"})
         self.assertFalse(plan["exams"]["due"])
-        self.assertEqual(plan["exams"]["next"], "2026-11-24T09:17+09:00")
-        # The NAS was down at 09:47 and 10:17: both run as soon as it is back that day.
-        self.assertTrue(plan["academic-calendar"]["due"])
+        self.assertEqual(plan["exams"]["next"], "2026-11-23T12:30+09:00")
         self.assertTrue(plan["important-dates"]["due"])
-        self.assertEqual(plan["courses"]["next"], "2026-11-23T12:00+09:00")
-        # Departments are read on Sundays only.
-        self.assertFalse(plan["departments"]["due"])
-        self.assertEqual(plan["departments"]["next"], "2026-11-29T10:47+09:00")
-        early = runner.upcoming(datetime(2026, 11, 29, 9, 0, tzinfo=runner.JST), {})
-        self.assertEqual(early["departments"]["next"], "2026-11-29T10:47+09:00")
-        self.assertFalse(early["departments"]["due"])
+        # Never checked, or a date from the daily schedule this replaced: check now.
+        self.assertTrue(plan["academic-calendar"]["due"])
+        self.assertTrue(plan["departments"]["due"])
+        self.assertFalse(plan["courses"]["due"])
+        self.assertEqual(plan["courses"]["next"], "2026-11-24T03:23+09:00")
+        # The NAS was down at 03:23: the syllabus runs as soon as it is back that day.
+        self.assertTrue(runner.upcoming(monday, {})["courses"]["due"])
 
     def test_jobs_pause_without_their_credentials(self):
         with patch.dict(os.environ, {"OPENAI_API_KEY": ""}):
@@ -132,6 +134,36 @@ class RunTest(unittest.TestCase):
         ])
         self.assertEqual(runner.source_changes(state, None)[0]["change"], "new")
 
+    def test_only_changed_sources_reach_a_model(self):
+        baseline = {"manifests": {"m": "1"}, "sources": {"a": "1", "b": "1", "c": "1"}, "content": {"b": "x", "c": "x"}}
+        state = {"manifests": {"m": "1"}, "sources": {"a": "1", "b": "2", "c": "2", "d": "1"}, "content": {"b": "x", "c": "y"}}
+        # Same bytes, or new bytes with the same visible content, were already reviewed.
+        self.assertEqual(data_workflow.unchanged_sources(state, baseline), {"a", "b"})
+        self.assertEqual(data_workflow.unchanged_sources({**state, "manifests": {"m": "2"}}, baseline), set())
+        self.assertEqual(data_workflow.unchanged_sources(state, None), set())
+        # An exam scope is settled by code only when its rows equal the feed, or its PDF is unchanged.
+        scope = {"outcome": "reviewed", "drift": [], "unresolvedFacts": [], "pdfHashMatchesReviewedSource": False}
+        self.assertTrue(data_workflow.settled_scope(scope))
+        self.assertFalse(data_workflow.settled_scope({**scope, "drift": ["X: in the PDF but not in the exam feed"]}))
+        self.assertFalse(data_workflow.settled_scope({**scope, "unresolvedFacts": ["ambiguous assessment identity"]}))
+        self.assertFalse(data_workflow.settled_scope({**scope, "outcome": "not_yet_published"}))
+        self.assertTrue(data_workflow.settled_scope({**scope, "outcome": "not_yet_published",
+                                                     "pdfHashMatchesReviewedSource": True}))
+
+    def test_the_check_tool_reports_what_is_wrong_and_stops_after_three(self):
+        def check(value):
+            if value.get("status") != "approved":
+                raise ValueError("review must be approved with a source review summary")
+            return "passed"
+
+        answer = lambda value: json.dumps({"answer": json.dumps(value)})
+        self.assertEqual(review.checked(check, answer({"status": "approved"}), 1), "passed")
+        self.assertEqual(review.checked(check, answer({"status": "pending"}), 2),
+                         "Check failed: review must be approved with a source review summary")
+        self.assertIn("not a JSON object", review.checked(check, json.dumps({"answer": "[1]"}), 1))
+        self.assertIn("not a JSON object", review.checked(check, json.dumps({"answer": "{"}), 1))
+        self.assertIn("Check limit reached", review.checked(check, answer({"status": "approved"}), 4))
+
     def test_receipts_drop_artifacts_then_logs_then_records_as_they_age(self):
         with tempfile.TemporaryDirectory() as directory:
             runs = Path(directory)
@@ -196,18 +228,85 @@ class StatusPageTest(unittest.TestCase):
                                                           "courses/2026/legacy.json": "2026-10-20"}}))
         self.plan = {"exams": {"next": "2026-11-24T09:17+09:00", "due": False, "paused": None},
                      "courses": {"next": None, "due": False, "paused": "GitHub App 未配置"}}
+        self.heartbeat = Path(directory.name) / "heartbeat.json"
+        self.heartbeat.write_text(json.dumps({"at": "2026-11-23T11:59:00+09:00"}), encoding="utf-8")
 
-    def test_overview_cards_and_the_run_filter(self):
-        found = status.records(self.runs)
-        view = status.overview(found, list(runner.SCHEDULE), self.plan, NOW)
-        cards = {card["job"]: card for card in view["cards"]}
-        self.assertEqual(list(cards)[:5], list(runner.SCHEDULE))
-        self.assertEqual(cards["exams"]["last"]["run"], PUBLISHED_RUN)
-        self.assertEqual(cards["exams"]["lastFailure"]["run"], FAILED_RUN)
-        self.assertEqual(cards["academic-calendar"]["last"]["status"], "ok")
+    def view(self, plan=None, heartbeat=NOW - timedelta(minutes=1), found=None):
+        return status.overview(status.records(self.runs) if found is None else found, runner.SCHEDULE,
+                               self.plan if plan is None else plan, status.verified_dates(self.rotation), heartbeat, NOW)
+
+    def test_overview_rows_and_the_run_filter(self):
+        view = self.view()
+        rows = {row["job"]: row for row in view["jobs"]}
+        self.assertEqual(list(rows)[:5], list(runner.SCHEDULE))
+        self.assertEqual(rows["exams"]["last"]["run"], PUBLISHED_RUN)
+        self.assertEqual(rows["exams"]["current"], "2026-11-23T09:40:00+09:00")
+        self.assertEqual(rows["exams"]["success"], [1, 2])
+        self.assertEqual(rows["exams"]["calendar"][-2]["record"]["run"], FAILED_RUN)
+        self.assertEqual(rows["academic-calendar"]["last"]["status"], "ok")
         self.assertEqual(view["week"], {"runs": 4, "failed": 1, "published": 2, "requests": 652, "tokens": 81234})
-        failed = status.overview(found, list(runner.SCHEDULE), self.plan, NOW, job="exams", state="failed")
+        failed = status.run_list(status.records(self.runs), NOW, job="exams", state="failed")
         self.assertEqual([record["run"] for record in failed["runs"]], [FAILED_RUN])
+
+    def test_alerts_name_what_needs_a_person_and_stay_quiet_otherwise(self):
+        found = status.records(self.runs)
+        # The paused syllabus job is the only alert: one published exam run after a failure is recovered.
+        view = self.view()
+        self.assertEqual([(item["level"], item["job"], item["title"]) for item in view["alerts"]],
+                         [("critical", "courses", "已暂停")])
+        self.assertEqual({row["job"]: row["health"] for row in view["jobs"]}["exams"], "ok")
+        running = dict(self.plan, courses={"next": None, "due": False, "paused": None})
+
+        def titles(records, plan=running, heartbeat=NOW - timedelta(minutes=1)):
+            return [(item["level"], item["title"]) for item in self.view(plan, heartbeat, records)["alerts"]]
+
+        def run(job, state, days, **extra):
+            at = (NOW - timedelta(days=days)).isoformat()
+            return {"run": f"r{job}{days}", "job": job, "status": state, "startedAt": at, "finishedAt": at, **extra}
+
+        self.assertEqual(titles(found, heartbeat=NOW - timedelta(minutes=10)), [("critical", "调度器没有心跳")])
+        self.assertEqual(titles(found, heartbeat=None), [("critical", "调度器没有心跳")])
+        # While a run holds the scheduler its heartbeat waits; only a run past two hours is stuck.
+        busy = [run("exams", "running", 0.05), *found]
+        self.assertEqual(titles(busy, heartbeat=NOW - timedelta(hours=1)), [])
+        self.assertEqual(titles([run("exams", "running", 0.2), *found], heartbeat=NOW - timedelta(hours=5)),
+                         [("critical", "运行超过 2 小时")])
+        # A lone retry is the design working; two in a row, or a failure, is not.
+        self.assertEqual(titles([run("exams", "retry", 0.1), *found]), [])
+        self.assertEqual(titles([run("exams", "retry", 0.1), run("exams", "retry", 0.5), *found]),
+                         [("warning", "连续 2 次未成功")])
+        self.assertEqual(titles([run("exams", "failed", 0.1), *found]), [("warning", "最近一次失败")])
+        self.assertEqual(titles([run("exams", "failed", 0.1), run("exams", "interrupted", 0.5), *found]),
+                         [("critical", "连续 2 次未成功")])
+        # Old data outranks the failures that caused it. An hourly dataset is current while its checks
+        # find nothing to review; a daily one is allowed two days and six hours.
+        self.assertEqual(titles([run("exams", "failed", 1), run("exams", "unchanged", 3)]),
+                         [("critical", "数据 3 天没有确认")])
+        self.assertEqual(titles([run("courses", "unchanged", 2)]), [])
+        self.assertEqual(titles([run("courses", "unchanged", 3)]), [("critical", "数据 3 天没有确认")])
+        current = {"lastCurrent": (NOW - timedelta(hours=1)).isoformat(), "failures": 0}
+        found_old = [run("exams", "published", 30)]
+        self.assertEqual([(item["level"], item["title"]) for item in status.alerts(
+            found_old, runner.SCHEDULE, running, {}, NOW, NOW, checks={"exams": current})], [])
+        self.assertEqual([(item["level"], item["title"]) for item in status.alerts(
+            found_old, runner.SCHEDULE, running, {}, NOW, NOW,
+            checks={"exams": {**current, "lastCurrent": (NOW - timedelta(hours=9)).isoformat()}})],
+            [("critical", "数据 9 小时没有确认")])
+        failing = {**current, "failures": 3, "error": "timed out", "at": NOW.isoformat()}
+        self.assertEqual([(item["level"], item["title"]) for item in status.alerts(
+            found_old, runner.SCHEDULE, running, {}, NOW, NOW, checks={"exams": failing})],
+            [("warning", "来源检查连续失败 3 次")])
+        # A run held back because today's review already failed is neither a failure nor a success.
+        self.assertEqual(titles([run("exams", "held", 0.05), run("exams", "unchanged", 0.2)]), [])
+        self.assertEqual(titles([run("exams", "failed", 0.1)]), [("critical", "从未成功")])
+        # A vanished official source, or a syllabus read that lost a tenth of its offerings, is a site change.
+        gone = run("exams", "unchanged", 0.1, sources=[{"url": "a", "change": "removed"}, {"url": "b", "change": "same"}])
+        self.assertEqual(titles([gone]), [("warning", "1 个官方来源消失")])
+        shrunk = [run("courses", "published", 0.1, courseFiles={"a": 80}), run("courses", "published", 1, courseFiles={"a": 100})]
+        self.assertEqual(titles(shrunk), [("critical", "开讲科目数骤减")])
+        self.assertEqual(titles(shrunk[1:]), [])
+        self.rotation.write_text(json.dumps({"verified": {"a": "2026-10-01"}}))
+        self.assertEqual(titles(shrunk[1:]), [("warning", "有课程文件 53 天没有重读详情页")])
 
     def test_history_keeps_each_days_last_result_over_thirty_days(self):
         view = status.history(status.records(self.runs), "exams", self.plan, NOW)
@@ -227,29 +326,43 @@ class StatusPageTest(unittest.TestCase):
 
     def test_pages_escape_run_text_and_show_the_details(self):
         found = status.records(self.runs)
-        front = pages.overview(status.overview(found, list(runner.SCHEDULE), self.plan, NOW)).decode()
-        self.assertNotIn("<script>", front)
-        self.assertIn("&lt;script&gt;", front)
+        front = pages.overview(self.view()).decode()
+        self.assertIn("1 Critical", front)
         self.assertIn("暂停：GitHub App 未配置", front)
-        failed = pages.detail(status.detail(self.runs, FAILED_RUN)).decode()
+        listed = pages.runs(status.run_list(found, NOW)).decode()
+        self.assertNotIn("<script>", listed + front)
+        failed = pages.detail(status.detail(self.runs, FAILED_RUN, NOW)).decode()
         self.assertIn("Traceback: boom", failed)
+        self.assertIn("&lt;script&gt;", failed)
+        self.assertNotIn("<script>", failed)
         self.assertIn("退出码 2", failed)
         self.assertIn(f'href="/runs/{FAILED_RUN}/files/review-a.json"', failed)
         self.assertNotIn("files/exam-evidence.zip", failed)
-        published = pages.detail(status.detail(self.runs, PUBLISHED_RUN)).decode()
+        published = pages.detail(status.detail(self.runs, PUBLISHED_RUN, NOW)).decode()
         for text in ("可见内容有变", "不一致，3 处差异", "gpt-6.1-sol", f'{pages.REPO_URL}/commit/{"a" * 40}'):
             self.assertIn(text, published)
+        # A running run's page follows its log live.
+        live = receipt(self.runs, "nas-20261123-115500-eeeeeeee", job="exams", status="running",
+                       startedAt="2026-11-23T11:55:00+09:00", steps=[{"command": "git fetch", "startedAt":
+                       "2026-11-23T11:55:01+09:00", "seconds": 1.0, "exit": 0}])
+        (live / "run.log").write_text("".join(f"line {index}\n" for index in range(300)), encoding="utf-8")
+        following = pages.detail(status.detail(self.runs, live.name, NOW)).decode()
+        self.assertIn("line 299", following)
+        self.assertNotIn("line 99\n", following)
+        self.assertIn('content="5"', following)
         course = pages.courses(status.courses(found, self.rotation, NOW)).decode()
         self.assertIn("TCM.B602", course)
         self.assertIn("时间与教室", course)
         self.assertIn("每次用时", pages.history(status.history(found, "exams", self.plan, NOW), NOW).decode())
 
     def test_the_server_serves_pages_logs_and_text_artifacts_only_inside_a_run(self):
-        server = status.start(self.runs, self.rotation, list(runner.SCHEDULE), lambda: self.plan, port=0)
+        server = status.start(self.runs, self.rotation, runner.SCHEDULE, lambda: self.plan, self.heartbeat,
+                              Path(self.runs.parent) / "checks.json", port=0)
+        server.clock = lambda: NOW
         self.addCleanup(server.server_close)
         self.addCleanup(server.shutdown)
         origin = f"http://127.0.0.1:{server.server_address[1]}"
-        for path in ("/", "/?job=exams&status=failed", "/jobs/exams", "/courses", f"/runs/{FAILED_RUN}"):
+        for path in ("/", "/runs", "/runs?job=exams&status=failed", "/jobs/exams", "/courses", f"/runs/{FAILED_RUN}"):
             with urlopen(origin + path) as response:
                 self.assertEqual(response.status, 200, path)
         with urlopen(f"{origin}/runs/{FAILED_RUN}/log") as response:
@@ -257,7 +370,11 @@ class StatusPageTest(unittest.TestCase):
         with urlopen(f"{origin}/runs/{FAILED_RUN}/files/review-a.json") as response:
             self.assertEqual(json.load(response), {"ok": True})
         with urlopen(f"{origin}/api/status") as response:
-            self.assertEqual(json.load(response)["cards"][1]["last"]["requests"], 12)
+            self.assertEqual(json.load(response)["jobs"][1]["last"]["requests"], 12)
+        # The paused syllabus job is critical, so an uptime monitor polling /healthz is told.
+        with self.assertRaises(HTTPError) as unhealthy:
+            urlopen(origin + "/healthz")
+        self.assertEqual((unhealthy.exception.code, unhealthy.exception.read()), (503, "开讲科目（Syllabus）：已暂停\n".encode()))
         for path in ("/runs/../courses-rotation.json/log", f"/runs/{FAILED_RUN}/files/../../courses-rotation.json",
                      f"/runs/{FAILED_RUN}/files/exam-evidence.zip", "/jobs/nope", f"/runs/{FAILED_RUN}/status.json"):
             with self.assertRaises(HTTPError) as refused:

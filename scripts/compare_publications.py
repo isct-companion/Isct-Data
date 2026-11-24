@@ -207,12 +207,11 @@ def write_task(out, comparison, bundles):
              'Each item in `.arbiter/comparison.json` has `options`: the record as ' +
              ', '.join(f'`{s}` ({sides[s]})' for s in SIDES) + '. `null` means the record is absent.',
              'Decide from the official evidence under `.data-runs/` which option is correct, not from which is more common.', '',
-             'In `.arbiter/verdict.json` set each `choice` to one of the listed option names, and `evidence` to the',
+             'In the verdict (template: `.arbiter/verdict.json`) set each `choice` to one of the listed option names, and `evidence` to the',
              'source file and page/heading/line that proves it. If no option matches the source, set `choice` to',
              '`none` and explain in `evidence`; nothing will be published and a person will look at it.', '',
-             'Then run `python3 scripts/compare_publications.py --dataset ' + comparison['dataset'] + ' --check-verdict`.',
-             'Fix only what it lists (at most 3 checks). Then call `noop` with a short summary.',
-             'Do not edit any other file.']
+             'Then call `check` with the complete verdict JSON and fix only what it lists (at most 3 checks).',
+             'Return the verdict JSON, with a short `summary`, as your final message.']
     (out / 'task.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 

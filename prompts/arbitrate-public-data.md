@@ -7,14 +7,13 @@ evidence under `.data-runs/` (source text, page images in `.data-runs/pages/`,
 and for exams the extracted rows in `.data-runs/exams/`). You have no network
 access and need none.
 
-Read evidence with queries, not whole files. `python3 scripts/evidence.py --help`
-lists read-only queries: grep across all source text with page numbers, one PDF
-page's text or tables, struck-through text on a page, exam rows by course code
-or date, and one record of a JSON file. You may also write short read-only
-`python3 -c` snippets (pdfplumber and json are installed) to count, filter or
-cross-check the prepared evidence, and `record .arbiter/comparison.json KEY` to read one item. Never write files from Python, never fetch
-from the network, and never print a whole large file: page images and big JSON
-files cost far more than a targeted query.
+You have read-only tools and no shell: `query` runs `scripts/evidence.py`
+(grep across all source text with page numbers, one PDF page's text or tables,
+struck-through text on a page, exam rows by course code or date, one record of
+a JSON file), `read` reads a slice of a prepared file such as
+`.arbiter/comparison.json`, `image` reads a prepared page image, and `check`
+validates a draft verdict. Use targeted queries: page images and big JSON files
+cost far more than a query.
 
 For every item in `.arbiter/comparison.json`:
 
@@ -33,8 +32,8 @@ For every item in `.arbiter/comparison.json`:
    Nothing is published then, and a person looks at it. That is a correct
    outcome; never pick an option you could not confirm.
 
-Run the check command from the task. It writes nothing; fix only what it lists
-in the verdict file, at most three checks. Then call `noop` with a short summary
-of what you decided. Do not edit data, evidence, scripts or any other file. A
-trusted script builds the final data from your choices, and the publisher
+Fill the verdict template (`.arbiter/verdict.json`) and call `check` with the
+complete verdict JSON. It writes nothing; fix only what it lists, at most three
+checks. Then return the verdict JSON with a short `summary` of what you decided.
+A trusted script builds the final data from your choices, and the publisher
 re-validates everything before main changes.

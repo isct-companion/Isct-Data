@@ -27,6 +27,27 @@ TOOLS = [
     tool("image", "Read a prepared JPEG page such as .data-runs/pages/STEM/2.jpg.", path="string"),
 ]
 TOOLS[1]["parameters"]["properties"]["arguments"]["items"] = {"type": "string"}
+# The runner's own validator, offered when it can check the answer: the model never runs commands or
+# writes files, so this is how it learns what its JSON still gets wrong before returning it.
+CHECK = tool("check", "Check a complete answer, passed as a JSON string, against the runner's validator. "
+             "Writes nothing. Returns 'passed' or what is wrong.", answer="string")
+CHECK_LIMIT = 3
+
+
+def checked(check, arguments, count):
+    if count > CHECK_LIMIT:
+        return ("Check limit reached. Return your final JSON now; if a fact is still unconfirmed, return "
+                "status pending with it listed as unresolved.")
+    try:
+        value = json.loads(json.loads(arguments)["answer"])
+    except (ValueError, TypeError, KeyError):
+        return "The answer is not a JSON object passed as a string."
+    if not isinstance(value, dict):
+        return "The answer is not a JSON object."
+    try:
+        return check(value)[:4000]
+    except (OSError, ValueError, TypeError, KeyError) as error:
+        return f"Check failed: {error}"[:4000]
 
 
 def evidence(root, name, args):
@@ -80,14 +101,16 @@ class Review:
         self.calls = []  # one entry per response, for the run record
         self.limit = int(os.getenv("OPENAI_RUN_TOKEN_LIMIT", "240000"))
 
-    def ask(self, root, model, role, context, effort="low", label=None):
+    def ask(self, root, model, role, context, effort="low", label=None, check=None):
+        """One answer JSON. `check(value)` validates a draft answer and returns what is wrong."""
         messages = [{"role": "developer", "content": role},
                     {"role": "user", "content": context}]
+        tools, checks = ([*TOOLS, CHECK] if check else TOOLS), 0
         for _ in range(14):
             if self.tokens >= self.limit:
                 raise RuntimeError("model token budget reached")
             result = responses(self.key, {
-                "model": model, "input": messages, "tools": TOOLS, "store": False,
+                "model": model, "input": messages, "tools": tools, "store": False,
                 "include": ["reasoning.encrypted_content"], "max_output_tokens": 12000,
                 "reasoning": {"effort": effort}, "text": {"format": {"type": "json_object"}},
             })
@@ -114,6 +137,11 @@ class Review:
                 raise RuntimeError("too many evidence queries in one response")
             messages.extend(output)
             for call in calls:
+                if check and call["name"] == "check":
+                    checks += 1
+                    messages.append({"type": "function_call_output", "call_id": call["call_id"],
+                                     "output": checked(check, call["arguments"], checks)})
+                    continue
                 try:
                     data = evidence(root, call["name"], json.loads(call["arguments"]))
                 except (OSError, ValueError, TypeError, KeyError, subprocess.TimeoutExpired) as error:
