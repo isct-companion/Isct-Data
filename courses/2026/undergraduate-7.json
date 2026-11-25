@@ -83633,10 +83633,6 @@
         {
           "ja": "西尾 純一朗",
           "en": "Junichiro Nishio"
-        },
-        {
-          "ja": "木内 久美子",
-          "en": "Kumiko Kiuchi"
         }
       ],
       "unit": {
@@ -84739,7 +84735,7 @@
     },
     {
       "id": "202636279",
-      "code": "ENT.G111(LAW.X102)",
+      "code": "ENT.G111",
       "title": {
         "ja": "グローバル海外研修ベーシック 1 AB",
         "en": "Oversea Practice Basic 1 AB"
@@ -85209,7 +85205,7 @@
     },
     {
       "id": "202636289",
-      "code": "ENT.G131(LAW.X156)",
+      "code": "ENT.G131",
       "title": {
         "ja": "オンライングローバル研修ベーシック",
         "en": "Online Global Practice Basic"
@@ -85943,7 +85939,7 @@
     },
     {
       "id": "202636306",
-      "code": "ENT.G331(LAW.X362)",
+      "code": "ENT.G331",
       "title": {
         "ja": "オンライングローバル研修",
         "en": "Online Global Practice"
@@ -86048,7 +86044,7 @@
     },
     {
       "id": "202636309",
-      "code": "ENT.G351(LAW.X371)",
+      "code": "ENT.G351",
       "title": {
         "ja": "伝統技術と国際協働",
         "en": "Traditional Technology and Intercultural Collaboration"

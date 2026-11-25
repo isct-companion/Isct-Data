@@ -15987,7 +15987,7 @@
     },
     {
       "id": "202636219",
-      "code": "ENT.A635(LAC.A635)",
+      "code": "ENT.A635",
       "title": {
         "ja": "博士アカデミック海外研修 A",
         "en": "Doctoral Academic Overseas Training A"
@@ -16386,7 +16386,7 @@
     },
     {
       "id": "202636228",
-      "code": "ENT.A642(LAC.A642)",
+      "code": "ENT.A642",
       "title": {
         "ja": "博士アカデミックプレゼンⅡ B",
         "en": "Doctoral Academic Presentation II B"
@@ -16799,7 +16799,7 @@
     },
     {
       "id": "202636243",
-      "code": "ENT.C406(LAC.M406)",
+      "code": "ENT.C406",
       "title": {
         "ja": "修士グローバルキャリア開発リテラシー A",
         "en": "Master's Global Career Development Literacy A"
@@ -17324,7 +17324,7 @@
     },
     {
       "id": "202636254",
-      "code": "ENT.C511(LAC.M511)",
+      "code": "ENT.C511",
       "title": {
         "ja": "修士キャリア構築ロールモデル C",
         "en": "Master's Career Development Role Models C"
@@ -17461,7 +17461,7 @@
     },
     {
       "id": "202636256",
-      "code": "ENT.C527(LAC.M527)",
+      "code": "ENT.C527",
       "title": {
         "ja": "修士社会・ビジネスのルールと倫理 B1",
         "en": "Master's Social and Business Rules and Ethics B1"
@@ -18355,7 +18355,7 @@
     },
     {
       "id": "202636274",
-      "code": "ENT.C663",
+      "code": "ENT.C663(LAC.C663)",
       "title": {
         "ja": "博士グローバル企業の研究開発・ビジネス戦略 C",
         "en": "Doctoral R&D and Business Strategies of Global Companies C"
@@ -18515,7 +18515,7 @@
     },
     {
       "id": "202636315",
-      "code": "ENT.G401(LAW.X432)",
+      "code": "ENT.G401",
       "title": {
         "ja": "グローバル課題解決演習特論",
         "en": "Advanced Global Problem Based Co-Learning"
@@ -18570,7 +18570,7 @@
     },
     {
       "id": "202636316",
-      "code": "ENT.G403(LAW.X453)",
+      "code": "ENT.G403",
       "title": {
         "ja": "異文化グループワーク海外研修アドバンスト 1 AB",
         "en": "Advanced Multicultural Groupwork Study Abroad 1 AB"
@@ -18937,7 +18937,7 @@
     },
     {
       "id": "202636323",
-      "code": "ENT.G454",
+      "code": "ENT.G454(LAW.X427)",
       "title": {
         "ja": "私たちの持続可能なエネルギーの未来：ビジネスと技術の役割",
         "en": "Our Sustainable Energy Future: Role of Business and Technology"
@@ -19541,7 +19541,7 @@
     },
     {
       "id": "202636338",
-      "code": "ENT.L456(LAW.X429)",
+      "code": "ENT.L456",
       "title": {
         "ja": "グローバル企業の効果的なチームワーク",
         "en": "Effective Teamwork in Global Companies"
@@ -19683,7 +19683,7 @@
     },
     {
       "id": "202636341",
-      "code": "ENT.P632(LAC.P632)",
+      "code": "ENT.P632",
       "title": {
         "ja": "博士企業研究インターンシップ1 A",
         "en": "Doctoral Research Internship in Private Companies 1 A"
@@ -20067,7 +20067,7 @@
     },
     {
       "id": "202636349",
-      "code": "ENT.P634(LAC.P634)",
+      "code": "ENT.P634",
       "title": {
         "ja": "博士企業研究インターンシップ4 A",
         "en": "Doctoral Research Internship in Private Companies 4 A"
