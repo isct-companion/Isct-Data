@@ -1,4 +1,29 @@
 {
   "formatVersion": 1,
-  "announcements": []
+  "announcements": [
+    {
+      "id": "2026-11-27-ios-dev-test",
+      "level": "info",
+      "startsAt": "2026-11-27T07:00:00+09:00",
+      "expiresAt": "2026-11-28T07:00:00+09:00",
+      "title": {
+        "ja": "【テスト】お知らせ表示の確認",
+        "en": "[Test] In-app announcement check"
+      },
+      "body": {
+        "ja": "実機でのお知らせ取得・表示・リンク・閉じる動作を確認するための臨時テストお知らせです。確認後に取り下げます。",
+        "en": "Temporary test announcement to verify fetching, display, link, and dismiss on device. It will be removed after verification."
+      },
+      "platforms": ["ios"],
+      "minAppVersion": "1.0.0",
+      "maxAppVersion": "1.0.0",
+      "link": {
+        "url": "https://isctcomp.app",
+        "label": {
+          "ja": "公式サイトを開く",
+          "en": "Open website"
+        }
+      }
+    }
+  ]
 }
