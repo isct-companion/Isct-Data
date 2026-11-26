@@ -2,6 +2,30 @@
   "formatVersion": 1,
   "announcements": [
     {
+      "id": "2026-11-27-ios-dev-test-important",
+      "level": "important",
+      "startsAt": "2026-11-27T07:30:00+09:00",
+      "expiresAt": "2026-11-28T07:30:00+09:00",
+      "title": {
+        "ja": "【重要テスト】複数お知らせ・強調表示の確認",
+        "en": "[Important Test] Multi-announcement & highlight check"
+      },
+      "body": {
+        "ja": "2件目の臨時テストお知らせ（important）です。強調バナーが先頭に表示され、1件目が折りたたみに入ること、未確認分がダイアログ表示されることを確認します。",
+        "en": "Second temporary test announcement (important). Verifies the highlighted top banner, collapsing of older items, and pending dialog behavior."
+      },
+      "platforms": ["ios"],
+      "minAppVersion": "1.0.0",
+      "maxAppVersion": "1.0.0",
+      "link": {
+        "url": "https://www.isct.ac.jp",
+        "label": {
+          "ja": "東京科学大学サイト",
+          "en": "Science Tokyo website"
+        }
+      }
+    },
+    {
       "id": "2026-11-27-ios-dev-test",
       "level": "info",
       "startsAt": "2026-11-27T07:00:00+09:00",
