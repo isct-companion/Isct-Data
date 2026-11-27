@@ -1,7 +1,7 @@
 # アプリのお知らせ
 
 [`announcements/v1/announcements.json`](../announcements/v1/announcements.json) は、Isct Companion の「今日」画面の上部に出すお知らせです。
-公式情報の自動取得ではなく、メンテナーが PR で直接書きます。形式は [`schema/announcements-v1.schema.json`](../schema/announcements-v1.schema.json)、
+公式情報の自動取得ではなく、メンテナーが PR か運用サービスの管理ページで書きます。形式は [`schema/announcements-v1.schema.json`](../schema/announcements-v1.schema.json)、
 意味的な検証は [`scripts/validate_announcements.py`](../scripts/validate_announcements.py) で、CI の `validate-data` が両方を実行します。
 
 ## アプリが読むタイミング

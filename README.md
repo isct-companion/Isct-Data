@@ -16,7 +16,7 @@ Science Tokyo（旧・東京工業大学）の公式情報を、Isct Companion �
 | [`exam-week-classes/`](exam-week-classes/) | 試験期間中の授業・補講 |
 | [`courses/`](courses/) | 公開シラバス（理工学系）の開講科目カタログ（科目・時間割・教室・単位、形式は [courses.md](docs/courses.md)） |
 | [`campus-map/`](campus-map/) | 大岡山・すずかけ台のキャンパスマップ（アプリ用 gzip、形式は [campus-map-export.md](docs/campus-map-export.md)。元データは非公開リポジトリ） |
-| [`announcements/`](announcements/) | アプリの「今日」画面に出すお知らせ（手動 PR で保守、index を経由しない。形式は [announcements.md](docs/announcements.md)） |
+| [`announcements/`](announcements/) | アプリの「今日」画面に出すお知らせ（メンテナーが手で保守、index を経由しない。形式は [announcements.md](docs/announcements.md)） |
 
 収録年度と配信ファイルは [`index.json`](index.json) で確認できます。出典、収録範囲、既知の欠落は [データ仕様](docs/data.md) と [試験データの更新](docs/exams.md) を参照してください。未収録の試験・授業は公式情報で確認してください。
 
