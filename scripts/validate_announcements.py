@@ -73,6 +73,9 @@ def issues(value):
         if "minAppVersion" in item and "maxAppVersion" in item \
                 and version(item["minAppVersion"]) > version(item["maxAppVersion"]):
             found.append(f"{at}/maxAppVersion: must not be below minAppVersion")
+        # The apps show one language's title with the same language's body.
+        if set(item["title"]) != set(item["body"]):
+            found.append(f"{at}/body: must be written in the same languages as the title")
         for field, limit in (("title", TITLE_BYTES), ("body", BODY_BYTES)):
             for language, text in item[field].items():
                 if len(text.encode("utf-8")) > limit:

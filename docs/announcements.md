@@ -27,11 +27,11 @@ raw の CDN は 5 分キャッシュするため、マージ後 5 分以内の�
       "level": "info",
       "startsAt": "2026-12-01T09:00:00+09:00",
       "expiresAt": "2026-12-08T09:00:00+09:00",
-      "title": {"ja": "…", "en": "…"},
-      "body": {"ja": "…", "en": "…"},
+      "title": {"en": "…", "ja": "…", "zh": "…"},
+      "body": {"en": "…", "ja": "…", "zh": "…"},
       "platforms": ["ios", "android"],
       "minAppVersion": "1.4.0",
-      "link": {"url": "https://www.isct.ac.jp/…", "label": {"ja": "詳細", "en": "Details"}}
+      "link": {"url": "https://www.isct.ac.jp/…", "label": {"en": "Details", "ja": "詳細", "zh": "详情"}}
     }
   ]
 }
@@ -40,6 +40,7 @@ raw の CDN は 5 分キャッシュするため、マージ後 5 分以内の�
 - `id` は小文字英数字とハイフン。一度使った id は削除後も再利用しません（アプリは閉じた id を覚えています）。
 - `level` は `info` か `important`。`important` は目立つ表示になります。
 - `startsAt` から `expiresAt` まで表示します。`expiresAt` は必須で、期間は最長 90 日です。
+- 文言は英語（`en`）が必須で、日本語（`ja`）と中国語（`zh`）は任意です。アプリは表示言語の文言を出し、なければ英語を出します。タイトルと本文は同じ言語の組で書きます。
 - 本文は改行を含むプレーンテキスト。タイトル 160 バイト、本文 2000 バイト（UTF-8）まで。
 - `platforms`（`macos`・`windows`・`ios`・`android`）と `minAppVersion`・`maxAppVersion` は省略すると全員に表示します。
 - `link` は `isct.ac.jp` か `isctcomp.app`（とそのサブドメイン）の https URL だけです。

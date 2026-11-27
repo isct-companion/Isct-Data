@@ -41,6 +41,9 @@ class AnnouncementTests(unittest.TestCase):
         self.assertTrue(broken(lambda item: item["link"].update(url="https://www.isct.ac.jp:443000/")))
         self.assertTrue(broken(lambda item: item.update(expiresAt="2026-02-30T09:00:00+09:00")))
         self.assertTrue(broken(lambda item: item["title"].update(en=" ")))
+        self.assertTrue(broken(lambda item: item["title"].pop("en") and item["body"].pop("en")))
+        self.assertTrue(broken(lambda item: item["title"].update(zh="通知")))
+        self.assertEqual(broken(lambda item: (item["title"].update(zh="通知"), item["body"].update(zh="正文"))), [])
         self.assertTrue(broken(lambda item: item.pop("expiresAt")))
         self.assertTrue(broken(lambda item: item.update(extra=True)))
 

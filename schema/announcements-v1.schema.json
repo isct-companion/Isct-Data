@@ -14,10 +14,11 @@
     "text": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["ja", "en"],
+      "required": ["en"],
       "properties": {
+        "en": {"type": "string", "pattern": "\\S"},
         "ja": {"type": "string", "pattern": "\\S"},
-        "en": {"type": "string", "pattern": "\\S"}
+        "zh": {"type": "string", "pattern": "\\S"}
       }
     },
     "instant": {
