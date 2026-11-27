@@ -31,8 +31,8 @@
         },
         {
           "source": "exam/undergraduate/2026-3q.json",
-          "hash": "10de4b5511d98c06dcd2857d28f8e36ef8d50fb9d822904e5ea7a7e1acfa1773",
-          "ts": "2026-11-24T06:51:48Z"
+          "hash": "f62916d862b83a5878be1e2e205d0f55c8c5808148afe10c762f3686ad1d4a91",
+          "ts": "2026-11-27T01:55:20Z"
         },
         {
           "source": "exam/graduate/2026-3q.json",
@@ -53,8 +53,8 @@
         },
         {
           "source": "exam-week-classes/undergraduate/2026-3q.json",
-          "hash": "918b02f83618c04b239c36992008d9347c40443bba86671511b11ef35463922f",
-          "ts": "2026-11-24T06:51:48Z"
+          "hash": "67451e10f4c451d30e43aaedaf47be9657f4e9851b3f8c9c9abb62aff2a800aa",
+          "ts": "2026-11-27T01:55:20Z"
         },
         {
           "source": "exam-week-classes/graduate/2026-3q.json",
